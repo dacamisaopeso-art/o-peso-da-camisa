@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Peso da Camisa | Histórias do Futebol</title>
+<meta name="description" content="O Peso da Camisa — histórias, rivalidades, curiosidades e personagens que marcaram o futebol.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=Inter:wght@400;600;700&display=swap');
+:root{--bg:#07090b;--panel:#0e1216;--text:#f4f2ed;--muted:#92999d;--line:#252a2e;--gold:#d8a83e;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}
+nav{position:fixed;z-index:10;top:0;width:100%;border-bottom:1px solid transparent;transition:.25s}nav.scrolled{background:#07090be8;backdrop-filter:blur(12px);border-color:var(--line)}.navin{height:72px;max-width:var(--max);margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}.logo{font:900 23px 'Barlow Condensed';letter-spacing:1.5px}.logo b{color:var(--gold)}.links{display:flex;gap:28px}.links a{text-transform:uppercase;font-size:12px;letter-spacing:1px;color:#c7cbcd}
+.hero{min-height:790px;display:flex;align-items:end;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 40%,#6d542120,transparent 25%),linear-gradient(105deg,#050607 5%,#101814 48%,#050607 100%)}.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 100px,#ffffff05 101px 102px)}.hero:after{content:"";position:absolute;width:700px;height:700px;right:-300px;top:-180px;border:1px solid #d8a83e30;border-radius:50%;box-shadow:0 0 0 90px #d8a83e09,0 0 0 180px #d8a83e06}.hero .in{position:relative;z-index:1;max-width:var(--max);width:100%;margin:auto;padding:150px 24px 90px}.kicker,.eyebrow{color:#e0b75a;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700}.hero h1{font:900 clamp(68px,10vw,130px)/.82 'Barlow Condensed';text-transform:uppercase;letter-spacing:-3px;margin:18px 0;max-width:850px}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{max-width:560px;color:#c2c7c8;font-size:17px;margin:25px 0 30px}.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{min-height:48px;padding:0 22px;display:inline-flex;align-items:center;border:1px solid #ffffff35;text-transform:uppercase;letter-spacing:1px;font-size:11px;font-weight:700}.primary{background:var(--gold);color:#080909;border-color:var(--gold)}.btn:hover{background:white;color:#090a0b}
+.section{max-width:var(--max);margin:auto;padding:105px 24px}.head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.title{font:900 clamp(45px,6vw,70px)/.88 'Barlow Condensed';text-transform:uppercase}.intro{max-width:420px;color:var(--muted);font-size:14px}
+.feature{display:grid;grid-template-columns:1.35fr 1fr;background:var(--panel);border:1px solid var(--line)}.art{min-height:470px;padding:35px;display:flex;align-items:end;position:relative;overflow:hidden;background:radial-gradient(circle at 60% 40%,#d8a83e42,transparent 18%),linear-gradient(135deg,#34443a,#101618 65%,#080a0c)}.art:before{content:"K";position:absolute;right:20px;top:-90px;font:900 530px/1 'Barlow Condensed';color:#ffffff08}.art strong{position:relative;font:900 90px/.8 'Barlow Condensed';letter-spacing:-2px}.copy{padding:50px;display:flex;justify-content:center;flex-direction:column}.copy .num{color:var(--gold);font:500 18px 'Barlow Condensed';margin-bottom:20px}.copy h3{font:900 50px/.9 'Barlow Condensed';text-transform:uppercase;margin-bottom:20px}.copy p{color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:25px}.read{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px}.read:after{content:"  →";color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);transition:.2s;overflow:hidden}.card:hover{transform:translateY(-5px);border-color:#d8a83e80}.thumb{height:230px;padding:20px;display:flex;align-items:end;position:relative;overflow:hidden;background:linear-gradient(135deg,#304035,#101418)}.card:nth-child(2) .thumb{background:linear-gradient(135deg,#493629,#101214)}.card:nth-child(3) .thumb{background:linear-gradient(135deg,#28354b,#0d1014)}.card:nth-child(4) .thumb{background:linear-gradient(135deg,#3a402e,#0d1012)}.card:nth-child(5) .thumb{background:linear-gradient(135deg,#472d32,#0e1013)}.card:nth-child(6) .thumb{background:linear-gradient(135deg,#294047,#0d1012)}.thumb:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#000b)}.num{position:absolute;right:15px;top:5px;font:900 65px 'Barlow Condensed';color:#fff1}.name{position:relative;z-index:1;font:900 45px/.8 'Barlow Condensed';text-transform:uppercase}.body{padding:20px}.meta{color:var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:2px;font-weight:700}.body h3{font:700 27px/1 'Barlow Condensed';text-transform:uppercase;margin:8px 0}.body p{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:17px}
+.quote{padding:110px 24px;text-align:center;border-block:1px solid var(--line);background:linear-gradient(135deg,#0a0d0f,#17140e,#0a0d0f)}blockquote{max-width:900px;margin:auto;font:900 clamp(43px,6vw,75px)/.92 'Barlow Condensed';text-transform:uppercase}blockquote span{color:var(--gold)}.quote small{display:block;margin-top:25px;color:#73797d;font-size:10px;letter-spacing:3px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about p{color:#b7bdc0;font-size:16px;line-height:1.9}.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:28px}.stat{background:var(--panel);padding:25px}.stat strong{display:block;color:var(--gold);font:900 48px 'Barlow Condensed'}.stat span{color:#777f83;text-transform:uppercase;font-size:9px;letter-spacing:1px}
+footer{border-top:1px solid var(--line);background:#050607;padding:55px 24px 25px}.foot{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;gap:40px}.footlogo{font:900 38px 'Barlow Condensed'}.footlogo b{color:var(--gold)}.note{max-width:350px;color:#737a7e;font-size:12px}.social{display:flex;gap:10px;margin-top:22px}.social a{width:42px;height:42px;border:1px solid var(--line);display:grid;place-items:center;font-size:10px;font-weight:700}.social a:hover{border-color:var(--gold);color:var(--gold)}.copyr{max-width:var(--max);margin:45px auto 0;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#555d61;font-size:9px;text-transform:uppercase;letter-spacing:1px}
+@media(max-width:800px){.links{display:none}.hero{min-height:700px}.hero .in{padding-top:130px}.feature{grid-template-columns:1fr}.art{min-height:300px}.copy{padding:35px 25px}.copy h3{font-size:42px}.grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr;gap:35px}.head{display:block}.intro{margin-top:15px}.foot{display:block}.note{margin-top:25px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.thumb{height:220px}.hero h1{letter-spacing:-1px}.copyr{display:block}.copyr span{display:block;margin-top:7px}}
+
+.real-wrap{max-width:1180px;margin:auto;padding:0 24px}
+.real-hero{min-height:72vh;display:flex;align-items:center;padding:110px 0 70px;background:
+linear-gradient(90deg,rgba(6,7,8,.98) 0%,rgba(6,7,8,.82) 48%,rgba(6,7,8,.35) 100%),
+url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-repeat}
+.real-hero h1{font-size:clamp(58px,9vw,118px);line-height:.82;margin:16px 0 24px;max-width:900px;text-transform:uppercase}
+.real-hero h1 em{font-style:normal;color:#d7aa4b}
+.real-hero p{font-size:18px;line-height:1.7;max-width:650px;color:#c8c5bd}
+.real-btn{display:inline-block;margin:18px 12px 0 0;padding:15px 22px;border:1px solid #d7aa4b;color:#0a0b0c;background:#d7aa4b;text-decoration:none;font-weight:800;letter-spacing:.06em}
+.real-btn.alt{background:transparent;color:#f4f1e8;border-color:#555}
+.real-section{padding:80px 0}.real-kicker{color:#d7aa4b;font-size:12px;font-weight:800;letter-spacing:.18em}
+.real-title{font-size:clamp(38px,6vw,68px);text-transform:uppercase;margin:8px 0 30px}
+.real-feature{display:grid;grid-template-columns:1.35fr 1fr;background:#111315;border:1px solid #26292c;margin-bottom:28px}
+.real-feature-img{min-height:420px;background-size:cover;background-position:center}
+.real-copy{padding:42px}.real-copy h2{font-size:42px;line-height:1;margin:12px 0 18px;text-transform:uppercase}
+.real-copy p,.real-card p{color:#aaa;line-height:1.65}.real-link{color:#d7aa4b;text-decoration:none;font-weight:800}
+.real-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.real-card{background:#111315;border:1px solid #26292c;overflow:hidden}.real-card a{color:inherit;text-decoration:none}
+.real-thumb{height:220px;background-size:cover;background-position:center}.real-body{padding:24px}
+.real-body h3{font-size:27px;line-height:1.05;text-transform:uppercase;margin:10px 0}
+.real-quote{padding:90px 24px;text-align:center;border-top:1px solid #222;border-bottom:1px solid #222;font-size:clamp(32px,5vw,64px);font-weight:800;text-transform:uppercase}
+.real-about{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.real-footer{padding:36px 24px;border-top:1px solid #222;text-align:center;color:#777}
+@media(max-width:800px){.real-feature,.real-about{grid-template-columns:1fr}.real-grid{grid-template-columns:1fr}.real-feature-img{min-height:280px}.real-copy{padding:26px}.real-hero{min-height:75vh}.real-copy h2{font-size:34px}}
+</style>
+</head>
+<body>
+<section class="real-hero">
+  <div class="real-wrap">
+    <div class="real-kicker">O PESO DA CAMISA • HISTÓRIAS DO FUTEBOL</div>
+    <h1>O FUTEBOL TEM <em>MEMÓRIA.</em></h1>
+    <p>Ídolos, quedas, rivalidades e histórias que fizeram o futebol ser muito mais do que 90 minutos.</p>
+    <a class="real-btn" href="https://www.youtube.com/@OPesoDaCamisa10" target="_blank" rel="noopener">▶ CONHEÇA O CANAL</a>
+    <a class="real-btn alt" href="#historias">VER HISTÓRIAS ↓</a>
+  </div>
+</section>
+
+<section class="real-section" id="historias">
+<div class="real-wrap">
+  <div class="real-kicker">DOCUMENTÁRIOS</div>
+  <div class="real-title">Histórias em destaque</div>
+
+  <article class="real-feature">
+    <div class="real-feature-img" style="background-image:linear-gradient(135deg,rgba(0,0,0,.08),rgba(0,0,0,.6)),url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg')"></div>
+    <div class="real-copy">
+      <div class="real-kicker">KAKÁ • DOCUMENTÁRIO</div>
+      <h2>O ÚLTIMO BRASILEIRO MELHOR DO MUNDO</h2>
+      <p>A trajetória de Kaká: talento, superação e a história de um dos grandes nomes de sua geração.</p>
+      <a class="real-link" href="https://www.youtube.com/watch?v=fh_scOHZsH0" target="_blank" rel="noopener">ASSISTIR NO YOUTUBE →</a>
+    </div>
+  </article>
+
+  <div class="real-grid">
+    <article class="real-card"><a href="https://www.youtube.com/watch?v=VDmgzkLKVgU" target="_blank" rel="noopener">
+      <div class="real-thumb" style="background-image:url('https://img.youtube.com/vi/VDmgzkLKVgU/maxresdefault.jpg')"></div>
+      <div class="real-body"><div class="real-kicker">ROBINHO • DOCUMENTÁRIO</div><h3>Robinho: O Caminho Até a Queda</h3><p>Da ascensão como uma das maiores promessas do país aos acontecimentos que mudaram sua história.</p><span class="real-link">ASSISTIR →</span></div>
+    </a></article>
+
+    <article class="real-card"><a href="https://www.youtube.com/shorts/xugBuAHARYY" target="_blank" rel="noopener">
+      <div class="real-thumb" style="background-image:url('https://img.youtube.com/vi/xugBuAHARYY/hqdefault.jpg')"></div>
+      <div class="real-body"><div class="real-kicker">RIVALIDADES • SHORTS</div><h3>Por que Manchester United e Liverpool são rivais?</h3><p>A história por trás de uma das maiores rivalidades do futebol inglês.</p><span class="real-link">ASSISTIR →</span></div>
+    </a></article>
+
+    <article class="real-card"><a href="https://www.youtube.com/shorts/Ci4A1ENbH_0" target="_blank" rel="noopener">
+      <div class="real-thumb" style="background-image:url('https://img.youtube.com/vi/Ci4A1ENbH_0/hqdefault.jpg')"></div>
+      <div class="real-body"><div class="real-kicker">CURIOSIDADES • SHORTS</div><h3>Por que 3 gols é chamado de hat trick?</h3><p>A origem de uma das expressões mais conhecidas do futebol.</p><span class="real-link">ASSISTIR →</span></div>
+    </a></article>
+  </div>
+</div>
+</section>
+
+<div class="real-quote">Algumas camisas vestem jogadores.<br>Outras fazem história.</div>
+
+<section class="real-section">
+<div class="real-wrap real-about">
+  <div><div class="real-kicker">SOBRE O PROJETO</div><div class="real-title">O Peso da Camisa</div></div>
+  <div><p style="color:#aaa;line-height:1.8;font-size:18px">Histórias, personagens, rivalidades e momentos que construíram o futebol. Aqui, cada camisa carrega uma memória.</p>
+  <a class="real-btn" href="https://www.youtube.com/@OPesoDaCamisa10" target="_blank" rel="noopener">▶ INSCREVA-SE NO YOUTUBE</a></div>
+</div>
+</section>
+
+<footer class="real-footer">O PESO DA CAMISA • Histórias que o futebol não esquece.</footer>
+</body>
+</html>
