@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Peso da Camisa</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #090b0f;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.88)),
+        radial-gradient(circle at center, #253a2a 0%, #101711 42%, #090b0f 75%);
+      border-bottom: 1px solid #252a31;
+    }
+    .hero { max-width: 900px; }
+    .tag {
+      display: inline-block;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #b9c7b9;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(44px, 8vw, 92px);
+      line-height: .95;
+      text-transform: uppercase;
+      letter-spacing: -3px;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 25px auto 32px;
+      color: #c8cbd0;
+      font-size: 19px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      border: 1px solid #f5f5f5;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      transition: .2s;
+    }
+    .btn:hover { background: #fff; color: #090b0f; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(9,11,15,.94);
+      border-bottom: 1px solid #252a31;
+      backdrop-filter: blur(8px);
+    }
+    nav .inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-weight: 900; letter-spacing: 1px; }
+    nav a {
+      color: #d8dadd;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+    nav a:hover { color: #fff; }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 85px 20px;
+    }
+    .section-title {
+      text-transform: uppercase;
+      font-size: 31px;
+      margin-bottom: 12px;
+    }
+    .section-subtitle {
+      color: #92969d;
+      margin-bottom: 35px;
+    }
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+    .card {
+      background: #11151b;
+      border: 1px solid #252a31;
+      overflow: hidden;
+      transition: transform .2s, border-color .2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #5c6875;
+    }
+    .thumb {
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        linear-gradient(135deg, #26382a, #11151b 70%);
+      color: #dce4dc;
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    .card-content { padding: 22px; }
+    .card h3 { font-size: 23px; margin-bottom: 8px; }
+    .card p { color: #999ea6; margin-bottom: 17px; }
+    .card a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .about {
+      border-top: 1px solid #252a31;
+      border-bottom: 1px solid #252a31;
+      background: #0d1015;
+    }
+    .about p {
+      max-width: 780px;
+      color: #b7bbc1;
+      font-size: 18px;
+    }
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+    .socials a {
+      border: 1px solid #30363e;
+      padding: 11px 18px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .socials a:hover { background: #181d24; }
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      border-top: 1px solid #252a31;
+      color: #777c84;
+      font-size: 14px;
+    }
+    @media (max-width: 700px) {
+      nav .inner { display: block; text-align: center; }
+      nav a { display: inline-block; margin: 10px 8px 0; }
+      .videos { grid-template-columns: 1fr; }
+      header { min-height: 70vh; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="inner">
+      <div class="logo">O PESO DA CAMISA</div>
+      <div>
+        <a href="#videos">Vídeos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#redes">Redes</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <span class="tag">Histórias que fizeram o futebol</span>
+      <h1>O Peso da Camisa</h1>
+      <p>
+        Grandes jogadores. Grandes momentos. Grandes histórias.
+        Um canal dedicado a contar o futebol além dos 90 minutos.
+      </p>
+      <a class="btn" href="#videos">Explorar vídeos</a>
+    </div>
+  </header>
+
+  <section id="videos">
+    <h2 class="section-title">Últimos vídeos</h2>
+    <p class="section-subtitle">Algumas das histórias contadas pelo canal.</p>
+
+    <div class="videos">
+      <article class="card">
+        <div class="thumb">KAKÁ</div>
+        <div class="card-content">
+          <h3>Kaká — Quase ficou sem andar</h3>
+          <p>Da infância marcada por um acidente ao topo do futebol mundial.</p>
+          <a href="#">Assistir →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb">ROBINHO</div>
+        <div class="card-content">
+          <h3>Robinho — Do rei das pedaladas à queda</h3>
+          <p>A trajetória de um dos grandes talentos brasileiros dos anos 2000.</p>
+          <a href="#">Assistir →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb">HAT-TRICK</div>
+        <div class="card-content">
+          <h3>De onde veio o Hat-Trick?</h3>
+          <p>A história por trás de uma das expressões mais famosas do futebol.</p>
+          <a href="#">Assistir →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb">HISTÓRIA</div>
+        <div class="card-content">
+          <h3>Jogos que entraram para a história</h3>
+          <p>As partidas que transformaram momentos em eternidade.</p>
+          <a href="#">Assistir →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="about">
+    <section id="sobre">
+      <h2 class="section-title">Sobre o canal</h2>
+      <p>
+        O Peso da Camisa nasceu para contar histórias que vão além de gols,
+        títulos e estatísticas. Carreiras, quedas, superações, partidas
+        inesquecíveis e personagens que ajudaram a construir a história do futebol.
+      </p>
+    </section>
+  </div>
+
+  <section id="redes">
+    <h2 class="section-title">Acompanhe o canal</h2>
+    <p class="section-subtitle">Em breve, todos os links oficiais estarão aqui.</p>
+
+    <div class="socials">
+      <a href="#">YouTube</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 O Peso da Camisa — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
