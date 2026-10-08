@@ -3,7 +3,7 @@ title: "O Brasil ainda é o país do futebol ou vive das glórias do passado?"
 date: 2026-10-08
 category: "Histórias"
 description: "Com cinco títulos mundiais, a Seleção Brasileira construiu uma história incomparável. Mas será que o peso dessa tradição ainda corresponde ao futebol apresentado em campo?"
-image: ""
+image: "https://commons.wikimedia.org/wiki/Special:FilePath/Brazil_national_team_1970.jpg"
 ---
 
 Durante décadas, o Brasil foi sinônimo de futebol. Pelé, Garrincha, Romário, Ronaldo e tantos outros ajudaram a transformar a camisa amarela em um símbolo mundial.
@@ -43,3 +43,6 @@ Mas a camisa amarela não vence partidas por aquilo que conquistou décadas atr�
 Se quiser voltar ao topo, a Seleção precisará transformar seu talento em um projeto coletivo consistente, capaz de competir com as melhores equipes do mundo.
 
 **O Brasil ainda é o país do futebol quando olhamos para sua história. Mas será que continua merecendo esse título pelo que apresenta hoje?**
+
+
+*Foto: Seleção Brasileira de 1970. Fonte: El Gráfico, via Wikimedia Commons (domínio público).*
