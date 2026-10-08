@@ -1,7 +1,7 @@
 from pathlib import Path
 import html, re, yaml, markdown
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 POSTS = ROOT / "posts"
 OUT = ROOT / "publicacoes"
 OUT.mkdir(exist_ok=True)
