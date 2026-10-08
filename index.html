@@ -109,6 +109,11 @@ url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-
   <div class="real-kicker">BLOG • O PESO DA CAMISA</div>
   <div class="real-title">Últimas histórias</div>
   <p class="blog-intro">O futebol vai muito além do apito final. Leia nossas matérias sobre os personagens e os acontecimentos que deixaram sua marca no jogo.</p>
+  <div class="blog-search" role="search" style="margin:24px 0 12px;max-width:600px">
+    <label for="busca-artigos" style="display:block;color:#d8a83e;font-weight:700;margin-bottom:9px">Pesquisar histórias</label>
+    <input id="busca-artigos" type="search" placeholder="Busque por Pelé, Kaká, Robinho..." autocomplete="off" aria-controls="resultados-busca" style="width:100%;box-sizing:border-box;padding:15px 17px;background:#1c1c1c;color:#fff;border:1px solid #b58c35;border-radius:7px;font:inherit;outline-offset:3px">
+    <p id="resultados-busca" role="status" aria-live="polite" style="color:#bbb;margin:10px 0 0;display:none"></p>
+  </div>
   <!-- CMS_POSTS_START --><div class="article-grid"><article class="article-card"><a href="publicacoes/como-o-pele-se-tornou-o-maior-mesmo-sem-as-televisoes.html"><img src="/o-peso-da-camisa/imagens/walter-firmopelep012cro610f1-1-031090x1600-1024x1503.jpg" alt="Capa de Como o Pelé se tornou o maior mesmo sem as televisões?" loading="lazy"><div class="article-content"><div class="real-kicker">Histórias • 2026-10-07</div><h3>Como o Pelé se tornou o maior mesmo sem as televisões?</h3><p>Contamos um pouco sobre como o maior jogador da história do futebol se tornou tão grande apenas pela voz.</p><span class="real-link">LER POST COMPLETO →</span></div></a></article></div><!-- CMS_POSTS_END -->
   <div class="article-grid">
     <article class="article-card">
@@ -153,5 +158,29 @@ url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-
 </section>
 
 <footer class="real-footer">O PESO DA CAMISA • Histórias que o futebol não esquece.<div style="margin-top:12px;line-height:1.7;color:#c9c9c9"><strong style="color:#d8a83e">Fundadores:</strong><div>Luis Otávio Neves</div><div>Leonardo Vidal</div></div><div style="margin-top:14px;display:flex;justify-content:center;gap:22px;flex-wrap:wrap"><a href="sobre-nos.html" style="color:#d8a83e">Sobre nós</a><a href="contato.html" style="color:#d8a83e">Contato</a><a href="politica-de-privacidade.html" style="color:#d8a83e">Política de Privacidade</a><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer" style="color:#92999d">Painel editorial ↗</a></div></footer>
+<script>
+(function () {
+  const input = document.getElementById('busca-artigos');
+  const status = document.getElementById('resultados-busca');
+  if (!input || !status) return;
+  const cards = Array.from(document.querySelectorAll('#blog .article-card'));
+  const normalize = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  input.addEventListener('input', function () {
+    const query = normalize(input.value.trim());
+    let count = 0;
+    cards.forEach(function (card) {
+      const found = !query || normalize(card.textContent).includes(query);
+      card.hidden = !found;
+      card.style.display = found ? '' : 'none';
+      if (found) count++;
+    });
+    status.style.display = query ? 'block' : 'none';
+    status.textContent = count === 0 ? 'Nenhuma história encontrada. Tente outro nome ou assunto.' : count === 1 ? '1 história encontrada.' : count + ' histórias encontradas.';
+    document.querySelectorAll('#blog .article-grid').forEach(function (grid) {
+      grid.style.display = Array.from(grid.querySelectorAll('.article-card')).some(function (card) { return !card.hidden; }) ? '' : 'none';
+    });
+  });
+})();
+</script>
 </body>
 </html>
