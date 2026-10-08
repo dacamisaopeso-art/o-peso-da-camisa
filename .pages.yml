@@ -1,0 +1,43 @@
+media:
+  input: imagens
+  output: /o-peso-da-camisa/imagens
+  rename: safe
+content:
+  - name: posts
+    label: Publicações do blog
+    type: collection
+    path: posts
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [title, category, date]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: date
+        label: Data
+        type: date
+        required: true
+      - name: category
+        label: Categoria
+        type: select
+        options:
+          values: [Ídolos, Personagens, Clubes, Histórias, Curiosidades]
+      - name: description
+        label: Resumo
+        type: text
+        required: true
+      - name: image
+        label: Imagem de capa
+        type: image
+      - name: body
+        label: Texto da publicação
+        type: rich-text
+        required: true
