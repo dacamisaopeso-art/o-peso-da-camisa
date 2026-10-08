@@ -1,11 +1,13 @@
 from pathlib import Path
 import html, re, yaml, markdown
+from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
 POSTS = ROOT / "posts"
 OUT = ROOT / "publicacoes"
 OUT.mkdir(exist_ok=True)
 cards = []
+post_urls = []
 for path in sorted(POSTS.glob("*.md"), reverse=True):
     source = path.read_text(encoding="utf-8")
     if not source.startswith("---"):
@@ -21,6 +23,7 @@ for path in sorted(POSTS.glob("*.md"), reverse=True):
     if not slug:
         continue
     url = "publicacoes/" + slug + ".html"
+    post_urls.append(url)
     esc = lambda s: html.escape(str(s), quote=True)
     image_tag = f'<img src="{esc(image)}" alt="Capa de {esc(title)}" loading="lazy">' if image else ""
     cards.append(f'<article class="article-card"><a href="{url}">{image_tag}<div class="article-content"><div class="real-kicker">{esc(category)} • {esc(date)}</div><h3>{esc(title)}</h3><p>{esc(description)}</p><span class="real-link">LER POST COMPLETO →</span></div></a></article>')
@@ -37,3 +40,15 @@ if start not in index or end not in index:
 index = index.split(start)[0] + start + '<div class="article-grid">' + "".join(cards) + "</div>" + end + index.split(end, 1)[1]
 index_path.write_text(index, encoding="utf-8")
 print(f"Geradas {len(cards)} publicações")
+
+# Sitemap atualizado a cada publicação, preservando as páginas institucionais e os artigos fixos.
+base_url = "https://dacamisaopeso-art.github.io/o-peso-da-camisa/"
+fixed_urls = ["", "kaka-da-superacao-a-bola-de-ouro.html", "robinho-da-promessa-a-queda.html", "sobre-nos.html", "contato.html", "politica-de-privacidade.html"]
+namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
+ET.register_namespace("", namespace)
+urlset = ET.Element(f"{{{namespace}}}urlset")
+for relative_url in fixed_urls + sorted(post_urls):
+    ET.SubElement(ET.SubElement(urlset, f"{{{namespace}}}url"), f"{{{namespace}}}loc").text = base_url + relative_url
+ET.indent(urlset, space="  ")
+ET.ElementTree(urlset).write(ROOT / "sitemap.xml", encoding="utf-8", xml_declaration=True)
+print(f"Sitemap atualizado com {len(fixed_urls) + len(post_urls)} URLs")
