@@ -2,8 +2,11 @@
 title: "Fla-Flu: a maior rivalidade do Rio de Janeiro?"
 date: 2026-10-09
 category: "Rivalidades"
+image: "https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato_Carioca_-_Fluminense_x_Flamengo_(25087481991).jpg"
 description: "A história do Fla-Flu começou com uma ruptura no Fluminense, atravessou gerações e levou quase 195 mil pessoas ao Maracanã em 1963."
 ---
+
+*Foto: André Borges/Agência Brasília — Fla-Flu no Estádio Mané Garrincha, 2016. [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Campeonato_Carioca_-_Fluminense_x_Flamengo_(25087481991).jpg), licença CC BY 2.0.*
 
 Poucos clássicos do futebol brasileiro carregam tanta tradição quanto o Fla-Flu. Flamengo e Fluminense protagonizam uma rivalidade centenária, marcada por títulos, decisões e arquibancadas lotadas. Mas o que muita gente não sabe é que essa história começou com uma divisão dentro do próprio Fluminense.
 
