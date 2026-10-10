@@ -1,0 +1,4102 @@
+{
+  "updated": "2026-10-10",
+  "method": "Identidades, nomes, nacionalidades e posição profissional reaproveitados da base OPC com fonte individual. Atributos são estimativas próprias de entretenimento, geradas por perfis de posição e ajustes editoriais; não são estatísticas oficiais ou dados de videogames comerciais. Década é uma referência aproximada baseada na data de nascimento mais 26 anos, limitada a 2020; não define um auge comprovado. Defesa em GOL representa a capacidade de impedir gols. Bandeiras são servidas pelo FlagCDN com fallback textual.",
+  "athletes": [
+    {
+      "id": "Q309966",
+      "name": "Bernd Leno",
+      "country": "Alemanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Bernd_Leno"
+    },
+    {
+      "id": "Q3275904",
+      "name": "Emiliano Martínez",
+      "country": "Argentina",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez"
+    },
+    {
+      "id": "Q16902219",
+      "name": "Martin Ødegaard",
+      "country": "Noruega",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Martin_%C3%98degaard"
+    },
+    {
+      "id": "Q19665907",
+      "name": "David Raya",
+      "country": "Espanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/David_Raya"
+    },
+    {
+      "id": "Q25175970",
+      "name": "Gabriel Magalhães",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gabriel_Magalh%C3%A3es"
+    },
+    {
+      "id": "Q27310755",
+      "name": "Kai Havertz",
+      "country": "Alemanha",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Kai_Havertz"
+    },
+    {
+      "id": "Q27839155",
+      "name": "Ben White",
+      "country": "Inglaterra",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ben_White_%28footballer%29"
+    },
+    {
+      "id": "Q28059260",
+      "name": "Dean Henderson",
+      "country": "Inglaterra",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Dean_Henderson"
+    },
+    {
+      "id": "Q30007142",
+      "name": "Declan Rice",
+      "country": "Inglaterra",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Declan_Rice"
+    },
+    {
+      "id": "Q42913004",
+      "name": "Kjell Scherpen",
+      "country": "Países Baixos",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Kjell_Scherpen"
+    },
+    {
+      "id": "Q56249966",
+      "name": "Illan Meslier",
+      "country": "França",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Illan_Meslier"
+    },
+    {
+      "id": "Q56868118",
+      "name": "William Saliba",
+      "country": "França",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/William_Saliba"
+    },
+    {
+      "id": "Q63384759",
+      "name": "Martín Zubimendi",
+      "country": "Espanha",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Mart%C3%ADn_Zubimendi"
+    },
+    {
+      "id": "Q64627435",
+      "name": "Caoimhín Kelleher",
+      "country": "Irlanda",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Caoimh%C3%ADn_Kelleher"
+    },
+    {
+      "id": "Q67498669",
+      "name": "Zion Suzuki",
+      "country": "Japão",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Zion_Suzuki"
+    },
+    {
+      "id": "Q98682558",
+      "name": "Bart Verbruggen",
+      "country": "Países Baixos",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Bart_Verbruggen"
+    },
+    {
+      "id": "Q5879014",
+      "name": "Gerónimo Rulli",
+      "country": "Argentina",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ger%C3%B3nimo_Rulli"
+    },
+    {
+      "id": "Q6767750",
+      "name": "Mark Gillespie",
+      "country": "Inglaterra",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Mark_Gillespie_%28footballer%29"
+    },
+    {
+      "id": "Q6792066",
+      "name": "Matz Sels",
+      "country": "Bélgica",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Matz_Sels"
+    },
+    {
+      "id": "Q15999945",
+      "name": "Nick Pope",
+      "country": "Inglaterra",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nick_Pope_%28footballer%29"
+    },
+    {
+      "id": "Q16200385",
+      "name": "Marcus Bettinelli",
+      "country": "Inglaterra",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Marcus_Bettinelli"
+    },
+    {
+      "id": "Q18237361",
+      "name": "Alisson Becker",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Alisson_Becker"
+    },
+    {
+      "id": "Q20830808",
+      "name": "Gianluigi Donnarumma",
+      "country": "Itália",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gianluigi_Donnarumma"
+    },
+    {
+      "id": "Q21621168",
+      "name": "Rúben Dias",
+      "country": "Portugal",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/R%C3%BAben_Dias"
+    },
+    {
+      "id": "Q23908113",
+      "name": "Unai Simón",
+      "country": "Espanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Unai_Sim%C3%B3n"
+    },
+    {
+      "id": "Q28967995",
+      "name": "Erling Haaland",
+      "country": "Noruega",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Erling_Haaland"
+    },
+    {
+      "id": "Q30729096",
+      "name": "Phil Foden",
+      "country": "Inglaterra",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Phil_Foden"
+    },
+    {
+      "id": "Q59209505",
+      "name": "Jérémy Doku",
+      "country": "Bélgica",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/J%C3%A9r%C3%A9my_Doku"
+    },
+    {
+      "id": "Q64736321",
+      "name": "Rayan Cherki",
+      "country": "França",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Rayan_Cherki"
+    },
+    {
+      "id": "Q73400656",
+      "name": "Josko Gvardiol",
+      "country": "Croácia",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jo%C5%A1ko_Gvardiol"
+    },
+    {
+      "id": "Q98100512",
+      "name": "Senne Lammens",
+      "country": "Bélgica",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Senne_Lammens"
+    },
+    {
+      "id": "Q107985608",
+      "name": "James Trafford",
+      "country": "Inglaterra",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/James_Trafford"
+    },
+    {
+      "id": "Q113509374",
+      "name": "Rico Lewis",
+      "country": "Inglaterra",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Rico_Lewis"
+    },
+    {
+      "id": "Q188997",
+      "name": "Wojciech Szczesny",
+      "country": "Polônia",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Wojciech_Szcz%C4%99sny"
+    },
+    {
+      "id": "Q4162928",
+      "name": "Marko Dmitrovic",
+      "country": "Sérvia",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Marko_Dmitrovi%C4%87"
+    },
+    {
+      "id": "Q19708656",
+      "name": "Gabriel Jesus",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gabriel_Jesus"
+    },
+    {
+      "id": "Q19898898",
+      "name": "Frenkie de Jong",
+      "country": "Países Baixos",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Frenkie_de_Jong"
+    },
+    {
+      "id": "Q28861547",
+      "name": "Raphinha",
+      "country": "Brasil",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Raphinha"
+    },
+    {
+      "id": "Q47170176",
+      "name": "Jules Koundé",
+      "country": "França",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jules_Kound%C3%A9"
+    },
+    {
+      "id": "Q59938996",
+      "name": "Eric García",
+      "country": "Espanha",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Eric_Garcia_%28footballer%2C_born_2001%29"
+    },
+    {
+      "id": "Q66606355",
+      "name": "Pedri",
+      "country": "Espanha",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Pedri"
+    },
+    {
+      "id": "Q105681392",
+      "name": "Alejandro Balde",
+      "country": "Espanha",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Alejandro_Balde"
+    },
+    {
+      "id": "Q108111889",
+      "name": "Gavi",
+      "country": "Espanha",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gavi_%28footballer%29"
+    },
+    {
+      "id": "Q113704154",
+      "name": "Lamine Yamal",
+      "country": "Espanha",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Lamine_Yamal"
+    },
+    {
+      "id": "Q118473161",
+      "name": "Pau Cubarsí",
+      "country": "Espanha",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Pau_Cubars%C3%AD"
+    },
+    {
+      "id": "Q73360",
+      "name": "Thibaut Courtois",
+      "country": "Bélgica",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Thibaut_Courtois"
+    },
+    {
+      "id": "Q96755",
+      "name": "Antonio Rüdiger",
+      "country": "Alemanha",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Antonio_R%C3%BCdiger"
+    },
+    {
+      "id": "Q357507",
+      "name": "Péter Gulácsi",
+      "country": "Hungria",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/P%C3%A9ter_Gul%C3%A1csi"
+    },
+    {
+      "id": "Q17274709",
+      "name": "Mike Maignan",
+      "country": "França",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Mike_Maignan"
+    },
+    {
+      "id": "Q18156147",
+      "name": "Pierluigi Gollini",
+      "country": "Itália",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Pierluigi_Gollini"
+    },
+    {
+      "id": "Q19509544",
+      "name": "Federico Valverde",
+      "country": "Uruguai",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Federico_Valverde"
+    },
+    {
+      "id": "Q19882816",
+      "name": "Denzel Dumfries",
+      "country": "Países Baixos",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Denzel_Dumfries"
+    },
+    {
+      "id": "Q20492591",
+      "name": "Álex Remiro",
+      "country": "Espanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/%C3%81lex_Remiro"
+    },
+    {
+      "id": "Q21621995",
+      "name": "Kylian Mbappé",
+      "country": "França",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9"
+    },
+    {
+      "id": "Q23884186",
+      "name": "Ferland Mendy",
+      "country": "França",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ferland_Mendy"
+    },
+    {
+      "id": "Q27342447",
+      "name": "Andriy Lunin",
+      "country": "Ucrânia",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Andriy_Lunin"
+    },
+    {
+      "id": "Q28973866",
+      "name": "Vinícius Júnior",
+      "country": "Brasil",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior"
+    },
+    {
+      "id": "Q29950055",
+      "name": "Éder Militão",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/%C3%89der_Milit%C3%A3o"
+    },
+    {
+      "id": "Q42728914",
+      "name": "Rodrygo",
+      "country": "Brasil",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Rodrygo"
+    },
+    {
+      "id": "Q46951844",
+      "name": "Aurélien Tchouaméni",
+      "country": "França",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Aur%C3%A9lien_Tchouam%C3%A9ni"
+    },
+    {
+      "id": "Q62960177",
+      "name": "Eduardo Camavinga",
+      "country": "França",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Eduardo_Camavinga"
+    },
+    {
+      "id": "Q66241169",
+      "name": "Jude Bellingham",
+      "country": "Inglaterra",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jude_Bellingham"
+    },
+    {
+      "id": "Q108159340",
+      "name": "Arda Güler",
+      "country": "Turquia",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Arda_G%C3%BCler"
+    },
+    {
+      "id": "Q112184628",
+      "name": "Dean Huijsen",
+      "country": "Espanha",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Dean_Huijsen"
+    },
+    {
+      "id": "Q150268",
+      "name": "David de Gea",
+      "country": "Espanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/David_de_Gea"
+    },
+    {
+      "id": "Q763465",
+      "name": "Hakan Çalhanoglu",
+      "country": "Turquia",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Hakan_%C3%87alhano%C4%9Flu"
+    },
+    {
+      "id": "Q2025900",
+      "name": "John Stones",
+      "country": "Inglaterra",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/John_Stones"
+    },
+    {
+      "id": "Q19599124",
+      "name": "Benjamin Pavard",
+      "country": "França",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Benjamin_Pavard"
+    },
+    {
+      "id": "Q19903718",
+      "name": "Marcus Thuram",
+      "country": "França",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Marcus_Thuram"
+    },
+    {
+      "id": "Q19938984",
+      "name": "Manuel Akanji",
+      "country": "Suíça",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Manuel_Akanji"
+    },
+    {
+      "id": "Q20090225",
+      "name": "Nicolò Barella",
+      "country": "Itália",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nicol%C3%B2_Barella"
+    },
+    {
+      "id": "Q20204829",
+      "name": "Federico Dimarco",
+      "country": "Itália",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Federico_Dimarco"
+    },
+    {
+      "id": "Q23899393",
+      "name": "Manuel Locatelli",
+      "country": "Itália",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Manuel_Locatelli"
+    },
+    {
+      "id": "Q28561068",
+      "name": "Alessandro Bastoni",
+      "country": "Itália",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Alessandro_Bastoni"
+    },
+    {
+      "id": "Q38693097",
+      "name": "Bremer",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gleison_Bremer"
+    },
+    {
+      "id": "Q56043276",
+      "name": "Robert Sánchez",
+      "country": "Espanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Robert_S%C3%A1nchez"
+    },
+    {
+      "id": "Q56223006",
+      "name": "Carlos Augusto",
+      "country": "Brasil",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Carlos_Augusto_%28footballer%29"
+    },
+    {
+      "id": "Q58465451",
+      "name": "Khéphren Thuram",
+      "country": "França",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Kh%C3%A9phren_Thuram"
+    },
+    {
+      "id": "Q59655998",
+      "name": "Randal Kolo Muani",
+      "country": "França",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Randal_Kolo_Muani"
+    },
+    {
+      "id": "Q63384393",
+      "name": "Josep Martínez",
+      "country": "Espanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Josep_Mart%C3%ADnez"
+    },
+    {
+      "id": "Q98815671",
+      "name": "Pierre Kalulu",
+      "country": "França",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Pierre_Kalulu"
+    },
+    {
+      "id": "Q99617367",
+      "name": "Francisco Conceição",
+      "country": "Portugal",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Francisco_Concei%C3%A7%C3%A3o"
+    },
+    {
+      "id": "Q60340",
+      "name": "Sven Ulreich",
+      "country": "Alemanha",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Sven_Ulreich"
+    },
+    {
+      "id": "Q107365",
+      "name": "Manuel Neuer",
+      "country": "Alemanha",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Manuel_Neuer"
+    },
+    {
+      "id": "Q5499311",
+      "name": "Frederik Ronnow",
+      "country": "Dinamarca",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Frederik_R%C3%B8nnow"
+    },
+    {
+      "id": "Q13865408",
+      "name": "Joshua Kimmich",
+      "country": "Alemanha",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Joshua_Kimmich"
+    },
+    {
+      "id": "Q14640027",
+      "name": "Jonathan Tah",
+      "country": "Alemanha",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jonathan_Tah"
+    },
+    {
+      "id": "Q20723878",
+      "name": "Dayot Upamecano",
+      "country": "França",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Dayot_Upamecano"
+    },
+    {
+      "id": "Q21622039",
+      "name": "Alex Meret",
+      "country": "Itália",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Alex_Meret"
+    },
+    {
+      "id": "Q23540953",
+      "name": "Alphonso Davies",
+      "country": "Canadá",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Alphonso_Davies"
+    },
+    {
+      "id": "Q23893097",
+      "name": "Lucas Perri",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Lucas_Perri"
+    },
+    {
+      "id": "Q28699707",
+      "name": "Kim Min-Jae",
+      "country": "Coreia do Sul",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Kim_Min-jae_%28footballer%29"
+    },
+    {
+      "id": "Q62050484",
+      "name": "Michael Olise",
+      "country": "França",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Michael_Olise"
+    },
+    {
+      "id": "Q96072055",
+      "name": "Jamal Musiala",
+      "country": "Alemanha",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jamal_Musiala"
+    },
+    {
+      "id": "Q339252",
+      "name": "Loris Karius",
+      "country": "Alemanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Loris_Karius"
+    },
+    {
+      "id": "Q969725",
+      "name": "Harry Kane",
+      "country": "Inglaterra",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Harry_Kane"
+    },
+    {
+      "id": "Q16830322",
+      "name": "Alexander Schwolow",
+      "country": "Alemanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Alexander_Schwolow"
+    },
+    {
+      "id": "Q17484446",
+      "name": "Ramy Bensebaini",
+      "country": "Argélia",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ramy_Bensebaini"
+    },
+    {
+      "id": "Q21588109",
+      "name": "Markus Schubert",
+      "country": "Alemanha",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Markus_Schubert"
+    },
+    {
+      "id": "Q23559699",
+      "name": "Waldemar Anton",
+      "country": "Alemanha",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Waldemar_Anton"
+    },
+    {
+      "id": "Q28531111",
+      "name": "Luis Díaz",
+      "country": "Colômbia",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Luis_D%C3%ADaz_%28footballer%2C_born_1997%29"
+    },
+    {
+      "id": "Q60791064",
+      "name": "Maarten Vandevoordt",
+      "country": "Bélgica",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Maarten_Vandevoordt"
+    },
+    {
+      "id": "Q60889488",
+      "name": "Felix Nmecha",
+      "country": "Alemanha",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Felix_Nmecha"
+    },
+    {
+      "id": "Q62015814",
+      "name": "Nico Schlotterbeck",
+      "country": "Alemanha",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nico_Schlotterbeck"
+    },
+    {
+      "id": "Q1392235",
+      "name": "Anthony Lopes",
+      "country": "Portugal",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Anthony_Lopes"
+    },
+    {
+      "id": "Q16236380",
+      "name": "Yvon Mvogo",
+      "country": "Suíça",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Yvon_Mvogo"
+    },
+    {
+      "id": "Q20666826",
+      "name": "Nicolas Kocik",
+      "country": "França",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nicolas_Kocik"
+    },
+    {
+      "id": "Q39230",
+      "name": "Marquinhos",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Marquinhos"
+    },
+    {
+      "id": "Q8078540",
+      "name": "Éverson",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Everson_%28footballer%2C_born_1990%29"
+    },
+    {
+      "id": "Q11059683",
+      "name": "Pierre-Emile Højbjerg",
+      "country": "Dinamarca",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Pierre-Emile_H%C3%B8jbjerg"
+    },
+    {
+      "id": "Q15627817",
+      "name": "Brice Samba",
+      "country": "França",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Brice_Samba"
+    },
+    {
+      "id": "Q18637930",
+      "name": "Fabián Ruiz",
+      "country": "Espanha",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Fabi%C3%A1n_Ruiz"
+    },
+    {
+      "id": "Q18924954",
+      "name": "Lucas Hernández",
+      "country": "França",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Lucas_Hernandez"
+    },
+    {
+      "id": "Q26932598",
+      "name": "Achraf Hakimi",
+      "country": "Marrocos",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Achraf_Hakimi"
+    },
+    {
+      "id": "Q29988852",
+      "name": "Angel Gomes",
+      "country": "Inglaterra",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Angel_Gomes"
+    },
+    {
+      "id": "Q30045780",
+      "name": "Amine Gouiri",
+      "country": "Argélia",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Amine_Gouiri"
+    },
+    {
+      "id": "Q36371294",
+      "name": "Matvei Safonov",
+      "country": "Rússia",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Matvey_Safonov"
+    },
+    {
+      "id": "Q44297797",
+      "name": "Ferran Torres",
+      "country": "Espanha",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ferran_Torres"
+    },
+    {
+      "id": "Q66818509",
+      "name": "Vitinha",
+      "country": "Portugal",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Vitinha"
+    },
+    {
+      "id": "Q96396963",
+      "name": "Nuno Mendes",
+      "country": "Portugal",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nuno_Mendes_%28footballer%2C_born_2002%29"
+    },
+    {
+      "id": "Q111280241",
+      "name": "Warren Zaïre-Emery",
+      "country": "França",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Warren_Za%C3%AFre-Emery"
+    },
+    {
+      "id": "Q112170256",
+      "name": "Désiré Doué",
+      "country": "França",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/D%C3%A9sir%C3%A9_Dou%C3%A9"
+    },
+    {
+      "id": "Q112604843",
+      "name": "Lucas Beraldo",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Lucas_Beraldo"
+    },
+    {
+      "id": "Q113551733",
+      "name": "João Neves",
+      "country": "Portugal",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jo%C3%A3o_Neves"
+    },
+    {
+      "id": "Q121423825",
+      "name": "Guillaume Restes",
+      "country": "França",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Guillaume_Restes"
+    },
+    {
+      "id": "Q551192",
+      "name": "Alex Sandro",
+      "country": "Brasil",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Alex_Sandro"
+    },
+    {
+      "id": "Q3810078",
+      "name": "Jorginho",
+      "country": "Itália",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jorginho_%28footballer%2C_born_December_1991%29"
+    },
+    {
+      "id": "Q13422031",
+      "name": "Guillermo Varela",
+      "country": "Uruguai",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Guillermo_Varela"
+    },
+    {
+      "id": "Q13578003",
+      "name": "Giorgian de Arrascaeta",
+      "country": "Uruguai",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Giorgian_de_Arrascaeta"
+    },
+    {
+      "id": "Q16911636",
+      "name": "Erick Pulgar",
+      "country": "Chile",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Erick_Pulgar"
+    },
+    {
+      "id": "Q18199184",
+      "name": "Léo Pereira",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/L%C3%A9o_Pereira_%28footballer%2C_born_1996%29"
+    },
+    {
+      "id": "Q23638974",
+      "name": "Ayrton Lucas",
+      "country": "Brasil",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ayrton_Lucas"
+    },
+    {
+      "id": "Q30089624",
+      "name": "Lucas Paquetá",
+      "country": "Brasil",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Lucas_Paquet%C3%A1"
+    },
+    {
+      "id": "Q30123152",
+      "name": "Emerson Royal",
+      "country": "Brasil",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Emerson_Royal"
+    },
+    {
+      "id": "Q55816003",
+      "name": "Léo Ortiz",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/L%C3%A9o_Ortiz"
+    },
+    {
+      "id": "Q60841629",
+      "name": "Vitão",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Vit%C3%A3o_%28footballer%2C_born_February_2000%29"
+    },
+    {
+      "id": "Q8040741",
+      "name": "Weverton",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Weverton_%28footballer%2C_born_1987%29"
+    },
+    {
+      "id": "Q17086753",
+      "name": "Sergio Rochet",
+      "country": "Uruguai",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Sergio_Rochet"
+    },
+    {
+      "id": "Q17619350",
+      "name": "Andreas Pereira",
+      "country": "Brasil",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Andreas_Pereira"
+    },
+    {
+      "id": "Q19956526",
+      "name": "Bruno Henrique",
+      "country": "Brasil",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Bruno_Henrique_%28footballer%2C_born_1990%29"
+    },
+    {
+      "id": "Q20994037",
+      "name": "Nicolás de la Cruz",
+      "country": "Uruguai",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nicol%C3%A1s_de_la_Cruz"
+    },
+    {
+      "id": "Q25175962",
+      "name": "Luiz Araújo",
+      "country": "Brasil",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Luiz_Ara%C3%BAjo_%28footballer%29"
+    },
+    {
+      "id": "Q31763107",
+      "name": "Cleiton",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Cleiton_%28footballer%2C_born_1997%29"
+    },
+    {
+      "id": "Q39079181",
+      "name": "Paulinho",
+      "country": "Brasil",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Paulinho_%28footballer%2C_born_July_2000%29"
+    },
+    {
+      "id": "Q47491410",
+      "name": "Pedro",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Pedro_%28footballer%2C_born_1997%29"
+    },
+    {
+      "id": "Q66685601",
+      "name": "Bruno Fuchs",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Bruno_Fuchs_%28footballer%29"
+    },
+    {
+      "id": "Q67222776",
+      "name": "Samuel Lino",
+      "country": "Brasil",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Samuel_Lino"
+    },
+    {
+      "id": "Q110160871",
+      "name": "Ramón Sosa",
+      "country": "Paraguai",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ram%C3%B3n_Sosa"
+    },
+    {
+      "id": "Q111016177",
+      "name": "Vitor Roque",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Vitor_Roque"
+    },
+    {
+      "id": "Q112854266",
+      "name": "Agustín Giay",
+      "country": "Argentina",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Agust%C3%ADn_Giay"
+    },
+    {
+      "id": "Q21020124",
+      "name": "Léo Jardim",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/L%C3%A9o_Jardim"
+    },
+    {
+      "id": "Q58447210",
+      "name": "Gabriel Brazão",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gabriel_Braz%C3%A3o"
+    },
+    {
+      "id": "Q52427585",
+      "name": "Jean Lucas",
+      "country": "Brasil",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jean_Lucas_%28footballer%2C_born_1998%29"
+    },
+    {
+      "id": "Q2035459",
+      "name": "Willian Arão",
+      "country": "Brasil",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Willian_Ar%C3%A3o"
+    },
+    {
+      "id": "Q16298050",
+      "name": "Jonathan Calleri",
+      "country": "Argentina",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jonathan_Calleri"
+    },
+    {
+      "id": "Q99328435",
+      "name": "Amadou Onana",
+      "country": "Bélgica",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Amadou_Onana"
+    },
+    {
+      "id": "Q64005114",
+      "name": "João Pedro",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jo%C3%A3o_Pedro_%28footballer%2C_born_2001%29"
+    },
+    {
+      "id": "Q96943831",
+      "name": "Tyrick Mitchell",
+      "country": "Inglaterra",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Tyrick_Mitchell"
+    },
+    {
+      "id": "Q110466658",
+      "name": "Oscar Bobb",
+      "country": "Noruega",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Oscar_Bobb"
+    },
+    {
+      "id": "Q63228677",
+      "name": "Jacob Ramsey",
+      "country": "Inglaterra",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jacob_Ramsey"
+    },
+    {
+      "id": "Q56183905",
+      "name": "Sven Botman",
+      "country": "Países Baixos",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Sven_Botman"
+    },
+    {
+      "id": "Q514427",
+      "name": "Granit Xhaka",
+      "country": "Suíça",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Granit_Xhaka"
+    },
+    {
+      "id": "Q61609728",
+      "name": "Rodrigo Garro",
+      "country": "Argentina",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Rodrigo_Garro"
+    },
+    {
+      "id": "Q43252427",
+      "name": "Yuri Alberto",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Yuri_Alberto"
+    },
+    {
+      "id": "Q123463461",
+      "name": "Jefté",
+      "country": "Brasil",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jeft%C3%A9"
+    },
+    {
+      "id": "Q19866008",
+      "name": "Marlon Freitas",
+      "country": "Brasil",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Marlon_Freitas"
+    },
+    {
+      "id": "Q131910304",
+      "name": "Gabriel Bontempo",
+      "country": "Brasil",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gabriel_Bontempo"
+    },
+    {
+      "id": "Q19818652",
+      "name": "Luan Peres",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Luan_Peres"
+    },
+    {
+      "id": "Q10547335",
+      "name": "John McGinn",
+      "country": "Escócia",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/John_McGinn"
+    },
+    {
+      "id": "Q5022998",
+      "name": "Callum Wilson",
+      "country": "Inglaterra",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Callum_Wilson"
+    },
+    {
+      "id": "Q26212017",
+      "name": "Vitaly Janelt",
+      "country": "Alemanha",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Vitaly_Janelt"
+    },
+    {
+      "id": "Q20039495",
+      "name": "Daichi Kamada",
+      "country": "Japão",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Daichi_Kamada"
+    },
+    {
+      "id": "Q26964668",
+      "name": "Jean-Philippe Mateta",
+      "country": "França",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jean-Philippe_Mateta"
+    },
+    {
+      "id": "Q28801927",
+      "name": "Cody Gakpo",
+      "country": "Países Baixos",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Cody_Gakpo"
+    },
+    {
+      "id": "Q22005877",
+      "name": "Kostas Tsimikas",
+      "country": "Grécia",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Kostas_Tsimikas"
+    },
+    {
+      "id": "Q56257870",
+      "name": "Ryan Gravenberch",
+      "country": "Países Baixos",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ryan_Gravenberch"
+    },
+    {
+      "id": "Q72603655",
+      "name": "Amad Diallo",
+      "country": "Costa do Marfim",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Amad_Diallo"
+    },
+    {
+      "id": "Q4979316",
+      "name": "Bruno Fernandes",
+      "country": "Portugal",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Bruno_Fernandes"
+    },
+    {
+      "id": "Q5213217",
+      "name": "Dan Burn",
+      "country": "Inglaterra",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Dan_Burn"
+    },
+    {
+      "id": "Q15622117",
+      "name": "Jacob Murphy",
+      "country": "Inglaterra",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jacob_Murphy"
+    },
+    {
+      "id": "Q20745071",
+      "name": "Nordi Mukiele",
+      "country": "França",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nordi_Mukiele"
+    },
+    {
+      "id": "Q104414736",
+      "name": "Nico Williams",
+      "country": "Espanha",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nico_Williams"
+    },
+    {
+      "id": "Q59381180",
+      "name": "Julián Álvarez",
+      "country": "Argentina",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Juli%C3%A1n_Alvarez"
+    },
+    {
+      "id": "Q27469970",
+      "name": "Robin Le Normand",
+      "country": "Espanha",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Robin_Le_Normand"
+    },
+    {
+      "id": "Q60466652",
+      "name": "Aihen Muñoz",
+      "country": "Espanha",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Aihen_Mu%C3%B1oz"
+    },
+    {
+      "id": "Q101073917",
+      "name": "Arsen Zakharyan",
+      "country": "Rússia",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Arsen_Zakharyan"
+    },
+    {
+      "id": "Q106930407",
+      "name": "Beñat Turrientes",
+      "country": "Espanha",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Be%C3%B1at_Turrientes"
+    },
+    {
+      "id": "Q19948076",
+      "name": "Álvaro Odriozola",
+      "country": "Espanha",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/%C3%81lvaro_Odriozola"
+    },
+    {
+      "id": "Q21066260",
+      "name": "Denis Zakaria",
+      "country": "Suíça",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Denis_Zakaria"
+    },
+    {
+      "id": "Q20090069",
+      "name": "Ruben Aguilar",
+      "country": "França",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ruben_Aguilar"
+    },
+    {
+      "id": "Q3876530",
+      "name": "Nicolás Tagliafico",
+      "country": "Argentina",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nicol%C3%A1s_Tagliafico"
+    },
+    {
+      "id": "Q65950201",
+      "name": "Josip Stanisic",
+      "country": "Croácia",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Josip_Stani%C5%A1i%C4%87"
+    },
+    {
+      "id": "Q55865033",
+      "name": "Maxence Caqueret",
+      "country": "França",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Maxence_Caqueret"
+    },
+    {
+      "id": "Q111336539",
+      "name": "Nico Paz",
+      "country": "Argentina",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nico_Paz"
+    },
+    {
+      "id": "Q794628",
+      "name": "Felipe Anderson",
+      "country": "Brasil",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Felipe_Anderson"
+    },
+    {
+      "id": "Q11571",
+      "name": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+    },
+    {
+      "id": "Q531814",
+      "name": "Kaká",
+      "country": "Brasil",
+      "position": "MAR",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Kak%C3%A1"
+    },
+    {
+      "id": "Q615",
+      "name": "Lionel Messi",
+      "country": "Argentina",
+      "position": "SA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Lionel_Messi"
+    },
+    {
+      "id": "Q38136",
+      "name": "Marcelo",
+      "country": "Brasil",
+      "position": "ALA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Marcelo_%28footballer%2C_born_1988%29"
+    },
+    {
+      "id": "Q142794",
+      "name": "Neymar",
+      "country": "Brasil",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Neymar"
+    },
+    {
+      "id": "Q483577",
+      "name": "Rivaldo",
+      "country": "Brasil",
+      "position": "MAR",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Rivaldo"
+    },
+    {
+      "id": "Q429039",
+      "name": "Roberto Carlos",
+      "country": "Brasil",
+      "position": "ALA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Roberto_Carlos"
+    },
+    {
+      "id": "Q178649",
+      "name": "Romário",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Rom%C3%A1rio"
+    },
+    {
+      "id": "Q39444",
+      "name": "Ronaldinho",
+      "country": "Brasil",
+      "position": "MAR",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Ronaldinho"
+    },
+    {
+      "id": "Q529207",
+      "name": "Ronaldo",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Ronaldo_%28Brazilian_footballer%29"
+    },
+    {
+      "id": "Q45901",
+      "name": "Thierry Henry",
+      "country": "França",
+      "position": "ATA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Thierry_Henry"
+    },
+    {
+      "id": "Q1835",
+      "name": "Zidane",
+      "country": "França",
+      "position": "MAR",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Zinedine_Zidane"
+    },
+    {
+      "id": "Q46896",
+      "name": "Zlatan Ibrahimović",
+      "country": "Suécia",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Zlatan_Ibrahimovi%C4%87"
+    },
+    {
+      "id": "Q204450",
+      "name": "Felipe Melo",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Felipe_Melo"
+    },
+    {
+      "id": "Q312772",
+      "name": "Fred",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Fred_%28footballer%2C_born_1983%29"
+    },
+    {
+      "id": "Q13646572",
+      "name": "Gabriel Barbosa",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gabriel_Barbosa"
+    },
+    {
+      "id": "Q3761170",
+      "name": "Germán Cano",
+      "country": "Argentina",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Germ%C3%A1n_Cano"
+    },
+    {
+      "id": "Q18617137",
+      "name": "Gerson",
+      "country": "Brasil",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Gerson_%28footballer%2C_born_1997%29"
+    },
+    {
+      "id": "Q357844",
+      "name": "Renato Augusto",
+      "country": "Brasil",
+      "position": "MEI",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Renato_Augusto"
+    },
+    {
+      "id": "Q210453",
+      "name": "Thiago Silva",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Thiago_Silva"
+    },
+    {
+      "id": "Q12897",
+      "name": "Pelé",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Pel%C3%A9"
+    },
+    {
+      "id": "Q180642",
+      "name": "Garrincha",
+      "country": "Brasil",
+      "position": "PON",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Garrincha"
+    },
+    {
+      "id": "Q171583",
+      "name": "Bobby Charlton",
+      "country": "Inglaterra",
+      "position": "MEI",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Bobby_Charlton"
+    },
+    {
+      "id": "Q11584",
+      "name": "Iker Casillas",
+      "country": "Espanha",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Iker_Casillas"
+    },
+    {
+      "id": "Q178683",
+      "name": "Cafu",
+      "country": "Brasil",
+      "position": "ALA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Cafu"
+    },
+    {
+      "id": "Q483027",
+      "name": "Paolo Maldini",
+      "country": "Itália",
+      "position": "ZAG",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Paolo_Maldini"
+    },
+    {
+      "id": "Q68060",
+      "name": "Gianluigi Buffon",
+      "country": "Itália",
+      "position": "GOL",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Gianluigi_Buffon"
+    },
+    {
+      "id": "Q102331",
+      "name": "Sócrates",
+      "country": "Brasil",
+      "position": "MEI",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/S%C3%B3crates"
+    },
+    {
+      "id": "Q1347269",
+      "name": "Islam Slimani",
+      "country": "Argélia",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Islam_Slimani"
+    },
+    {
+      "id": "Q1362048",
+      "name": "Ali Benarbia",
+      "country": "Argélia",
+      "position": "MEI",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Ali_Benarbia"
+    },
+    {
+      "id": "Q251683",
+      "name": "Ángel Di María",
+      "country": "Argentina",
+      "position": "MAR",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/%C3%81ngel_Di_Mar%C3%ADa"
+    },
+    {
+      "id": "Q29005699",
+      "name": "Fabricio Bustos",
+      "country": "Argentina",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Fabricio_Bustos"
+    },
+    {
+      "id": "Q923302",
+      "name": "José Ramos Delgado",
+      "country": "Argentina",
+      "position": "ZAG",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Jos%C3%A9_Ramos_Delgado"
+    },
+    {
+      "id": "Q316205",
+      "name": "Sergio Goycochea",
+      "country": "Argentina",
+      "position": "GOL",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Sergio_Goycochea"
+    },
+    {
+      "id": "Q135207823",
+      "name": "Luis Bonelli",
+      "country": "Argentina",
+      "position": "GOL",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Luis_Bonelli"
+    },
+    {
+      "id": "Q3985408",
+      "name": "Teófilo Juárez",
+      "country": "Argentina",
+      "position": "MEI",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Te%C3%B3filo_Ju%C3%A1rez"
+    },
+    {
+      "id": "Q6163858",
+      "name": "Jason van Blerk",
+      "country": "Austrália",
+      "position": "MAR",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Jason_van_Blerk"
+    },
+    {
+      "id": "Q187238",
+      "name": "Tim Cahill",
+      "country": "Austrália",
+      "position": "MEI",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Tim_Cahill"
+    },
+    {
+      "id": "Q313575",
+      "name": "Marko Arnautović",
+      "country": "Áustria",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87"
+    },
+    {
+      "id": "Q106915801",
+      "name": "Carney Chukwuemeka",
+      "country": "Áustria",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Carney_Chukwuemeka"
+    },
+    {
+      "id": "Q896151",
+      "name": "Gerhard Rodax",
+      "country": "Áustria",
+      "position": "ATA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Gerhard_Rodax"
+    },
+    {
+      "id": "Q357984",
+      "name": "Kevin De Bruyne",
+      "country": "Bélgica",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Kevin_De_Bruyne"
+    },
+    {
+      "id": "Q46694474",
+      "name": "Albert Sambi Lokonga",
+      "country": "Bélgica",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Albert_Sambi_Lokonga"
+    },
+    {
+      "id": "Q1388069",
+      "name": "Fernand Goyvaerts",
+      "country": "Bélgica",
+      "position": "ATA",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Fernand_Goyvaerts"
+    },
+    {
+      "id": "Q1381542",
+      "name": "Ludo Coeck",
+      "country": "Bélgica",
+      "position": "MEI",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Ludo_Coeck"
+    },
+    {
+      "id": "Q153786",
+      "name": "Edin Džeko",
+      "country": "Bósnia e Herzegovina",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Edin_D%C5%BEeko"
+    },
+    {
+      "id": "Q2428604",
+      "name": "Mirsad Hibić",
+      "country": "Bósnia e Herzegovina",
+      "position": "ZAG",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Mirsad_Hibi%C4%87"
+    },
+    {
+      "id": "Q96376357",
+      "name": "Diego Loureiro",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Diego_Loureiro"
+    },
+    {
+      "id": "Q15093124",
+      "name": "Walter",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Walter_%28footballer%2C_born_1987%29"
+    },
+    {
+      "id": "Q10376232",
+      "name": "Sérgio Gil",
+      "country": "Brasil",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/S%C3%A9rgio_Gil_%28footballer%2C_born_1970%29"
+    },
+    {
+      "id": "Q594893",
+      "name": "Bio",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Bio_%28footballer%29"
+    },
+    {
+      "id": "Q366156",
+      "name": "Arthur Friedenreich",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/Arthur_Friedenreich"
+    },
+    {
+      "id": "Q10355729",
+      "name": "Píndaro",
+      "country": "Brasil",
+      "position": "ZAG",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/P%C3%ADndaro_%28footballer%2C_born_1925%29"
+    },
+    {
+      "id": "Q16488465",
+      "name": "Alfredinho",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Alfredo_Willemsens"
+    },
+    {
+      "id": "Q2435339",
+      "name": "William Andem",
+      "country": "Camarões",
+      "position": "GOL",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/William_Andem"
+    },
+    {
+      "id": "Q314755",
+      "name": "Lauren",
+      "country": "Camarões",
+      "position": "ALA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Lauren_%28Cameroonian_footballer%29"
+    },
+    {
+      "id": "Q52419977",
+      "name": "Duplexe Tchamba",
+      "country": "Camarões",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Duplexe_Tchamba"
+    },
+    {
+      "id": "Q296222",
+      "name": "Mauricio Isla",
+      "country": "Chile",
+      "position": "MEI",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Mauricio_Isla"
+    },
+    {
+      "id": "Q938447",
+      "name": "Gabriel Mendoza",
+      "country": "Chile",
+      "position": "ALA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Gabriel_Mendoza"
+    },
+    {
+      "id": "Q106511321",
+      "name": "Yenny Acuña",
+      "country": "Chile",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Yenny_Acu%C3%B1a"
+    },
+    {
+      "id": "Q3785573",
+      "name": "Higinio Ortúzar",
+      "country": "Chile",
+      "position": "MEI",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Higinio_Ort%C3%BAzar"
+    },
+    {
+      "id": "Q310981",
+      "name": "Elías Figueroa",
+      "country": "Chile",
+      "position": "ZAG",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/El%C3%ADas_Figueroa"
+    },
+    {
+      "id": "Q120703401",
+      "name": "Kevin Quejada",
+      "country": "Colômbia",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Kevin_Quejada"
+    },
+    {
+      "id": "Q441769",
+      "name": "Víctor Aristizábal",
+      "country": "Colômbia",
+      "position": "ATA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/V%C3%ADctor_Aristiz%C3%A1bal"
+    },
+    {
+      "id": "Q5403852",
+      "name": "Vladimir Hernández",
+      "country": "Colômbia",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Vladimir_Hern%C3%A1ndez"
+    },
+    {
+      "id": "Q17501875",
+      "name": "Nikola Vlašić",
+      "country": "Croácia",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nikola_Vla%C5%A1i%C4%87"
+    },
+    {
+      "id": "Q489107",
+      "name": "Slaven Bilić",
+      "country": "Croácia",
+      "position": "ZAG",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Slaven_Bili%C4%87"
+    },
+    {
+      "id": "Q483837",
+      "name": "Luka Modrić",
+      "country": "Croácia",
+      "position": "MEI",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Luka_Modri%C4%87"
+    },
+    {
+      "id": "Q29162",
+      "name": "Tomáš Rosický",
+      "country": "Tchéquia",
+      "position": "MEI",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Tom%C3%A1%C5%A1_Rosick%C3%BD"
+    },
+    {
+      "id": "Q155924",
+      "name": "Patrik Berger",
+      "country": "Tchéquia",
+      "position": "MAR",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Patrik_Berger"
+    },
+    {
+      "id": "Q124647398",
+      "name": "Antonín Kinský",
+      "country": "Tchéquia",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Anton%C3%ADn_Kinsk%C3%BD_%28footballer%2C_born_2003%29"
+    },
+    {
+      "id": "Q2736612",
+      "name": "Jiří Hanke",
+      "country": "Tchéquia",
+      "position": "ATA",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Ji%C5%99%C3%AD_Hanke"
+    },
+    {
+      "id": "Q1283288",
+      "name": "Kevin Stuhr Ellegaard",
+      "country": "Dinamarca",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Kevin_Stuhr_Ellegaard"
+    },
+    {
+      "id": "Q66467324",
+      "name": "Rasmus Højlund",
+      "country": "Dinamarca",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund"
+    },
+    {
+      "id": "Q182314",
+      "name": "Peter Schmeichel",
+      "country": "Dinamarca",
+      "position": "GOL",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Peter_Schmeichel"
+    },
+    {
+      "id": "Q153463",
+      "name": "Allan Simonsen",
+      "country": "Dinamarca",
+      "position": "PON",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Allan_Simonsen"
+    },
+    {
+      "id": "Q1602386",
+      "name": "Helge Bronée",
+      "country": "Dinamarca",
+      "position": "ATA",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Helge_Bron%C3%A9e"
+    },
+    {
+      "id": "Q123488359",
+      "name": "Keny Arroyo",
+      "country": "Equador",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Keny_Arroyo"
+    },
+    {
+      "id": "Q11091630",
+      "name": "Júnior Sornoza",
+      "country": "Equador",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/J%C3%BAnior_Sornoza"
+    },
+    {
+      "id": "Q2240442",
+      "name": "Hólger Quiñónez",
+      "country": "Equador",
+      "position": "ZAG",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/H%C3%B3lger_Qui%C3%B1%C3%B3nez"
+    },
+    {
+      "id": "Q3318533",
+      "name": "Mohamed Elneny",
+      "country": "Egito",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Mohamed_Elneny"
+    },
+    {
+      "id": "Q134513932",
+      "name": "Hamza Abdelkarim",
+      "country": "Egito",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Hamza_Abdelkarim"
+    },
+    {
+      "id": "Q6277526",
+      "name": "Jordon Ibe",
+      "country": "Inglaterra",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jordon_Ibe"
+    },
+    {
+      "id": "Q317317",
+      "name": "Danny Mills",
+      "country": "Inglaterra",
+      "position": "ALA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Danny_Mills"
+    },
+    {
+      "id": "Q50097597",
+      "name": "Harry Read",
+      "country": "Inglaterra",
+      "position": "MEI",
+      "era": 1910,
+      "source": "https://en.wikipedia.org/wiki/Harry_Read_%28footballer%29"
+    },
+    {
+      "id": "Q4684928",
+      "name": "Adrian Clarke",
+      "country": "Inglaterra",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Adrian_Clarke_%28footballer%29"
+    },
+    {
+      "id": "Q6211015",
+      "name": "Joe Lumsden",
+      "country": "Inglaterra",
+      "position": "ATA",
+      "era": 1900,
+      "source": "https://en.wikipedia.org/wiki/Joe_Lumsden"
+    },
+    {
+      "id": "Q4894529",
+      "name": "Bernie Wright",
+      "country": "Inglaterra",
+      "position": "ATA",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Bernie_Wright"
+    },
+    {
+      "id": "Q18640336",
+      "name": "Jack Jones",
+      "country": "Inglaterra",
+      "position": "ALA",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Jack_Jones_%28footballer%2C_born_1913%29"
+    },
+    {
+      "id": "Q462141",
+      "name": "Dennis Viollet",
+      "country": "Inglaterra",
+      "position": "ATA",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Dennis_Viollet"
+    },
+    {
+      "id": "Q342530",
+      "name": "Mikael Forssell",
+      "country": "Finlândia",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Mikael_Forssell"
+    },
+    {
+      "id": "Q89190058",
+      "name": "Jimi Tauriainen",
+      "country": "Finlândia",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jimi_Tauriainen"
+    },
+    {
+      "id": "Q209650",
+      "name": "Jari Litmanen",
+      "country": "Finlândia",
+      "position": "MAR",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Jari_Litmanen"
+    },
+    {
+      "id": "Q2303087",
+      "name": "David Grondin",
+      "country": "França",
+      "position": "ALA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/David_Grondin"
+    },
+    {
+      "id": "Q176755",
+      "name": "Christophe Dugarry",
+      "country": "França",
+      "position": "ATA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Christophe_Dugarry"
+    },
+    {
+      "id": "Q123118",
+      "name": "Raymond Kopa",
+      "country": "França",
+      "position": "MAR",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Raymond_Kopa"
+    },
+    {
+      "id": "Q2756677",
+      "name": "Manuel Anatol",
+      "country": "França",
+      "position": "ZAG",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Manuel_Anatol"
+    },
+    {
+      "id": "Q83488",
+      "name": "Mesut Özil",
+      "country": "Alemanha",
+      "position": "MAR",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Mesut_%C3%96zil"
+    },
+    {
+      "id": "Q749253",
+      "name": "Stefan Malz",
+      "country": "Alemanha",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Stefan_Malz"
+    },
+    {
+      "id": "Q374982",
+      "name": "Bert Trautmann",
+      "country": "Alemanha",
+      "position": "GOL",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Bert_Trautmann"
+    },
+    {
+      "id": "Q132205016",
+      "name": "Eduardo Schilling",
+      "country": "Alemanha",
+      "position": "ATA",
+      "era": 1910,
+      "source": "https://en.wikipedia.org/wiki/Eduardo_Schilling_%28footballer%29"
+    },
+    {
+      "id": "Q828998",
+      "name": "Emil Walter",
+      "country": "Alemanha",
+      "position": "ZAG",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Emil_Walter_%28footballer%29"
+    },
+    {
+      "id": "Q57375",
+      "name": "Helmut Haller",
+      "country": "Alemanha",
+      "position": "ATA",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Helmut_Haller"
+    },
+    {
+      "id": "Q298466",
+      "name": "Kwadwo Asamoah",
+      "country": "Gana",
+      "position": "ALA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Kwadwo_Asamoah"
+    },
+    {
+      "id": "Q80197171",
+      "name": "Tariq Lamptey",
+      "country": "Gana",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Tariq_Lamptey"
+    },
+    {
+      "id": "Q372988",
+      "name": "Alex Nyarko",
+      "country": "Gana",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Alex_Nyarko"
+    },
+    {
+      "id": "Q96182871",
+      "name": "Christos Tzolis",
+      "country": "Grécia",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Christos_Tzolis"
+    },
+    {
+      "id": "Q192923",
+      "name": "Sokratis Papastathopoulos",
+      "country": "Grécia",
+      "position": "ZAG",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Sokratis_Papastathopoulos"
+    },
+    {
+      "id": "Q462908",
+      "name": "Demis Nikolaidis",
+      "country": "Grécia",
+      "position": "ATA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Demis_Nikolaidis"
+    },
+    {
+      "id": "Q687198",
+      "name": "Ádám Bogdán",
+      "country": "Hungria",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/%C3%81d%C3%A1m_Bogd%C3%A1n"
+    },
+    {
+      "id": "Q841642",
+      "name": "István Kozma",
+      "country": "Hungria",
+      "position": "MEI",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Istv%C3%A1n_Kozma_%28footballer%29"
+    },
+    {
+      "id": "Q30134278",
+      "name": "Dominik Szoboszlai",
+      "country": "Hungria",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Dominik_Szoboszlai"
+    },
+    {
+      "id": "Q793535",
+      "name": "Elemér Berkessy",
+      "country": "Hungria",
+      "position": "MEI",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Elem%C3%A9r_Berkessy"
+    },
+    {
+      "id": "Q482931",
+      "name": "Ferenc Puskás",
+      "country": "Hungria",
+      "position": "MAR",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Ferenc_Pusk%C3%A1s"
+    },
+    {
+      "id": "Q45538",
+      "name": "Robbie Brady",
+      "country": "Irlanda",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Robbie_Brady"
+    },
+    {
+      "id": "Q928480",
+      "name": "Jim Beglin",
+      "country": "Irlanda",
+      "position": "ALA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Jim_Beglin"
+    },
+    {
+      "id": "Q1647087",
+      "name": "Don Givens",
+      "country": "Irlanda",
+      "position": "ATA",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Don_Givens"
+    },
+    {
+      "id": "Q10453606",
+      "name": "David Lyner",
+      "country": "Irlanda",
+      "position": "ATA",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/David_Lyner"
+    },
+    {
+      "id": "Q8012474",
+      "name": "William Hood",
+      "country": "Irlanda",
+      "position": "ZAG",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/William_Hood_%28footballer%29"
+    },
+    {
+      "id": "Q7562037",
+      "name": "Sonny Feehan",
+      "country": "Irlanda",
+      "position": "GOL",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Sonny_Feehan"
+    },
+    {
+      "id": "Q16066707",
+      "name": "John McVicker",
+      "country": "Irlanda",
+      "position": "ALA",
+      "era": 1890,
+      "source": "https://en.wikipedia.org/wiki/John_McVicker"
+    },
+    {
+      "id": "Q122789756",
+      "name": "Davide Bartesaghi",
+      "country": "Itália",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Davide_Bartesaghi"
+    },
+    {
+      "id": "Q208673",
+      "name": "Federico Macheda",
+      "country": "Itália",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Federico_Macheda"
+    },
+    {
+      "id": "Q3960642",
+      "name": "Silvano Fontolan",
+      "country": "Itália",
+      "position": "ZAG",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Silvano_Fontolan"
+    },
+    {
+      "id": "Q219390",
+      "name": "Giacinto Facchetti",
+      "country": "Itália",
+      "position": "ALA",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Giacinto_Facchetti"
+    },
+    {
+      "id": "Q1337447",
+      "name": "Emilio Caprile",
+      "country": "Itália",
+      "position": "ATA",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Emilio_Caprile"
+    },
+    {
+      "id": "Q257588",
+      "name": "Gino Colaussi",
+      "country": "Itália",
+      "position": "ATA",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Gino_Colaussi"
+    },
+    {
+      "id": "Q737900",
+      "name": "Pietro Lana",
+      "country": "Itália",
+      "position": "ATA",
+      "era": 1910,
+      "source": "https://en.wikipedia.org/wiki/Pietro_Lana"
+    },
+    {
+      "id": "Q105575806",
+      "name": "David Datro Fofana",
+      "country": "Costa do Marfim",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/David_Datro_Fofana"
+    },
+    {
+      "id": "Q370339",
+      "name": "Wilfried Bony",
+      "country": "Costa do Marfim",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Wilfried_Bony"
+    },
+    {
+      "id": "Q2778356",
+      "name": "Serge Maguy",
+      "country": "Costa do Marfim",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Serge_Maguy"
+    },
+    {
+      "id": "Q21286402",
+      "name": "Takehiro Tomiyasu",
+      "country": "Japão",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Takehiro_Tomiyasu"
+    },
+    {
+      "id": "Q331953",
+      "name": "Kazuyoshi Miura",
+      "country": "Japão",
+      "position": "ATA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Kazuyoshi_Miura"
+    },
+    {
+      "id": "Q10526787",
+      "name": "Wataru Endo",
+      "country": "Japão",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Wataru_Endo"
+    },
+    {
+      "id": "Q117837263",
+      "name": "Matheus Reis",
+      "country": "México",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Matheus_Reis_%28footballer%2C_born_2007%29"
+    },
+    {
+      "id": "Q562337",
+      "name": "Giovani dos Santos",
+      "country": "México",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Giovani_dos_Santos"
+    },
+    {
+      "id": "Q1709307",
+      "name": "José Luis Borbolla",
+      "country": "México",
+      "position": "MEI",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Jos%C3%A9_Luis_Borbolla"
+    },
+    {
+      "id": "Q542031",
+      "name": "Luis García",
+      "country": "México",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Luis_Garc%C3%ADa_%28footballer%2C_born_1969%29"
+    },
+    {
+      "id": "Q6293835",
+      "name": "José Ramón Sauto",
+      "country": "México",
+      "position": "MEI",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Jos%C3%A9_Ram%C3%B3n_Sauto"
+    },
+    {
+      "id": "Q109327842",
+      "name": "Abdessamad Ezzalzouli",
+      "country": "Marrocos",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Abde_Ezzalzouli"
+    },
+    {
+      "id": "Q316540",
+      "name": "Oussama Assaidi",
+      "country": "Marrocos",
+      "position": "PON",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Oussama_Assaidi"
+    },
+    {
+      "id": "Q609626",
+      "name": "Larbi Benbarek",
+      "country": "Marrocos",
+      "position": "MAR",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Larbi_Benbarek"
+    },
+    {
+      "id": "Q53952196",
+      "name": "Jurriën Timber",
+      "country": "Países Baixos",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jurri%C3%ABn_Timber"
+    },
+    {
+      "id": "Q182685",
+      "name": "Maarten Stekelenburg",
+      "country": "Países Baixos",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Maarten_Stekelenburg"
+    },
+    {
+      "id": "Q137724",
+      "name": "Ken Monkou",
+      "country": "Países Baixos",
+      "position": "ZAG",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Ken_Monkou"
+    },
+    {
+      "id": "Q2026738",
+      "name": "Gerrit Keizer",
+      "country": "Países Baixos",
+      "position": "GOL",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Gerrit_Keizer"
+    },
+    {
+      "id": "Q17163",
+      "name": "Johan Cruyff",
+      "country": "Países Baixos",
+      "position": "MAR",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Johan_Cruyff"
+    },
+    {
+      "id": "Q57017297",
+      "name": "Samuel Chukwueze",
+      "country": "Nigéria",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Samuel_Chukwueze"
+    },
+    {
+      "id": "Q202410",
+      "name": "Yakubu",
+      "country": "Nigéria",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Yakubu_%28footballer%29"
+    },
+    {
+      "id": "Q431526",
+      "name": "Emmanuel Amunike",
+      "country": "Nigéria",
+      "position": "PON",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Emmanuel_Amunike"
+    },
+    {
+      "id": "Q553903",
+      "name": "Erik Thorstvedt",
+      "country": "Noruega",
+      "position": "GOL",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Erik_Thorstvedt"
+    },
+    {
+      "id": "Q313936",
+      "name": "Håvard Nordtveit",
+      "country": "Noruega",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/H%C3%A5vard_Nordtveit"
+    },
+    {
+      "id": "Q30122644",
+      "name": "Sebastián Ferreira",
+      "country": "Paraguai",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Ferreira"
+    },
+    {
+      "id": "Q11689387",
+      "name": "Adolfo Riquelme",
+      "country": "Paraguai",
+      "position": "GOL",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Adolfo_Riquelme"
+    },
+    {
+      "id": "Q47731",
+      "name": "Raúl Amarilla",
+      "country": "Paraguai",
+      "position": "ATA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Ra%C3%BAl_Amarilla_%28footballer%2C_born_1960%29"
+    },
+    {
+      "id": "Q18637933",
+      "name": "Óscar Ruiz",
+      "country": "Paraguai",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/%C3%93scar_Ruiz_%28footballer%29"
+    },
+    {
+      "id": "Q3898648",
+      "name": "Pedro Fernández",
+      "country": "Paraguai",
+      "position": "ZAG",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Pedro_Fern%C3%A1ndez_%28Paraguayan_footballer%29"
+    },
+    {
+      "id": "Q16300369",
+      "name": "Beto da Silva",
+      "country": "Peru",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Beto_da_Silva"
+    },
+    {
+      "id": "Q98379295",
+      "name": "Villalobos",
+      "country": "Peru",
+      "position": "ATA",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Jes%C3%BAs_Villalobos_Villegas"
+    },
+    {
+      "id": "Q922664",
+      "name": "Roberto Palacios",
+      "country": "Peru",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Roberto_Palacios"
+    },
+    {
+      "id": "Q2467066",
+      "name": "Yoshimar Yotún",
+      "country": "Peru",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Yoshimar_Yot%C3%BAn"
+    },
+    {
+      "id": "Q368550",
+      "name": "Víctor Benítez",
+      "country": "Peru",
+      "position": "ZAG",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/V%C3%ADctor_Ben%C3%ADtez"
+    },
+    {
+      "id": "Q151269",
+      "name": "Robert Lewandowski",
+      "country": "Polônia",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Robert_Lewandowski"
+    },
+    {
+      "id": "Q65159598",
+      "name": "Marcin Bułka",
+      "country": "Polônia",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Marcin_Bu%C5%82ka"
+    },
+    {
+      "id": "Q190651",
+      "name": "Jerzy Dudek",
+      "country": "Polônia",
+      "position": "GOL",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Jerzy_Dudek"
+    },
+    {
+      "id": "Q345702",
+      "name": "Kazimierz Deyna",
+      "country": "Polônia",
+      "position": "MAR",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Kazimierz_Deyna"
+    },
+    {
+      "id": "Q106091717",
+      "name": "Dário Essugo",
+      "country": "Portugal",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/D%C3%A1rio_Essugo"
+    },
+    {
+      "id": "Q16235823",
+      "name": "Nélson Semedo",
+      "country": "Portugal",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/N%C3%A9lson_Semedo"
+    },
+    {
+      "id": "Q718284",
+      "name": "Carlos Secretário",
+      "country": "Portugal",
+      "position": "ALA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Carlos_Secret%C3%A1rio"
+    },
+    {
+      "id": "Q29347636",
+      "name": "Virgilio Da Costa",
+      "country": "Portugal",
+      "position": "ATA",
+      "era": 1910,
+      "source": "https://en.wikipedia.org/wiki/Virgilio_Da_Costa"
+    },
+    {
+      "id": "Q1703754",
+      "name": "Jorge Mendonça",
+      "country": "Portugal",
+      "position": "ATA",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Jorge_Mendon%C3%A7a_%28footballer%2C_born_1938%29"
+    },
+    {
+      "id": "Q135877185",
+      "name": "Antonio Azambuja",
+      "country": "Portugal",
+      "position": "MEI",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Antonio_Azambuja"
+    },
+    {
+      "id": "Q439309",
+      "name": "Costel Pantilimon",
+      "country": "Romênia",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Costel_Pantilimon"
+    },
+    {
+      "id": "Q86835512",
+      "name": "Radu Drăgușin",
+      "country": "Romênia",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Radu_Dr%C4%83gu%C8%99in"
+    },
+    {
+      "id": "Q265055",
+      "name": "Daniel Prodan",
+      "country": "Romênia",
+      "position": "ZAG",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Daniel_Prodan"
+    },
+    {
+      "id": "Q246417",
+      "name": "Denis Cheryshev",
+      "country": "Rússia",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Denis_Cheryshev"
+    },
+    {
+      "id": "Q552710",
+      "name": "Dmitri Kharin",
+      "country": "Rússia",
+      "position": "GOL",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Dmitri_Kharine"
+    },
+    {
+      "id": "Q2552654",
+      "name": "Michael Stewart",
+      "country": "Escócia",
+      "position": "MEI",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Michael_Stewart_%28footballer%29"
+    },
+    {
+      "id": "Q4932795",
+      "name": "Bob Hill",
+      "country": "Escócia",
+      "position": "ATA",
+      "era": 1890,
+      "source": "https://en.wikipedia.org/wiki/Bob_Hill_%28footballer%29"
+    },
+    {
+      "id": "Q56070657",
+      "name": "Andy Neil",
+      "country": "Escócia",
+      "position": "ATA",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/Andy_Neil_%28footballer%29"
+    },
+    {
+      "id": "Q7819975",
+      "name": "Tommy Walker",
+      "country": "Escócia",
+      "position": "ATA",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Tommy_Walker_%28footballer%2C_born_1915%29"
+    },
+    {
+      "id": "Q6201311",
+      "name": "Jimmy Smith",
+      "country": "Escócia",
+      "position": "GOL",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Jimmy_Smith_%28footballer%2C_born_1901%29"
+    },
+    {
+      "id": "Q3110931",
+      "name": "Gordon Wallace",
+      "country": "Escócia",
+      "position": "ATA",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Gordon_Wallace_%28footballer%2C_born_1944%29"
+    },
+    {
+      "id": "Q5307135",
+      "name": "Drew Brand",
+      "country": "Escócia",
+      "position": "GOL",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Drew_Brand"
+    },
+    {
+      "id": "Q83264648",
+      "name": "Nathan Patterson",
+      "country": "Escócia",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nathan_Patterson_%28footballer%29"
+    },
+    {
+      "id": "Q100144350",
+      "name": "Nicolas Jackson",
+      "country": "Senegal",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Nicolas_Jackson"
+    },
+    {
+      "id": "Q2308061",
+      "name": "Ibrahima",
+      "country": "Senegal",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ibrahima_Bald%C3%A9_%28footballer%2C_born_1989%29"
+    },
+    {
+      "id": "Q7938756",
+      "name": "Vladimir Đorđević",
+      "country": "Sérvia",
+      "position": "ZAG",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Vladimir_%C4%90or%C4%91evi%C4%87"
+    },
+    {
+      "id": "Q2015351",
+      "name": "Dejan Petković",
+      "country": "Sérvia",
+      "position": "MAR",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Dejan_Petkovi%C4%87"
+    },
+    {
+      "id": "Q98431212",
+      "name": "Đorđe Petrović",
+      "country": "Sérvia",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/%C4%90or%C4%91e_Petrovi%C4%87_%28footballer%29"
+    },
+    {
+      "id": "Q16174734",
+      "name": "Lee Kang-in",
+      "country": "Coreia do Sul",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Lee_Kang-in"
+    },
+    {
+      "id": "Q439722",
+      "name": "Son Heung-min",
+      "country": "Coreia do Sul",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Son_Heung-min"
+    },
+    {
+      "id": "Q17627796",
+      "name": "Unai López",
+      "country": "Espanha",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Unai_L%C3%B3pez"
+    },
+    {
+      "id": "Q3824692",
+      "name": "Gaspar Gálvez",
+      "country": "Espanha",
+      "position": "ZAG",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Gaspar_G%C3%A1lvez"
+    },
+    {
+      "id": "Q3802506",
+      "name": "Isidro Sánchez",
+      "country": "Espanha",
+      "position": "ALA",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Isidro_S%C3%A1nchez_%28footballer%2C_born_1936%29"
+    },
+    {
+      "id": "Q111927566",
+      "name": "José Luis Espinosa",
+      "country": "Espanha",
+      "position": "GOL",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Jos%C3%A9_Luis_Espinosa_%28footballer%29"
+    },
+    {
+      "id": "Q2398633",
+      "name": "Eduardo Estíbariz",
+      "country": "Espanha",
+      "position": "ALA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Eduardo_Est%C3%ADbariz"
+    },
+    {
+      "id": "Q21192838",
+      "name": "Francisco Cruzate",
+      "country": "Espanha",
+      "position": "ATA",
+      "era": 1900,
+      "source": "https://en.wikipedia.org/wiki/Francisco_Cruzate"
+    },
+    {
+      "id": "Q28708101",
+      "name": "Luis Miranda",
+      "country": "Espanha",
+      "position": "MEI",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Luis_Miranda_Junco"
+    },
+    {
+      "id": "Q18059137",
+      "name": "Miguel Valdés",
+      "country": "Espanha",
+      "position": "MEI",
+      "era": 1890,
+      "source": "https://en.wikipedia.org/wiki/Miguel_Vald%C3%A9s_%28footballer%29"
+    },
+    {
+      "id": "Q4125587",
+      "name": "Victor Lindelöf",
+      "country": "Suécia",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Victor_Lindel%C3%B6f"
+    },
+    {
+      "id": "Q47075606",
+      "name": "Viktor Gyökeres",
+      "country": "Suécia",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Viktor_Gy%C3%B6keres"
+    },
+    {
+      "id": "Q444033",
+      "name": "Glenn Hysén",
+      "country": "Suécia",
+      "position": "ZAG",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Glenn_Hys%C3%A9n"
+    },
+    {
+      "id": "Q394376",
+      "name": "Agne Simonsson",
+      "country": "Suécia",
+      "position": "ATA",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Agne_Simonsson"
+    },
+    {
+      "id": "Q363766",
+      "name": "Kurt Hamrin",
+      "country": "Suécia",
+      "position": "PON",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Kurt_Hamrin"
+    },
+    {
+      "id": "Q5581030",
+      "name": "Agne Boklund",
+      "country": "Suécia",
+      "position": "GOL",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Agne_Boklund"
+    },
+    {
+      "id": "Q130315786",
+      "name": "Zachary Athekame",
+      "country": "Suíça",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Zachary_Athekame"
+    },
+    {
+      "id": "Q115748",
+      "name": "Davide Chiumiento",
+      "country": "Suíça",
+      "position": "MAR",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Davide_Chiumiento"
+    },
+    {
+      "id": "Q677079",
+      "name": "Willi Steffen",
+      "country": "Suíça",
+      "position": "ALA",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Willi_Steffen"
+    },
+    {
+      "id": "Q676250",
+      "name": "Ramon Vega",
+      "country": "Suíça",
+      "position": "ZAG",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Ramon_Vega"
+    },
+    {
+      "id": "Q3783192",
+      "name": "Hans Walter Imhoff",
+      "country": "Suíça",
+      "position": "ATA",
+      "era": 1910,
+      "source": "https://en.wikipedia.org/wiki/Hans_Walter_Imhoff"
+    },
+    {
+      "id": "Q53280628",
+      "name": "Ozan Kabak",
+      "country": "Turquia",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ozan_Kabak"
+    },
+    {
+      "id": "Q201900",
+      "name": "Rüştü Reçber",
+      "country": "Turquia",
+      "position": "GOL",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/R%C3%BC%C5%9Ft%C3%BC_Re%C3%A7ber"
+    },
+    {
+      "id": "Q19636859",
+      "name": "Oleksandr Zinchenko",
+      "country": "Ucrânia",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Oleksandr_Zinchenko_%28footballer%29"
+    },
+    {
+      "id": "Q705494",
+      "name": "Oleh Luzhnyi",
+      "country": "Ucrânia",
+      "position": "ALA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Oleh_Luzhnyi"
+    },
+    {
+      "id": "Q298140",
+      "name": "Dmytro Chyhrynskyi",
+      "country": "Ucrânia",
+      "position": "ZAG",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Dmytro_Chyhrynskyi"
+    },
+    {
+      "id": "Q20015287",
+      "name": "Cristian Tassano",
+      "country": "Uruguai",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Cristian_Tassano"
+    },
+    {
+      "id": "Q640147",
+      "name": "Richard Núñez",
+      "country": "Uruguai",
+      "position": "MAR",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Richard_N%C3%BA%C3%B1ez"
+    },
+    {
+      "id": "Q1643936",
+      "name": "Javier Ambrois",
+      "country": "Uruguai",
+      "position": "ATA",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Javier_Ambrois"
+    },
+    {
+      "id": "Q555204",
+      "name": "Luis Cubilla",
+      "country": "Uruguai",
+      "position": "PON",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Luis_Cubilla"
+    },
+    {
+      "id": "Q11918091",
+      "name": "Eduardo Belza",
+      "country": "Uruguai",
+      "position": "GOL",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Eduardo_Belza"
+    },
+    {
+      "id": "Q318172",
+      "name": "Héctor Scarone",
+      "country": "Uruguai",
+      "position": "ATA",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/H%C3%A9ctor_Scarone"
+    },
+    {
+      "id": "Q7597805",
+      "name": "Stan Morgan",
+      "country": "País de Gales",
+      "position": "ATA",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Stan_Morgan"
+    },
+    {
+      "id": "Q18640327",
+      "name": "Gerry Humphreys",
+      "country": "País de Gales",
+      "position": "PON",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Gerry_Humphreys_%28footballer%29"
+    },
+    {
+      "id": "Q190515",
+      "name": "Craig Bellamy",
+      "country": "País de Gales",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Craig_Bellamy"
+    },
+    {
+      "id": "Q10524861",
+      "name": "Bert Gray",
+      "country": "País de Gales",
+      "position": "GOL",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Bert_Gray"
+    },
+    {
+      "id": "Q10510315",
+      "name": "Frank Hoddinott",
+      "country": "País de Gales",
+      "position": "ATA",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/Frank_Hoddinott"
+    },
+    {
+      "id": "Q545303",
+      "name": "Dean Saunders",
+      "country": "País de Gales",
+      "position": "ATA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Dean_Saunders"
+    },
+    {
+      "id": "Q47658470",
+      "name": "Joe Rodon",
+      "country": "País de Gales",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Joe_Rodon"
+    },
+    {
+      "id": "Q5495313",
+      "name": "Fred Griffiths",
+      "country": "País de Gales",
+      "position": "GOL",
+      "era": 1900,
+      "source": "https://en.wikipedia.org/wiki/Fred_Griffiths_%28footballer%29"
+    },
+    {
+      "id": "Q975390",
+      "name": "Ishak Belfodil",
+      "country": "Argélia",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Ishak_Belfodil"
+    },
+    {
+      "id": "Q1199190",
+      "name": "Denis Stracqualursi",
+      "country": "Argentina",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Denis_Stracqualursi"
+    },
+    {
+      "id": "Q21207868",
+      "name": "Agustín Doffo",
+      "country": "Argentina",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Agust%C3%ADn_Doffo"
+    },
+    {
+      "id": "Q2835627",
+      "name": "Alfredo Obberti",
+      "country": "Argentina",
+      "position": "ATA",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Alfredo_Obberti"
+    },
+    {
+      "id": "Q297397",
+      "name": "Julio Cruz",
+      "country": "Argentina",
+      "position": "ATA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Julio_Cruz_%28Argentine_footballer%29"
+    },
+    {
+      "id": "Q3065629",
+      "name": "Gustavo Albella",
+      "country": "Argentina",
+      "position": "ATA",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Gustavo_Albella"
+    },
+    {
+      "id": "Q3787494",
+      "name": "Hugo Lamanna",
+      "country": "Argentina",
+      "position": "ATA",
+      "era": 1940,
+      "source": "https://en.wikipedia.org/wiki/Hugo_Lamanna"
+    },
+    {
+      "id": "Q197697",
+      "name": "Alex Manninger",
+      "country": "Áustria",
+      "position": "GOL",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Alex_Manninger"
+    },
+    {
+      "id": "Q65552955",
+      "name": "Yusuf Demir",
+      "country": "Áustria",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Yusuf_Demir"
+    },
+    {
+      "id": "Q17517046",
+      "name": "Jason Denayer",
+      "country": "Bélgica",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jason_Denayer"
+    },
+    {
+      "id": "Q431368",
+      "name": "Asmir Begović",
+      "country": "Bósnia e Herzegovina",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Asmir_Begovi%C4%87"
+    },
+    {
+      "id": "Q127040237",
+      "name": "Fabiano",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Fabiano_%28footballer%2C_born_2006%29"
+    },
+    {
+      "id": "Q14755605",
+      "name": "Biro Biro",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Biro_Biro_%28footballer%2C_born_1994%29"
+    },
+    {
+      "id": "Q10368653",
+      "name": "Saulo",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Saulo_de_Freitas"
+    },
+    {
+      "id": "Q124029608",
+      "name": "Peres",
+      "country": "Brasil",
+      "position": "VOL",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Valter_Peres"
+    },
+    {
+      "id": "Q16486900",
+      "name": "Borgerth",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/Alberto_Borgerth"
+    },
+    {
+      "id": "Q124694865",
+      "name": "Mão de Onça",
+      "country": "Brasil",
+      "position": "GOL",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Armando_Giorni"
+    },
+    {
+      "id": "Q3810712",
+      "name": "Ninão",
+      "country": "Brasil",
+      "position": "ATA",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Nin%C3%A3o"
+    },
+    {
+      "id": "Q5134192",
+      "name": "Clinton N'Jie",
+      "country": "Camarões",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Clinton_N%27Jie"
+    },
+    {
+      "id": "Q19116103",
+      "name": "André Onana",
+      "country": "Camarões",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Andr%C3%A9_Onana"
+    },
+    {
+      "id": "Q1989585",
+      "name": "Mauricio Pinilla",
+      "country": "Chile",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Mauricio_Pinilla"
+    },
+    {
+      "id": "Q19823576",
+      "name": "José Luis Álvarez",
+      "country": "Chile",
+      "position": "ATA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Jos%C3%A9_Luis_%C3%81lvarez_%28footballer%29"
+    },
+    {
+      "id": "Q56248486",
+      "name": "Carlos Palacios",
+      "country": "Chile",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Carlos_Palacios_%28Chilean_footballer%29"
+    },
+    {
+      "id": "Q24258623",
+      "name": "Juan Pablo Ramírez",
+      "country": "Colômbia",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Juan_Pablo_Ram%C3%ADrez"
+    },
+    {
+      "id": "Q365208",
+      "name": "Adolfo Valencia",
+      "country": "Colômbia",
+      "position": "ATA",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Adolfo_Valencia"
+    },
+    {
+      "id": "Q74681",
+      "name": "Carlos Bacca",
+      "country": "Colômbia",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Carlos_Bacca"
+    },
+    {
+      "id": "Q350452",
+      "name": "Mario Stanić",
+      "country": "Croácia",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Mario_Stani%C4%87"
+    },
+    {
+      "id": "Q311368",
+      "name": "Nikola Kalinić",
+      "country": "Croácia",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Nikola_Kalini%C4%87_%28footballer%29"
+    },
+    {
+      "id": "Q200868",
+      "name": "Marek Jankulovski",
+      "country": "Tchéquia",
+      "position": "PON",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Marek_Jankulovski"
+    },
+    {
+      "id": "Q311342",
+      "name": "Vladimír Šmicer",
+      "country": "Tchéquia",
+      "position": "MAR",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Vladim%C3%ADr_%C5%A0micer"
+    },
+    {
+      "id": "Q59914031",
+      "name": "Matěj Kovář",
+      "country": "Tchéquia",
+      "position": "GOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Mat%C4%9Bj_Kov%C3%A1%C5%99"
+    },
+    {
+      "id": "Q204141",
+      "name": "Christian Poulsen",
+      "country": "Dinamarca",
+      "position": "VOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Christian_Poulsen"
+    },
+    {
+      "id": "Q123485961",
+      "name": "Chido Obi",
+      "country": "Dinamarca",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Chido_Obi"
+    },
+    {
+      "id": "Q1098851",
+      "name": "Claus Thomsen",
+      "country": "Dinamarca",
+      "position": "ZAG",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Claus_Thomsen"
+    },
+    {
+      "id": "Q728031",
+      "name": "John Hansen",
+      "country": "Dinamarca",
+      "position": "PON",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/John_Hansen_%28footballer%2C_born_1924%29"
+    },
+    {
+      "id": "Q106638287",
+      "name": "Jhoanner Chávez",
+      "country": "Equador",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jhoanner_Ch%C3%A1vez"
+    },
+    {
+      "id": "Q3885318",
+      "name": "Miller Bolaños",
+      "country": "Equador",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Miller_Bola%C3%B1os"
+    },
+    {
+      "id": "Q1354960",
+      "name": "Mohamed Salah",
+      "country": "Egito",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Mohamed_Salah"
+    },
+    {
+      "id": "Q28065104",
+      "name": "Omar Marmoush",
+      "country": "Egito",
+      "position": "PON",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Omar_Marmoush"
+    },
+    {
+      "id": "Q105622926",
+      "name": "Shola Shoretire",
+      "country": "Inglaterra",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Shola_Shoretire"
+    },
+    {
+      "id": "Q2007696",
+      "name": "Stephen Wright",
+      "country": "Inglaterra",
+      "position": "ZAG",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Stephen_Wright_%28English_footballer%29"
+    },
+    {
+      "id": "Q4797806",
+      "name": "Arthur Allman",
+      "country": "Inglaterra",
+      "position": "ZAG",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/Arthur_Allman"
+    },
+    {
+      "id": "Q2468505",
+      "name": "Teddy Maybank",
+      "country": "Inglaterra",
+      "position": "ATA",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Teddy_Maybank"
+    },
+    {
+      "id": "Q6113362",
+      "name": "Jack Jones",
+      "country": "Inglaterra",
+      "position": "ATA",
+      "era": 1900,
+      "source": "https://en.wikipedia.org/wiki/Jack_Jones_%28footballer%2C_born_1874%29"
+    },
+    {
+      "id": "Q6988794",
+      "name": "Neil Johnson",
+      "country": "Inglaterra",
+      "position": "MEI",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Neil_Johnson_%28footballer%29"
+    },
+    {
+      "id": "Q10476981",
+      "name": "Tommy Roe",
+      "country": "Inglaterra",
+      "position": "ATA",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Tommy_Roe_%28footballer%29"
+    },
+    {
+      "id": "Q7298059",
+      "name": "Ray Sambrook",
+      "country": "Inglaterra",
+      "position": "MEI",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Ray_Sambrook"
+    },
+    {
+      "id": "Q100602910",
+      "name": "Hugo Ekitike",
+      "country": "França",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Hugo_Ekitike"
+    },
+    {
+      "id": "Q1908",
+      "name": "Mathieu Debuchy",
+      "country": "França",
+      "position": "ALA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Mathieu_Debuchy"
+    },
+    {
+      "id": "Q553578",
+      "name": "Frédéric Déhu",
+      "country": "França",
+      "position": "ZAG",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_D%C3%A9hu"
+    },
+    {
+      "id": "Q1871752",
+      "name": "Louis Hon",
+      "country": "França",
+      "position": "ZAG",
+      "era": 1950,
+      "source": "https://en.wikipedia.org/wiki/Louis_Hon"
+    },
+    {
+      "id": "Q11948",
+      "name": "Michael Ballack",
+      "country": "Alemanha",
+      "position": "MEI",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Michael_Ballack"
+    },
+    {
+      "id": "Q94699949",
+      "name": "Florian Wirtz",
+      "country": "Alemanha",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Florian_Wirtz"
+    },
+    {
+      "id": "Q155911",
+      "name": "Thomas Häßler",
+      "country": "Alemanha",
+      "position": "MAR",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Thomas_H%C3%A4%C3%9Fler"
+    },
+    {
+      "id": "Q27974977",
+      "name": "Otto Maier",
+      "country": "Alemanha",
+      "position": "MEI",
+      "era": 1900,
+      "source": "https://en.wikipedia.org/wiki/Otto_Maier_%28footballer%29"
+    },
+    {
+      "id": "Q312580",
+      "name": "Uli Stielike",
+      "country": "Alemanha",
+      "position": "MEI",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Uli_Stielike"
+    },
+    {
+      "id": "Q15963873",
+      "name": "Thomas Partey",
+      "country": "Gana",
+      "position": "VOL",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Thomas_Partey"
+    },
+    {
+      "id": "Q139827765",
+      "name": "Benjamin Arhin",
+      "country": "Gana",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Benjamin_Arhin"
+    },
+    {
+      "id": "Q47015833",
+      "name": "Konstantinos Mavropanos",
+      "country": "Grécia",
+      "position": "ZAG",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Konstantinos_Mavropanos"
+    },
+    {
+      "id": "Q1191464",
+      "name": "Apostolos Vellios",
+      "country": "Grécia",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Apostolos_Vellios"
+    },
+    {
+      "id": "Q2546619",
+      "name": "Grigoris Georgatos",
+      "country": "Grécia",
+      "position": "ALA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Grigoris_Georgatos"
+    },
+    {
+      "id": "Q460696",
+      "name": "Márton Fülöp",
+      "country": "Hungria",
+      "position": "GOL",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/M%C3%A1rton_F%C3%BCl%C3%B6p"
+    },
+    {
+      "id": "Q518756",
+      "name": "Ferenc Plattkó",
+      "country": "Hungria",
+      "position": "GOL",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/Ferenc_Plattk%C3%B3"
+    },
+    {
+      "id": "Q295265",
+      "name": "Sándor Kocsis",
+      "country": "Hungria",
+      "position": "ATA",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/S%C3%A1ndor_Kocsis"
+    },
+    {
+      "id": "Q123652463",
+      "name": "Jamie Donley",
+      "country": "Irlanda",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Jamie_Donley"
+    },
+    {
+      "id": "Q113916",
+      "name": "Stephen Ireland",
+      "country": "Irlanda",
+      "position": "MAR",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Stephen_Ireland"
+    },
+    {
+      "id": "Q1175594",
+      "name": "David McCreery",
+      "country": "Irlanda",
+      "position": "MEI",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/David_McCreery"
+    },
+    {
+      "id": "Q5488765",
+      "name": "Frank O'Neill",
+      "country": "Irlanda",
+      "position": "ATA",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Frank_O%27Neill_%28footballer%2C_born_1940%29"
+    },
+    {
+      "id": "Q2899870",
+      "name": "Joe Toner",
+      "country": "Irlanda",
+      "position": "PON",
+      "era": 1920,
+      "source": "https://en.wikipedia.org/wiki/Joe_Toner"
+    },
+    {
+      "id": "Q2056445",
+      "name": "Joe Bambrick",
+      "country": "Irlanda",
+      "position": "ATA",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Joe_Bambrick"
+    },
+    {
+      "id": "Q5538270",
+      "name": "George Cummins",
+      "country": "Irlanda",
+      "position": "ATA",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/George_Cummins_%28footballer%29"
+    },
+    {
+      "id": "Q1701381",
+      "name": "John Peden",
+      "country": "Irlanda",
+      "position": "ATA",
+      "era": 1890,
+      "source": "https://en.wikipedia.org/wiki/Jack_Peden"
+    },
+    {
+      "id": "Q97365426",
+      "name": "Matteo Ruggeri",
+      "country": "Itália",
+      "position": "ALA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Matteo_Ruggeri"
+    },
+    {
+      "id": "Q1029247",
+      "name": "Giacomo Beretta",
+      "country": "Itália",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Giacomo_Beretta"
+    },
+    {
+      "id": "Q3763237",
+      "name": "Gianluca Gaudenzi",
+      "country": "Itália",
+      "position": "MEI",
+      "era": 1990,
+      "source": "https://en.wikipedia.org/wiki/Gianluca_Gaudenzi"
+    },
+    {
+      "id": "Q4015060",
+      "name": "Vito D'Amato",
+      "country": "Itália",
+      "position": "ATA",
+      "era": 1970,
+      "source": "https://en.wikipedia.org/wiki/Vito_D%27Amato"
+    },
+    {
+      "id": "Q501362",
+      "name": "Mario David",
+      "country": "Itália",
+      "position": "MEI",
+      "era": 1960,
+      "source": "https://en.wikipedia.org/wiki/Mario_David_%28footballer%29"
+    },
+    {
+      "id": "Q678243",
+      "name": "Armando Castellazzi",
+      "country": "Itália",
+      "position": "MEI",
+      "era": 1930,
+      "source": "https://en.wikipedia.org/wiki/Armando_Castellazzi"
+    },
+    {
+      "id": "Q1612148",
+      "name": "Giulio Cederna",
+      "country": "Itália",
+      "position": "GOL",
+      "era": 1900,
+      "source": "https://en.wikipedia.org/wiki/Giulio_Cederna"
+    },
+    {
+      "id": "Q133698867",
+      "name": "Yan Diomande",
+      "country": "Costa do Marfim",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Yan_Diomande"
+    },
+    {
+      "id": "Q725857",
+      "name": "Ibrahima Bakayoko",
+      "country": "Costa do Marfim",
+      "position": "ATA",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Ibrahima_Bakayoko"
+    },
+    {
+      "id": "Q533472",
+      "name": "Cyril Domoraud",
+      "country": "Costa do Marfim",
+      "position": "ZAG",
+      "era": 2000,
+      "source": "https://en.wikipedia.org/wiki/Cyril_Domoraud"
+    },
+    {
+      "id": "Q154708",
+      "name": "Shinji Kagawa",
+      "country": "Japão",
+      "position": "MEI",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Shinji_Kagawa"
+    },
+    {
+      "id": "Q350257",
+      "name": "Nery Castillo",
+      "country": "México",
+      "position": "ATA",
+      "era": 2010,
+      "source": "https://en.wikipedia.org/wiki/Nery_Castillo"
+    },
+    {
+      "id": "Q487155",
+      "name": "Hugo Sánchez",
+      "country": "México",
+      "position": "ATA",
+      "era": 1980,
+      "source": "https://en.wikipedia.org/wiki/Hugo_S%C3%A1nchez"
+    },
+    {
+      "id": "Q350616",
+      "name": "Adel Taarabt",
+      "country": "Marrocos",
+      "position": "MAR",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Adel_Taarabt"
+    },
+    {
+      "id": "Q65675442",
+      "name": "Joshua Zirkzee",
+      "country": "Países Baixos",
+      "position": "ATA",
+      "era": 2020,
+      "source": "https://en.wikipedia.org/wiki/Joshua_Zirkzee"
+    }
+  ]
+}

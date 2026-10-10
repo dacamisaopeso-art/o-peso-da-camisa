@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Alemanha",
+    "code": "de"
+  },
+  {
+    "name": "Argélia",
+    "code": "dz"
+  },
+  {
+    "name": "Argentina",
+    "code": "ar"
+  },
+  {
+    "name": "Austrália",
+    "code": "au"
+  },
+  {
+    "name": "Áustria",
+    "code": "at"
+  },
+  {
+    "name": "Bélgica",
+    "code": "be"
+  },
+  {
+    "name": "Bósnia e Herzegovina",
+    "code": "ba"
+  },
+  {
+    "name": "Brasil",
+    "code": "br"
+  },
+  {
+    "name": "Camarões",
+    "code": "cm"
+  },
+  {
+    "name": "Canadá",
+    "code": "ca"
+  },
+  {
+    "name": "Chile",
+    "code": "cl"
+  },
+  {
+    "name": "Colômbia",
+    "code": "co"
+  },
+  {
+    "name": "Coreia do Sul",
+    "code": "kr"
+  },
+  {
+    "name": "Costa do Marfim",
+    "code": "ci"
+  },
+  {
+    "name": "Croácia",
+    "code": "hr"
+  },
+  {
+    "name": "Dinamarca",
+    "code": "dk"
+  },
+  {
+    "name": "Egito",
+    "code": "eg"
+  },
+  {
+    "name": "Equador",
+    "code": "ec"
+  },
+  {
+    "name": "Escócia",
+    "code": "gb-sct"
+  },
+  {
+    "name": "Espanha",
+    "code": "es"
+  },
+  {
+    "name": "Estados Unidos",
+    "code": "us"
+  },
+  {
+    "name": "Finlândia",
+    "code": "fi"
+  },
+  {
+    "name": "França",
+    "code": "fr"
+  },
+  {
+    "name": "Gana",
+    "code": "gh"
+  },
+  {
+    "name": "Grécia",
+    "code": "gr"
+  },
+  {
+    "name": "Hungria",
+    "code": "hu"
+  },
+  {
+    "name": "Inglaterra",
+    "code": "gb-eng"
+  },
+  {
+    "name": "Irlanda",
+    "code": "ie"
+  },
+  {
+    "name": "Itália",
+    "code": "it"
+  },
+  {
+    "name": "Japão",
+    "code": "jp"
+  },
+  {
+    "name": "Marrocos",
+    "code": "ma"
+  },
+  {
+    "name": "México",
+    "code": "mx"
+  },
+  {
+    "name": "Nigéria",
+    "code": "ng"
+  },
+  {
+    "name": "Noruega",
+    "code": "no"
+  },
+  {
+    "name": "País de Gales",
+    "code": "gb-wls"
+  },
+  {
+    "name": "Países Baixos",
+    "code": "nl"
+  },
+  {
+    "name": "Paraguai",
+    "code": "py"
+  },
+  {
+    "name": "Peru",
+    "code": "pe"
+  },
+  {
+    "name": "Polônia",
+    "code": "pl"
+  },
+  {
+    "name": "Portugal",
+    "code": "pt"
+  },
+  {
+    "name": "Romênia",
+    "code": "ro"
+  },
+  {
+    "name": "Rússia",
+    "code": "ru"
+  },
+  {
+    "name": "Senegal",
+    "code": "sn"
+  },
+  {
+    "name": "Sérvia",
+    "code": "rs"
+  },
+  {
+    "name": "Suécia",
+    "code": "se"
+  },
+  {
+    "name": "Suíça",
+    "code": "ch"
+  },
+  {
+    "name": "Tchéquia",
+    "code": "cz"
+  },
+  {
+    "name": "Turquia",
+    "code": "tr"
+  },
+  {
+    "name": "Ucrânia",
+    "code": "ua"
+  },
+  {
+    "name": "Uruguai",
+    "code": "uy"
+  }
+]

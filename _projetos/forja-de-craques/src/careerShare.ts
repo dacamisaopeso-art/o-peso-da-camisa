@@ -1,0 +1,6 @@
+import {restore,createDraft,finish} from './engine/draft';
+import {ENGINE,replay} from './engine/career';
+import type {Build} from './engine/types';
+export function checkedBuild(raw:Build):Build|null{try{const draft=restore({...createDraft(raw.config),picks:raw.picks});if(!draft||draft.picks.length!==8)return null;return finish(draft,Number.isFinite(Date.parse(raw.createdAt))?raw.createdAt:'2026-01-01T00:00:00.000Z');}catch{return null;}}
+export function readSharedCareer():Build|null{try{if(!location.hash.startsWith('#career='))return null;const raw=JSON.parse(decodeURIComponent(location.hash.slice(8))),build=checkedBuild(raw.build);if(raw.version!==ENGINE||!build||!Number.isInteger(raw.seasons)||raw.seasons<0||raw.seasons>30||!Array.isArray(raw.decisions)||raw.decisions.length>30)return null;const c=replay(build,raw.decisions,raw.seasons);localStorage.setItem('opc:career:v2',JSON.stringify(c));history.replaceState(null,'',location.pathname+location.search);return build;}catch{return null;}}
+export function readCurrentCareer():Build|null{try{const raw=JSON.parse(localStorage.getItem('opc:career:v2')||'null');if(raw?.version!==ENGINE||raw.seasons.length>30)return null;const b=checkedBuild(raw.build);if(!b)return null;replay(b,raw.decisions,raw.seasons.length);return b;}catch{return null;}}
