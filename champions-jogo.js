@@ -8,6 +8,7 @@ function changeSpeed(){const control=el('cup-speed');if(control)control.value=el
 function cancelCup(){clearInterval(cupTimer);cupTimer=null;cupTick=null;cup=null}
 const cupFlag=t=>t.clubId?'<img class="cup-flag" src="'+championsBadges[t.clubId]+'" alt="">':'⭐';
 const cupName=t=>t.user?'Seu esquadrão':t.country+' '+t.year;
+function cupScorer(t,attempt){const players=(t.user?team:t.players).filter(p=>p[0]!=='GOL');return players[(attempt??rand(players.length))%players.length][1]}
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function cupRecord(r){const {a,b,ga,gb}=r;a.j++;b.j++;a.gf+=ga;a.ga+=gb;b.gf+=gb;b.ga+=ga;b.awayGoals+=gb;a.opponents.push(b);b.opponents.push(a);if(ga===gb){a.e++;b.e++;a.pts++;b.pts++}else{const w=ga>gb?a:b,l=ga>gb?b:a;w.v++;l.d++;w.pts+=3;if(w===b)b.awayWins++}}
 function cupScore(r){return cupFlag(r.a)+safe(cupName(r.a))+' <b>'+r.ga+' × '+r.gb+'</b> '+safe(cupName(r.b))+cupFlag(r.b)+(r.aggregate?' <small>Agregado: '+r.aggregate.join(' × ')+'</small>':'')+(r.extra?' <small>Após prorrogação</small>':'')+(r.pen?' <small>Pênaltis: '+r.pen.join(' × ')+'</small>':'')}
@@ -35,7 +36,7 @@ function play(){
  for(const s of candidates){const association=championsClubs[s.clubId].association;if(used.has(s.clubId)||(associations[association]||0)>=4)continue;selected.push(s);used.add(s.clubId);associations[association]=(associations[association]||0)+1;if(selected.length===35)break}
  if(selected.length!==35){el('headline').textContent='Não foi possível completar os 36 clubes. Tente novamente.';return}
  const user={country:'',user:true,strength:team.reduce((sum,p)=>sum+adjusted(p),0)/11,association:'',clubId:null};
- const entrants=[user,...selected.map(s=>({country:s.country,clubId:s.clubId,year:s.year,association:championsClubs[s.clubId].association,strength:Math.max(1,s.players.map(p=>p[2]).sort((a,b)=>b-a).slice(0,11).reduce((a,b)=>a+b,0)/11+difficultyBonus[el('difficulty').value])}))].sort((a,b)=>b.strength-a.strength).map((t,seed)=>({...t,seed,pts:0,j:0,v:0,e:0,d:0,gf:0,ga:0,awayGoals:0,awayWins:0,discipline:0,coefficient:t.strength,opponents:[]}));
+ const entrants=[user,...selected.map(s=>({country:s.country,clubId:s.clubId,year:s.year,players:s.players,association:championsClubs[s.clubId].association,strength:Math.max(1,s.players.map(p=>p[2]).sort((a,b)=>b-a).slice(0,11).reduce((a,b)=>a+b,0)/11+difficultyBonus[el('difficulty').value])}))].sort((a,b)=>b.strength-a.strength).map((t,seed)=>({...t,seed,pts:0,j:0,v:0,e:0,d:0,gf:0,ga:0,awayGoals:0,awayWins:0,discipline:0,coefficient:t.strength,opponents:[]}));
  let schedule;try{schedule=ChampionsFormat.schedule(entrants)}catch(e){el('tournament').hidden=false;el('headline').textContent=e.message;return}
  cup={teams:entrants,schedule,round:0,stage:0,leg:0,ties:[],ranked:[],history:[],busy:false,over:false,difficulty:el('difficulty').value};
  el('play').disabled=true;el('tournament').hidden=false;el('headline').textContent='';
@@ -75,7 +76,7 @@ function cupNext(){
  update();
  scheduleCup(()=>{
   if(cup!==active){clearInterval(cupTimer);return}minute=Math.min(last,minute+5);
-  while(events.length&&events[0].minute<=minute){const e=events.shift(),t=e.side==='a'?r.a:r.b;if(e.side==='a')ga++;else gb++;const attack=team.filter(p=>p[0]!=='GOL'),scorer=t.user?attack[rand(attack.length)][1]:'o ataque de '+cupName(t);el('cup-feed').insertAdjacentHTML('beforeend','<p class="goal-event">⚽ '+e.minute+'′ • GOOOL! '+safe(scorer)+' balança a rede. '+ga+' × '+gb+'</p>')}
+  while(events.length&&events[0].minute<=minute){const e=events.shift(),t=e.side==='a'?r.a:r.b;if(e.side==='a')ga++;else gb++;const scorer=cupScorer(t);el('cup-feed').insertAdjacentHTML('beforeend','<p class="goal-event">⚽ '+e.minute+'′ • GOOOL! '+safe(scorer)+' ('+safe(cupName(t))+') balança a rede. '+ga+' × '+gb+'</p>')}
   if(minute===45)el('cup-feed').insertAdjacentHTML('beforeend','<p>45′ • Intervalo. Os treinadores ajustam as equipes.</p>');
   if(minute===90&&r.extra)el('cup-feed').insertAdjacentHTML('beforeend','<p>90′ • Tudo igual na decisão. Começa a prorrogação, sem vantagem por gols fora.</p>');
   update();if(minute!==last)return;
@@ -84,7 +85,7 @@ function cupNext(){
   if(!r.pen){cupComplete(results);return}
   let kick=0,pa=0,pb=0;scheduleCup(()=>{
    if(cup!==active){clearInterval(cupTimer);return}const side=kick%2===0?'a':'b',attempt=Math.floor(kick/2)+1,scored=attempt<=r.pen[side==='a'?0:1];if(scored){if(side==='a')pa++;else pb++}
-   el('cup-clock').textContent='PÊNALTIS • '+pa+' × '+pb;el('cup-feed').insertAdjacentHTML('beforeend','<p class="goal-event">'+(scored?'⚽':'✋')+' Cobrança '+attempt+' de '+safe(cupName(side==='a'?r.a:r.b))+': '+(scored?'na rede!':'defesa do goleiro!')+'</p>');el('cup-feed').scrollTop=el('cup-feed').scrollHeight;kick++;
+   const t=side==='a'?r.a:r.b;el('cup-clock').textContent='PÊNALTIS • '+pa+' × '+pb;el('cup-feed').insertAdjacentHTML('beforeend','<p class="goal-event">'+(scored?'⚽':'✋')+' Cobrança '+attempt+' de '+safe(cupScorer(t,attempt-1))+' ('+safe(cupName(t))+'): '+(scored?'na rede!':'defesa do goleiro!')+'</p>');el('cup-feed').scrollTop=el('cup-feed').scrollHeight;kick++;
    if(kick===10){clearInterval(cupTimer);cupTimer=null;el('cup-feed').insertAdjacentHTML('beforeend','<p>🏁 '+safe(cupName(r.winner))+' vence nos pênaltis.</p>');cupComplete(results)}
   },450);
  },260);
