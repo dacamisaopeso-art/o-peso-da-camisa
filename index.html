@@ -98,9 +98,9 @@ url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-
 .site-brand{display:inline-flex;flex:0 0 auto;align-items:center;gap:12px;min-width:0;white-space:nowrap}
 .brand-logo{width:58px;height:58px;object-fit:contain;flex-shrink:0}
 .site-brand>.brand-name{font-size:25px;line-height:1.05;white-space:nowrap}
-.site-nav{display:flex;flex:0 1 auto;justify-content:flex-end;align-items:center;gap:clamp(12px,1.7vw,26px);min-width:0}
+.site-nav{position:static;width:auto;display:flex;flex:0 1 auto;justify-content:flex-end;align-items:center;gap:clamp(12px,1.7vw,26px);min-width:0}
 .site-nav a{white-space:nowrap}
-@media(max-width:950px){
+@media(max-width:1100px){
  .site-header-inner{flex-wrap:wrap;justify-content:center;gap:10px;padding:12px 20px}
  .site-brand{width:100%;justify-content:center}
  .site-nav{width:100%;justify-content:center;overflow-x:auto;gap:18px;padding:5px 0 7px}
@@ -121,6 +121,7 @@ url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-
 .game-promo-button{display:inline-flex;align-items:center;min-height:50px;padding:14px 24px;margin-top:28px;border-radius:8px;background:#d8a83e;color:#101010;font-size:13px;font-weight:800;box-shadow:0 5px 24px #d8a83e25;transition:background .2s,transform .2s}.game-promo-button:hover{background:#edc568;transform:translateY(-2px)}.game-promo-button:focus-visible{outline:3px solid white;outline-offset:5px}
 @media(max-width:760px){.game-promo-card{min-height:560px;align-items:flex-end}.game-promo-image{object-position:75% center}.game-promo-card:after{background:linear-gradient(0deg,rgba(5,7,8,.98),rgba(5,7,8,.92) 35%,rgba(5,7,8,.08) 78%)}.game-promo-copy{width:100%;padding:28px}.game-promo-copy .real-title{font-size:46px;margin:12px 0 16px}.game-promo-copy p{font-size:14px;max-width:340px}.game-promo-button{margin-top:22px}}
 @media(max-width:380px){.game-promo-copy{padding:24px 20px}.game-promo-copy .real-title{font-size:40px}}
+.games-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.games-grid .game-promo-card{min-height:560px;align-items:flex-end}.games-grid .game-promo-copy{width:100%;padding:30px}.games-grid .game-promo-copy .real-title{font-size:clamp(38px,4vw,52px)}.games-grid .game-promo-card:after{background:linear-gradient(0deg,#050708fa,#050708e8 50%,#05070822)}.champions-promo{border-color:#566dad}.champions-promo .game-promo-image{filter:saturate(.4) hue-rotate(170deg)}.games-grid .champions-promo:after{background:linear-gradient(0deg,#070c19,#071027ed 50%,#172b4b33)}@media(max-width:800px){.games-grid{grid-template-columns:1fr}}
 </style>
 <link rel="canonical" href="https://dacamisaopeso-art.github.io/o-peso-da-camisa/"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:type" content="website"><meta property="og:site_name" content="O Peso da Camisa"><meta property="og:locale" content="pt_BR"><meta property="og:title" content="O Peso da Camisa | Histórias do Futebol"><meta property="og:description" content="Histórias do futebol, documentários e artigos sobre Kaká, Robinho e personagens que marcaram o esporte."><meta property="og:url" content="https://dacamisaopeso-art.github.io/o-peso-da-camisa/"><meta property="og:image" content="https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"O Peso da Camisa","url":"https://dacamisaopeso-art.github.io/o-peso-da-camisa/","description":"Histórias do futebol, documentários e artigos sobre Kaká, Robinho e personagens que marcaram o esporte."}</script></head>
 <body>
@@ -208,16 +209,28 @@ url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-
   </div>
 </section>
 
-<section class="real-section game-promo" id="jogo" aria-labelledby="game-promo-title">
+<section class="real-section game-promo" id="jogo" aria-labelledby="games-home-title">
   <div class="real-wrap">
+    <div class="section-heading"><h2 class="real-title" id="games-home-title">Escolha seu jogo</h2><a class="real-link" href="jogos.html">VER TODOS OS JOGOS →</a></div>
+    <div class="games-grid">
     <div class="game-promo-card">
       <img class="game-promo-image" src="imagens/desafio-lendas-banner.webp" alt="Troféu dourado e bola de futebol em um estádio iluminado" width="1672" height="941" loading="lazy" decoding="async">
       <div class="game-promo-copy">
         <div class="real-kicker">JOGO • O PESO DA CAMISA</div>
-        <h2 class="real-title" id="game-promo-title">Desafio das Lendas</h2>
+        <h3 class="real-title" id="game-promo-title">Desafio das Lendas</h3>
         <p>Sorteie craques históricos, monte sua seleção e dispute a Copa das Lendas!</p>
         <a class="game-promo-button" href="desafio-das-lendas.html">JOGAR AGORA →</a>
       </div>
+    </div>
+    <div class="game-promo-card champions-promo">
+      <img class="game-promo-image" src="imagens/desafio-lendas-banner.webp" alt="Troféu e bola de futebol em uma noite de estádio" width="1672" height="941" loading="lazy" decoding="async">
+      <div class="game-promo-copy">
+        <div class="real-kicker">CLUBES HISTÓRICOS • NOITES EUROPEIAS</div>
+        <h3 class="real-title" id="champions-home-title">Desafio da Champions</h3>
+        <p>Monte seu esquadrão com craques de 2000 até hoje e conquiste a Champions!</p>
+        <a class="game-promo-button" href="desafio-da-champions.html">JOGAR CHAMPIONS →</a>
+      </div>
+    </div>
     </div>
   </div>
 </section>
