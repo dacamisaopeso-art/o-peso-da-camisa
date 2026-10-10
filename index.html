@@ -112,6 +112,15 @@ url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-
  .brand-logo{width:48px;height:48px}
  .site-nav{justify-content:flex-start}
 }
+
+/* Banner do Desafio das Lendas */
+.game-promo-card{position:relative;isolation:isolate;overflow:hidden;border:1px solid #725323;border-radius:18px;background:#0a0c0e;min-height:440px;display:flex;align-items:center;box-shadow:0 20px 65px #0006}
+.game-promo-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
+.game-promo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,7,8,.95),rgba(5,7,8,.8) 35%,rgba(5,7,8,.1) 70%);z-index:-1}
+.game-promo-copy{width:54%;padding:52px 48px}.game-promo-copy .real-title{font-size:clamp(42px,5vw,68px);margin:16px 0 20px}.game-promo-copy p{color:#e0dfd9;max-width:360px;font-size:15px;line-height:1.8}
+.game-promo-button{display:inline-flex;align-items:center;min-height:50px;padding:14px 24px;margin-top:28px;border-radius:8px;background:#d8a83e;color:#101010;font-size:13px;font-weight:800;box-shadow:0 5px 24px #d8a83e25;transition:background .2s,transform .2s}.game-promo-button:hover{background:#edc568;transform:translateY(-2px)}.game-promo-button:focus-visible{outline:3px solid white;outline-offset:5px}
+@media(max-width:760px){.game-promo-card{min-height:560px;align-items:flex-end}.game-promo-image{object-position:75% center}.game-promo-card:after{background:linear-gradient(0deg,rgba(5,7,8,.98),rgba(5,7,8,.92) 35%,rgba(5,7,8,.08) 78%)}.game-promo-copy{width:100%;padding:28px}.game-promo-copy .real-title{font-size:46px;margin:12px 0 16px}.game-promo-copy p{font-size:14px;max-width:340px}.game-promo-button{margin-top:22px}}
+@media(max-width:380px){.game-promo-copy{padding:24px 20px}.game-promo-copy .real-title{font-size:40px}}
 </style>
 <link rel="canonical" href="https://dacamisaopeso-art.github.io/o-peso-da-camisa/"><meta name="robots" content="index,follow,max-image-preview:large"><meta property="og:type" content="website"><meta property="og:site_name" content="O Peso da Camisa"><meta property="og:locale" content="pt_BR"><meta property="og:title" content="O Peso da Camisa | Histórias do Futebol"><meta property="og:description" content="Histórias do futebol, documentários e artigos sobre Kaká, Robinho e personagens que marcaram o esporte."><meta property="og:url" content="https://dacamisaopeso-art.github.io/o-peso-da-camisa/"><meta property="og:image" content="https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"O Peso da Camisa","url":"https://dacamisaopeso-art.github.io/o-peso-da-camisa/","description":"Histórias do futebol, documentários e artigos sobre Kaká, Robinho e personagens que marcaram o esporte."}</script></head>
 <body>
@@ -199,7 +208,19 @@ url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-
   </div>
 </section>
 
-<section class="real-section" id="jogo"><div class="real-wrap" style="text-align:center;padding:42px 18px"><div class="real-kicker">JOGO • O PESO DA CAMISA</div><div class="real-title">Desafio das Lendas ⚽</div><p class="section-caption">Sorteie craques históricos, monte sua seleção e dispute a Copa das Lendas!</p><p><a href="desafio-das-lendas.html" style="display:inline-block;background:#d8a83e;color:#101010;padding:14px 24px;border-radius:8px;font-weight:800;text-decoration:none">JOGAR AGORA →</a></p></div></section>
+<section class="real-section game-promo" id="jogo" aria-labelledby="game-promo-title">
+  <div class="real-wrap">
+    <div class="game-promo-card">
+      <img class="game-promo-image" src="imagens/desafio-lendas-banner.webp" alt="Troféu dourado e bola de futebol em um estádio iluminado" width="1672" height="941" loading="lazy" decoding="async">
+      <div class="game-promo-copy">
+        <div class="real-kicker">JOGO • O PESO DA CAMISA</div>
+        <h2 class="real-title" id="game-promo-title">Desafio das Lendas</h2>
+        <p>Sorteie craques históricos, monte sua seleção e dispute a Copa das Lendas!</p>
+        <a class="game-promo-button" href="desafio-das-lendas.html">JOGAR AGORA →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="real-section blog-section" id="blog">
 <div class="real-wrap">
