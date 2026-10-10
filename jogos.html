@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jogos de Futebol | O Peso da Camisa</title>
+<meta name="description" content="Jogue o Desafio das Lendas: sorteie craques históricos, monte sua seleção e dispute a Copa das Lendas no O Peso da Camisa.">
+<link rel="icon" type="image/png" href="imagens/favicon-opc.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;900&family=Inter:wght@400;600;700&display=swap');
+:root{--bg:#07090b;--panel:#0e1216;--text:#f4f2ed;--muted:#92999d;--line:#252a2e;--gold:#d8a83e;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}
+nav{position:fixed;z-index:10;top:0;width:100%;border-bottom:1px solid transparent;transition:.25s}nav.scrolled{background:#07090be8;backdrop-filter:blur(12px);border-color:var(--line)}.navin{height:72px;max-width:var(--max);margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between}.logo{font:900 23px 'Barlow Condensed';letter-spacing:1.5px}.logo b{color:var(--gold)}.links{display:flex;gap:28px}.links a{text-transform:uppercase;font-size:12px;letter-spacing:1px;color:#c7cbcd}
+.hero{min-height:790px;display:flex;align-items:end;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 40%,#6d542120,transparent 25%),linear-gradient(105deg,#050607 5%,#101814 48%,#050607 100%)}.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 100px,#ffffff05 101px 102px)}.hero:after{content:"";position:absolute;width:700px;height:700px;right:-300px;top:-180px;border:1px solid #d8a83e30;border-radius:50%;box-shadow:0 0 0 90px #d8a83e09,0 0 0 180px #d8a83e06}.hero .in{position:relative;z-index:1;max-width:var(--max);width:100%;margin:auto;padding:150px 24px 90px}.kicker,.eyebrow{color:#e0b75a;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700}.hero h1{font:900 clamp(68px,10vw,130px)/.82 'Barlow Condensed';text-transform:uppercase;letter-spacing:-3px;margin:18px 0;max-width:850px}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{max-width:560px;color:#c2c7c8;font-size:17px;margin:25px 0 30px}.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{min-height:48px;padding:0 22px;display:inline-flex;align-items:center;border:1px solid #ffffff35;text-transform:uppercase;letter-spacing:1px;font-size:11px;font-weight:700}.primary{background:var(--gold);color:#080909;border-color:var(--gold)}.btn:hover{background:white;color:#090a0b}
+.section{max-width:var(--max);margin:auto;padding:105px 24px}.head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.title{font:900 clamp(45px,6vw,70px)/.88 'Barlow Condensed';text-transform:uppercase}.intro{max-width:420px;color:var(--muted);font-size:14px}
+.feature{display:grid;grid-template-columns:1.35fr 1fr;background:var(--panel);border:1px solid var(--line)}.art{min-height:470px;padding:35px;display:flex;align-items:end;position:relative;overflow:hidden;background:radial-gradient(circle at 60% 40%,#d8a83e42,transparent 18%),linear-gradient(135deg,#34443a,#101618 65%,#080a0c)}.art:before{content:"K";position:absolute;right:20px;top:-90px;font:900 530px/1 'Barlow Condensed';color:#ffffff08}.art strong{position:relative;font:900 90px/.8 'Barlow Condensed';letter-spacing:-2px}.copy{padding:50px;display:flex;justify-content:center;flex-direction:column}.copy .num{color:var(--gold);font:500 18px 'Barlow Condensed';margin-bottom:20px}.copy h3{font:900 50px/.9 'Barlow Condensed';text-transform:uppercase;margin-bottom:20px}.copy p{color:var(--muted);font-size:14px;line-height:1.8;margin-bottom:25px}.read{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px}.read:after{content:"  →";color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);transition:.2s;overflow:hidden}.card:hover{transform:translateY(-5px);border-color:#d8a83e80}.thumb{height:230px;padding:20px;display:flex;align-items:end;position:relative;overflow:hidden;background:linear-gradient(135deg,#304035,#101418)}.card:nth-child(2) .thumb{background:linear-gradient(135deg,#493629,#101214)}.card:nth-child(3) .thumb{background:linear-gradient(135deg,#28354b,#0d1014)}.card:nth-child(4) .thumb{background:linear-gradient(135deg,#3a402e,#0d1012)}.card:nth-child(5) .thumb{background:linear-gradient(135deg,#472d32,#0e1013)}.card:nth-child(6) .thumb{background:linear-gradient(135deg,#294047,#0d1012)}.thumb:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#000b)}.num{position:absolute;right:15px;top:5px;font:900 65px 'Barlow Condensed';color:#fff1}.name{position:relative;z-index:1;font:900 45px/.8 'Barlow Condensed';text-transform:uppercase}.body{padding:20px}.meta{color:var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:2px;font-weight:700}.body h3{font:700 27px/1 'Barlow Condensed';text-transform:uppercase;margin:8px 0}.body p{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:17px}
+.quote{padding:110px 24px;text-align:center;border-block:1px solid var(--line);background:linear-gradient(135deg,#0a0d0f,#17140e,#0a0d0f)}blockquote{max-width:900px;margin:auto;font:900 clamp(43px,6vw,75px)/.92 'Barlow Condensed';text-transform:uppercase}blockquote span{color:var(--gold)}.quote small{display:block;margin-top:25px;color:#73797d;font-size:10px;letter-spacing:3px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about p{color:#b7bdc0;font-size:16px;line-height:1.9}.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:28px}.stat{background:var(--panel);padding:25px}.stat strong{display:block;color:var(--gold);font:900 48px 'Barlow Condensed'}.stat span{color:#777f83;text-transform:uppercase;font-size:9px;letter-spacing:1px}
+footer{border-top:1px solid var(--line);background:#050607;padding:55px 24px 25px}.foot{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;gap:40px}.footlogo{font:900 38px 'Barlow Condensed'}.footlogo b{color:var(--gold)}.note{max-width:350px;color:#737a7e;font-size:12px}.social{display:flex;gap:10px;margin-top:22px}.social a{width:42px;height:42px;border:1px solid var(--line);display:grid;place-items:center;font-size:10px;font-weight:700}.social a:hover{border-color:var(--gold);color:var(--gold)}.copyr{max-width:var(--max);margin:45px auto 0;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#555d61;font-size:9px;text-transform:uppercase;letter-spacing:1px}
+@media(max-width:800px){.links{display:none}.hero{min-height:700px}.hero .in{padding-top:130px}.feature{grid-template-columns:1fr}.art{min-height:300px}.copy{padding:35px 25px}.copy h3{font-size:42px}.grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr;gap:35px}.head{display:block}.intro{margin-top:15px}.foot{display:block}.note{margin-top:25px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.thumb{height:220px}.hero h1{letter-spacing:-1px}.copyr{display:block}.copyr span{display:block;margin-top:7px}}
+
+.real-wrap{max-width:1180px;margin:auto;padding:0 24px}
+.real-hero{min-height:72vh;display:flex;align-items:center;padding:110px 0 70px;background:
+linear-gradient(90deg,rgba(6,7,8,.98) 0%,rgba(6,7,8,.82) 48%,rgba(6,7,8,.35) 100%),
+url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-repeat}
+.real-hero h1{font-size:clamp(58px,9vw,118px);line-height:.82;margin:16px 0 24px;max-width:900px;text-transform:uppercase}
+.real-hero h1 em{font-style:normal;color:#d7aa4b}
+.real-hero p{font-size:18px;line-height:1.7;max-width:650px;color:#c8c5bd}
+.real-btn{display:inline-block;margin:18px 12px 0 0;padding:15px 22px;border:1px solid #d7aa4b;color:#0a0b0c;background:#d7aa4b;text-decoration:none;font-weight:800;letter-spacing:.06em}
+.real-btn.alt{background:transparent;color:#f4f1e8;border-color:#555}
+.real-section{padding:80px 0}.real-kicker{color:#d7aa4b;font-size:12px;font-weight:800;letter-spacing:.18em}
+.real-title{font-size:clamp(38px,6vw,68px);text-transform:uppercase;margin:8px 0 30px}
+.real-feature{display:grid;grid-template-columns:1.35fr 1fr;background:#111315;border:1px solid #26292c;margin-bottom:28px}
+.real-feature-img{min-height:420px;background-size:cover;background-position:center}
+.real-copy{padding:42px}.real-copy h2{font-size:42px;line-height:1;margin:12px 0 18px;text-transform:uppercase}
+.real-copy p,.real-card p{color:#aaa;line-height:1.65}.real-link{color:#d7aa4b;text-decoration:none;font-weight:800}
+.real-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.real-card{background:#111315;border:1px solid #26292c;overflow:hidden}.real-card a{color:inherit;text-decoration:none}
+.real-thumb{height:220px;background-size:cover;background-position:center}.real-body{padding:24px}
+.real-body h3{font-size:27px;line-height:1.05;text-transform:uppercase;margin:10px 0}
+.real-quote{padding:90px 24px;text-align:center;border-top:1px solid #222;border-bottom:1px solid #222;font-size:clamp(32px,5vw,64px);font-weight:800;text-transform:uppercase}
+.real-about{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.real-footer{padding:36px 24px;border-top:1px solid #222;text-align:center;color:#777}
+@media(max-width:800px){.real-feature,.real-about{grid-template-columns:1fr}.real-grid{grid-template-columns:1fr}.real-feature-img{min-height:280px}.real-copy{padding:26px}.real-hero{min-height:75vh}.real-copy h2{font-size:34px}}
+.social-area{margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}.social-label{font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;letter-spacing:2px;color:var(--muted);margin-bottom:12px}.social-links{display:flex;flex-wrap:wrap;gap:10px}.social-link{display:inline-flex;align-items:center;gap:8px;padding:11px 15px;border:1px solid var(--line);border-radius:4px;color:var(--text);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.8px;transition:.2s;background:#0b0e11}.social-link:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}.social-icon{font-family:Inter,sans-serif;font-size:13px;font-weight:700;color:var(--gold)}
+.article-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:22px}.article-card{display:block;background:#0e1216;border:1px solid #252a2e;border-radius:7px;overflow:hidden;transition:transform .2s,border-color .2s}.article-card:hover{transform:translateY(-3px);border-color:var(--gold)}.article-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.article-content{padding:22px}.article-content h3{font:800 29px/1.1 'Barlow Condensed',sans-serif;margin:10px 0}.article-content p{color:#aaa;font-size:14px;line-height:1.7}.article-content .real-link{display:block;margin-top:14px}@media(max-width:650px){.article-grid{grid-template-columns:1fr}}
+
+/* Página inicial: navegação e apresentação editorial */
+.site-header{position:sticky;top:0;z-index:40;background:rgba(7,9,11,.96);backdrop-filter:blur(14px);border-bottom:1px solid #282a2b}
+.site-header-inner{max-width:1180px;margin:auto;padding:0 24px;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-brand{font:900 27px 'Barlow Condensed',sans-serif;letter-spacing:.035em;line-height:1;color:#f4f2ed;text-decoration:none;white-space:nowrap}.site-brand span{color:var(--gold)}
+.site-nav{display:flex;align-items:center;gap:28px}.site-nav a{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#c6c7c6;text-decoration:none}.site-nav a:hover,.site-nav a:focus-visible{color:var(--gold)}
+.site-nav .nav-cta{border:1px solid var(--gold);color:var(--gold);padding:10px 14px;border-radius:3px}
+.real-hero{min-height:clamp(480px,68vh,750px);padding:85px 0 95px;background:linear-gradient(90deg,rgba(6,7,8,.98) 0%,rgba(6,7,8,.85) 48%,rgba(6,7,8,.28) 100%),url('https://img.youtube.com/vi/fh_scOHZsH0/maxresdefault.jpg') center/cover no-repeat}
+.real-hero h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;letter-spacing:-.025em;max-width:850px}
+.real-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;letter-spacing:.01em;line-height:1}
+.real-copy h2,.real-body h3{font-family:'Barlow Condensed',sans-serif;font-weight:900}
+.real-section{scroll-margin-top:85px}.real-feature,.real-card,.article-card{transition:border-color .2s,transform .2s}.real-card:hover,.real-feature:hover{border-color:#d8a83e80}
+.real-grid{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.real-feature-img{background-position:center;background-color:#181b1d}
+.real-btn,.real-link,.social-link{transition:filter .2s,color .2s,border-color .2s,transform .2s}.real-btn:hover{filter:brightness(1.12)}.real-link:hover{color:#ffe09c}
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}.section-heading .real-title{margin-bottom:0}.section-caption{color:#9ea4a6;font-size:14px;max-width:400px}
+.real-footer{font-size:13px}
+@media(max-width:760px){.site-header-inner{flex-wrap:wrap;padding:15px 20px;gap:14px}.site-nav{width:100%;gap:18px;overflow-x:auto;padding-bottom:3px}.site-nav a{white-space:nowrap;font-size:11px}.real-hero{min-height:560px;padding:75px 0}.real-hero h1{font-size:clamp(56px,12vw,88px)}.section-heading{display:block}.section-caption{margin-top:10px}.real-section{padding:60px 0}.real-title{font-size:clamp(38px,9vw,60px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+.blog-section{background:linear-gradient(180deg,#0b0e11 0%,#07090b 100%);border-block:1px solid #252a2e}.blog-intro{color:#aaa;max-width:750px;line-height:1.8;margin-bottom:25px}.blog-section .article-card{display:block}.blog-section .article-card a{text-decoration:none}.blog-section .article-card h3 a:hover{color:var(--gold)}.blog-section .article-card .real-link{display:inline-block;margin-top:14px}.blog-section .article-card img{transition:transform .25s}.blog-section .article-card>a{display:block;overflow:hidden}.blog-section .article-card:hover img{transform:scale(1.025)}
+
+.shorts-section{background:linear-gradient(125deg,#11151a,#090b0e 60%,#211906);border-block:1px solid #3a3020}
+.shorts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;margin-top:26px}
+.shorts-card,.shorts-more{border:1px solid #554222;border-radius:14px;overflow:hidden;transition:transform .2s,border-color .2s}
+.shorts-card:hover,.shorts-more:hover{transform:translateY(-5px);border-color:#d8a83e}
+.shorts-image{height:320px;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center}
+.shorts-play{width:72px;height:72px;border-radius:50%;background:#d8a83e;color:#080909;display:grid;place-items:center;font-size:30px;box-shadow:0 0 35px #d8a83e77}
+.shorts-tag{position:absolute;bottom:15px;left:16px;font-size:11px;letter-spacing:1px;color:#e9c67a;font-weight:700}
+.shorts-info{padding:16px;display:grid;gap:12px}.shorts-info strong{font-size:17px}.shorts-info span,.shorts-more span:last-child{font-size:12px;color:#d8a83e;font-weight:700;letter-spacing:1px}
+.shorts-more{padding:32px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:24px;background:radial-gradient(circle at 80% 20%,#d8a83e24,transparent 55%),#12161a}
+.shorts-more strong{font:900 clamp(32px,5vw,58px)/1.05 'Barlow Condensed',sans-serif;text-transform:uppercase;max-width:450px}
+.shorts-more-icon{font-size:36px;color:#d8a83e}
+@media(max-width:600px){.shorts-grid{grid-template-columns:1fr}.shorts-card{max-width:340px}.shorts-more{min-height:230px}}
+
+/* Logo oficial: proporções preservadas no cabeçalho e no rodapé. */
+.site-brand{display:inline-flex;align-items:center;gap:12px}
+.site-brand>.brand-name{color:var(--text)}
+.brand-logo{display:block;width:clamp(48px,6vw,64px);height:auto;aspect-ratio:1;flex-shrink:0;border-radius:50%}
+.footer-brand{display:inline-block;margin:0 auto 18px}
+.footer-logo{display:block;width:clamp(88px,14vw,120px);height:auto;aspect-ratio:1;border-radius:50%;margin:auto}
+@media(max-width:760px){.site-brand{font-size:clamp(19px,5.5vw,27px);gap:10px}.real-section{scroll-margin-top:145px}}
+
+.blog-categories{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 24px}.blog-category{font:700 12px Inter,Arial,sans-serif;color:#ddd;background:#14191d;border:1px solid #444b4d;border-radius:24px;padding:11px 17px;cursor:pointer}.blog-category:hover,.blog-category:focus-visible{border-color:#d8a83e}.blog-category.active{background:#d8a83e;color:#080909;border-color:#d8a83e}.blog-section .article-card[hidden]{display:none!important}
+
+/* Cabeçalho OPC: marca e navegação sem sobreposição */
+.site-header{position:sticky;top:0;width:100%;z-index:50}
+.site-header-inner{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;min-height:84px;gap:30px}
+.site-brand{display:inline-flex;flex:0 0 auto;align-items:center;gap:12px;min-width:0;white-space:nowrap}
+.brand-logo{width:58px;height:58px;object-fit:contain;flex-shrink:0}
+.site-brand>.brand-name{font-size:25px;line-height:1.05;white-space:nowrap}
+.site-nav{display:flex;flex:0 1 auto;justify-content:flex-end;align-items:center;gap:clamp(12px,1.7vw,26px);min-width:0}
+.site-nav a{white-space:nowrap}
+@media(max-width:950px){
+ .site-header-inner{flex-wrap:wrap;justify-content:center;gap:10px;padding:12px 20px}
+ .site-brand{width:100%;justify-content:center}
+ .site-nav{width:100%;justify-content:center;overflow-x:auto;gap:18px;padding:5px 0 7px}
+ .site-nav a{flex-shrink:0}
+}
+@media(max-width:540px){
+ .site-header-inner{align-items:stretch}
+ .site-brand>.brand-name{font-size:22px}
+ .brand-logo{width:48px;height:48px}
+ .site-nav{justify-content:flex-start}
+}
+
+/* Banner do Desafio das Lendas */
+.game-promo-card{position:relative;isolation:isolate;overflow:hidden;border:1px solid #725323;border-radius:18px;background:#0a0c0e;min-height:440px;display:flex;align-items:center;box-shadow:0 20px 65px #0006}
+.game-promo-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
+.game-promo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,7,8,.95),rgba(5,7,8,.8) 35%,rgba(5,7,8,.1) 70%);z-index:-1}
+.game-promo-copy{width:54%;padding:52px 48px}.game-promo-copy .real-title{font-size:clamp(42px,5vw,68px);margin:16px 0 20px}.game-promo-copy p{color:#e0dfd9;max-width:360px;font-size:15px;line-height:1.8}
+.game-promo-button{display:inline-flex;align-items:center;min-height:50px;padding:14px 24px;margin-top:28px;border-radius:8px;background:#d8a83e;color:#101010;font-size:13px;font-weight:800;box-shadow:0 5px 24px #d8a83e25;transition:background .2s,transform .2s}.game-promo-button:hover{background:#edc568;transform:translateY(-2px)}.game-promo-button:focus-visible{outline:3px solid white;outline-offset:5px}
+@media(max-width:760px){.game-promo-card{min-height:560px;align-items:flex-end}.game-promo-image{object-position:75% center}.game-promo-card:after{background:linear-gradient(0deg,rgba(5,7,8,.98),rgba(5,7,8,.92) 35%,rgba(5,7,8,.08) 78%)}.game-promo-copy{width:100%;padding:28px}.game-promo-copy .real-title{font-size:46px;margin:12px 0 16px}.game-promo-copy p{font-size:14px;max-width:340px}.game-promo-button{margin-top:22px}}
+@media(max-width:380px){.game-promo-copy{padding:24px 20px}.game-promo-copy .real-title{font-size:40px}}
+
+.site-nav a[aria-current="page"]{color:var(--gold);border-bottom:2px solid var(--gold)}
+.games-intro{padding:64px 0 0}.games-intro h1{margin:16px 0 20px}.games-intro p{max-width:640px;color:#b8bdc0;font-size:16px;line-height:1.8}
+.games-list{padding:36px 0 80px}.game-promo-copy .real-kicker{font-size:11px}.games-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.games-tags span{border:1px solid #d8a83e66;background:#080b0dc9;border-radius:20px;padding:5px 10px;color:#e7c57e;font-size:11px}
+@media(max-width:760px){.games-intro{padding-top:36px}.games-list{padding-bottom:50px}}
+</style>
+</head>
+<body><header class="site-header"><div class="site-header-inner"><a class="site-brand" href="index.html#inicio" aria-label="O Peso da Camisa, início"><img class="brand-logo" src="imagens/logo-opc.jpg" alt="" width="384" height="384" fetchpriority="high"><span class="brand-name">O PESO <span>DA CAMISA</span></span></a><nav class="site-nav" aria-label="Navegação principal"><a href="index.html#inicio">Início</a><a href="index.html#historias">Documentários</a><a href="index.html#shorts">Shorts</a><a href="index.html#blog">Blog</a><a href="jogos.html" aria-current="page">Jogos</a><a href="index.html#sobre">Sobre</a><a class="nav-cta" href="index.html#redes">Redes sociais ↗</a></nav></div></header>
+<main>
+<section class="games-intro" aria-labelledby="games-title"><div class="real-wrap">
+<div class="real-kicker">FUTEBOL PARA JOGAR</div>
+<h1 class="real-title" id="games-title">Jogos</h1>
+<p>A história do futebol entra em campo. Escolha seu jogo, monte sua seleção e viva a emoção de disputar o título.</p>
+</div></section>
+<section class="games-list" aria-label="Jogos disponíveis"><div class="real-wrap">
+<article class="game-promo-card" aria-labelledby="legends-title">
+<img class="game-promo-image" src="imagens/desafio-lendas-banner.webp" alt="Troféu dourado e bola em um estádio iluminado" width="1672" height="941" fetchpriority="high">
+<div class="game-promo-copy">
+<div class="real-kicker">MONTE SUA SELEÇÃO • DISPUTE A COPA</div>
+<h2 class="real-title" id="legends-title">Desafio das Lendas</h2>
+<p>Sorteie craques de seleções históricas, escolha sua formação e busque o título da Copa das Lendas!</p>
+<div class="games-tags"><span>Seleções históricas</span><span>Dificuldade ajustável</span><span>No celular e computador</span></div>
+<a class="game-promo-button" href="desafio-das-lendas.html" aria-label="Jogar Desafio das Lendas">JOGAR AGORA →</a>
+</div>
+</article>
+</div></section>
+</main>
+<footer class="real-footer"><a class="footer-brand" href="index.html#inicio" aria-label="O Peso da Camisa, voltar ao início"><img class="footer-logo" src="imagens/logo-opc.jpg" alt="Logo O Peso da Camisa" width="384" height="384" loading="lazy"></a><div>O PESO DA CAMISA • Histórias que o futebol não esquece.<div style="margin-top:12px;line-height:1.7;color:#c9c9c9"><strong style="color:#d8a83e">Fundadores:</strong><div>Luis Otávio Neves</div><div>Leonardo Vidal</div></div><div style="margin-top:14px;display:flex;justify-content:center;gap:22px;flex-wrap:wrap"><a href="sobre-nos.html" style="color:#d8a83e">Sobre nós</a><a href="contato.html" style="color:#d8a83e">Contato</a><a href="politica-de-privacidade.html" style="color:#d8a83e">Política de Privacidade</a><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer" style="color:#92999d">Painel editorial ↗</a></div></div></footer>
+</body>
+</html>
