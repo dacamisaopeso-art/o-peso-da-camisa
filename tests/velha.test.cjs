@@ -3,7 +3,9 @@ require('../velha-dados.js');const d=globalThis.OPC_VELHA_DATA,c=require('../vel
 const byName=name=>d.players.find(p=>p.name===name);
 const has=(name,cat)=>byName(name).categories.includes(cat);
 assert(d.players.length>=200);assert.equal(d.boards.length,1120);assert.equal(new Set(d.players.map(p=>p.id)).size,d.players.length);
-for(const p of d.players){assert(p.name&&p.modes.length&&p.categories.length&&p.sources.length);assert(p.photo.author&&p.photo.licenseUrl&&p.photo.filePage);assert(fs.existsSync(path.join(__dirname,'..',p.photo.path)));}
+for(const p of d.players){assert(p.name&&p.modes.length&&p.categories.length&&p.sources.length);assert(!p.photo,'Fotos não condicionam nem compõem a base deste jogo');assert(p.sources.every(s=>/^https:\/\//.test(s)));}
+assert(d.categories.every(c=>!c.photo));assert(!fs.readFileSync(path.join(__dirname,'../velha.js'),'utf8').includes('p.photo'));
+assert.equal(byName('Zidane').nationality,'France');assert.equal(byName('Zlatan Ibrahimović').nationality,'Sweden');
 assert(has('Romário','club:fluminense')&&has('Romário','club:flamengo'));assert(has('Ronaldinho','club:fluminense')&&has('Ronaldinho','club:flamengo'));assert(has('Gerson','club:fluminense')&&has('Gerson','club:flamengo'));
 assert(has('Ronaldo','club:corinthians'));assert(has('Kaká','club:realmadrid'));assert(has('Marcelo','club:realmadrid'));assert(has('Vinícius Júnior','club:realmadrid'));
 for(const name of ['Martin Ødegaard','Declan Rice','William Saliba','Nicolò Barella','Roberto Carlos','Romário'])assert(!has(name,'award:ballondor'),name+' não venceu a Bola de Ouro europeia');
