@@ -100,7 +100,8 @@
     $('remaining').textContent=round.max-round.guesses.length;
     $('portrait').style.filter=`blur(${blur(round.difficulty,round.guesses.length,round.max,round.ended)}px)`;
     const photo=round.target.photo;
-    if($('portrait').getAttribute('src')!==photo.path)$('portrait').src=photo.path;
+    const photoUrl=photo.path+'?v=20261010-kit5';
+    if($('portrait').getAttribute('src')!==photoUrl)$('portrait').src=photoUrl;
     $('portrait').alt=round.ended?`Foto de ${round.target.name}`:'Foto do jogador misterioso com blur';
     const credit=$('photo-credit');credit.replaceChildren(node('span',`Foto: ${photo.author} · `));
     for(const [text,url] of [[photo.license,photo.licenseUrl],['Wikimedia Commons',photo.filePage]]){const link=node('a',text);link.href=url;link.target='_blank';link.rel='noopener noreferrer';credit.append(link,node('span',' · '));}
