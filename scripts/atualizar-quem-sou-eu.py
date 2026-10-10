@@ -4,6 +4,7 @@ Uso: python scripts/atualizar-quem-sou-eu.py
 Revisar diff, cobertura e transferências antes de publicar.
 """
 import concurrent.futures
+import calendar
 import datetime
 import json
 import pathlib
@@ -42,7 +43,8 @@ def main():
     for league in LEAGUES:
         data = get(league + '/teams?limit=100')
         teams = data['sports'][0]['leagues'][0]['teams']
-        pairs.extend((league, t['team']) for t in teams)
+        pairs.extend((league, t['team']) for t in teams
+                     if league != 'ger.1' or str(t['team']['id']) in ['132', '124'])
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         clubs = list(pool.map(roster, pairs))
     if any(not c['players'] for c in clubs):
@@ -84,11 +86,16 @@ def main():
     eligible_before_photos = len(complete)
     photos = {photo['id']: photo for photo in json.loads((ROOT / 'docs/quem-sou-eu-fotos.json').read_text(encoding='utf-8'))}
     with_photos = []
+    snapshot = datetime.date.fromisoformat(updated)
+    prior_year = snapshot.year - 5
+    cutoff = snapshot.replace(year=prior_year, day=min(snapshot.day, calendar.monthrange(prior_year, snapshot.month)[1])).isoformat()
     for player in complete:
         photo = photos.get(player['id'])
-        if not photo or not (ROOT / photo['path']).is_file() or not all(photo.get(f) for f in ['author', 'license', 'licenseUrl', 'filePage']):
+        if not photo or not cutoff <= photo.get('photoDate', '') <= photo.get('photoDateLatest', '') <= updated or not photo.get('photoDateSource'):
             continue
-        player['photo'] = {field: photo[field] for field in ['path', 'author', 'license', 'licenseUrl', 'filePage']}
+        if not photo or not (ROOT / photo['path']).is_file() or not all(photo.get(f) for f in ['author', 'license', 'licenseUrl', 'filePage']) or photo.get('kitClubId') != player['clubId'] or not photo.get('kitReviewed'):
+            continue
+        player['photo'] = {field: photo[field] for field in ['path', 'author', 'license', 'licenseUrl', 'filePage', 'kitClubId', 'kitReviewed', 'kitType', 'photoDate', 'photoDateLatest', 'photoDatePrecision', 'photoDateSource']}
         with_photos.append(player)
     excluded['photo'] = eligible_before_photos - len(with_photos)
     result = {'updated': updated, 'excluded': excluded, 'eligibleBeforePhotos': eligible_before_photos,

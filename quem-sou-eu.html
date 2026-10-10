@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Quem Sou Eu? — Guess the Player | O Peso da Camisa</title>
-<meta name="description" content="Descubra o jogador pelas pistas. Seis ligas, modo Europa, dificuldades e tentativas ajustáveis no O Peso da Camisa.">
+<meta name="description" content="Descubra o jogador pelas pistas. Europa combinada ou Brasileirão, fotos dos clubes atuais, dificuldades e tentativas ajustáveis no O Peso da Camisa.">
 <link rel="icon" href="imagens/favicon-opc.png"><link rel="stylesheet" href="quem-sou-eu.css">
 <script defer src="quem-sou-eu-dados.js"></script><script defer src="quem-sou-eu.js"></script>
 </head>
@@ -14,15 +14,15 @@
 <section id="setup" class="panel" aria-labelledby="setup-title">
 <div class="section-heading"><span class="badge">01 / PREPARE O DESAFIO</span><h2 id="setup-title">Escolha seu campo.</h2></div>
 <form id="config">
-<fieldset><legend>Liga ou modo</legend><div id="modes" class="modes"></div></fieldset>
-<div class="settings"><label>Dificuldade<select id="difficulty"><option value="easy">Fácil — duas pistas iniciais</option><option value="normal" selected>Normal — sem pistas iniciais</option><option value="hard">Difícil — blur mais intenso, sem dica</option></select></label><label>Tentativas<input id="attempts" type="number" min="3" max="20" value="5" required><small>3 a 20. Padrão: 5 por liga / 10 na Europa.</small></label></div>
+<fieldset><legend>Modo de jogo</legend><div id="modes" class="modes"></div><p class="muted">Europa: Premier League, LaLiga, Serie A, Ligue 1 e Bundesliga. Na Alemanha, apenas Bayern e Borussia Dortmund.</p></fieldset>
+<div class="settings"><label>Dificuldade<select id="difficulty"><option value="easy">Fácil — duas pistas iniciais</option><option value="normal" selected>Normal — sem pistas iniciais</option><option value="hard">Difícil — blur mais intenso, sem dica</option></select></label><label>Tentativas<input id="attempts" type="number" min="3" max="20" value="10" required><small>3 a 20. Padrão: 5 no Brasil / 10 na Europa.</small></label></div>
 <p id="coverage" class="muted"></p><button class="primary" type="submit" id="start">ENTRAR EM CAMPO →</button>
 </form>
 </section>
 <section id="game" hidden aria-labelledby="round-title">
 <div class="round-bar"><div><span class="badge" id="round-mode"></span><h2 id="round-title">Encontre o craque.</h2></div><button id="change" class="quiet">Trocar modo</button></div>
 <div class="arena">
-<div class="portrait-panel panel"><div class="portrait-frame"><img id="portrait" width="240" height="270" alt="Jogador misterioso"><span class="portrait-stamp">OPC • FOTO LICENCIADA</span></div><p id="visual-note" class="muted">O blur diminui a cada chute. A foto pode ser de outra temporada; uniforme e aparência não são pistas do clube ou idade atuais.</p><div class="counter"><strong id="remaining"></strong><span>tentativas restantes</span></div><div id="progress" class="progress" aria-hidden="true"></div><p id="photo-credit" class="photo-credit"></p></div>
+<div class="portrait-panel panel"><div class="portrait-frame"><img id="portrait" width="240" height="270" alt="Jogador misterioso"><span class="portrait-stamp">OPC • FOTO LICENCIADA</span></div><p id="visual-note" class="muted">O blur diminui a cada chute. Todas as fotos mostram a camisa do clube da base; a foto pode ser de outra temporada, com no máximo cinco anos.</p><div class="counter"><strong id="remaining"></strong><span>tentativas restantes</span></div><div id="progress" class="progress" aria-hidden="true"></div><p id="photo-credit" class="photo-credit"></p></div>
 <div class="play-panel panel">
 <p class="eyebrow">02 / LEIA AS PISTAS</p><p class="legend">✓ Verde: igual · ≠ Cinza: diferente · ↑ / ↓: o valor procurado é maior / menor.</p>
 <div id="hints" class="hints" aria-live="polite"></div>
@@ -34,7 +34,7 @@
 </div>
 <section class="history" aria-labelledby="history-title"><h3 id="history-title">Seus chutes</h3><p id="empty" class="muted">A primeira pista começa com você.</p><div id="guesses"></div></section>
 </section>
-<details class="data-note"><summary>Base de jogadores, posições e fontes</summary><p id="data-summary"></p><p>A coleta abrange os clubes das seis primeiras divisões. Só entram no jogo atletas com todas as categorias preenchidas: nacionalidade, liga, clube, posição detalhada, nascimento, camisa e foto com licença verificável. Quem não possui qualquer uma dessas informações fica fora do sorteio e do autocomplete. A cobertura jogável é menor que os elencos completos da fonte. Transferências, números e inscrições podem mudar. Idades são calculadas na data da base.</p><p>As posições usadas são GOL, ZAG, LE, LD, VOL, MC, MEI, PD, PE e ATA. Quando a fonte só informa o grupo geral e não há função detalhada na curadoria, o jogador fica fora do jogo. A nacionalidade segue o campo de cidadania e pode diferir da seleção representada.</p><p>Sem anúncios ou escudos. As fotos são do Wikimedia Commons, com autoria e licença exibidas ao lado da imagem. A foto pode retratar outra temporada e outro uniforme. Consulte <a href="creditos-quem-sou-eu.html">os créditos de todas as fotos</a>, <a href="docs/quem-sou-eu.md">a documentação de cobertura e atualização</a> e <a href="https://www.espn.com/soccer/" target="_blank" rel="noopener noreferrer">a fonte dos elencos, ESPN</a>. A ficha do jogador é vinculada após o fim da rodada.</p><p id="club-list"></p></details>
+<details class="data-note"><summary>Base de jogadores, posições e fontes</summary><p id="data-summary"></p><p>A coleta abrange as seis primeiras divisões, com Bayern e Dortmund como únicos clubes alemães elegíveis. Só entram atletas com nacionalidade, liga, clube, posição detalhada, nascimento, camisa e foto licenciada com o uniforme do clube da base. Quem não possui qualquer uma dessas informações fica fora do sorteio e do autocomplete. A cobertura é parcial. Transferências, números e inscrições podem mudar. Idades são calculadas na data da base.</p><p>As posições usadas são GOL, ZAG, LE, LD, VOL, MC, MEI, PD, PE e ATA. Funções detalhadas são conferidas em fichas adicionais; grupos gerais sem detalhamento não entram. A nacionalidade segue a cidadania da fonte e pode diferir da seleção representada.</p><p>As fotos do Wikimedia Commons têm autoria e licença exibidas ao lado da imagem. São de 10/10/2021 em diante, com data da fotografia verificada e camisa do clube da base. A primeira camisa é preferida; outros uniformes de jogo podem aparecer. Licenças Creative Commons têm condições de atribuição; disponibilidade pública não significa ausência de direitos autorais. Consulte <a href="creditos-quem-sou-eu.html">os créditos das fotos</a>, <a href="docs/quem-sou-eu.md">a cobertura e as fontes adicionais</a> e <a href="https://www.espn.com/soccer/" target="_blank" rel="noopener noreferrer">os elencos da ESPN</a>. A ficha individual aparece ao fim da rodada.</p><p id="club-list"></p></details>
 <noscript>Este jogo precisa de JavaScript habilitado para funcionar.</noscript>
 </main><footer>O PESO DA CAMISA · O futebol deixa pistas.<a href="jogos.html">Voltar aos jogos →</a></footer>
 </body></html>

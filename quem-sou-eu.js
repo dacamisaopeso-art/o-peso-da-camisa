@@ -16,8 +16,13 @@
     const position = p.position || (p.group === 'G' ? 'GOL' : groups[p.group] || '?');
     return {...p, position, detailedPosition: !['DEF','MEIO','ATQ','?'].includes(position), age:ageAt(p.birth,updated)};
   }
+  function recentPhoto(photo, updated) {
+    const cutoff = String(Number(updated.slice(0,4))-5)+updated.slice(4);
+    const latest=photo?.photoDateLatest||photo?.photoDate;
+    return !!photo && /^\d{4}-\d{2}-\d{2}$/.test(photo.photoDate||'') && /^\d{4}-\d{2}-\d{2}$/.test(latest||'') && photo.photoDate>=cutoff && latest>=photo.photoDate && latest<=updated && !!photo.photoDateSource;
+  }
   function fields(mode) {return Object.keys(labels).filter(f => f !== 'league' || mode === 'europe');}
-  function poolFor(players,mode) {return players.filter(p=>mode==='europe' ? p.league!=='bra.1' : p.league===mode);}
+  function poolFor(players,mode) {return players.filter(p=>mode==='europe' ? p.league!=='bra.1' && (p.league!=='ger.1'||['132','124'].includes(p.clubId)) : mode==='bra.1'&&p.league===mode);}
   function compare(guess,target,field) {
     const g=guess[field], t=target[field];
     if (g===null || g===undefined || t===null || t===undefined || (field==='position' && (!guess.detailedPosition || !target.detailedPosition))) return {kind:'unknown',mark:'?',direction:0};
@@ -55,17 +60,17 @@
       return {player,clues};
     }
   }
-  const api={normalize,ageAt,enrich,fields,poolFor,compare,blur,Round,fullPositions};
+  const api={normalize,ageAt,enrich,recentPhoto,fields,poolFor,compare,blur,Round,fullPositions};
   if(typeof module!=='undefined')module.exports=api;
   root.OPCGuess=api;
   if(typeof document==='undefined')return;
   const $=id=>document.getElementById(id), data=root.OPC_PLAYERS;
   if(!data||!data.players.length){$('start').disabled=true;$('coverage').textContent='Não foi possível carregar a base. Atualize a página para tentar novamente.';return;}
-  const players=data.players.map(p=>enrich(p,data.updated)).filter(p=>p.detailedPosition&&p.age!==null&&p.nationality&&p.club&&p.league&&p.number!==null&&p.photo&&p.photo.path&&p.photo.author&&p.photo.license);
-  let round=null, mode='eng.1', selected=null, suggestions=[], active=-1;
+  const players=data.players.map(p=>enrich(p,data.updated)).filter(p=>p.detailedPosition&&p.age!==null&&p.nationality&&p.club&&p.league&&Number.isInteger(p.number)&&p.photo&&p.photo.path&&p.photo.author&&p.photo.license&&p.photo.kitReviewed&&p.photo.kitClubId===p.clubId&&recentPhoto(p.photo,data.updated));
+  let round=null, mode='europe', selected=null, suggestions=[], active=-1;
   function node(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;}
   function display(p,f){if(p[f]===null||p[f]===undefined)return '?';if(f==='league')return data.leagues[p[f]];if(f==='nationality')return countryNames[p[f]]||p[f];return String(p[f]);}
-  for(const [id,name] of [...Object.entries(data.leagues),['europe','Cinco ligas europeias combinadas']]){
+  for(const [id,name] of [['europe','Europa · cinco ligas combinadas'],['bra.1','Brasileirão Série A 2026']]){
     const label=node('label',undefined,'mode'), radio=node('input');radio.type='radio';radio.name='mode';radio.value=id;radio.checked=id===mode;
     label.append(radio,node('span',name));$('modes').append(label);
     radio.addEventListener('change',()=>{mode=id;$('attempts').value=id==='europe'?10:5;coverage();});

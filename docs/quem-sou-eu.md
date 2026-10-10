@@ -1,65 +1,51 @@
 # Quem Sou Eu? / Guess the Player
 
-Jogo original OPC, executado no navegador, sem backend, anúncios, cookies ou chamadas externas durante a rodada. Desafio das Lendas e Desafio da Champions foram preservados. A identidade visual e o banner SVG são originais; as quatro capturas de referência foram usadas apenas para entender a mecânica de pistas. Todas as fotos do jogo são fotografias reais com licenças individuais verificadas do Wikimedia Commons.
+Jogo original OPC para GitHub Pages. Desafio das Lendas e Desafio da Champions preservados. Interface preta/dourada, banner original, fotos locais, sem anúncios ou chamadas externas durante a rodada.
 
-## Cobertura em 10 de outubro de 2026
+## Cobertura em 10/10/2026
 
-| Primeira divisão | Clubes com atletas elegíveis | Jogadores completos, com foto e jogáveis |
+| Liga | Clubes jogáveis | Jogadores |
 | --- | ---: | ---: |
-| Premier League 2026/27 | 15 | 34 |
-| LaLiga 2026/27 | 7 | 31 |
-| Serie A italiana 2026/27 | 8 | 24 |
-| Bundesliga 2026/27 | 8 | 22 |
-| Ligue 1 2026/27 | 7 | 23 |
-| Brasileirão Série A 2026 | 8 | 28 |
-| Total | 53 | 162 |
+| Premier League | 13 | 31 |
+| LaLiga | 3 | 7 |
+| Serie A italiana | 3 | 4 |
+| Bundesliga (apenas Bayern e Dortmund) | 2 | 6 |
+| Ligue 1 | 4 | 6 |
+| Brasileirão Série A | 6 | 13 |
+| Total | 31 | 67 |
 
-A coleta consultou todos os 116 clubes e 3.774 registros dos elencos da ESPN, inclusive jovens listados. 574 atletas tinham todas as categorias factuais; destes, 162 tiveram foto licenciada e identidade verificadas. Conforme a preferência explícita do usuário, **somente atletas com todas as categorias e foto reutilizável** foram conservados na base distribuída e disponibilizados tanto para sorteio quanto para chutes. Portanto, a base final não contém todos os jogadores nem todos os clubes: contém 162 atletas de 53 clubes, com cobertura parcial. Europa combinada: 134 atletas de 45 clubes. Não é uma certificação de todos os atletas registrados em cada federação. Não inclui seleções, segundas divisões ou Brasil no modo Europa.
+Europa combinada: 54 jogadores de 25 clubes. Brasil: 13 de 6 clubes. A pesquisa abrangeu 100 clubes e 3.307 registros de elenco, com 698 jogadores completos antes do filtro fotográfico. A cobertura final é parcial: não representa todos os clubes ou atletas registrados. O corte estrito de fotos reduziu a base anterior de 162 atletas.
 
-Fonte factual: serviço público de elencos do próprio publicador ESPN. Endpoint de clubes `https://site.api.espn.com/apis/site/v2/sports/soccer/{liga}/teams?limit=100`; endpoint de elenco `https://site.api.espn.com/apis/site/v2/sports/soccer/{liga}/teams/{id}/roster`. Códigos: `eng.1`, `esp.1`, `ita.1`, `ger.1`, `fra.1`, `bra.1`. Cada clube guarda endpoint e temporada; cada atleta guarda ID estável, ficha de origem, clube, data de nascimento, cidadania e camisa. Nenhuma fotografia, biografia, marca gráfica ou texto editorial da ESPN foi reproduzido.
+## Critérios obrigatórios
 
-Conferências adicionais em fontes primárias de clubes/competição:
+Sorteio e autocomplete usam exatamente a mesma base. Cada jogador possui cidadania, clube, liga, nascimento, camisa, posição detalhada e fotografia licenciada. Não são oferecidos campos desconhecidos ou posições genéricas DEF/MEIO/ATQ.
 
-- [Real Madrid](https://www.realmadrid.com/en-US/football/first-team/players)
-- [Inter](https://www.inter.it/en/teams/first-team)
-- [PSG](https://www.psg.fr/football-masculin/effectif)
-- [Bayern / Bundesliga](https://www.bundesliga.com/en/bundesliga/clubs/fc-bayern-muenchen/squad)
-- [Flamengo](https://www.flamengo.com.br/futebol/elenco)
-- [Arrascaeta: idade e camisa](https://www.flamengo.com.br/en/futebol/atleta/de-arrascaeta)
-- [Manchester City: relacionados em 2026](https://www.mancity.com/news/mens/fa-cup-final-chelsea-may-2026-team-news-tactics-63914526)
+Toda fotografia foi conferida visualmente e mostra uniforme de jogo do clube atual na base. Preferência pela primeira camisa; segunda, terceira e uniforme de goleiro são alternativas permitidas. Seleções, antigos clubes, treino/aquecimento, viagem e identidade ambígua foram excluídos.
 
-Estas conferências são pontuais, não uma auditoria individual de todos os jogadores.
+A data da fotografia deve estar entre **10/10/2021 e 10/10/2026**, inclusive, para todos os jogadores, incluindo retornos ao clube e atletas antigos. Data de upload não substitui data da foto. Quando a fonte informa apenas mês ou ano, todo o intervalo precisa caber nesses cinco anos; os créditos preservam essa precisão sem inventar um dia. Data incerta implica exclusão.
 
-## Qualidade, posições e imagens
+O manifesto `quem-sou-eu-fotos.json` registra autor, licença individual, origem, identidade, clube do uniforme, evidência visual, data e precisão. Creative Commons não significa ausência de direitos autorais: cada licença e suas condições permanecem nos créditos junto da imagem e na página de créditos. WebP, redimensionamento, enquadramento e blur são informados como adaptações. Não foram copiadas fotografias de Transfermarkt, ESPN ou galerias de clubes sem autorização.
 
-117 registros sem nascimento, 128 sem cidadania e 50 sem camisa na coleta. 3.175 não possuíam função detalhada na fonte/curadoria. As contagens de ausência podem se sobrepor; todos esses registros foram excluídos da base jogável. Idade é calculada na data da base; não muda diariamente enquanto a base não é atualizada. A cidadania da fonte não necessariamente equivale à seleção nacional do atleta.
+## Pesquisa e fontes
 
-O serviço fornece grupos G/D/M/F. G é convertido em GOL; as funções ZAG, LE, LD, VOL, MC, MEI, PD, PE e ATA de uma seleção de atletas conhecidos recebem curadoria editorial por ID estável em `docs/quem-sou-eu-posicoes.json`. Essa função é uma simplificação de jogo, não uma afirmação de que o atleta só joga ali. Registros sem função detalhada são excluídos; DEF/MEIO/ATQ nunca são oferecidos no jogo. Ampliar posições verificadas e fotos licenciadas é necessário para ampliar a cobertura.
+Elencos e categorias factuais: ESPN, endpoints públicos `https://site.api.espn.com/apis/site/v2/sports/soccer/{liga}/teams?limit=100` e `https://site.api.espn.com/apis/site/v2/sports/soccer/{liga}/teams/{id}/roster`. Ligas: eng.1, esp.1, ita.1, ger.1, fra.1 e bra.1. A Alemanha é filtrada para IDs 132/124. Cada ficha mantém seu link factual. Temporadas europeias 2026/27 e brasileira 2026 conforme a coleta; transferências e inscrições podem mudar. Idade é calculada na data da base.
 
-Foram encontrados dois IDs duplicados entre ligas. A [contratação de Arthur Chaves pelo Botafogo](https://botafogo.com.br/noticias/bem-vindo-arthur-chaves) resolve o registro antigo do Hoffenheim; ele ainda fica fora da base jogável por ausência de função detalhada na curadoria. O ID de Moussa Diarra aparece em Málaga e Lens com identidade conflitante; ambos os registros são excluídos até revisão. Correções confirmadas constam em `docs/quem-sou-eu-correcoes.json` e expiram na coleta de outro dia, exigindo revisão.
+Identidades foram cruzadas pelo ID ESPN do Wikidata e nascimento; nomes adicionais exigiram correspondência única e nascimento coincidente. Posições específicas foram conferidas em Wikidata, fichas Wikipedia e perfis Transfermarkt indexados. `quem-sou-eu-revisao-fontes.json` guarda evidências; `quem-sou-eu-posicoes.json` guarda a curadoria por ID. Quando a ficha traz múltiplas funções específicas, a primeira é usada para comparação, sem afirmar exclusividade tática. Categorias amplas não foram convertidas por suposição.
 
-## Fotografias e créditos
+A busca fotográfica incluiu Wikimedia Commons, Openverse, Flickr, Europeana, Pexels, Pixabay, PxHere e PublicDomainPictures. Disponibilidade gratuita não comprova identidade, licença, data e uniforme. Apenas imagens verificadas do Commons entraram nesta versão. Foram localizados milhares de candidatos; nem todos puderam ser inspecionados ou obtidos, inclusive por limites de acesso dos acervos. Não se afirma uma auditoria completa de todas as imagens existentes.
 
-As 162 fotografias foram vinculadas aos atletas pela propriedade ESPN FC ID (`P3681`) do Wikidata, com a data de nascimento (`P569`) igual à da ficha da base. A imagem (`P18`) aponta para o Wikimedia Commons. Cinco resultados sem nascimento coincidente foram descartados, sem tentar resolver por semelhança de nome ou rosto. As 162 restantes tiveram licença, autoria, URL do arquivo e página de origem verificadas via `imageinfo/extmetadata` do Commons e foram incorporadas localmente. Todas as imagens foram decodificadas e inspecionadas em folhas de conferência.
+Fontes de reutilização: [Commons](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia), [Flickr](https://www.flickr.com/creativecommons/) e [orientação Flickr](https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members).
 
-Cada imagem mantém sua própria licença CC BY ou CC BY-SA indicada no manifesto `docs/quem-sou-eu-fotos.json`; não existe licença única aplicada por suposição. Autoria, link da licença e página do arquivo aparecem junto à foto em todas as etapas da rodada. A página [Créditos das fotografias](../creditos-quem-sou-eu.html) também preserva nome, foto, autor, licença, origem e identidade. As miniaturas fornecidas pelo Commons foram otimizadas em WebP, mantendo a licença original da imagem; a apresentação faz enquadramento e blur progressivos. A conversão e as mudanças de apresentação são informadas nos créditos e no manifesto.
-
-Fotos podem ser antigas, usar uniforme de outra equipe ou mostrar o jogador em ação. Portanto, roupa, aparência e idade visual não representam os dados atuais de clube/idade. A identidade e os dados factuais são independentes da época da foto. Não há fotos copiadas do site de referência nem de galerias de clubes/ESPN sem licença. Atletas sem foto reutilizável verificável foram excluídos, conforme escolha do usuário; não há fallback gráfico de jogador.
-
-Fontes de reutilização e metadados: [Wikimedia Commons — reuse](https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia), [CommonsMetadata](https://www.mediawiki.org/wiki/Extension:CommonsMetadata) e [créditos de mídia](https://attribution.wikimedia.org/attribution-signals/license.html).
+Conferências de uniformes: [Palmeiras dourado](https://www.palmeiras.com.br/noticias/palmeiras-e-puma-apresentam-novo-terceiro-uniforme-em-inedita-cor-dourada/), [Santos e patrocinador](https://www.santosfc.com.br/patrocinadora-master-atende-pedido-da-torcida-e-faz-mudanca-em-uniforme-do-santos-fc/), [Brentford 2026/27](https://www.brentfordfc.com/en/news/club-news-brentford-announces-indeed-new-principal-front-of-shirt-partner).
 
 ## Mecânica
 
-- Sete modos, três dificuldades, 3–20 tentativas ajustáveis (padrão 5 individual, 10 combinado).
-- Todas as dificuldades usam todos os nomes do modo. Fácil começa com cidadania e posição disponíveis, normal sem pistas iniciais, difícil usa blur maior e desativa dicas.
-- Busca de nomes com normalização de acentos, lista com ícone da posição, clube para distinguir homônimos, navegação por teclado, seleção obrigatória e rejeição de chute repetido.
-- Comparação de cidadania, clube, posição detalhada, idade e camisa; liga somente no combinado. Verde/✓ para igualdade, cinza/≠ para diferença, setas indicam o sentido do valor procurado. Texto acompanha cores para acessibilidade. Nenhuma categoria ausente é oferecida no sorteio ou na busca.
-- Dicas revelam um campo disponível ainda não conhecido; não consomem tentativa. Nenhum anúncio ou promessa de recompensa.
-- Vitória por ID do atleta, derrota no limite; resposta e fonte reveladas em ambos. Reiniciar evita repetir o alvo anterior; trocar modo retorna à configuração.
-- Layout com grades adaptadas a 800 e 600 px, controles de pelo menos 48 px, autocomplete acessível e redução de animação conforme preferência do sistema.
+Dois modos: Europa combinada e Brasileirão. Padrões de 10 e 5 tentativas, ajustáveis entre 3 e 20. Três dificuldades: fácil revela cidadania e posição; normal sem pistas iniciais; difícil aumenta blur e desativa dicas. Todas usam todos os nomes elegíveis do modo.
 
-## Atualização e testes
+Autocomplete com acentos normalizados, posição, clube e teclado. Comparação de cidadania, clube, posição, idade e camisa; liga apenas na Europa. Verde/cinza acompanhados de símbolos e texto, setas para valores numéricos. Cada chute reduz blur. Dica opcional revela informação ainda não conhecida sem gastar tentativa. Vitória, derrota, resposta, reinício sem repetir o alvo anterior e troca de modo. Layout responsivo e preferência de redução de movimento.
 
-`python scripts/atualizar-quem-sou-eu.py` coleta novamente todos os clubes/elencos e filtra obrigatoriamente todas as categorias completas e a presença de foto licenciada no manifesto/localmente antes de gravar a base; falhas ou elenco vazio abortam antes de substituir a base. Conflitos de clube são documentados e excluídos, não resolvidos por suposição. Revise temporada, transferências, campos ausentes, contagens, curadoria e licenças antes de publicar. Ampliar a galeria exige verificar identidade, autoria e licença individual e incorporar a foto antes de disponibilizar o atleta. O script não publica automaticamente nem garante que o serviço continuará disponível.
+## Atualização e validação
 
-`node tests/quem-sou-eu.test.cjs` testa cobertura, identidade, filtros, comparação numérica, dados ausentes, aniversário, dicas, tentativa inválida/repetida, vitória, derrota, reinício e blur. Verificação de sintaxe: `node --check quem-sou-eu.js` e `node --check quem-sou-eu-dados.js`.
+`python scripts/atualizar-quem-sou-eu.py` atualiza dados factuais e filtra todos os campos, licença, arquivo local, clube do uniforme e janela fotográfica. Não busca fotos automaticamente nem publica. Mudança de clube ou expiração da foto elimina o atleta até nova revisão. Falhas de coleta abortam antes da substituição; conflitos de identidade são excluídos. Revisar transferências, temporada, posições e licenças antes de publicar.
+
+`node tests/quem-sou-eu.test.cjs` verifica dados, filtros de modos e fotos, limites de datas, comparação, aniversário, dicas, tentativas inválidas/repetidas, vitória, derrota, reinício e blur. `node --check` verifica os dois arquivos JavaScript. A publicação exige ainda conferir imagens e fluxo no navegador, incluindo celular.
