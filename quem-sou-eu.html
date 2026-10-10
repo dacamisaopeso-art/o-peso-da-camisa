@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quem Sou Eu? — Guess the Player | O Peso da Camisa</title>
+<meta name="description" content="Descubra o jogador pelas pistas. Seis ligas, modo Europa, dificuldades e tentativas ajustáveis no O Peso da Camisa.">
+<link rel="icon" href="imagens/favicon-opc.png"><link rel="stylesheet" href="quem-sou-eu.css">
+<script defer src="quem-sou-eu-dados.js"></script><script defer src="quem-sou-eu.js"></script>
+</head>
+<body>
+<header><a class="brand" href="index.html"><img src="imagens/logo-opc.jpg" width="48" height="48" alt=""><span>O PESO <b>DA CAMISA</b></span></a><a class="back" href="jogos.html">← Todos os jogos</a></header>
+<main>
+<div class="intro"><p class="eyebrow">OPC / FUTEBOL PARA DECIFRAR</p><h1>QUEM <span>SOU EU?</span></h1><p class="subtitle">Guess the Player · Cada chute conta uma parte da história.</p></div>
+<section id="setup" class="panel" aria-labelledby="setup-title">
+<div class="section-heading"><span class="badge">01 / PREPARE O DESAFIO</span><h2 id="setup-title">Escolha seu campo.</h2></div>
+<form id="config">
+<fieldset><legend>Liga ou modo</legend><div id="modes" class="modes"></div></fieldset>
+<div class="settings"><label>Dificuldade<select id="difficulty"><option value="easy">Fácil — duas pistas iniciais</option><option value="normal" selected>Normal — sem pistas iniciais</option><option value="hard">Difícil — blur mais intenso, sem dica</option></select></label><label>Tentativas<input id="attempts" type="number" min="3" max="20" value="5" required><small>3 a 20. Padrão: 5 por liga / 10 na Europa.</small></label></div>
+<p id="coverage" class="muted"></p><button class="primary" type="submit" id="start">ENTRAR EM CAMPO →</button>
+</form>
+</section>
+<section id="game" hidden aria-labelledby="round-title">
+<div class="round-bar"><div><span class="badge" id="round-mode"></span><h2 id="round-title">Encontre o craque.</h2></div><button id="change" class="quiet">Trocar modo</button></div>
+<div class="arena">
+<div class="portrait-panel panel"><div class="portrait-frame"><svg id="portrait" viewBox="0 0 240 270" role="img" aria-label="Retrato gráfico original com pistas visuais"><circle cx="120" cy="62" r="39" fill="#cba24f"/><path d="M64 112L30 145L50 187L70 173L70 260L170 260L170 173L190 187L210 145L176 112L148 104Q120 136 92 104Z" fill="#d8a83e"/><path d="M93 113L120 131L147 113" fill="none" stroke="#15191d" stroke-width="7"/><text id="shirt" x="120" y="223" text-anchor="middle" fill="#101418" font-size="58" font-weight="900"></text><text id="initials" x="120" y="167" text-anchor="middle" fill="#101418" font-size="20" font-weight="700"></text></svg><span class="portrait-stamp">OPC • RETRATO GRÁFICO</span></div><p id="visual-note" class="muted">Arte original com iniciais e camisa; não é foto do atleta. O blur diminui a cada chute.</p><div class="counter"><strong id="remaining"></strong><span>tentativas restantes</span></div><div id="progress" class="progress" aria-hidden="true"></div></div>
+<div class="play-panel panel">
+<p class="eyebrow">02 / LEIA AS PISTAS</p><p class="legend">✓ Verde: igual · ≠ Cinza: diferente · ↑ / ↓: o valor procurado é maior / menor.</p>
+<div id="hints" class="hints" aria-live="polite"></div>
+<form id="guess-form" autocomplete="off"><label for="search">Qual jogador você tem em mente?</label><div class="search-row"><div class="autocomplete"><input id="search" type="text" placeholder="Digite um nome…" role="combobox" aria-autocomplete="list" aria-controls="suggestions" aria-expanded="false" maxlength="100"><ul id="suggestions" role="listbox" aria-label="Jogadores disponíveis" hidden></ul></div><button class="primary" type="submit" id="guess">CHUTAR →</button></div><p id="search-help" class="muted">Selecione um nome da lista. Use ↑, ↓ e Enter para navegar.</p></form>
+<p id="message" role="status" aria-live="polite"></p>
+<div class="actions"><button class="quiet" id="hint">Revelar uma dica</button><button class="quiet" id="restart">Novo jogador</button></div>
+<div id="result" hidden class="result" tabindex="-1"></div>
+</div>
+</div>
+<section class="history" aria-labelledby="history-title"><h3 id="history-title">Seus chutes</h3><p id="empty" class="muted">A primeira pista começa com você.</p><div id="guesses"></div></section>
+</section>
+<details class="data-note"><summary>Base de jogadores, posições e fontes</summary><p id="data-summary"></p><p>A coleta abrange os clubes das seis primeiras divisões. Só entram no jogo atletas com todas as categorias preenchidas: nacionalidade, liga, clube, posição detalhada, nascimento e camisa. A cobertura jogável é menor que os elencos completos da fonte. Transferências, números e inscrições podem mudar. Idades são calculadas na data da base.</p><p>As posições usadas são GOL, ZAG, LE, LD, VOL, MC, MEI, PD, PE e ATA. Quando a fonte só informa o grupo geral e não há função detalhada na curadoria, o jogador fica fora do sorteio e do autocomplete. Há mais goleiros na base porque sua função é identificada diretamente pela fonte. A nacionalidade segue o campo de cidadania e pode diferir da seleção representada.</p><p>Sem anúncios, fotos de terceiros ou escudos. A ilustração genérica foi criada para este jogo. Consulte <a href="docs/quem-sou-eu.md">a documentação de cobertura e atualização</a> e <a href="https://www.espn.com/soccer/" target="_blank" rel="noopener noreferrer">a fonte dos elencos, ESPN</a>. A ficha do jogador é vinculada após o fim da rodada.</p><p id="club-list"></p></details>
+<noscript>Este jogo precisa de JavaScript habilitado para funcionar.</noscript>
+</main><footer>O PESO DA CAMISA · O futebol deixa pistas.<a href="jogos.html">Voltar aos jogos →</a></footer>
+</body></html>
