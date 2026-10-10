@@ -2,8 +2,11 @@
 title: "Garrincha: o homem que voltava para driblar de novo"
 date: 2026-10-10
 category: "Lendas do Futebol"
+image: "https://commons.wikimedia.org/wiki/Special:FilePath/Garrincha%20e%20o%20povo.jpg"
 description: "Das pernas tortas ao bicampeonato mundial: a história de Garrincha, o ponta que transformou o drible em diversão e ficou conhecido como a Alegria do Povo."
 ---
+
+*Foto de capa: Acervo Arquivo Nacional / Wikimedia Commons (domínio público).*
 
 Você sabe quem foi o jogador que era tão bom no drible que chegava a voltar para driblar o mesmo adversário de novo?
 
