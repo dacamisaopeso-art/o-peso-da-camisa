@@ -2,7 +2,9 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 require('../velha-dados.js');const d=globalThis.OPC_VELHA_DATA,c=require('../velha-core.js');
 const byName=name=>d.players.find(p=>p.name===name);
 const has=(name,cat)=>byName(name).categories.includes(cat);
-assert(d.players.length>=200);assert.equal(d.boards.length,1120);assert.equal(new Set(d.players.map(p=>p.id)).size,d.players.length);
+assert(d.players.length>=3000);assert.equal(d.boards.length,1120);assert.equal(new Set(d.players.map(p=>p.id)).size,d.players.length);assert.equal(new Set(d.players.map(p=>p.identity)).size,d.players.length);
+const sameNames=new Map();for(const p of d.players){const key=c.normalize(p.name),group=sameNames.get(key)||[];group.push(p);sameNames.set(key,group);}for(const group of sameNames.values())if(group.length>1)for(const p of group){assert(p.position);assert.notEqual(c.playerAge(p),null);if(p.deceased)assert(p.death);if(p.death)assert(c.playerDetails(p).includes('†'));}
+assert(byName('Wellington Paulista'));assert(byName('Juninho Pernambucano'));assert(byName('Juninho Paulista'));assert(!has('Raphinha','club:vitoria'));assert(has('Raphinha','club:vitoriaguimaraes'));assert(has('Garrincha','award:worldcup'));assert(has('Juninho Paulista','award:worldcup'));assert(!has('Juninho Paulista','award:copaamerica'));
 for(const p of d.players){assert(p.name&&p.modes.length&&p.categories.length&&p.sources.length);assert(!p.photo,'Fotos não condicionam nem compõem a base deste jogo');assert(p.sources.every(s=>/^https:\/\//.test(s)));}
 assert(d.categories.every(c=>!c.photo));assert(!fs.readFileSync(path.join(__dirname,'../velha.js'),'utf8').includes('p.photo'));
 assert.equal(byName('Zidane').nationality,'France');assert.equal(byName('Zlatan Ibrahimović').nationality,'Sweden');

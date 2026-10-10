@@ -4,17 +4,17 @@ Jogo original em `jogo-da-velha.html`, com a identidade preta e dourada OPC. O c
 
 ## Cobertura da publicação
 
-Coleta em 10/10/2026: **3,258 jogadores** atuais/históricos e **1,120 grades**, sem exigir disponibilidade de foto. Os universos se sobrepõem:
+Coleta em 10/10/2026: **4,485 jogadores** atuais/históricos e **1,120 grades**, sem exigir disponibilidade de foto. Os universos se sobrepõem:
 
-- Champions · cinco ligas: 460 jogadores.
-- Premier League: 130 jogadores.
-- LaLiga: 135 jogadores.
-- Serie A italiana: 173 jogadores.
-- Bundesliga: 74 jogadores.
-- Ligue 1: 113 jogadores.
-- Brasileirão Série A: 3,086 jogadores.
+- Champions · cinco ligas: 879 jogadores.
+- Premier League: 521 jogadores.
+- LaLiga: 148 jogadores.
+- Serie A italiana: 209 jogadores.
+- Bundesliga: 86 jogadores.
+- Ligue 1: 139 jogadores.
+- Brasileirão Série A: 3,914 jogadores.
 
-Há 300 grupos de nomes repetidos. Neles, busca, seleção e casa preenchida mostram idade e posição. **† indica a idade ao falecer**, calculada entre nascimento e morte, nunca a idade que o atleta teria hoje. Para vivos, a idade se atualiza pelo aniversário. Se nome, idade e posição ainda coincidirem, a busca e a casa mostram a data de nascimento completa. Homônimos sem datas/posição verificáveis ficam fora da base selecionável. Apelidos conhecidos são preservados; exemplos: Wellington Paulista, Juninho Pernambucano e Juninho Paulista. Dois IDs nunca representam o mesmo atleta.
+Há 399 grupos de nomes repetidos. Neles, busca, seleção e casa preenchida mostram idade e posição. **† indica a idade ao falecer**, calculada entre nascimento e morte, nunca a idade que o atleta teria hoje. Para vivos, a idade se atualiza pelo aniversário. Se nome, idade e posição ainda coincidirem, a busca e a casa mostram a data de nascimento completa. Homônimos sem datas/posição verificáveis ficam fora da base selecionável. Apelidos conhecidos são preservados; exemplos: Wellington Paulista, Juninho Pernambucano e Juninho Paulista. Dois IDs nunca representam o mesmo atleta.
 
 Esta é uma base parcial, não um inventário de todo jogador da história ou de todos os elencos atuais. Clubes das categorias pertencem às primeiras divisões representadas pela coleta de 2026/27 (Brasil: 2026). O universo histórico considera passagens profissionais verificáveis em clubes tradicionais dessas ligas; não reconstrói a divisão de cada clube em cada ano. Champions no menu significa as cinco ligas combinadas e não exige participação na competição da UEFA. As restrições de fotos e clubes do Quem Sou Eu não se aplicam a esta base histórica independente.
 
