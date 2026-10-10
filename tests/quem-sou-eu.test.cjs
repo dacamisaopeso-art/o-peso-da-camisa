@@ -1,4 +1,5 @@
 const assert=require('node:assert/strict');
+const fs=require('node:fs'),path=require('node:path');
 const game=require('../quem-sou-eu.js');
 require('../quem-sou-eu-dados.js');
 const data=global.OPC_PLAYERS,players=data.players.map(p=>game.enrich(p,data.updated));
@@ -6,9 +7,10 @@ assert.equal(data.clubs.length,116);
 assert.equal(new Set(players.map(p=>p.id)).size,players.length);
 assert(players.every(p=>p.nationality&&p.club&&p.league&&p.birth&&p.age!==null&&Number.isInteger(p.number)&&p.detailedPosition));
 assert(players.every(p=>['GOL','ZAG','LE','LD','VOL','MC','MEI','PD','PE','ATA'].includes(p.position)));
+assert(players.every(p=>p.photo&&p.photo.author&&p.photo.license&&p.photo.licenseUrl&&p.photo.filePage&&fs.existsSync(path.join(__dirname,'..',p.photo.path))));
 for(const [league,count] of Object.entries({'eng.1':20,'esp.1':20,'ita.1':20,'ger.1':18,'fra.1':18,'bra.1':20})){
   assert.equal(data.clubs.filter(c=>c.league===league).length,count);
-  assert(data.clubs.filter(c=>c.league===league).every(c=>players.some(p=>p.league===league&&p.clubId===c.id)));
+  assert(game.poolFor(players,league).length>=10,'Cada modo precisa manter uma base jogável suficiente');
   assert(game.poolFor(players,league).every(p=>p.league===league));
 }
 assert(game.poolFor(players,'europe').every(p=>p.league!=='bra.1'));

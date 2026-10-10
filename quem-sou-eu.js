@@ -1,4 +1,4 @@
-/* Original OPC game. No external game code, photographs or logos. */
+/* Original OPC game; licensed Commons photographs, no reference-game code or logos. */
 (function (root) {
   'use strict';
   
@@ -61,7 +61,7 @@
   if(typeof document==='undefined')return;
   const $=id=>document.getElementById(id), data=root.OPC_PLAYERS;
   if(!data||!data.players.length){$('start').disabled=true;$('coverage').textContent='Não foi possível carregar a base. Atualize a página para tentar novamente.';return;}
-  const players=data.players.map(p=>enrich(p,data.updated)).filter(p=>p.detailedPosition&&p.age!==null&&p.nationality&&p.club&&p.league&&p.number!==null);
+  const players=data.players.map(p=>enrich(p,data.updated)).filter(p=>p.detailedPosition&&p.age!==null&&p.nationality&&p.club&&p.league&&p.number!==null&&p.photo&&p.photo.path&&p.photo.author&&p.photo.license);
   let round=null, mode='eng.1', selected=null, suggestions=[], active=-1;
   function node(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;}
   function display(p,f){if(p[f]===null||p[f]===undefined)return '?';if(f==='league')return data.leagues[p[f]];if(f==='nationality')return countryNames[p[f]]||p[f];return String(p[f]);}
@@ -72,8 +72,8 @@
   }
   function coverage(){const p=poolFor(players,mode),clubs=new Set(p.map(x=>x.clubId));$('coverage').textContent=`${p.length.toLocaleString('pt-BR')} jogadores disponíveis · ${clubs.size} clubes · Base de ${data.updated.split('-').reverse().join('/')}. Todos os nomes da base podem ser chutados em qualquer dificuldade.`;}
   coverage();
-  $('data-summary').textContent=`${new Set(players.map(p=>p.clubId)).size} clubes com atletas elegíveis e ${players.length.toLocaleString('pt-BR')} jogadores completos. Atualização: ${data.updated.split('-').reverse().join('/')}. Europa: 2026/27; Brasil: 2026. A coleta consultou ${data.clubs.length} clubes. Atletas sem qualquer categoria ou com identidade conflitante são excluídos do sorteio e da busca.`;
-  for(const [id,name] of Object.entries(data.leagues)){$('club-list').append(node('p',`${name} (${data.clubs.filter(c=>c.league===id).length} clubes / ${players.filter(p=>p.league===id).length} jogadores): ${data.clubs.filter(c=>c.league===id).map(c=>c.name).join(', ')}.`,'club-group'));}
+  $('data-summary').textContent=`${new Set(players.map(p=>p.clubId)).size} clubes com atletas elegíveis e ${players.length.toLocaleString('pt-BR')} jogadores com todas as categorias e foto licenciada. Atualização: ${data.updated.split('-').reverse().join('/')}. Europa: 2026/27; Brasil: 2026. A coleta consultou ${data.clubs.length} clubes. Atletas sem qualquer categoria, sem foto reutilizável ou com identidade conflitante são excluídos do sorteio e da busca.`;
+  for(const [id,name] of Object.entries(data.leagues)){const available=players.filter(p=>p.league===id),clubIds=new Set(available.map(p=>p.clubId));$('club-list').append(node('p',`${name} (${clubIds.size} clubes com jogadores elegíveis / ${available.length} jogadores): ${data.clubs.filter(c=>c.league===id&&clubIds.has(c.id)).map(c=>c.name).join(', ')}.`,'club-group'));}
   function closeSuggestions(){suggestions=[];active=-1;$('suggestions').replaceChildren();$('suggestions').hidden=true;$('search').setAttribute('aria-expanded','false');$('search').removeAttribute('aria-activedescendant');}
   function choose(index){const p=suggestions[index];if(!p)return;selected=p.id;$('search').value=p.name;closeSuggestions();$('search').focus();}
   function search(){
@@ -94,8 +94,12 @@
   function render(){
     $('remaining').textContent=round.max-round.guesses.length;
     $('portrait').style.filter=`blur(${blur(round.difficulty,round.guesses.length,round.max,round.ended)}px)`;
-    $('shirt').textContent=round.target.number??'?';$('initials').textContent=round.target.name.split(' ').filter(Boolean).map(s=>s[0]).slice(0,3).join('');
-    $('portrait').setAttribute('aria-label',round.ended?`Ilustração genérica de ${round.target.name}`:'Retrato gráfico misterioso com blur');
+    const photo=round.target.photo;
+    if($('portrait').getAttribute('src')!==photo.path)$('portrait').src=photo.path;
+    $('portrait').alt=round.ended?`Foto de ${round.target.name}`:'Foto do jogador misterioso com blur';
+    const credit=$('photo-credit');credit.replaceChildren(node('span',`Foto: ${photo.author} · `));
+    for(const [text,url] of [[photo.license,photo.licenseUrl],['Wikimedia Commons',photo.filePage]]){const link=node('a',text);link.href=url;link.target='_blank';link.rel='noopener noreferrer';credit.append(link,node('span',' · '));}
+    credit.append(node('span','Redimensionada em WebP. Exibição com enquadramento e blur progressivo.'));
     $('progress').replaceChildren(...Array.from({length:round.max},(_,i)=>node('i',undefined,i<round.guesses.length?'used':'')));
     $('hints').replaceChildren(...round.hints.map(f=>node('span',`${labels[f]}: ${display(round.target,f)}`,'hint-chip')));
     $('guess').disabled=round.ended;$('search').disabled=round.ended;

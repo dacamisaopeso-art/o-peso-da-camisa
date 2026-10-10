@@ -81,10 +81,20 @@ def main():
                 excluded[field] += 1
             continue
         complete.append(player)
-    result = {'updated': updated, 'excluded': excluded,
+    eligible_before_photos = len(complete)
+    photos = {photo['id']: photo for photo in json.loads((ROOT / 'docs/quem-sou-eu-fotos.json').read_text(encoding='utf-8'))}
+    with_photos = []
+    for player in complete:
+        photo = photos.get(player['id'])
+        if not photo or not (ROOT / photo['path']).is_file() or not all(photo.get(f) for f in ['author', 'license', 'licenseUrl', 'filePage']):
+            continue
+        player['photo'] = {field: photo[field] for field in ['path', 'author', 'license', 'licenseUrl', 'filePage']}
+        with_photos.append(player)
+    excluded['photo'] = eligible_before_photos - len(with_photos)
+    result = {'updated': updated, 'excluded': excluded, 'eligibleBeforePhotos': eligible_before_photos,
               'listedRecords': listed_records,
               'leagues': LEAGUES, 'clubs': clubs, 'conflicts': conflicts, 'resolutions': resolutions,
-              'players': complete}
+              'players': with_photos}
     target = ROOT / 'quem-sou-eu-dados.js'
     target.write_text('// Fatos de elencos; fontes e limitações em docs/quem-sou-eu.md.\n'
                       'globalThis.OPC_PLAYERS = ' + json.dumps(result, ensure_ascii=False, separators=(',', ':')) + ';\n', encoding='utf-8')
