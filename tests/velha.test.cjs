@@ -2,10 +2,12 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 require('../velha-dados.js');const d=globalThis.OPC_VELHA_DATA,c=require('../velha-core.js');
 const byName=name=>d.players.find(p=>p.name===name);
 const has=(name,cat)=>byName(name).categories.includes(cat);
+for(const name of ['Pelé','Neymar','Ronaldo','Ronaldinho','Romário'])assert(byName(name).modes.includes('bra.1'));
+assert(has('Pelé','club:santos'));assert(has('Pelé','award:brasileiro'));assert(has('Pelé','award:libertadores'));assert(has('Pelé','award:worldcup'));assert(!has('Pelé','award:ballondor'));assert(!has('Pelé','award:copaamerica'));assert.equal(c.playerAge(byName('Pelé')),82);
 assert(d.players.length>=3000);assert.equal(d.boards.length,1120);assert.equal(new Set(d.players.map(p=>p.id)).size,d.players.length);assert.equal(new Set(d.players.map(p=>p.identity)).size,d.players.length);
 const sameNames=new Map();for(const p of d.players){const key=c.normalize(p.name),group=sameNames.get(key)||[];group.push(p);sameNames.set(key,group);}for(const group of sameNames.values())if(group.length>1)for(const p of group){assert(p.position);assert.notEqual(c.playerAge(p),null);if(p.deceased)assert(p.death);if(p.death)assert(c.playerDetails(p).includes('†'));}
 assert(byName('Wellington Paulista'));assert(byName('Juninho Pernambucano'));assert(byName('Juninho Paulista'));assert(!has('Raphinha','club:vitoria'));assert(has('Raphinha','club:vitoriaguimaraes'));assert(has('Garrincha','award:worldcup'));assert(has('Juninho Paulista','award:worldcup'));assert(!has('Juninho Paulista','award:copaamerica'));
-for(const p of d.players){assert(p.name&&p.modes.length&&p.categories.length&&p.sources.length);assert(!p.photo,'Fotos não condicionam nem compõem a base deste jogo');assert(p.sources.every(s=>/^https:\/\//.test(s)));}
+for(const p of d.players){assert(p.name&&p.modes.length&&p.categories.length&&p.sources.length);assert(!/[<>{}]|-->|br entries/.test(p.name),'Nome conhecido sem resíduos de marcação: '+p.name);assert(!p.photo,'Fotos não condicionam nem compõem a base deste jogo');assert(p.sources.every(s=>/^https:\/\//.test(s)));}
 assert(d.categories.every(c=>!c.photo));assert(!fs.readFileSync(path.join(__dirname,'../velha.js'),'utf8').includes('p.photo'));
 assert.equal(byName('Zidane').nationality,'France');assert.equal(byName('Zlatan Ibrahimović').nationality,'Sweden');
 assert(has('Romário','club:fluminense')&&has('Romário','club:flamengo'));assert(has('Ronaldinho','club:fluminense')&&has('Ronaldinho','club:flamengo'));assert(has('Gerson','club:fluminense')&&has('Gerson','club:flamengo'));
@@ -37,3 +39,5 @@ assert.equal(c.playerDetails({birth:"1920-10-11",death:"1980-10-10",position:"AT
 assert.equal(c.playerDetails({birth:"1990-10-11",position:"MC"},new Date(2026,9,10)),"35 anos · MC");
 assert.equal(c.playerAge({birth:"1990-10-11"},new Date(2026,9,11)),36);
 assert.equal(c.playerAge({birth:"1920-10-11",deceased:true}),null);
+for(const p of d.players.filter(p=>['Q178683','Q156822','Q342474','Q318184'].includes(p.identity)))assert(p.categories.includes('with:'+byName('Ronaldo').id));
+for(const p of d.players.filter(p=>['Q27107167','Q724092'].includes(p.identity)))assert(!p.categories.includes('with:'+byName('Ronaldo').id),'A final de 2002 não pertence a um homônimo');
