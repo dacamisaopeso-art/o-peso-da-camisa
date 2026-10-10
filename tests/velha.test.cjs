@@ -10,7 +10,7 @@ assert(has('Romário','club:fluminense')&&has('Romário','club:flamengo'));asser
 assert(has('Ronaldo','club:corinthians'));assert(has('Kaká','club:realmadrid'));assert(has('Marcelo','club:realmadrid'));assert(has('Vinícius Júnior','club:realmadrid'));
 for(const name of ['Martin Ødegaard','Declan Rice','William Saliba','Nicolò Barella','Roberto Carlos','Romário'])assert(!has(name,'award:ballondor'),name+' não venceu a Bola de Ouro europeia');
 for(const name of ['Cristiano Ronaldo','Kaká','Lionel Messi','Rivaldo','Ronaldinho','Ronaldo','Zidane'])assert(has(name,'award:ballondor'));
-assert(!has('Achraf Hakimi','award:worldcup'));assert(!has('Neymar','award:copaamerica'));assert(!has('Ronaldo','award:champions'));assert(!has('Denzel Dumfries','club:realmadrid'));assert(!has('Felipe Melo','award:copaamerica'));
+assert(!has('Achraf Hakimi','award:worldcup'));assert(!has('Neymar','award:copaamerica'));assert(!has('Ronaldo','award:champions'));assert(has('Denzel Dumfries','club:realmadrid'));assert(!has('Felipe Melo','award:copaamerica'));
 for(const name of ['Emiliano Martínez','Julián Álvarez','Nicolás Tagliafico','Lionel Messi','Romário','Ronaldo'])assert(has(name,'award:worldcup'));
 for(const name of ['Yuri Alberto','Paulinho','Germán Cano','Fred','Gabriel Barbosa','Romário'])assert(has(name,'award:brtop'));
 function assignment(sets){const order=sets.map((s,i)=>i).sort((a,b)=>sets[a].length-sets[b].length),used=new Set();const walk=k=>{if(k===9)return true;for(const p of sets[order[k]]){if(used.has(p.id))continue;used.add(p.id);if(walk(k+1))return true;used.delete(p.id);}return false;};return walk(0);}
@@ -30,3 +30,8 @@ let trailing={...structuredClone(series),config:{...series.config,format:'rounds
 let botState=c.start(synthetic,{mode:'test',difficulty:'normal',target:1,steal:false},()=>0);botState.cells[0]={owner:0,playerId:'0'};botState.cells[1]={owner:0,playerId:'1'};botState.used=['0','1'];assert.equal(c.bot(synthetic,botState,()=>0).cell,2,'Bot termina sua linha');botState.turn=1;assert.equal(c.bot(synthetic,botState,()=>0).cell,2,'Bot bloqueia vitória imediata');
 for(let i=0;i<150;i++){const b=d.boards[i%d.boards.length];let game=c.start(d,{mode:b.mode,difficulty:b.difficulty,target:1,steal:i%2===0});for(let j=0;j<40&&!game.roundEnded;j++){const m=c.bot(d,game);const out=m?c.apply(d,game,m.cell,m.playerId):c.pass(game);assert(out.ok);if(m)assert(out.correct);game=out.state;}assert(game.roundEnded);assert.equal(new Set(game.used).size,game.used.length);}
 console.log(`OK: ${d.players.length} jogadores, ${d.boards.length} grades; todas as interseções e nove respostas distintas; dados críticos, 8 linhas, roubo, bot, turnos, empate e série.`);
+
+assert.equal(c.playerDetails({birth:"1920-10-11",death:"1980-10-10",position:"ATA"}),"59 anos † · ATA");
+assert.equal(c.playerDetails({birth:"1990-10-11",position:"MC"},new Date(2026,9,10)),"35 anos · MC");
+assert.equal(c.playerAge({birth:"1990-10-11"},new Date(2026,9,11)),36);
+assert.equal(c.playerAge({birth:"1920-10-11",deceased:true}),null);

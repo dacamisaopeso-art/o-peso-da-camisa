@@ -1,59 +1,70 @@
 # Jogo da Velha Futebol — OPC
 
-Jogo original estático em `jogo-da-velha.html`. Usa o cruzamento de duas categorias para ocupar uma casa, com vitória em linha, coluna ou diagonal. Não copia código, imagens, layout ou marcas do jogo de referência. Camisas, troféus, bola e chuteira são ilustrações simbólicas originais; fotos reais possuem créditos próprios.
+Jogo original em `jogo-da-velha.html`, com a identidade preta e dourada OPC. O cruzamento de dois critérios determina se um nome ocupa uma casa; três casas em linha, coluna ou diagonal vencem. Não usa fotografias, retratos ou imagens de atletas. As camisas e ícones são desenhos SVG originais. Peso usa uma camisa dourada com escudo simbólico; Tradição, uma camisa marfim com estrela. Ambos têm texto, forma e cor para identificar a posse.
 
-## Publicação jogável
+## Cobertura da publicação
 
-- Contra o bot e duas pessoas no mesmo aparelho.
-- Premier League, LaLiga, Serie A italiana, Bundesliga, Ligue 1, Brasileirão e Europa combinada, chamada Champions no menu. Esse nome representa o universo das cinco ligas; não comprova participação na Champions.
-- 225 jogadores atuais/históricos com foto reutilizável. Europa: 200; Brasil: 63. Há atletas nos dois universos. Pools individuais: Inglaterra 81, Espanha 61, Itália 65, Alemanha 46, França 52.
-- 1.120 grades pré-validadas: 80 por modo/dificuldade. Normal exige pelo menos 3 respostas por casa; difícil exige pelo menos 2 e uma casa com exatamente 2.
-- Todas as grades têm uma atribuição possível de nove nomes diferentes às nove casas. A base usada para avaliar os mínimos é a mesma do autocomplete e da validação.
-- Total fixo de 1, 2, 3 ou 5 rodadas, ou primeiro a 1, 2, 3 ou 5 vitórias. No total fixo, empates contam como rodada; no primeiro a vitórias, não contam como ponto. O placar final compara os pontos de toda a série.
-- Roubo opcional: até duas casas adversárias por pessoa/rodada, com nomes novos. O nome de uma casa roubada continua consumido. Não se substitui uma casa própria. Uma grade cheia sem vencedor ou 40 ações é empate.
-- Erro e passar vez transferem o turno. Seleção inválida de nome/casa não altera o estado. Autocomplete com teclado e acentos, fotos nas casas corretas, dono indicado por símbolo e cor, respostas/fontes disponíveis ao fim da rodada.
-- A cada rodada alterna quem começa e mudam as seis posições dos critérios. O motor prefere seis categorias diferentes da grade anterior quando possível. Pode reaparecer categoria em outra posição.
-- Bot usa respostas válidas e prioriza vencer, bloquear, centro e roubos. Conhece a base; não simula desconhecimento humano. A dificuldade altera os cruzamentos, não o conhecimento do bot.
-- Partida local salva no navegador; pode ser retomada. Reinício/saída cancela a ação pendente do bot. Sem anúncios, analytics ou chamadas de serviço durante partidas locais.
+Coleta em 10/10/2026: **3,258 jogadores** atuais/históricos e **1,120 grades**, sem exigir disponibilidade de foto. Os universos se sobrepõem:
 
-## Curadoria e limitações
+- Champions · cinco ligas: 460 jogadores.
+- Premier League: 130 jogadores.
+- LaLiga: 135 jogadores.
+- Serie A italiana: 173 jogadores.
+- Bundesliga: 74 jogadores.
+- Ligue 1: 113 jogadores.
+- Brasileirão Série A: 3,086 jogadores.
 
-Snapshot 10/10/2026. Elencos atuais e identificadores vieram da base ESPN já auditada do Quem Sou Eu; identidades foram cruzadas pelo Wikidata e nascimento. A nova base combina atletas dessa coleta com lendas e perfis históricos. **Passagens por clubes e títulos/prêmios estão limitados aos fatos conferidos até 2025**, explicitamente indicado na configuração e nas categorias. Novas transferências/títulos de 2026 exigem revisão própria antes de inclusão. Isso evita usar notícias de contratação ou temporadas recentes ainda sem conferência suficiente como histórico confirmado.
+Há 300 grupos de nomes repetidos. Neles, busca, seleção e casa preenchida mostram idade e posição. **† indica a idade ao falecer**, calculada entre nascimento e morte, nunca a idade que o atleta teria hoje. Para vivos, a idade se atualiza pelo aniversário. Se nome, idade e posição ainda coincidirem, a busca e a casa mostram a data de nascimento completa. Homônimos sem datas/posição verificáveis ficam fora da base selecionável. Apelidos conhecidos são preservados; exemplos: Wellington Paulista, Juninho Pernambucano e Juninho Paulista. Dois IDs nunca representam o mesmo atleta.
 
-Para clube, foi consultada a ficha profissional do atleta, com pelo menos uma atuação; times de base/reserva e empréstimos sem atuação não entram. Clubes que aparecem nas categorias pertencem às primeiras divisões representadas na coleta (temporadas europeias 2026/27 e Brasil 2026). Não são sorteados clubes de outros países ou divisões naquele modo. Elegibilidade histórica de liga usa passagens profissionais conferidas em clubes tradicionais daquela primeira divisão; a lista é conservadora, não um catálogo completo de todos os clubes promovidos/rebaixados e temporadas. A nacionalidade segue cidadania da fonte, não necessariamente a seleção defendida. Os grupos de posição herdam a curadoria detalhada do Quem Sou Eu, quando disponível.
+Esta é uma base parcial, não um inventário de todo jogador da história ou de todos os elencos atuais. Clubes das categorias pertencem às primeiras divisões representadas pela coleta de 2026/27 (Brasil: 2026). O universo histórico considera passagens profissionais verificáveis em clubes tradicionais dessas ligas; não reconstrói a divisão de cada clube em cada ano. Champions no menu significa as cinco ligas combinadas e não exige participação na competição da UEFA. As restrições de fotos e clubes do Quem Sou Eu não se aplicam a esta base histórica independente.
 
-Títulos foram conferidos em listas de honrarias dos perfis, com distinção entre campeão, vice, terceiro, indicação e vencedor de prêmio. Temporadas encerradas após 2025 não foram usadas. Bola de Ouro e Copa do Mundo receberam revisão explícita de vencedores; premiações adicionais/retrospectivas de Romário não são tratadas como Ballon d’Or oficial. O título da Copa do Mundo considera membro do elenco campeão, inclusive reserva, e não exige presença na final. “Jogou com” tem critério diferente: atuação simultânea comprovada em partida da equipe principal. Não é inferido apenas de anos de contrato ou convocação.
+## Critérios e fontes
 
-Categorias de companheiros incluídas: Messi, Cristiano Ronaldo, Neymar, Ronaldo, Ronaldinho e Romário. Cobertura parcial: não se presume que os nomes não listados jamais tenham jogado juntos. Artilharia significa gols de uma edição, incluindo empate na liderança. As categorias só entram na grade se há respostas suficientes no pool; por isso exemplos como Remo/Chapecoense ou algumas nacionalidades podem não aparecer nesta primeira base. Não se inventam respostas para alcançar o mínimo.
+Perfis históricos foram descobertos em categorias de clubes e identidades Wikidata, mas **estar numa categoria não confirma uma resposta**. A entrada exige ficha profissional com clube e ao menos uma atuação. Base, reservas/B/II e empréstimos sem atuação são excluídos. Nomes de clubes e suas formas extensas são normalizados para evitar rejeitar a mesma passagem por uma diferença de escrita.
 
-Evidências estão em `jogo-da-velha-fontes.json`, com atleta, categoria, fonte, método e temporadas quando disponíveis. Perfis Wikipedia fornecem fichas históricas e referências; ESPN fornece a coleta factual atual; conferências adicionais usam publicadores oficiais:
+A extração estruturada das biografias Wikipedia filtra os fatos e registra fontes por atleta/categoria em `jogo-da-velha-fontes.json`; não é revisão manual integral de milhares de fichas. A nacionalidade vem da informação explícita do perfil, da cidadania Wikidata ou da base ESPN previamente conferida por identidade/nascimento. Não é inferida de aparência, nome, clube ou local de nascimento. Isso não constitui uma lista exclusiva de seleções nacionais defendidas. A posição usa o perfil profissional; quando a fonte informa somente um grupo amplo, não se inventa uma posição mais específica.
 
-- [FIFA: Brasil de 2002](https://inside.fifa.com/es/news/el-brasil-de-2002-en-cifras-2925832), [DFB: final 2002 e atuações](https://datencenter.dfb.de/datencenter/weltmeisterschaft/2002-in-japan-suedkorea/finale/deutschland-brasilien-137420).
-- [FFF: escalação da final de 2022](https://www.fff.fr/article/9089-argentine-france-les-compositions.html), [relatório FIFA](https://fdp.fifa.org/assetspublic/ce44/r2864/pdf/FullTimeMatchReport-English.pdf).
-- [FPF: Portugal–Irlanda 2024](https://www.fpf.pt/pt/selecoes/futebol-masculino/selecao-a/jogos/ficha-de-jogo/match/2103363).
-- [PSG: Bayern–PSG 2023](https://en.psg.fr/teams/first-team/content/paris-knocked-out-in-the-last-16-match-report-paris-saint-germain-fc-bayern-munich-psg-ucl-22-23).
-- [CBF: Brasil–Coreia 2022](https://www.cbf.com.br/futebol-brasileiro/jogos/amistoso/selecao-brasileira/2022/431525/coreia-do-sul-x-brasil/822681?view=escalacao), [relatório FIFA das oitavas](https://www.fifatrainingcentre.com/media/native/world-cup-2022/report_128073.pdf).
-- [CBF: artilharia 2024](https://www.cbf.com.br/futebol-brasileiro/noticias/detalhes/competicoes-campeonato-brasileiro-serie-a/alerrandro-e-yuri-alberto-ganham-o-trofeu-roberto-dinamite), [Atlético: Paulinho 2023](https://atletico.com.br/pelo-galo-paulinho-lidera-ranking-no-futebol-brasileiro/), [Barcelona: Romário e artilharias](https://players.fcbarcelona.com/en/player/759-romario-romario-souza-faria), [CBF: Cano/Gabigol](https://www.cbf.com.br/futebol-brasileiro/noticias/jogadores-imortais/a/kaio-jorge-e-artilheiro-do-brasileirao-e-da-copa-do-brasil-e-repete-marca-historica).
+Passagens profissionais incluem a coleta de outubro de 2026. Títulos e prêmios usam somente edições encerradas até **2025**. Listas explícitas de conquistas são filtradas para excluir vice, terceiros, indicações e colocações. Honrarias de treinador são separadas das de jogador. Ausência na base significa ausência de comprovação incorporada, não uma conclusão de que o atleta jamais conquistou algo. Lacunas continuam possíveis e são uma limitação declarada da curadoria.
 
-Fotos podem ser de qualquer época e traje, conforme autorização específica do usuário para este novo jogo. Isso **não altera** a regra de clube atual e cinco anos do Quem Sou Eu. Reutilização de fotografias da base anterior preserva a licença e os créditos; novas fotografias históricas tiveram identidade conferida visualmente e licença do arquivo consultada no Commons. As imagens incorporadas são do Wikimedia Commons, incluindo fotografias originadas em Flickr e publicadores brasileiros, com CC BY/CC BY-SA/CC0/domínio público individuais. Não se afirma que todas sejam domínio público. `jogo-da-velha-fotos.json` e a página de créditos preservam autor, licença e origem; redimensionamento WebP e enquadramento são informados. Não foram importadas fotos de Getty, Transfermarkt ou clubes sem autorização.
+Copa do Mundo considera o elenco campeão, inclusive reservas. Bola de Ouro significa o Ballon d’Or da France Football/fase FIFA, não o melhor jogador de uma Copa, Bola de Prata ou prêmios retrospectivos. Artilharia significa liderar os gols de uma edição, inclusive empate. “Jogou com” exige atuação juntos em uma partida da equipe principal ou seleção principal; não é deduzido apenas de contratos ou convocações sobrepostos. A cobertura dessa categoria permanece menor, com comprovações para Messi, Cristiano Ronaldo, Neymar, Ronaldo, Ronaldinho e Romário.
 
-## Online preparado, ainda não conectado
+Conferências adicionais e exemplos de fontes primárias:
 
-O GitHub Pages hospeda os arquivos estáticos. Salas entre aparelhos e busca pública dependem de um serviço compartilhado, que o usuário ainda não possui. A interface informa essa situação e não inicia uma espera falsa. A integração Supabase está preparada, mas **não foi ativada nem testada contra um projeto real**. O modo local e o bot não dependem dela.
+- [Real Madrid: Dumfries, carreira e partidas em 2026](https://www.realmadrid.com/en-US/football/first-team/players/denzel-dumfries).
+- [Fortaleza: passagem de Wellington Paulista](https://fortaleza1918.com.br/comunicado-oficial-wellington-paulista/).
+- [Vasco: Juninho Pernambucano na final do Brasileiro de 1997](https://vasco.com.br/futebol/tricampeonato-brasileiro-do-vasco-completa-18-anos/).
+- [FIFA: Brasil de 2002](https://inside.fifa.com/es/news/el-brasil-de-2002-en-cifras-2925832), [DFB: final e atuações](https://datencenter.dfb.de/datencenter/weltmeisterschaft/2002-in-japan-suedkorea/finale/deutschland-brasilien-137420).
+- [FFF: final de 2022](https://www.fff.fr/article/9089-argentine-france-les-compositions.html), [FIFA: relatório da final](https://fdp.fifa.org/assetspublic/ce44/r2864/pdf/FullTimeMatchReport-English.pdf).
+- [FPF: Portugal–Irlanda 2024](https://www.fpf.pt/pt/selecoes/futebol-masculino/selecao-a/jogos/ficha-de-jogo/match/2103363), [PSG: Bayern–PSG 2023](https://en.psg.fr/teams/first-team/content/paris-knocked-out-in-the-last-16-match-report-paris-saint-germain-fc-bayern-munich-psg-ucl-22-23).
+- [CBF: artilharia de 2024](https://www.cbf.com.br/futebol-brasileiro/noticias/detalhes/competicoes-campeonato-brasileiro-serie-a/alerrandro-e-yuri-alberto-ganham-o-trofeu-roberto-dinamite), [Atlético: Paulinho em 2023](https://atletico.com.br/pelo-galo-paulinho-lidera-ranking-no-futebol-brasileiro/).
 
-Quando o usuário decidir ativar:
+`fontes-jogo-da-velha.html` permite buscar os nomes e consultar comprovações. O endereço antigo de créditos redireciona para essa consulta sem imagens. Arquivos fotográficos antigos não integram este jogo; outros jogos mantêm seus próprios critérios e créditos.
 
-1. Criar um projeto Supabase e habilitar **Anonymous Sign-Ins** em Authentication. Não é necessário pedir e-mail ao jogador.
-2. Executar `online/velha-schema.sql` no SQL Editor; depois `online/velha-catalogo.sql`.
-3. Colocar a Project URL e a chave **pública/publishable ou anon** em `velha-online-config.js`. Nunca colocar chave secret/service_role no site.
-4. Publicar esse arquivo e validar com dois navegadores/aparelhos: criar/entrar pelo código, duas pessoas na fila, turnos, erro, roubo, próxima rodada, placar final, saída, interrupção e expiração. Testar também tentativa de acesso por uma terceira identidade e jogadas com versão/turno incorretos antes de abrir ao público.
+## Regras e equilíbrio
 
-Referências oficiais: [acesso anônimo](https://supabase.com/docs/guides/auth/auth-anonymous), [proteção por RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
+Bot e duas pessoas no mesmo aparelho são jogáveis. Cada modo/dificuldade tem 80 grades. Normal exige pelo menos três nomes por casa; difícil exige pelo menos dois e ao menos uma casa com exatamente dois. Todas as grades permitem nove nomes distintos. Os mínimos usam a mesma base do autocomplete e da validação. Critérios só entram no sorteio se cumprem essas condições; nunca são inventadas respostas para aumentar cobertura.
 
-Servidor: catálogo privado, tabelas com RLS e acesso direto revogado. Apenas o RPC autorizado aceita ações. Identidade é obtida do JWT, não enviada como dono pelo cliente. Bloqueio de linha e versão impedem duas jogadas simultâneas; respostas, posse, limites de roubo e placar são calculados no servidor. Código de 10 caracteres; duas pessoas por sala; espera de 15 minutos e limpeza de salas antigas após 24 horas em chamadas subsequentes. Pareamento serializado e com configurações fixas: Europa, normal, sem roubo, primeiro a três. Consulta periódica substitui necessidade de publicar tabelas via Realtime. Durante atualização de catálogo, partidas de versão diferente são recusadas e precisam ser reiniciadas.
+Pode-se escolher 1, 2, 3 ou 5 rodadas, ou primeiro a 1, 2, 3 ou 5 vitórias. Empates contam como rodada no total fixo, sem pontuar. Quem inicia alterna e as seis posições dos critérios mudam na rodada seguinte; o motor prefere seis categorias novas quando possível.
 
-## Manutenção e validação
+Roubo opcional: dois por pessoa/rodada, com outro nome ainda não usado. O nome da casa roubada continua consumido. Não se troca uma casa própria. Grade cheia sem vencedor ou 40 ações é empate. Erro e passar transferem o turno; seleção inválida não altera a partida. O bot conhece os nomes válidos e prioriza vitória, bloqueio, centro e roubos. A dificuldade altera o desafio das interseções, não o conhecimento do bot.
 
-Não há coleta ou publicação automática desta curadoria histórica. Para ampliar, conferir identidade/foto/licença, passagem profissional, título ou partida de companheiros; registrar a evidência; atualizar jogador/categorias e gerar novas grades com os mínimos e nove respostas distintas. Bump de versão em dados e URLs de assets evita caches antigos; atualizar também o catálogo online. `scripts/gerar-velha-online.cjs` gera o catálogo SQL a partir da base publicada.
+Partidas locais são salvas no navegador e podem ser retomadas. Sair/reiniciar cancela a ação pendente do bot. Sem anúncios ou esperas falsas.
 
-`node tests/velha.test.cjs` verifica todas as interseções e atribuições, oito linhas de vitória, turnos, erros, roubos/limites/reutilização, empates, rodízio dos seis critérios, séries e bot, incluindo partidas simuladas. Há casos factuais contra indicação à Bola de Ouro, confusão de Copa América/Confederações e Copa do Mundo/colocação, além dos exemplos Flamengo–Fluminense e Real Madrid–brasileiro. Sintaxe dos arquivos JavaScript, decodificação de todas as imagens e apresentação pública em computador/celular também são conferidas na publicação.
+## Online preparado, aguardando serviço
+
+GitHub Pages hospeda arquivos estáticos. Salas entre aparelhos e pareamento exigem um serviço compartilhado; a integração Supabase está preparada, sem projeto conectado. Bot e partida local funcionam sem ele. Não foi validada contra um serviço real.
+
+Para ativar posteriormente:
+
+1. Criar um projeto Supabase e habilitar Anonymous Sign-Ins em Authentication.
+2. Executar `online/velha-schema.sql` e depois `online/velha-catalogo.sql` no SQL Editor.
+3. Preencher URL do projeto e chave **pública/publishable ou anon** em `velha-online-config.js`; nunca usar secret/service_role.
+4. Publicar e testar dois aparelhos: código, fila, turnos, erro, roubo, rodadas, placar, saída, expiração e acesso indevido por terceira identidade.
+
+Referências: [autenticação anônima](https://supabase.com/docs/guides/auth/auth-anonymous), [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security). O servidor preparado valida catálogo, turno, posse, limite de roubos e placar; usa identidade JWT, bloqueio de linha e versão. Catálogo privado e acesso direto revogado. Pareamento público usa Europa, normal, sem roubo e primeiro a três. Não são criados adversários ou salas fictícias.
+
+## Validação e manutenção
+
+`node tests/velha.test.cjs` verifica interseções, nove respostas distintas, oito linhas de vitória, turnos, erros, roubos/limites/reutilização, empates, rodízio de critérios, séries e partidas do bot. Também verifica fatos críticos, identidades únicas, metadados dos homônimos e cálculos de idade/aniversário/morte. Verificação de sintaxe e apresentação em computador/celular completam a publicação.
+
+Ampliações exigem dados comprováveis e regeneração das grades; o catálogo não se atualiza sozinho. `scripts/gerar-velha-online.cjs` gera o catálogo do servidor a partir da base publicada. Versões em dados e URLs de assets invalidam saves/caches antigos. Não há exigência de coletar fotos ou licenças de imagens para incluir atletas neste jogo.
