@@ -74,7 +74,7 @@ Ampliações exigem dados comprováveis e regeneração das grades; o catálogo 
 456 identidades adicionais ficaram disponíveis no universo brasileiro após incorporar passagens profissionais em todos os clubes brasileiros já representados no catálogo, além do subconjunto anterior. Clube e ao menos uma atuação continuam obrigatórios; nenhum título ou companheiro foi deduzido para aumentar cobertura. As biografias de origem e comprovações estão na consulta de fontes. A elegibilidade histórica considera passagens pelos clubes representados, não reconstrói a divisão de cada ano nem garante que cada atuação individual foi no Brasileirão. Grades brasileiras foram recalculadas, preservando os mínimos de três/dois e nove nomes distintos. Na versão v7, as grades europeias foram preservadas; na revisão v8 abaixo, todas foram recalculadas.
 
 ### Empate por acordo
-Nos modos bot e duas pessoas, cada lado pode propor empate uma vez por rodada durante sua vez. A resposta não consome jogada. Aceitar encerra a rodada sem ponto; recusar mantém a vez do proponente. Rodadas fixas contam o empate; séries por vitórias seguem até a meta. O bot aceita quando não lembra resposta e pode aceitar após seis jogadas conforme a força escolhida. A integração online ainda não oferece esse acordo.
+Nos modos bot e duas pessoas, cada lado pode propor empate novamente após uma recusa, durante sua vez e sem outra proposta pendente. A resposta não consome jogada. Aceitar encerra a rodada sem ponto; recusar mantém a vez do proponente. Rodadas fixas contam o empate; séries por vitórias seguem até a meta. O bot aceita quando não lembra resposta e pode aceitar após seis jogadas conforme a força escolhida. A integração online ainda não oferece esse acordo.
 
 
 Após aceitar, a próxima rodada começa automaticamente, se a série ainda não terminou; quem aceitou inicia. A recusa mostra confirmação e mantém a vez do proponente.
@@ -91,3 +91,10 @@ Nenhuma foto, contato pessoal ou informação de empresário foi incorporada. No
 `tests/velha-ligas.test.cjs` verifica crescimento por liga, recorte de carreira, preservação das lendas brasileiras, identidades das categorias de companheiros, metadados e consistência do relatório. Os testes anteriores de grades, partidas, bot e acordo de empate também se aplicam.
 
 
+
+
+## Curadoria do modo Champions — 11/10/2026
+
+As 160 grades combinadas foram refeitas com uma seleção editorial de 39 clubes conhecidos ou de destaque recente. Le Havre e clubes menos familiares não aparecem como categorias neste modo. Normal exige cinco respostas e duas com botFame >= 40 em cada casa; difícil mantém mínimo de duas, uma casa com exatamente duas e ao menos um nome com botFame >= 30 por casa. Esse índice é uma aproximação editorial de reconhecimento, não uma medida objetiva de fama. Todas permitem nove nomes distintos. A base de jogadores, os fatos históricos e as grades das ligas individuais e do Brasil foram preservados.
+
+Aston Villa e Bologna chegaram à Champions em 2024/25 ([UEFA](https://www.uefa.com/uefachampionsleague/news/0292-1c1785ea604f-8387507d2eed-1000--aston-villa-vs-bologna-facts/)); a seleção também contempla clubes de destaque europeu recente como Atalanta, Leverkusen e Frankfurt. A lista editorial está em `velha-champions.js`, carregado após o catálogo principal. Ao configurar o backend, regenere `online/velha-catalogo.sql` com `node scripts/gerar-velha-online.cjs` para usar as mesmas grades.

@@ -39,7 +39,7 @@
   $('next').hidden=!state.roundEnded||state.matchEnded;$('rematch').hidden=!state.matchEnded||isOnline();$('pass').hidden=state.roundEnded;$('pass').disabled=!!state.pendingDraw||!myTurn()||(opponent==='bot'&&state.turn===1);
   $('steal-status').textContent=state.config.steal?'Roubos restantes: '+names[0]+' '+(2-state.steals[0])+' · '+names[1]+' '+(2-state.steals[1]):'Roubo de casas desativado nesta partida.';
   $('room-status').hidden=!isOnline();if(isOnline())$('room-status').textContent=online?.status||'';
-  $('draw-offer').hidden=state.roundEnded||isOnline();$('draw-offer').disabled=!!state.pendingDraw||!!state.drawOffers?.[state.turn]||(opponent==='bot'&&state.turn===1);
+  $('draw-offer').hidden=state.roundEnded||isOnline();$('draw-offer').disabled=!!state.pendingDraw||(opponent==='bot'&&state.turn===1);
   if(state.pendingDraw&&opponent==='local'){$('draw-message').textContent=names[1-state.pendingDraw.actor]+', '+names[state.pendingDraw.actor]+' propôs encerrar a rodada empatada. Você aceita?';if(!$('draw-dialog').open)$('draw-dialog').showModal();}else if($('draw-dialog').open)$('draw-dialog').close();
   save();scheduleBot();
  }

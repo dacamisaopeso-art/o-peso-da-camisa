@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-require('../velha-dados.js');const d=globalThis.OPC_VELHA_DATA,c=require('../velha-core.js');
+require('../velha-dados.js');require('../velha-champions.js');const d=globalThis.OPC_VELHA_DATA,c=require('../velha-core.js');
 const identities=require('./velha-identidades.json');
 const byName=name=>d.players.find(p=>p.name===name&&(!identities[name]||p.identity===identities[name]));
 const has=(name,cat)=>byName(name).categories.includes(cat);
