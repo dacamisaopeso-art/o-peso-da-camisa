@@ -9,4 +9,12 @@ a.equal(c.normalize('João Félix'),'joao felix');a(c.search(d,'player','Neymar'
 a.equal(c.age({birth:'1960-01-02',death:'2020-01-01',deceased:true}),59);a.equal(c.age({birth:'1960-01-02',deceased:true}), '');
 for(const n of [2,3,7,20]){let last=1001;for(let i=1;i<=n;i++){const points=c.score(i,n);a(points<=last);last=points;}a.equal(c.score(n,n),250);}a.equal(c.score(1,3),c.score(1,20));a.equal(c.score(2,3),c.score(6,11));
 const config={mode:'coach',difficulty:'all'},used=[],random=c.rng('desafio-opc');let picked;while(picked=c.choose(d,config,used,random)){a(!used.includes(picked.id));used.push(picked.id);}a.equal(used.length,c.pool(d,'coach').length);a.equal(c.choose(d,config,used,random),null);a.deepEqual(Array.from({length:10},c.rng('same')),Array.from({length:10},c.rng('same')));
-console.log('OK:',d.people.length,'carreiras; dados, licenças, cronologia, empréstimos, retornos, separação de modos, último palpite, erros, pontuação, aliases, seed e sessão sem repetições.');
+const br=c.pool(d,'player','all','brazil'),world=c.pool(d,'player','all','world');a(br.length>=400);a(world.length>=900);a.deepEqual(d.teams,{});a.equal(byId('player:Q26932598').nationality,'Marrocos');a(d.people.every(p=>!['Catalonia','Basque Country','Andalusia','Galicia','Sardinia','Corsica','England School Boy','Italy Olympic'].includes(p.nationality)));
+for(const id of ['Q529207','Q39444','Q531814','Q142794']){a(br.some(p=>p.identity===id));a(world.some(p=>p.identity===id));}
+for(const id of ['Q19956526','Q4025436','Q3761170']){a(br.some(p=>p.identity===id));a(!world.some(p=>p.identity===id));}
+for(const id of ['Q6147586','Q16665941','Q251683','Q96105248','Q630170','Q6110670','Q22082505','Q44080929','Q20994118','Q312157','Q8338725','Q641425'])a(world.some(p=>p.identity===id),'Nome solicitado ausente: '+id);
+a.notEqual(byId('player:Q6147586').difficulty,'hard');a.notEqual(byId('player:Q16665941').difficulty,'hard');
+a.equal(c.resolve(d,'player','Gabigol','brazil').identity,'Q13646572');a(!c.search(d,'player','Bruno Henrique','world').length);a(c.search(d,'player','Bruno Henrique','brazil').length>=2);
+a(!c.answer(d,c.start(neymar,'world'),'player:Q19956526').ok);a.equal(c.pool(d,'coach','all','brazil').length,c.pool(d,'coach').length);
+for(const p of d.people){a(p.universes.length);a(!p.career.some(s=>s.wiki==='Real Madrid Castilla'));}
+console.log('OK:',d.people.length,'carreiras;',br.length,'Brasileirão;',world.length,'mundiais; regras, licenças, fontes, cronologia, homônimos, nomes solicitados, filtros e tentativas.');
