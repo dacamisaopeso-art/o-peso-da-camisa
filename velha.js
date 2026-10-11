@@ -17,7 +17,7 @@
  function available(){return data.players.filter(p=>p.modes.includes(state.config.mode)&&!state.used.includes(p.id));}
  function save(){if(isOnline())return;try{localStorage.setItem('opc-velha-save',JSON.stringify({version:data.version,state,names,opponent}));}catch{}}
  function refreshSetup(){const mode=$('mode').value,diff=$('difficulty').value;const n=data.players.filter(p=>p.modes.includes(mode)).length,b=data.boards.filter(b=>b.mode===mode&&b.difficulty===diff).length;
-  $('coverage').textContent=n+' jogadores com histórico conferido · '+b+' grades auditadas neste modo. Atuais e históricos; passagens coletadas em outubro de 2026 e títulos até 2025. Cobertura parcial.';
+  $('coverage').textContent=n+' jogadores com histórico conferido · '+b+' grades auditadas neste modo. Carreiras com passagem profissional de 1960 em diante. Base parcial; registros de atuações até 2025 e biografias consultadas em outubro de 2026.';
   const type=$('opponent').value,net=['create','join','queue'].includes(type),ready=globalThis.OPC_VELHA_ONLINE.ready();
   $('room-label').hidden=type!=='join';$('online-note').hidden=!net;$('online-note').textContent=ready?'Partida conectada: as jogadas são validadas pelo serviço online.':'As partidas online ainda aguardam a conexão do serviço. Contra o bot e no mesmo aparelho já estão disponíveis.';
   for(const id of ['mode','difficulty','target','series','steal'])$(id).disabled=type==='queue'||type==='join';

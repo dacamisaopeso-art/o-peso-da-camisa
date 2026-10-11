@@ -4,17 +4,17 @@ Jogo original em `jogo-da-velha.html`, com a identidade preta e dourada OPC. O c
 
 ## Cobertura da publicação
 
-Coleta em 10/10/2026: **9,742 jogadores** atuais/históricos e **1,120 grades**, sem exigir disponibilidade de foto. Os universos se sobrepõem:
+Revisão em 11/10/2026: **25.742 jogadores** atuais/históricos e **1.120 grades**, sem exigir disponibilidade de foto. Os universos se sobrepõem:
 
-- Champions · cinco ligas: 5,688 jogadores.
-- Premier League: 3,674 jogadores.
-- LaLiga: 1,478 jogadores.
-- Serie A italiana: 790 jogadores.
-- Bundesliga: 210 jogadores.
-- Ligue 1: 317 jogadores.
-- Brasileirão Série A: 4,389 jogadores.
+- Champions · cinco ligas: 20.439 jogadores.
+- Premier League: 6.034 jogadores.
+- LaLiga: 6.064 jogadores.
+- Serie A italiana: 5.890 jogadores.
+- Bundesliga: 3.170 jogadores.
+- Ligue 1: 3.583 jogadores.
+- Brasileirão Série A: 6.278 jogadores.
 
-Há 495 grupos de nomes repetidos. Neles, busca, seleção e casa preenchida mostram idade e posição. **† indica a idade ao falecer**, calculada entre nascimento e morte, nunca a idade que o atleta teria hoje. Para vivos, a idade se atualiza pelo aniversário. Se nome, idade e posição ainda coincidirem, a busca e a casa mostram a data de nascimento completa. Homônimos sem datas/posição verificáveis ficam fora da base selecionável. Apelidos conhecidos são preservados; exemplos: Wellington Paulista, Juninho Pernambucano e Juninho Paulista. Dois IDs nunca representam o mesmo atleta.
+Há 955 grupos de nomes repetidos. Neles, busca, seleção e casa preenchida mostram idade e posição. **† indica a idade ao falecer**, calculada entre nascimento e morte, nunca a idade que o atleta teria hoje. Para vivos, a idade se atualiza pelo aniversário. Se nome, idade e posição ainda coincidirem, a busca e a casa mostram a data de nascimento completa. Homônimos sem datas/posição verificáveis ficam fora da base selecionável. Apelidos conhecidos são preservados; exemplos: Wellington Paulista, Juninho Pernambucano e Juninho Paulista. Dois IDs nunca representam o mesmo atleta.
 
 Esta é uma base parcial, não um inventário de todo jogador da história ou de todos os elencos atuais. Clubes das categorias pertencem às primeiras divisões representadas pela coleta de 2026/27 (Brasil: 2026). O universo histórico considera passagens profissionais verificáveis em clubes tradicionais dessas ligas; não reconstrói a divisão de cada clube em cada ano. Champions no menu significa as cinco ligas combinadas e não exige participação na competição da UEFA. As restrições de fotos e clubes do Quem Sou Eu não se aplicam a esta base histórica independente.
 
@@ -22,9 +22,9 @@ Esta é uma base parcial, não um inventário de todo jogador da história ou de
 
 Perfis históricos foram descobertos em categorias de clubes e identidades Wikidata, mas **estar numa categoria não confirma uma resposta**. A entrada exige ficha profissional com clube e ao menos uma atuação. Base, reservas/B/II e empréstimos sem atuação são excluídos. Nomes de clubes e suas formas extensas são normalizados para evitar rejeitar a mesma passagem por uma diferença de escrita.
 
-A extração estruturada das biografias Wikipedia filtra os fatos e registra fontes por atleta/categoria em `jogo-da-velha-fontes.json`; não é revisão manual integral de milhares de fichas. A nacionalidade vem da informação explícita do perfil, da cidadania Wikidata ou da base ESPN previamente conferida por identidade/nascimento. Não é inferida de aparência, nome, clube ou local de nascimento. Isso não constitui uma lista exclusiva de seleções nacionais defendidas. A posição usa o perfil profissional; quando a fonte informa somente um grupo amplo, não se inventa uma posição mais específica.
+A extração estruturada das biografias Wikipedia filtra os fatos e registra fontes por atleta/categoria em `jogo-da-velha-fontes.json.gz` (JSON completo compactado; o arquivo `.json` descreve o conteúdo e sua integridade); não é revisão manual integral de milhares de fichas. A nacionalidade vem da informação explícita do perfil, da cidadania Wikidata ou da base ESPN previamente conferida por identidade/nascimento. Não é inferida de aparência, nome, clube ou local de nascimento. Isso não constitui uma lista exclusiva de seleções nacionais defendidas. A posição usa o perfil profissional; quando a fonte informa somente um grupo amplo, não se inventa uma posição mais específica.
 
-Passagens profissionais incluem a coleta de outubro de 2026. Títulos e prêmios usam somente edições encerradas até **2025**. Listas explícitas de conquistas são filtradas para excluir vice, terceiros, indicações e colocações. Honrarias de treinador são separadas das de jogador. Ausência na base significa ausência de comprovação incorporada, não uma conclusão de que o atleta jamais conquistou algo. Lacunas continuam possíveis e são uma limitação declarada da curadoria.
+O recorte começa em **1960**: exige carreira profissional documentada nesse ano ou depois. Lendas que começaram antes e continuaram depois, como Pelé e Garrincha, são preservadas. Para esses atletas, passagens anteriores a 1960 continuam sendo fatos válidos de carreira. A lista é ordenada pela passagem profissional mais recente documentada, descendo para as antigas; um ano sem fim indicado não é tratado automaticamente como carreira atual. Títulos e prêmios usam somente edições encerradas até **2025**. Listas explícitas de conquistas são filtradas para excluir vice, terceiros, indicações e colocações. Honrarias de treinador são separadas das de jogador. Ausência na base significa ausência de comprovação incorporada, não uma conclusão de que o atleta jamais conquistou algo. Lacunas continuam possíveis e são uma limitação declarada da curadoria.
 
 Copa do Mundo considera o elenco campeão, inclusive reservas. Bola de Ouro significa o Ballon d’Or da France Football/fase FIFA, não o melhor jogador de uma Copa, Bola de Prata ou prêmios retrospectivos. Artilharia significa liderar os gols de uma edição, inclusive empate. “Jogou com” exige atuação juntos em uma partida da equipe principal ou seleção principal; não é deduzido apenas de contratos ou convocações sobrepostos. A cobertura dessa categoria permanece menor, com comprovações para Messi, Cristiano Ronaldo, Neymar, Ronaldo, Ronaldinho e Romário.
 
@@ -71,10 +71,23 @@ Ampliações exigem dados comprováveis e regeneração das grades; o catálogo 
 
 ## Ampliação brasileira v7
 
-456 identidades adicionais ficaram disponíveis no universo brasileiro após incorporar passagens profissionais em todos os clubes brasileiros já representados no catálogo, além do subconjunto anterior. Clube e ao menos uma atuação continuam obrigatórios; nenhum título ou companheiro foi deduzido para aumentar cobertura. As biografias de origem e comprovações estão na consulta de fontes. A elegibilidade histórica considera passagens pelos clubes representados, não reconstrói a divisão de cada ano nem garante que cada atuação individual foi no Brasileirão. Grades brasileiras foram recalculadas, preservando os mínimos de três/dois e nove nomes distintos. Grades europeias foram preservadas.
+456 identidades adicionais ficaram disponíveis no universo brasileiro após incorporar passagens profissionais em todos os clubes brasileiros já representados no catálogo, além do subconjunto anterior. Clube e ao menos uma atuação continuam obrigatórios; nenhum título ou companheiro foi deduzido para aumentar cobertura. As biografias de origem e comprovações estão na consulta de fontes. A elegibilidade histórica considera passagens pelos clubes representados, não reconstrói a divisão de cada ano nem garante que cada atuação individual foi no Brasileirão. Grades brasileiras foram recalculadas, preservando os mínimos de três/dois e nove nomes distintos. Na versão v7, as grades europeias foram preservadas; na revisão v8 abaixo, todas foram recalculadas.
 
 ### Empate por acordo
 Nos modos bot e duas pessoas, cada lado pode propor empate uma vez por rodada durante sua vez. A resposta não consome jogada. Aceitar encerra a rodada sem ponto; recusar mantém a vez do proponente. Rodadas fixas contam o empate; séries por vitórias seguem até a meta. O bot aceita quando não lembra resposta e pode aceitar após seis jogadas conforme a força escolhida. A integração online ainda não oferece esse acordo.
 
 
 Após aceitar, a próxima rodada começa automaticamente, se a série ainda não terminou; quem aceitou inicia. A recusa mostra confirmação e mantém a vez do proponente.
+
+
+## Revisão das seis ligas v8 — recorte de 1960
+
+As categorias específicas de participantes de cada liga complementam as biografias e o catálogo anterior. Foi incorporado o [banco público football-datasets](https://github.com/salimt/football-datasets), com 92.671 perfis e registros individuais de atuações. Somente competições de primeira divisão (BRA1, GB1, ES1, IT1, L1 e FR1), temporada de 1960 em diante e quantidade positiva de entradas em campo habilitam a participação por esse banco. Presença no banco de reservas ou transferência não basta. A elegibilidade anterior por passagem profissional nos clubes representados continua declarada; não é comprovação automática de disputa de Série A em toda temporada.
+
+O banco complementar é uma fotografia de 2025, não uma atualização integral dos elencos de 2026. Biografias foram consultadas em outubro de 2026. A cobertura mais antiga depende das biografias disponíveis; não se afirma cobertura completa de 1960 até hoje. Nacionalidade, nascimento e posição precisam estar informados. Identificadores Transfermarkt/Wikidata de atleta (P2446) e clube (P7223) evitam cruzar homônimos. Conflitos de nascimento e identidades ambíguas não são importados. Clubes sem cruzamento seguro mantêm identificador próprio, sem fusão por nome parecido. Base, reservas e seleções não viram categorias de clube.
+
+Nenhuma foto, contato pessoal ou informação de empresário foi incorporada. Novas atuações não geram títulos ou categorias de companheiros por dedução. Títulos e partidas simultâneas continuam exigindo suas próprias comprovações. Todas as 1.120 grades foram recalculadas com os mesmos mínimos e nove respostas distintas. Os repertórios de 180/420/900 nomes do bot permanecem limitados; a ampliação não lhe dá conhecimento de toda a base. O relatório `jogo-da-velha-ampliacao.json` registra diferenças em relação à versão publicada anterior.
+
+`tests/velha-ligas.test.cjs` verifica crescimento por liga, recorte de carreira, preservação das lendas brasileiras, identidades das categorias de companheiros, metadados e consistência do relatório. Os testes anteriores de grades, partidas, bot e acordo de empate também se aplicam.
+
+

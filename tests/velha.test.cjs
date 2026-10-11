@@ -1,6 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 require('../velha-dados.js');const d=globalThis.OPC_VELHA_DATA,c=require('../velha-core.js');
-const byName=name=>d.players.find(p=>p.name===name);
+const identities=require('./velha-identidades.json');
+const byName=name=>d.players.find(p=>p.name===name&&(!identities[name]||p.identity===identities[name]));
 const has=(name,cat)=>byName(name).categories.includes(cat);
 for(const name of ['Pelé','Neymar','Ronaldo','Ronaldinho','Romário'])assert(byName(name).modes.includes('bra.1'));
 assert(has('Pelé','club:santos'));assert(has('Pelé','award:brasileiro'));assert(has('Pelé','award:libertadores'));assert(has('Pelé','award:worldcup'));assert(!has('Pelé','award:ballondor'));assert(!has('Pelé','award:copaamerica'));assert.equal(c.playerAge(byName('Pelé')),82);
