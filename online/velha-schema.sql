@@ -1,4 +1,4 @@
--- Preparação Supabase: executar antes de velha-catalogo.sql. Integração ainda não ativada.
+-- Serviço online OPC. Instalar antes do catálogo.
 create table if not exists public.opc_velha_catalog (id boolean primary key default true check(id), version text not null, data jsonb not null);
 create table if not exists public.opc_velha_rooms (
  code text primary key default upper(substr(replace(gen_random_uuid()::text,'-',''),1,10)),
@@ -70,7 +70,7 @@ begin
   b:=public.opc_velha_pick(cfg->>'mode',cfg->>'difficulty');
   cfg:=jsonb_build_object('mode',cfg->>'mode','difficulty',cfg->>'difficulty','format',coalesce(cfg->>'format','wins'),'target',(cfg->>'target')::integer,'steal',(cfg->>'steal')::boolean);
   s:=jsonb_build_object('config',cfg,'boardId',b->>'id','round',1,'score',jsonb_build_array(0,0),'turn',0,'cells','[null,null,null,null,null,null,null,null,null]'::jsonb,
-   'used','[]'::jsonb,'steals','[0,0]'::jsonb,'moves',0,'roundEnded',false,'matchEnded',false,'matchWinner',null,'result',null,'version',0);
+   'used','[]'::jsonb,'steals','[0,0]'::jsonb,'pendingDraw',null,'moves',0,'roundEnded',false,'matchEnded',false,'matchWinner',null,'result',null,'version',0);
   -- Uma sala em espera por identidade; não deixa múltiplas entradas órfãs na fila.
   delete from public.opc_velha_rooms where host=who and guest is null;
   insert into public.opc_velha_rooms(host,catalog_version,names,config,state,queue) values(who,ver,jsonb_build_array(nick,'Adversário'),cfg,s,kind='queue') returning * into r;
@@ -93,18 +93,40 @@ begin
  if kind='next' then
   if not (s->>'roundEnded')::boolean or (s->>'matchEnded')::boolean then raise exception 'Não é possível iniciar outra rodada.'; end if;
   b:=public.opc_velha_pick(cfg->>'mode',cfg->>'difficulty',s->>'boardId');n:=(s->>'round')::integer;
-  s:=s||jsonb_build_object('boardId',b->>'id','round',n+1,'turn',n%2,'cells','[null,null,null,null,null,null,null,null,null]'::jsonb,'used','[]'::jsonb,
-   'steals','[0,0]'::jsonb,'moves',0,'roundEnded',false,'result',null,'version',(s->>'version')::integer+1);
+  s:=s||jsonb_build_object('boardId',b->>'id','round',n+1,'turn',coalesce((s->'result'->>'nextStarter')::integer,n%2),'cells','[null,null,null,null,null,null,null,null,null]'::jsonb,'used','[]'::jsonb,
+   'steals','[0,0]'::jsonb,'pendingDraw',null,'moves',0,'roundEnded',false,'result',null,'version',(s->>'version')::integer+1);
   update public.opc_velha_rooms set state=s,touched_at=now() where code=r.code returning * into r;
   return public.opc_velha_reply(r,who,'Nova rodada. Todas as posições dos critérios mudaram.');
  end if;
  actor:=case when who=r.host then 0 else 1 end;
+ if kind='draw-answer' then
+  if s->'pendingDraw' is null or s->'pendingDraw'='null'::jsonb or actor=(s->'pendingDraw'->>'actor')::integer then raise exception 'Somente o adversário pode responder à proposta.'; end if;
+  if jsonb_typeof(payload->'accept') is distinct from 'boolean' then raise exception 'Resposta inválida.'; end if;
+  s:=s||jsonb_build_object('pendingDraw',null,'version',(s->>'version')::integer+1);
+  if (payload->>'accept')::boolean then
+   s:=s||jsonb_build_object('roundEnded',true,'result',jsonb_build_object('winner',null,'line','[]'::jsonb,'agreed',true,'nextStarter',actor));
+   if cfg->>'format'='rounds' and (s->>'round')::integer>=(cfg->>'target')::integer then
+    s:=s||jsonb_build_object('matchEnded',true,'matchWinner',case when s->'score'->>0=s->'score'->>1 then null when (s->'score'->>0)::integer>(s->'score'->>1)::integer then 0 else 1 end);
+   end if;
+   msg:='Empate aceito. Quem aceitou começa a próxima rodada.';
+  else msg:='Empate recusado. A vez continua com quem fez a proposta.'; end if;
+  update public.opc_velha_rooms set state=s,touched_at=now() where code=r.code returning * into r;
+  return public.opc_velha_reply(r,who,msg);
+ end if;
+ if s->'pendingDraw' is not null and s->'pendingDraw'<>'null'::jsonb then raise exception 'Responda à proposta de empate antes de jogar.'; end if;
+ if kind='draw' then
+  if (s->>'roundEnded')::boolean or actor<>(s->>'turn')::integer then raise exception 'Aguarde sua vez.'; end if;
+  s:=s||jsonb_build_object('pendingDraw',jsonb_build_object('actor',actor),'version',(s->>'version')::integer+1);
+  update public.opc_velha_rooms set state=s,touched_at=now() where code=r.code returning * into r;
+  return public.opc_velha_reply(r,who,'Proposta enviada. Aguardando a resposta do adversário.');
+ end if;
  if (s->>'roundEnded')::boolean or actor<>(s->>'turn')::integer then raise exception 'Aguarde sua vez.'; end if;
  if kind is null or kind not in ('move','pass') then raise exception 'Ação inválida.'; end if;
  if kind='move' then
   if coalesce(payload->>'cell','') !~ '^[0-8]$' then raise exception 'Casa inválida.'; end if;
   pos:=(payload->>'cell')::integer;c:=s->'cells'->pos;
   if c<>'null'::jsonb and ((c->>'owner')::integer=actor or not (cfg->>'steal')::boolean or (s->'steals'->>actor)::integer>=2) then raise exception 'Essa casa não pode ser usada.'; end if;
+  select data into catalog from public.opc_velha_catalog where id=true;
   select x into p from jsonb_array_elements(catalog->'players') x where x->>'id'=payload->>'playerId';
   if p is null or not (p->'modes' ? (cfg->>'mode')) or s->'used' ? (p->>'id') then raise exception 'Nome indisponível ou já utilizado.'; end if;
   select x into b from jsonb_array_elements(catalog->'boards') x where x->>'id'=s->>'boardId';

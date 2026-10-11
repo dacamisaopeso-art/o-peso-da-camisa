@@ -50,14 +50,14 @@ Roubo opcional: dois por pessoa/rodada, com outro nome ainda não usado. O nome 
 
 Partidas locais são salvas no navegador e podem ser retomadas. Sair/reiniciar cancela a ação pendente do bot. Sem anúncios ou esperas falsas.
 
-## Online preparado, aguardando serviço
+## Online conectado — 11/10/2026
 
-GitHub Pages hospeda arquivos estáticos. Salas entre aparelhos e pareamento exigem um serviço compartilhado; a integração Supabase está preparada, sem projeto conectado. Bot e partida local funcionam sem ele. Não foi validada contra um serviço real.
+GitHub Pages hospeda arquivos estáticos. Salas entre aparelhos e pareamento exigem um serviço compartilhado; o projeto Supabase foi conectado. Bot e partida local também continuam disponíveis. Salas por código e pareamento público usam identificação anônima e validação no servidor.
 
-Para ativar posteriormente:
+Para reinstalar em outro projeto:
 
 1. Criar um projeto Supabase e habilitar Anonymous Sign-Ins em Authentication.
-2. Executar `online/velha-schema.sql` e depois `online/velha-catalogo.sql` no SQL Editor.
+2. Regenerar o catálogo com `node scripts/gerar-velha-online.cjs`. Executar `online/velha-schema.sql` e depois `online/velha-catalogo.sql` no SQL Editor.
 3. Preencher URL do projeto e chave **pública/publishable ou anon** em `velha-online-config.js`; nunca usar secret/service_role.
 4. Publicar e testar dois aparelhos: código, fila, turnos, erro, roubo, rodadas, placar, saída, expiração e acesso indevido por terceira identidade.
 
@@ -74,7 +74,7 @@ Ampliações exigem dados comprováveis e regeneração das grades; o catálogo 
 456 identidades adicionais ficaram disponíveis no universo brasileiro após incorporar passagens profissionais em todos os clubes brasileiros já representados no catálogo, além do subconjunto anterior. Clube e ao menos uma atuação continuam obrigatórios; nenhum título ou companheiro foi deduzido para aumentar cobertura. As biografias de origem e comprovações estão na consulta de fontes. A elegibilidade histórica considera passagens pelos clubes representados, não reconstrói a divisão de cada ano nem garante que cada atuação individual foi no Brasileirão. Grades brasileiras foram recalculadas, preservando os mínimos de três/dois e nove nomes distintos. Na versão v7, as grades europeias foram preservadas; na revisão v8 abaixo, todas foram recalculadas.
 
 ### Empate por acordo
-Nos modos bot e duas pessoas, cada lado pode propor empate novamente após uma recusa, durante sua vez e sem outra proposta pendente. A resposta não consome jogada. Aceitar encerra a rodada sem ponto; recusar mantém a vez do proponente. Rodadas fixas contam o empate; séries por vitórias seguem até a meta. O bot aceita quando não lembra resposta e pode aceitar após seis jogadas conforme a força escolhida. A integração online ainda não oferece esse acordo.
+Nos modos bot e duas pessoas, cada lado pode propor empate novamente após uma recusa, durante sua vez e sem outra proposta pendente. A resposta não consome jogada. Aceitar encerra a rodada sem ponto; recusar mantém a vez do proponente. Rodadas fixas contam o empate; séries por vitórias seguem até a meta. O bot aceita quando não lembra resposta e pode aceitar após seis jogadas conforme a força escolhida. O online também permite novas propostas após recusa, aceitação pelo adversário e início da próxima rodada por quem aceitou.
 
 
 Após aceitar, a próxima rodada começa automaticamente, se a série ainda não terminou; quem aceitou inicia. A recusa mostra confirmação e mantém a vez do proponente.
@@ -98,3 +98,6 @@ Nenhuma foto, contato pessoal ou informação de empresário foi incorporada. No
 As 160 grades combinadas foram refeitas com uma seleção editorial de 39 clubes conhecidos ou de destaque recente. Le Havre e clubes menos familiares não aparecem como categorias neste modo. Normal exige cinco respostas e duas com botFame >= 40 em cada casa; difícil mantém mínimo de duas, uma casa com exatamente duas e ao menos um nome com botFame >= 30 por casa. Esse índice é uma aproximação editorial de reconhecimento, não uma medida objetiva de fama. Todas permitem nove nomes distintos. A base de jogadores, os fatos históricos e as grades das ligas individuais e do Brasil foram preservados.
 
 Aston Villa e Bologna chegaram à Champions em 2024/25 ([UEFA](https://www.uefa.com/uefachampionsleague/news/0292-1c1785ea604f-8387507d2eed-1000--aston-villa-vs-bologna-facts/)); a seleção também contempla clubes de destaque europeu recente como Atalanta, Leverkusen e Frankfurt. A lista editorial está em `velha-champions.js`, carregado após o catálogo principal. Ao configurar o backend, regenere `online/velha-catalogo.sql` com `node scripts/gerar-velha-online.cjs` para usar as mesmas grades.
+
+
+A integração foi testada em um serviço real com três identificações anônimas: código, fila, turnos, empate repetido e aceito, mudança de grade, roubo, versão obsoleta, 40 ações, saída e bloqueio de terceiros. Tabelas não permitem leitura direta pelos jogadores. A sessão e o código ficam no sessionStorage da aba: após recarregar, use Retomar sala online. Fechar a aba pode perder a identificação; não é recuperação entre aparelhos. As salas em espera expiram em 15 minutos; registros são removidos após 24 horas quando o serviço recebe outra solicitação. Atualização entre jogadores por consulta a cada 1,8 segundo; queda temporária tenta reconectar. Fila pública aguarda outra pessoa real, sem bot disfarçado. O plano e as cotas do Supabase limitam a disponibilidade; não foi feito teste de carga massivo.
