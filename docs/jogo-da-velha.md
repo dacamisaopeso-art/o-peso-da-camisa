@@ -4,7 +4,7 @@ Jogo original em `jogo-da-velha.html`, com a identidade preta e dourada OPC. O c
 
 ## Cobertura da publicação
 
-Coleta em 10/10/2026: **9,304 jogadores** atuais/históricos e **1,120 grades**, sem exigir disponibilidade de foto. Os universos se sobrepõem:
+Coleta em 10/10/2026: **9,742 jogadores** atuais/históricos e **1,120 grades**, sem exigir disponibilidade de foto. Os universos se sobrepõem:
 
 - Champions · cinco ligas: 5,688 jogadores.
 - Premier League: 3,674 jogadores.
@@ -12,9 +12,9 @@ Coleta em 10/10/2026: **9,304 jogadores** atuais/históricos e **1,120 grades**,
 - Serie A italiana: 790 jogadores.
 - Bundesliga: 210 jogadores.
 - Ligue 1: 317 jogadores.
-- Brasileirão Série A: 3,933 jogadores.
+- Brasileirão Série A: 4,389 jogadores.
 
-Há 442 grupos de nomes repetidos. Neles, busca, seleção e casa preenchida mostram idade e posição. **† indica a idade ao falecer**, calculada entre nascimento e morte, nunca a idade que o atleta teria hoje. Para vivos, a idade se atualiza pelo aniversário. Se nome, idade e posição ainda coincidirem, a busca e a casa mostram a data de nascimento completa. Homônimos sem datas/posição verificáveis ficam fora da base selecionável. Apelidos conhecidos são preservados; exemplos: Wellington Paulista, Juninho Pernambucano e Juninho Paulista. Dois IDs nunca representam o mesmo atleta.
+Há 495 grupos de nomes repetidos. Neles, busca, seleção e casa preenchida mostram idade e posição. **† indica a idade ao falecer**, calculada entre nascimento e morte, nunca a idade que o atleta teria hoje. Para vivos, a idade se atualiza pelo aniversário. Se nome, idade e posição ainda coincidirem, a busca e a casa mostram a data de nascimento completa. Homônimos sem datas/posição verificáveis ficam fora da base selecionável. Apelidos conhecidos são preservados; exemplos: Wellington Paulista, Juninho Pernambucano e Juninho Paulista. Dois IDs nunca representam o mesmo atleta.
 
 Esta é uma base parcial, não um inventário de todo jogador da história ou de todos os elencos atuais. Clubes das categorias pertencem às primeiras divisões representadas pela coleta de 2026/27 (Brasil: 2026). O universo histórico considera passagens profissionais verificáveis em clubes tradicionais dessas ligas; não reconstrói a divisão de cada clube em cada ano. Champions no menu significa as cinco ligas combinadas e não exige participação na competição da UEFA. As restrições de fotos e clubes do Quem Sou Eu não se aplicam a esta base histórica independente.
 
@@ -46,7 +46,7 @@ Bot e duas pessoas no mesmo aparelho são jogáveis. Cada modo/dificuldade tem 8
 
 Pode-se escolher 1, 2, 3 ou 5 rodadas, ou primeiro a 1, 2, 3 ou 5 vitórias. Empates contam como rodada no total fixo, sem pontuar. Quem inicia alterna e as seis posições dos critérios mudam na rodada seguinte; o motor prefere seis categorias novas quando possível.
 
-Roubo opcional: dois por pessoa/rodada, com outro nome ainda não usado. O nome da casa roubada continua consumido. Não se troca uma casa própria. Grade cheia sem vencedor ou 40 ações é empate. Erro e passar transferem o turno; seleção inválida não altera a partida. O bot conhece os nomes válidos e prioriza vitória, bloqueio, centro e roubos. A dificuldade altera o desafio das interseções, não o conhecimento do bot.
+Roubo opcional: dois por pessoa/rodada, com outro nome ainda não usado. O nome da casa roubada continua consumido. Não se troca uma casa própria. Grade cheia sem vencedor ou 40 ações é empate. Erro e passar transferem o turno; seleção inválida não altera a partida. A força do bot é independente da grade: Tranquilo (180 nomes, 28% de hesitação, 45% de decisão tática), Equilibrado (420 nomes, 15%, 72%) e Desafiador (900 nomes, 5%, 92%). A lembrança de cada nome é fixa por rodada e varia com o perfil (70%, 85%, 95%). Sem resposta lembrada, passa. Prioriza até cinco nomes mais familiares por casa e pode deixar de bloquear ou finalizar uma linha. Familiaridade é um parâmetro editorial, baseado em atuações documentadas, seleções, conquistas e identidades revisadas, não uma medição objetiva de fama. Nenhum perfil conhece automaticamente toda a base.
 
 Partidas locais são salvas no navegador e podem ser retomadas. Sair/reiniciar cancela a ação pendente do bot. Sem anúncios ou esperas falsas.
 
@@ -68,3 +68,13 @@ Referências: [autenticação anônima](https://supabase.com/docs/guides/auth/au
 `node tests/velha.test.cjs` verifica interseções, nove respostas distintas, oito linhas de vitória, turnos, erros, roubos/limites/reutilização, empates, rodízio de critérios, séries e partidas do bot. Também verifica fatos críticos, identidades únicas, metadados dos homônimos e cálculos de idade/aniversário/morte. Verificação de sintaxe e apresentação em computador/celular completam a publicação.
 
 Ampliações exigem dados comprováveis e regeneração das grades; o catálogo não se atualiza sozinho. `scripts/gerar-velha-online.cjs` gera o catálogo do servidor a partir da base publicada. Versões em dados e URLs de assets invalidam saves/caches antigos. Não há exigência de coletar fotos ou licenças de imagens para incluir atletas neste jogo.
+
+## Ampliação brasileira v7
+
+456 identidades adicionais ficaram disponíveis no universo brasileiro após incorporar passagens profissionais em todos os clubes brasileiros já representados no catálogo, além do subconjunto anterior. Clube e ao menos uma atuação continuam obrigatórios; nenhum título ou companheiro foi deduzido para aumentar cobertura. As biografias de origem e comprovações estão na consulta de fontes. A elegibilidade histórica considera passagens pelos clubes representados, não reconstrói a divisão de cada ano nem garante que cada atuação individual foi no Brasileirão. Grades brasileiras foram recalculadas, preservando os mínimos de três/dois e nove nomes distintos. Grades europeias foram preservadas.
+
+### Empate por acordo
+Nos modos bot e duas pessoas, cada lado pode propor empate uma vez por rodada durante sua vez. A resposta não consome jogada. Aceitar encerra a rodada sem ponto; recusar mantém a vez do proponente. Rodadas fixas contam o empate; séries por vitórias seguem até a meta. O bot aceita quando não lembra resposta e pode aceitar após seis jogadas conforme a força escolhida. A integração online ainda não oferece esse acordo.
+
+
+Após aceitar, a próxima rodada começa automaticamente, se a série ainda não terminou; quem aceitou inicia. A recusa mostra confirmação e mantém a vez do proponente.
