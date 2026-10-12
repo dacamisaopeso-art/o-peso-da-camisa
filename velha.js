@@ -2,7 +2,8 @@
  'use strict';
  const data=globalThis.OPC_VELHA_DATA,core=globalThis.OPC_VELHA_CORE,$=id=>document.getElementById(id);
  const cats=new Map(data.categories.map(c=>[c.id,c])),players=new Map(data.players.map(p=>[p.id,p]));
- const nameCounts=new Map(),searchNames=new Map(data.players.map(p=>[p.id,core.normalize(p.name)]));for(const p of data.players){const key=core.normalize(p.name);nameCounts.set(key,(nameCounts.get(key)||0)+1);}
+ const search=globalThis.OPC_VELHA_SEARCH,searchIndex=search.createIndex(data.players,globalThis.OPC_VELHA_SEARCH_NAMES);
+ const nameCounts=new Map();for(const p of data.players){const key=core.normalize(p.name);nameCounts.set(key,(nameCounts.get(key)||0)+1);}
  const detailCounts=new Map();for(const p of data.players){const key=core.normalize(p.name)+'|'+core.playerDetails(p);detailCounts.set(key,(detailCounts.get(key)||0)+1);}
  const details=p=>nameCounts.get(core.normalize(p.name))>1?core.playerDetails(p)+(detailCounts.get(core.normalize(p.name)+'|'+core.playerDetails(p))>1?' · '+p.birth.split('-').reverse().join('/'):''):'';
  const display=p=>p.name+(details(p)?' · '+details(p):'');
@@ -14,7 +15,6 @@
  function category(c){return '<div class="category">'+icon(c)+'<strong>'+escape(c.kind==='person'?'Jogou com '+c.label:c.label)+'</strong><small>'+escape(c.kind==='person'?'Clube ou seleção':c.detail)+'</small></div>';}
  function isOnline(){return ['create','join','queue'].includes(opponent);}
  function myTurn(){return !isOnline()||online?.seat===state.turn;}
- function available(){return data.players.filter(p=>p.modes.includes(state.config.mode)&&!state.used.includes(p.id));}
  function save(){if(isOnline())return;try{localStorage.setItem('opc-velha-save',JSON.stringify({version:data.version,state,names,opponent}));}catch{}}
  function refreshSetup(){$('resume-online').hidden=!globalThis.OPC_VELHA_ONLINE.savedRoom();const mode=$('mode').value,diff=$('difficulty').value;const n=data.players.filter(p=>p.modes.includes(mode)).length,b=data.boards.filter(b=>b.mode===mode&&b.difficulty===diff).length;
   $('coverage').textContent=n+' jogadores com histórico conferido · '+b+' grades auditadas neste modo. Carreiras com passagem profissional de 1960 em diante. Base parcial; registros de atuações até 2025 e biografias consultadas em outubro de 2026.';
@@ -51,7 +51,7 @@
   $('choice').showModal();if(!state.roundEnded)$('search').focus();
  }
  $('board').addEventListener('click',e=>{const btn=e.target.closest('[data-cell]');if(btn&&!btn.disabled)openCell(Number(btn.dataset.cell));});
- $('search').addEventListener('input',()=>{selected=null;active=-1;$('confirm').disabled=true;const q=core.normalize($('search').value.trim());list=q?available().filter(p=>searchNames.get(p.id).includes(q)).sort((a,b)=>a.name.localeCompare(b.name,'pt-BR')).slice(0,30):[];
+ $('search').addEventListener('input',()=>{selected=null;active=-1;$('confirm').disabled=true;list=search.search(data.players,searchIndex,$('search').value,{mode:state.config.mode,used:state.used,limit:30});
   $('suggestions').innerHTML=list.map((p,i)=>'<li role="option" aria-selected="false" tabindex="-1" id="candidate-'+i+'" data-option="'+i+'"><span>'+escape(display(p))+'<small>'+escape(cats.get('country:'+p.nationality)?.label||p.nationality)+'</small></span></li>').join('');$('search').setAttribute('aria-expanded',String(list.length>0));$('search').removeAttribute('aria-activedescendant');});
  function select(i){const p=list[i];if(!p)return;selected=p.id;list=[];active=-1;$('search').value=display(p);$('suggestions').replaceChildren();$('search').setAttribute('aria-expanded','false');$('search').removeAttribute('aria-activedescendant');$('confirm').disabled=false;}
  $('suggestions').addEventListener('click',e=>{const li=e.target.closest('[data-option]');if(li)select(Number(li.dataset.option));});
