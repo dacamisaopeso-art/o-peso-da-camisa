@@ -32,3 +32,6 @@ Fotos licenciadas de estádios e identificações originais OPC; não são fotos
 ## Checkpoint
 
 Antes deste jogo: 084af685f1f689e6cd639224efcb75e393e74584. Para reverter, remover somente os arquivos deste jogo e restaurar as alterações de navegação e sitemap, preservando alterações posteriores. Os demais jogos e o serviço online não foram alterados.
+
+## Ampliação de 12/10/2026
+43 partidas / 473 posições titulares: 15 brasileiras, 16 europeias e 12 de seleções. Inclui finais, remontadas e partida de confirmação do título; cada desafio identifica a fase, data e adversário. 25 partidas adicionadas. Filtro por equipe, mantendo dificuldades, busca, retomada e recordes. Fontes de escalação em cada desafio; perfis adicionais em extraProfiles. Adílson José Pinto: nascimento corrigido para 06/01/1965 conforme fichário oficial SPFC. Novas identificações visuais originais OPC; não são escudos oficiais. Fotos licenciadas anteriores preservadas. Base dos demais jogos intacta. Checkpoint anterior: e9a0a357803fcb282b7c17be9fc274778fa30d0a.
