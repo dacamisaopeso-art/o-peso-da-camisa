@@ -44,7 +44,7 @@ print(f"Geradas {len(cards)} publicações")
 
 # Sitemap atualizado a cada publicação, preservando as páginas institucionais e os artigos fixos.
 base_url = "https://dacamisaopeso-art.github.io/o-peso-da-camisa/"
-fixed_urls = ["", "kaka-da-superacao-a-bola-de-ouro.html", "robinho-da-promessa-a-queda.html", "sobre-nos.html", "contato.html", "politica-de-privacidade.html", "jogos.html", "desafio-das-lendas.html", "desafio-da-champions.html", "jogo-da-velha.html", "creditos-jogo-da-velha.html", "fontes-jogo-da-velha.html", "adivinhe-pela-carreira.html", "forja-de-craques/"]
+fixed_urls = ["", "kaka-da-superacao-a-bola-de-ouro.html", "robinho-da-promessa-a-queda.html", "sobre-nos.html", "contato.html", "politica-de-privacidade.html", "jogos.html", "desafio-das-lendas.html", "desafio-da-champions.html", "jogo-da-velha.html", "creditos-jogo-da-velha.html", "fontes-jogo-da-velha.html", "adivinhe-pela-carreira.html", "forja-de-craques/", "escalacao-historica.html"]
 namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
 ET.register_namespace("", namespace)
 urlset = ET.Element(f"{{{namespace}}}urlset")
