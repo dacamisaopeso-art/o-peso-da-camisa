@@ -6,7 +6,10 @@
  const winner=cells=>{for(const l of lines){const p=cells[l[0]]?.owner;if(p!==undefined&&l.every(i=>cells[i]?.owner===p))return {owner:p,line:l};}return null;};
  function eligible(player,row,col){return player.categories.includes(row)&&player.categories.includes(col);}
  function answers(data,board,cell){return data.players.filter(p=>p.modes.includes(board.mode)&&eligible(p,board.rows[Math.floor(cell/3)],board.cols[cell%3]));}
- function chooseBoard(data,mode,difficulty,previous=null,rng=Math.random){const old=data.boards.find(b=>b.id===previous);const options=data.boards.filter(b=>b.mode===mode&&b.difficulty===difficulty&&b.id!==previous&&(!old||(b.rows.every((c,i)=>c!==old.rows[i])&&b.cols.every((c,i)=>c!==old.cols[i]))));if(!options.length)throw Error('Ainda não há grade auditada suficiente para esta combinação.');const fresh=old?options.filter(b=>[...b.rows,...b.cols].every(c=>![...old.rows,...old.cols].includes(c))):options;const pool=fresh.length?fresh:options;return pool[Math.floor(rng()*pool.length)];}
+ const brazilCriteria=new Set(['award:brasileiro','award:copabrasil','award:brtop','award:libertadores']);
+ const boardAllowed=b=>b.mode==='bra.1'||![...b.rows,...b.cols].some(c=>brazilCriteria.has(c));
+ const boardWeight=b=>b.mode==='bra.1'&&[...b.rows,...b.cols].includes('award:europa') ? 0.2 : 1;
+ function chooseBoard(data,mode,difficulty,previous=null,rng=Math.random){const old=data.boards.find(b=>b.id===previous);const options=data.boards.filter(b=>b.mode===mode&&b.difficulty===difficulty&&boardAllowed(b)&&b.id!==previous&&(!old||(b.rows.every((c,i)=>c!==old.rows[i])&&b.cols.every((c,i)=>c!==old.cols[i]))));if(!options.length)throw Error('Ainda não há grade auditada suficiente para esta combinação.');const fresh=old?options.filter(b=>[...b.rows,...b.cols].every(c=>![...old.rows,...old.cols].includes(c))):options;const pool=fresh.length?fresh:options;let ticket=rng()*pool.reduce((sum,b)=>sum+boardWeight(b),0);for(const b of pool){ticket-=boardWeight(b);if(ticket<0)return b;}return pool.at(-1);}
  function start(data,config,rng=Math.random){const board=chooseBoard(data,config.mode,config.difficulty,null,rng);return {config:{format:'wins',...config},boardId:board.id,round:1,score:[0,0],turn:0,cells:Array(9).fill(null),used:[],steals:[0,0],drawOffers:[false,false],pendingDraw:null,moves:0,roundEnded:false,matchEnded:false,matchWinner:null,result:null,version:0};}
  function finishSeries(s){if(s.roundEnded&&((s.config.format==='rounds'&&s.round>=s.config.target)||(s.config.format!=='rounds'&&Math.max(...s.score)>=s.config.target))){s.matchEnded=true;s.matchWinner=s.score[0]===s.score[1]?null:s.score[0]>s.score[1]?0:1;}return s;}
  function apply(data,state,cell,playerId,actor=state.turn){
@@ -47,5 +50,5 @@
   const b=birth.split('-').map(Number),e=end.split('-').map(Number);const age=e[0]-b[0]-(e[1]<b[1]||(e[1]===b[1]&&e[2]<b[2])?1:0);return age>=0?age:null;
  }
  function playerDetails(player,today=new Date()){const age=playerAge(player,today);return [age===null?'':age+' anos'+(player.death?' †':''),player.position||''].filter(Boolean).join(' · ');}
- const api={lines,normalize,winner,eligible,answers,chooseBoard,start,apply,nextRound,moves,bot,botKnowledge,botProfiles,pass,offerDraw,answerDraw,botAcceptDraw,playerAge,playerDetails};if(typeof module!=='undefined')module.exports=api;root.OPC_VELHA_CORE=api;
+ const api={lines,normalize,winner,eligible,answers,chooseBoard,boardAllowed,boardWeight,start,apply,nextRound,moves,bot,botKnowledge,botProfiles,pass,offerDraw,answerDraw,botAcceptDraw,playerAge,playerDetails};if(typeof module!=='undefined')module.exports=api;root.OPC_VELHA_CORE=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
