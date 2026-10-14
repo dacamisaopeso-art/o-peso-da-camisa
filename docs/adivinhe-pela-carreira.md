@@ -14,7 +14,9 @@ Compartilhar usa o menu nativo quando disponível; caso contrário copia texto o
 
 ## Base desta edição
 
-**2.236 jogadores e 40 treinadores**, totalizando **2.276 carreiras**. O universo Brasileirão tem **651 jogadores**; o mundial, **1.851**. **266 atletas** aparecem nos dois, sem duplicação de identidade. Há **2.038 registros com foto licenciada** e **238 com alternativa de iniciais** (uma pessoa nos dois modos pode compartilhar um retrato). Todos os clubes usam iniciais OPC, sem imagens. Distribuição editorial: 145 fáceis, 1.354 médias e 777 difíceis. **252 trajetórias selecionadas foram rejeitadas** por informações incompletas ou ambíguas.
+O acervo integral continua com **2.236 jogadores e 40 treinadores**, totalizando **2.276 carreiras**, preservado em `carreira-dados.js`. A página agora usa **561 jogadores selecionados e os mesmos 40 treinadores**. O Brasileirão tem **260 jogadores jogáveis** e o mundial, **442**; **141** aparecem nos dois universos. Os jogadores selecionados se dividem em **125 fáceis, 311 normais e 125 difíceis**. A classificação dos treinadores foi mantida.
+
+O arquivo leve `carreira-jogaveis.js` contém apenas os registros disponíveis para jogar e sugerir. Sua igualdade com o acervo selecionado é testada; o arquivo integral não foi apagado ou modificado. Fotos e trajetórias dos nomes aprovados continuam iguais às originais. A data de nascimento de Pepe foi corrigida na camada de curadoria para 26/02/1983, com comprovação da [Federação Portuguesa de Futebol](https://www.fpf.pt/Jogadores/Pepe/contextId/172).
 
 Biografias, identidades e licenças consultadas em **11/10/2026**. A seleção reaproveita as identidades e a notoriedade editorial da base do Jogo da Velha, mas usa históricos cronológicos próprios, consultados novamente. Não modifica a base, as grades, o bot ou o checkpoint daquele jogo.
 
@@ -36,7 +38,7 @@ Exemplos de verificação oficial complementar: [saída de Guardiola do Manchest
 
 A ampliação combina a curadoria de notoriedade preexistente, participação documentada em seleções/títulos, passagens expressivas (150 ou mais jogos de liga somados em clubes conhecidos, acompanhadas de outros sinais de relevância) e inclusões editoriais explícitas. Uma passagem curta isolada em um clube grande não garante inclusão. Campanhas históricas permitem nomes de reconhecimento mais específico, como campeões pelo Leicester em 2016; os menos conhecidos podem ficar no nível difícil. Vardy, Kanté, Sterling, Mahrez, Fabinho, Di María, Enzo Fernández, Paredes, De Paul, Cucurella, Pedro Porro e Rodri têm identidades próprias e trajetórias conferidas. Isso não atribui a eles títulos que não conquistaram: o jogo mostra carreiras, não pistas de troféus.
 
-A divisão entre fama mundial e reconhecimento brasileiro é editorial e usa também atuação significativa no exterior e seleção principal, não apenas nacionalidade. A dificuldade considera notoriedade, extensão da carreira e raridade do primeiro clube; nomes amplamente conhecidos receberam revisão explícita, de modo que Vardy e Kanté não ficam no nível difícil. Não há garantia de que todos os participantes reconhecerão todos os nomes.
+A divisão entre fama mundial e reconhecimento brasileiro é editorial e usa também atuação significativa no exterior e seleção principal, não apenas nacionalidade. Desde 14/10/2026, o elenco exige inclusão explícita na curadoria: ter jogado por um clube grande, sozinho, não aprova ninguém. Fácil reúne estrelas e ídolos amplamente reconhecidos; Normal usa nomes conhecidos do futebol brasileiro e mundial; Difícil exige mais memória sobre trajetórias de nomes reconhecíveis, sobretudo históricos, sem recorrer a desconhecidos apenas por terem muitos clubes. Brasileirão e Fácil são as opções iniciais. Vardy e Kanté continuam fora do Difícil. Não há garantia de que todos os participantes reconhecerão todos os nomes.
 
 ## Imagens e atribuição
 
@@ -48,6 +50,16 @@ Nacionalidade futebolística prioriza a última seleção principal representada
 
 ## Motor, validação e continuidade
 
-`carreira-core.js` separa sorteio, filtro, estado, busca e pontuação da interface. Um gerador determinístico está disponível para evolução futura de desafio diário. Não há botão de diário ou ranking sem implementação. Atualizações preservam o placar e identidades já usadas; somente a rodada pendente precisa ser da mesma versão para ser retomada. O jogo atual funciona integralmente sem backend.
+`carreira-core.js` separa sorteio, filtro, estado, busca e pontuação da interface. Um gerador determinístico está disponível para evolução futura de desafio diário. Não há botão de diário ou ranking sem implementação. Atualizações preservam o placar e identidades já usadas; rodadas anteriores de nomes ainda selecionados também podem ser retomadas. Rodadas de nomes removidos da seleção não são retomadas, mas acertos, pontos e recordes locais são preservados. O jogo atual funciona integralmente sem backend.
 
 `node tests/carreira.test.cjs` valida dados, licenças, cronologia, retornos, jogador/treinador, última tentativa, perda, acerto, aliases, pontuação proporcional e sorteio sem repetição. Sintaxe e navegação real em computador/celular complementam a verificação.
+
+## Equilíbrio de sorteio — 14/10/2026
+
+O gerador `scripts/curar-carreira.cjs` mantém uma lista explícita de identidades, com data de nascimento quando há homônimos, em `dados/carreira-curadoria.json`. Nomes fora dela não aparecem como resposta misteriosa nem como sugestão. A base do Jogo da Velha e os outros jogos não são alterados.
+
+Os nomes com atuação registrada de 2015 em diante recebem peso 3; históricos recebem peso 1. No Misturado, os pesos adicionais são 3 para Fácil, 2 para Normal e 1 para Difícil. Nenhum sorteio repete um nome consumido. Ao esgotar o elenco, todos os aprovados terão aparecido; os pesos apenas mudam a ordem provável. Fama e dificuldade são uma decisão editorial voltada ao público brasileiro, não uma estatística oficial.
+
+Testes: `node tests/carreira.test.cjs` e `node tests/carreira-equilibrio.test.cjs`. A segunda suíte esgota todas as combinações de universo/dificuldade, confere exclusões e nomes preservados, igualdade da versão leve, e 6.000 sorteios por universo para verificar preferência por recentes e dificuldades acessíveis.
+
+Checkpoint anterior: `2257ad74c43f859f33fdaceab5494fff19a71c9d`.

@@ -1,8 +1,8 @@
 (function(root){'use strict';
  const normalize=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
  function rng(seed){let h=2166136261;for(const c of String(seed)){h^=c.charCodeAt(0);h=Math.imul(h,16777619);}return()=>{h+=0x6d2b79f5;let t=h;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return ((t^t>>>14)>>>0)/4294967296;};}
- function pool(data,mode,difficulty='all',universe='all'){return data.people.filter(p=>p.mode===mode&&(mode==='coach'||universe==='all'||p.universes.includes(universe))&&(difficulty==='all'||p.difficulty===difficulty));}
- function choose(data,config,used,random=Math.random){const options=pool(data,config.mode,config.difficulty,config.universe||'world').filter(p=>!used.includes(p.id));return options.length?options[Math.floor(random()*options.length)]:null;}
+ function pool(data,mode,difficulty='all',universe='all'){return data.people.filter(p=>p.mode===mode&&(mode!=='player'||p.playable===true)&&(mode==='coach'||universe==='all'||p.universes.includes(universe))&&(difficulty==='all'||p.difficulty===difficulty));}
+ function choose(data,config,used,random=Math.random){const options=pool(data,config.mode,config.difficulty,config.universe||'world').filter(p=>!used.includes(p.id));if(!options.length)return null;if(config.mode!=='player')return options[Math.floor(random()*options.length)];const weight=p=>(p.recent?3:1)*(config.difficulty==='all'?({easy:3,medium:2,hard:1}[p.difficulty]||1):1);let ticket=random()*options.reduce((sum,p)=>sum+weight(p),0);for(const p of options){ticket-=weight(p);if(ticket<0)return p;}return options.at(-1);}
  function start(person,universe='all'){if(!person?.career?.length)throw Error('Trajetória indisponível.');return {personId:person.id,universe,attempt:1,revealed:1,ended:false,won:false,score:0,guesses:[],skips:0};}
  function score(attempt,total){if(total===1)return 500;return Math.round(1000*(1-.75*(attempt-1)/(total-1)));}
  function signature(p){return JSON.stringify(p.career.map(s=>[s.wiki,s.start,s.end,s.loan]));}

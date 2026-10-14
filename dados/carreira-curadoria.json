@@ -1,0 +1,3380 @@
+{
+  "version": "reconheciveis-v1",
+  "date": "2026-10-14",
+  "criteria": "Nomes recentes conhecidos pelo público brasileiro e ídolos históricos; seleção editorial explícita, sem aprovação automática por clube, título ou duração da carreira.",
+  "players": [
+    {
+      "id": "player:Q101764291",
+      "name": "Luiz Henrique",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q102027",
+      "name": "Fabio Cannavaro",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q102331",
+      "name": "Sócrates",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q103312425",
+      "name": "João Gomes",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q1033783",
+      "name": "Gustavo Gómez",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q10364015",
+      "name": "Róger Guedes",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q104414736",
+      "name": "Nico Williams",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q104903216",
+      "name": "Flaco Lopez",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q10520",
+      "name": "David Beckham",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q10552615",
+      "name": "Deyverson",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q107365",
+      "name": "Manuel Neuer",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q108111889",
+      "name": "Gavi",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q10855654",
+      "name": "Ángel Correa",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q109428",
+      "name": "Diego",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q110053",
+      "name": "Mats Hummels",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q111016177",
+      "name": "Vitor Roque",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q112604843",
+      "name": "Lucas Beraldo",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q113156",
+      "name": "Robert Pires",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q113704154",
+      "name": "Lamine Yamal",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q115453",
+      "name": "Ivan Rakitić",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q11571",
+      "name": "Cristiano Ronaldo",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q11576",
+      "name": "Raúl",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q11584",
+      "name": "Iker Casillas",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q116560",
+      "name": "Gil",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q116980",
+      "name": "Gennaro Gattuso",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q117322318",
+      "name": "Richard Ríos",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q118473161",
+      "name": "Pau Cubarsí",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q11948",
+      "name": "Michael Ballack",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q119562",
+      "name": "Sergio Agüero",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q124086",
+      "name": "Wesley Sneijder",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q1249859",
+      "name": "Rogério Ceni",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q1255625",
+      "name": "Samuel Eto'o",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q126503",
+      "name": "Filippo Inzaghi",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q127452",
+      "name": "Dani Carvajal",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q128829",
+      "name": "Michael Owen",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q129027",
+      "name": "Paul Pogba",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q13014035",
+      "name": "Jordan Pickford",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q130215",
+      "name": "Pablo Aimar",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q131234",
+      "name": "Toni Kroos",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q132056",
+      "name": "Sebastián Abreu",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q133556",
+      "name": "Ashley Cole",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q133903",
+      "name": "Virgil van Dijk",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q1341709",
+      "name": "Dudu",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q1345763",
+      "name": "Renato Gaúcho",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q134976",
+      "name": "Lukas Podolski",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q1354960",
+      "name": "Mohamed Salah",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q13578003",
+      "name": "Giorgian de Arrascaeta",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q1363213",
+      "name": "Réver",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q13646572",
+      "name": "Gabigol",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q138075",
+      "name": "Alexandre Pato",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q138172",
+      "name": "Radamel Falcao",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q13865408",
+      "name": "Joshua Kimmich",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q1392500",
+      "name": "Wes Morgan",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q1408157",
+      "name": "Marcelo Grohe",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q142794",
+      "name": "Neymar",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q150268",
+      "name": "David de Gea",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q151260",
+      "name": "Jérôme Boateng",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q151269",
+      "name": "Robert Lewandowski",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q15207061",
+      "name": "Lucas Lima",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q15214940",
+      "name": "Alex Telles",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q152725",
+      "name": "Roy Makaay",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q153786",
+      "name": "Edin Džeko",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q154623",
+      "name": "Lucas Barrios",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q154708",
+      "name": "Shinji Kagawa",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q15521306",
+      "name": "Bernardo Silva",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q155461",
+      "name": "Robert Huth",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q156802",
+      "name": "Paolo Guerrero",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q156822",
+      "name": "Lúcio",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q15690175",
+      "name": "Mayke",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q159059",
+      "name": "Grafite",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q15915040",
+      "name": "Andy Robertson",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q15960510",
+      "name": "Ángel Romero",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q15966749",
+      "name": "Luciano",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q160206",
+      "name": "Hernán Crespo",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q160472",
+      "name": "Marc-André ter Stegen",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q161039",
+      "name": "Josué",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q161054",
+      "name": "Ivan Perišić",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q161069",
+      "name": "David Silva",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q161571",
+      "name": "Javier Mascherano",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q16298050",
+      "name": "Jonathan Calleri",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q163564",
+      "name": "Nemanja Vidić",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q16499882",
+      "name": "Leroy Sané",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q165772",
+      "name": "Harry Maguire",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q166317",
+      "name": "Paulo Dybala",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q16665941",
+      "name": "N'Golo Kanté",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q167790",
+      "name": "Edinson Cavani",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q168497",
+      "name": "Daniele De Rossi",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q168740",
+      "name": "Juan Mata",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q16902219",
+      "name": "Martin Ødegaard",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q169098",
+      "name": "Frank Rijkaard",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q16919481",
+      "name": "Luan",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q170235",
+      "name": "Dimitar Berbatov",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q170328",
+      "name": "Éric Cantona",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q170376",
+      "name": "Gabriel Batistuta",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q170452",
+      "name": "Adriano",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q17074511",
+      "name": "Ederson",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q1707749",
+      "name": "Edenilson",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q17086753",
+      "name": "Sergio Rochet",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q171295",
+      "name": "Pavel Nedvěd",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q17158",
+      "name": "Carles Puyol",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q17180926",
+      "name": "Keno",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q172720",
+      "name": "Dani Alves",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q17385902",
+      "name": "Everton",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q173972",
+      "name": "Ruud Gullit",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q17493",
+      "name": "Thiago Alcântara",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q17499",
+      "name": "Cesc Fàbregas",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q17500",
+      "name": "Xavi Hernández",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q17507",
+      "name": "Gerard Piqué",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q1756086",
+      "name": "Lorenzo Insigne",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q17612631",
+      "name": "Mikel Merino",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q17619350",
+      "name": "Andreas Pereira",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q177686",
+      "name": "Maicon",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q177885",
+      "name": "Heurelho Gomes",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q178649",
+      "name": "Romário",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q178683",
+      "name": "Cafu",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q179334",
+      "name": "Henrik Larsson",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q180326",
+      "name": "Lilian Thuram",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q180553",
+      "name": "Alexis Sánchez",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q180939",
+      "name": "Peter Crouch",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q181921",
+      "name": "Branislav Ivanović",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q18199184",
+      "name": "Léo Pereira",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q182063",
+      "name": "Nicolás Otamendi",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q182314",
+      "name": "Peter Schmeichel",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q18237361",
+      "name": "Alisson Becker",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q182459",
+      "name": "Júlio César",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q182907",
+      "name": "Gianluca Zambrotta",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q1835",
+      "name": "Zidane",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q1839",
+      "name": "Laurent Blanc",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q18394141",
+      "name": "Thiago Maia",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q183967",
+      "name": "David Trezeguet",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q184277",
+      "name": "Yaya Touré",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q1845684",
+      "name": "Lucas Pratto",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q184612",
+      "name": "Robbie Keane",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q185093",
+      "name": "Jesús Navas",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q185225",
+      "name": "Santi Cazorla",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q185389",
+      "name": "Dennis Bergkamp",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q186071",
+      "name": "Javier Saviola",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q18617137",
+      "name": "Gerson",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q1862778",
+      "name": "Danny Drinkwater",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q18637930",
+      "name": "Fabián Ruiz",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q187125",
+      "name": "Hristo Stoichkov",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q18719633",
+      "name": "Rafael Santos Borré",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q187891",
+      "name": "Fernando Llorente",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q188241",
+      "name": "Ricardo Quaresma",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q188544",
+      "name": "Dida",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q188632",
+      "name": "Roy Keane",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q188696",
+      "name": "Christian Vieri",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q188720",
+      "name": "Michael Laudrup",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q188997",
+      "name": "Wojciech Szczesny",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q189012",
+      "name": "Alex Song",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q189217",
+      "name": "Davor Šuker",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q1894",
+      "name": "Memphis Depay",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q18962",
+      "name": "Adrien Rabiot",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q189686",
+      "name": "Patrick Kluivert",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q189892",
+      "name": "Gheorghe Hagi",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q190142",
+      "name": "Gilberto Silva",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q190608",
+      "name": "Rui Costa",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q1907",
+      "name": "Hugo Lloris",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q191080",
+      "name": "Seydou Keita",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q1911",
+      "name": "Olivier Giroud",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q19116103",
+      "name": "André Onana",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q1912",
+      "name": "Karim Benzema",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q1918",
+      "name": "Franck Ribéry",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q191885",
+      "name": "Thiago Motta",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q1920",
+      "name": "Samir Nasri",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q192035",
+      "name": "Iván Zamorano",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q192122",
+      "name": "Esteban Cambiasso",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q192635",
+      "name": "Ronald Koeman",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q192671",
+      "name": "Arturo Vidal",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q192963",
+      "name": "Luís Fabiano",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q192965",
+      "name": "Juan Román Riquelme",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q193568",
+      "name": "Nuno Gomes",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q193625",
+      "name": "Marcel Desailly",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q193706",
+      "name": "David Luiz",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q19392",
+      "name": "Éver Banega",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q194461",
+      "name": "Guti",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q19497",
+      "name": "Oscar",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q19509544",
+      "name": "Federico Valverde",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q19518278",
+      "name": "Diogo Jota",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q195426",
+      "name": "Evair",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q19559974",
+      "name": "Guilherme Arana",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q19612578",
+      "name": "Çağlar Söyüncü",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q19708656",
+      "name": "Gabriel Jesus",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q19709176",
+      "name": "Gustavo Scarpa",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q197565",
+      "name": "Roger Machado",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q19866008",
+      "name": "Marlon Freitas",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q19882816",
+      "name": "Denzel Dumfries",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q19898898",
+      "name": "Frenkie de Jong",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q19956526",
+      "name": "Bruno Henrique",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q200785",
+      "name": "Tim Howard",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20090225",
+      "name": "Nicolò Barella",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20110",
+      "name": "Francesco Totti",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q2015351",
+      "name": "Dejan Petković",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q20204829",
+      "name": "Federico Dimarco",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q202054",
+      "name": "Keisuke Honda",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q202429",
+      "name": "Juan",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2025900",
+      "name": "John Stones",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q203451",
+      "name": "Juninho Pernambucano",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q2035459",
+      "name": "Willian Arão",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q203665",
+      "name": "Simão",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q204089",
+      "name": "Carlos Valderrama",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q204108",
+      "name": "Álvaro Recoba",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q204407",
+      "name": "Ramires",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q204555",
+      "name": "Zinho",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q204825",
+      "name": "Bebeto",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q204895",
+      "name": "Júlio Baptista",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q205499",
+      "name": "Fernando Hierro",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q2063693",
+      "name": "Fernando Prass",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20735677",
+      "name": "Jefferson Savarino",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20736318",
+      "name": "Agustín Rossi",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q207407",
+      "name": "Elano",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q208050",
+      "name": "Leonardo Bonucci",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20806743",
+      "name": "Richarlison",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q208104",
+      "name": "Xabi Alonso",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20830808",
+      "name": "Gianluigi Donnarumma",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20851003",
+      "name": "Ousmane Dembélé",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q208687",
+      "name": "Nilmar",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20872721",
+      "name": "Alexander Barboza",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20916833",
+      "name": "Allan",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20976280",
+      "name": "Yeferson Soteldo",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20994037",
+      "name": "Nicolás de la Cruz",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q20994118",
+      "name": "Rodri",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q209942",
+      "name": "Sadio Mané",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q21020124",
+      "name": "Léo Jardim",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q210453",
+      "name": "Thiago Silva",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q210914",
+      "name": "Juanfran",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q21195147",
+      "name": "Mikel Oyarzabal",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q212854",
+      "name": "Brian Laudrup",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q214498",
+      "name": "David Seaman",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q21484126",
+      "name": "Lautaro Martínez",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q214903",
+      "name": "Diego Godín",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q215040",
+      "name": "Maxwell",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q215890",
+      "name": "Dunga",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q216142",
+      "name": "Alex",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q21621168",
+      "name": "Rúben Dias",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q21621995",
+      "name": "Kylian Mbappé",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q21693199",
+      "name": "Christopher Nkunku",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q217482",
+      "name": "Youri Djorkaeff",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q218611",
+      "name": "Marcos Rocha",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q219248",
+      "name": "Marc Overmars",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q220593",
+      "name": "Lucas Leiva",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q220746",
+      "name": "Juan Pablo Sorín",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q22082505",
+      "name": "Marc Cucurella",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q22082590",
+      "name": "Nahuel Molina",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q22082660",
+      "name": "Robert Arboleda",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q221798",
+      "name": "Cicinho",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q222151",
+      "name": "João Moutinho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q225837",
+      "name": "Freddy Rincón",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q2268949",
+      "name": "Eduardo Vargas",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q227892",
+      "name": "Alessandro Nesta",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q22951255",
+      "name": "Marcus Rashford",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2308830",
+      "name": "Craque Neto",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q231468",
+      "name": "Zvonimir Boban",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q2316179",
+      "name": "Fábio Santos",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2339",
+      "name": "Robin van Persie",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2352244",
+      "name": "Chicão",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q23540953",
+      "name": "Alphonso Davies",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q23638974",
+      "name": "Ayrton Lucas",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q23703372",
+      "name": "Théo Hernandez",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q237561",
+      "name": "Juliano Belletti",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q23759917",
+      "name": "Alexander Isak",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q237964",
+      "name": "Predrag Mijatović",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q23899393",
+      "name": "Manuel Locatelli",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q23908113",
+      "name": "Unai Simón",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q24084736",
+      "name": "Gregore",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2440999",
+      "name": "Martin Braithwaite",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2449294",
+      "name": "Diego Souza",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2469877",
+      "name": "Carlos Germano",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q251683",
+      "name": "Ángel Di María",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q25175962",
+      "name": "Luiz Araújo",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q25175970",
+      "name": "Gabriel Magalhães",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q25253293",
+      "name": "Victor Osimhen",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q258115",
+      "name": "Diego Simeone",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q261534",
+      "name": "Diego Forlán",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q26255506",
+      "name": "Diogo Dalot",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q26259982",
+      "name": "Matthijs de Ligt",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q262954",
+      "name": "Marcelinho Paraíba",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q264228",
+      "name": "Francisco Arce",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q26517",
+      "name": "Luis Suárez",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q266410",
+      "name": "Pedro Geromel",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q266613",
+      "name": "Wayne Rooney",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q26704703",
+      "name": "Federico Chiesa",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q26932598",
+      "name": "Achraf Hakimi",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q27049064",
+      "name": "João Félix",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2719042",
+      "name": "Fabio Costa",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q2722553",
+      "name": "Arouca",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q27310755",
+      "name": "Kai Havertz",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q273715",
+      "name": "Jordan Henderson",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q27443365",
+      "name": "Raphael Veiga",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q275415",
+      "name": "Ezequiel Lavezzi",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q27569376",
+      "name": "Trent Alexander-Arnold",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q276091",
+      "name": "Koke",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q276434",
+      "name": "Javier Pastore",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q27736107",
+      "name": "Édouard Mendy",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q28058687",
+      "name": "Cristian Romero",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q2843080",
+      "name": "Enner Valencia",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q28531111",
+      "name": "Luis Díaz",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q28531145",
+      "name": "Fabrício Bruno",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q28561068",
+      "name": "Alessandro Bastoni",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q28663925",
+      "name": "Matías Viña",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q28748046",
+      "name": "Rony",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q28801927",
+      "name": "Cody Gakpo",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q28861547",
+      "name": "Raphinha",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q28967995",
+      "name": "Erling Haaland",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q28973866",
+      "name": "Vinícius Júnior",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q294951",
+      "name": "Christian Eriksen",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q294980",
+      "name": "Rui Patrício",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q295456",
+      "name": "Fernando Redondo",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q295512",
+      "name": "Carlos Gamarra",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q295797",
+      "name": "Kasper Schmeichel",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q295880",
+      "name": "Vágner Love",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q295887",
+      "name": "Vítor Baía",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q295891",
+      "name": "Cláudio Taffarel",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q29624459",
+      "name": "Scott McTominay",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q297603",
+      "name": "Nemanja Matić",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q29783600",
+      "name": "Mathías Villasanti",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q29950055",
+      "name": "Éder Militão",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q30007142",
+      "name": "Declan Rice",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q30089624",
+      "name": "Lucas Paquetá",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q30123152",
+      "name": "Emerson Royal",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q30148558",
+      "name": "Jadon Sancho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q303108",
+      "name": "Taison",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q30729096",
+      "name": "Phil Foden",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q30881092",
+      "name": "Lisandro Martínez",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q309731",
+      "name": "Márcio Amoroso",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q310612",
+      "name": "Shinji Okazaki",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q311035",
+      "name": "Kléberson",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q311377",
+      "name": "Marc Albrighton",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q311424",
+      "name": "Léo Júnior",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q311641",
+      "name": "Denílson",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q311872",
+      "name": "Philippe Coutinho",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q312157",
+      "name": "Raheem Sterling",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q312687",
+      "name": "Mineiro",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q312772",
+      "name": "Fred",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q312886",
+      "name": "Lucas Moura",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q313082",
+      "name": "Diego Alves",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q313570",
+      "name": "Hernanes",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q313741",
+      "name": "Andrés D'Alessandro",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q313835",
+      "name": "Paulo Henrique Ganso",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q314099",
+      "name": "Jô",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q315079",
+      "name": "Ricardo Oliveira",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q316436",
+      "name": "César Sampaio",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q316836",
+      "name": "Nenê",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q317863",
+      "name": "Mario Jardel",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q318184",
+      "name": "Juninho Paulista",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q3192187",
+      "name": "Kalidou Koulibaly",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q327456",
+      "name": "Hakim Ziyech",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q3275904",
+      "name": "Emiliano Martínez",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q32984822",
+      "name": "Murilo Cerqueira",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q33297140",
+      "name": "Alexis Mac Allister",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q342457",
+      "name": "Mauro Silva",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q342474",
+      "name": "Marcos",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q342489",
+      "name": "Careca",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q3438450",
+      "name": "Rodrigo Caio",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q348857",
+      "name": "Gary Neville",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q349125",
+      "name": "Dejan Lovren",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q350547",
+      "name": "Filipe Luís",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q35066458",
+      "name": "Joaquín Piquerez",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q350756",
+      "name": "Luizão",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q350761",
+      "name": "Mazinho",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q357844",
+      "name": "Renato Augusto",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q357984",
+      "name": "Kevin De Bruyne",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q359160",
+      "name": "Jádson",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q360782",
+      "name": "Jorge Valdivia",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q3612361",
+      "name": "Walter Kannemann",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q361409",
+      "name": "Faustino Asprilla",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q368441",
+      "name": "James Rodríguez",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q370014",
+      "name": "Thiago Neves",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q372379",
+      "name": "Georginio Wijnaldum",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q372451",
+      "name": "Sávio",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q373547",
+      "name": "Diego Lugano",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q3761170",
+      "name": "Germán Cano",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q376247",
+      "name": "Dimitri Payet",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q378101",
+      "name": "Marcelinho Carioca",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q38000669",
+      "name": "Mason Mount",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q3810078",
+      "name": "Jorginho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q38136",
+      "name": "Marcelo",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q381729",
+      "name": "Müller",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q3869209",
+      "name": "Marinho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q38693097",
+      "name": "Bremer",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q3876530",
+      "name": "Nicolás Tagliafico",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q39076401",
+      "name": "Reece James",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q39079181",
+      "name": "Paulinho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q391680",
+      "name": "Douglas Costa",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q39230",
+      "name": "Marquinhos",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q39444",
+      "name": "Ronaldinho",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q39667548",
+      "name": "Arthur",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q4025436",
+      "name": "Éverton Ribeiro",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q4094820",
+      "name": "Miguel Borja",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q41533",
+      "name": "Frank Lampard",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q42728914",
+      "name": "Rodrygo",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q42731",
+      "name": "Fernando Torres",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q429039",
+      "name": "Roberto Carlos",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q43252427",
+      "name": "Yuri Alberto",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q43666",
+      "name": "Thomas Müller",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q43729",
+      "name": "Andrés Iniesta",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q437329",
+      "name": "Danilo",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q43913",
+      "name": "Arjen Robben",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q43926",
+      "name": "Andrea Pirlo",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q439722",
+      "name": "Son Heung-min",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q44073",
+      "name": "Bixente Lizarazu",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q44080929",
+      "name": "Pedro Porro",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q440999",
+      "name": "Ricardo Gomes",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q44298",
+      "name": "Bastian Schweinsteiger",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q44522",
+      "name": "Stefan Effenberg",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q445541",
+      "name": "Edmundo",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q44815",
+      "name": "Giovane Élber",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q44977",
+      "name": "Pierre-Emerick Aubameyang",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q455462",
+      "name": "Antoine Griezmann",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q455557",
+      "name": "Humberlito Borges",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q45567",
+      "name": "Fernando Morientes",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q45613",
+      "name": "Paul Scholes",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q45626",
+      "name": "Ruud van Nistelrooy",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q458101",
+      "name": "Ciro Immobile",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q45901",
+      "name": "Thierry Henry",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q459356",
+      "name": "Fernandinho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q459707",
+      "name": "Diego Costa",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q459830",
+      "name": "Steven Gerrard",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q46347",
+      "name": "Patrick Vieira",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q46502",
+      "name": "Juan Sebastián Verón",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q467194",
+      "name": "Washington",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q4682353",
+      "name": "Santos",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q46896",
+      "name": "Zlatan Ibrahimović",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q46951844",
+      "name": "Aurélien Tchouaméni",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q470113",
+      "name": "Darío Conca",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q47075606",
+      "name": "Viktor Gyökeres",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q47170176",
+      "name": "Jules Koundé",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q47489",
+      "name": "Djalminha",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q47491410",
+      "name": "Pedro",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q47526",
+      "name": "Zico",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q482947",
+      "name": "Nani",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q482955",
+      "name": "Edwin van der Sar",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q483027",
+      "name": "Paolo Maldini",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q483137",
+      "name": "Petr Čech",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q483145",
+      "name": "Luís Figo",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q483309",
+      "name": "Sergio Ramos",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q483417",
+      "name": "Rio Ferdinand",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q483577",
+      "name": "Rivaldo",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q483629",
+      "name": "Marco van Basten",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q483837",
+      "name": "Luka Modrić",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q483846",
+      "name": "Gonzalo Higuaín",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q484909",
+      "name": "Clarence Seedorf",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q485697",
+      "name": "Pepe",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q4865527",
+      "name": "Bastos",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q48770",
+      "name": "Álvaro Morata",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q48892",
+      "name": "Didier Drogba",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q489039",
+      "name": "Raphaël Varane",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q49704",
+      "name": "Sergio Busquets",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q4979245",
+      "name": "Bruno Henrique",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q4979316",
+      "name": "Bruno Fernandes",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q50600",
+      "name": "Carlos Tevez",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q50603",
+      "name": "Park Ji-sung",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q507815",
+      "name": "Alex",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q508711",
+      "name": "Didier Deschamps",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q509374",
+      "name": "Juan Cuadrado",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q510123",
+      "name": "Elias",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q514252",
+      "name": "Jefferson",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q529207",
+      "name": "Ronaldo",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q531080",
+      "name": "Tinga",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q531814",
+      "name": "Kaká",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q5340762",
+      "name": "Eduardo Sasha",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q535429",
+      "name": "Edílson",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q5370912",
+      "name": "Emerson Palmieri",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q54094",
+      "name": "Sami Khedira",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q550019",
+      "name": "Roberto Dinamite",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q551192",
+      "name": "Alex Sandro",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q555391",
+      "name": "Danilo",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q55816003",
+      "name": "Léo Ortiz",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q559474",
+      "name": "Edu Dracena",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q5621422",
+      "name": "Gustavo Henrique",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q56223006",
+      "name": "Carlos Augusto",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q56257870",
+      "name": "Ryan Gravenberch",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q563649",
+      "name": "Victor",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q56868118",
+      "name": "William Saliba",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q570811",
+      "name": "Ricardo Carvalho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q57114",
+      "name": "Jens Lehmann",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q57167",
+      "name": "Zé Roberto",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q57293140",
+      "name": "Thiago Almada",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q58323172",
+      "name": "Bruno Guimarães",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q59108",
+      "name": "Kyle Walker",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q59306386",
+      "name": "Bukayo Saka",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q59381180",
+      "name": "Julián Álvarez",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q59490",
+      "name": "Serge Gnabry",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q59656516",
+      "name": "Matheuzinho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q59870",
+      "name": "Emerson Sheik",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q59914139",
+      "name": "Dejan Kulusevski",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q60048692",
+      "name": "Michael",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q602525",
+      "name": "Roberto Firmino",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q60842120",
+      "name": "Gonzalo Plata",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q60842145",
+      "name": "Gabriel Menino",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q6110670",
+      "name": "Rodrigo De Paul",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q61460651",
+      "name": "Gabriel Martinelli",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q6147586",
+      "name": "Jamie Vardy",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q615",
+      "name": "Lionel Messi",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q61609728",
+      "name": "Rodrigo Garro",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q616664",
+      "name": "Casemiro",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q61780902",
+      "name": "Khvicha Kvaratskhelia",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q624",
+      "name": "Alessandro Del Piero",
+      "difficulty": "easy",
+      "recent": false
+    },
+    {
+      "id": "player:Q62786",
+      "name": "Hulk",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q62960177",
+      "name": "Eduardo Camavinga",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q6298063",
+      "name": "João Cancelo",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q630170",
+      "name": "Leandro Paredes",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q63384759",
+      "name": "Martín Zubimendi",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q63659",
+      "name": "Gabriel Heinze",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q63871021",
+      "name": "Nino",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q64005114",
+      "name": "João Pedro",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q6413296",
+      "name": "Kingsley Coman",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q641425",
+      "name": "Fabinho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q64577950",
+      "name": "Hugo Souza",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q65030995",
+      "name": "Igor Jesus",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q65378670",
+      "name": "Jhon Arias",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q659634",
+      "name": "Deco",
+      "difficulty": "medium",
+      "recent": false
+    },
+    {
+      "id": "player:Q66241169",
+      "name": "Jude Bellingham",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q66606355",
+      "name": "Pedri",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q66818509",
+      "name": "Vitinha",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q67222776",
+      "name": "Samuel Lino",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q677923",
+      "name": "Fábio",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q67964",
+      "name": "Roberto Baggio",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q68060",
+      "name": "Gianluigi Buffon",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q701297",
+      "name": "Mateo Kovačić",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q713886",
+      "name": "Giuliano",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q714354",
+      "name": "Túlio Maravilha",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q718952",
+      "name": "Claudio Maldonado",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q73018",
+      "name": "Ralf",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q73082",
+      "name": "Paulinho",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q7322659",
+      "name": "Ricardo Goulart",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q73360",
+      "name": "Thibaut Courtois",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q736325",
+      "name": "Alan Kardec",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q75059692",
+      "name": "Gabriel Veron",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q7800068",
+      "name": "Tiago Volpi",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q781683",
+      "name": "Gatito Fernández",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q797945",
+      "name": "Charles Aránguiz",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q80306",
+      "name": "Giorgio Chiellini",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q8040741",
+      "name": "Weverton",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q80471",
+      "name": "Miroslav Klose",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q8078540",
+      "name": "Éverson",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q80892",
+      "name": "Isco",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q83006",
+      "name": "David Villa",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q8338725",
+      "name": "Riyad Mahrez",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q83456",
+      "name": "John Terry",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q83488",
+      "name": "Mesut Özil",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q905206",
+      "name": "Diego Tardelli",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q912172",
+      "name": "Saúl",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q920039",
+      "name": "Cássio",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q921324",
+      "name": "Álex Grimaldo",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q928184",
+      "name": "Mauro Galvão",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q932827",
+      "name": "Fagner",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q934259",
+      "name": "Hernán Barcos",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q9354",
+      "name": "Gianfranco Zola",
+      "difficulty": "hard",
+      "recent": false
+    },
+    {
+      "id": "player:Q943432",
+      "name": "Dagoberto",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q94699949",
+      "name": "Florian Wirtz",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q94850",
+      "name": "Adriano",
+      "difficulty": "hard",
+      "recent": true
+    },
+    {
+      "id": "player:Q96072055",
+      "name": "Jamal Musiala",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q96105248",
+      "name": "Enzo Fernández",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q96396963",
+      "name": "Nuno Mendes",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q965448",
+      "name": "Fred",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q96755",
+      "name": "Antonio Rüdiger",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q969423",
+      "name": "Keylor Navas",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q969520",
+      "name": "Michael Essien",
+      "difficulty": "medium",
+      "recent": true
+    },
+    {
+      "id": "player:Q969725",
+      "name": "Harry Kane",
+      "difficulty": "easy",
+      "recent": true
+    },
+    {
+      "id": "player:Q99760796",
+      "name": "Cole Palmer",
+      "difficulty": "easy",
+      "recent": true
+    }
+  ],
+  "birthCorrections": [
+    {
+      "id": "player:Q485697",
+      "birth": "1983-02-26",
+      "source": "https://www.fpf.pt/Jogadores/Pepe/contextId/172"
+    }
+  ]
+}
