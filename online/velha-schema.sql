@@ -11,7 +11,7 @@ alter table public.opc_velha_rooms enable row level security;
 revoke all on public.opc_velha_catalog, public.opc_velha_rooms from anon, authenticated;
 
 create or replace function public.opc_velha_pick(m text, d text, previous_id text default null)
-returns jsonb language plpgsql security definer set search_path=public,pg_temp as $
+returns jsonb language plpgsql security definer set search_path=public,pg_temp as $$
 declare result jsonb; old jsonb; catalog jsonb;
 begin
  select data into catalog from public.opc_velha_catalog where id=true;
@@ -24,7 +24,7 @@ begin
  order by -ln(greatest(random(),0.000000000001))/(case when m='bra.1' and ((b->'rows') || (b->'cols')) ? 'award:europa' then 0.2 else 1 end) limit 1;
  if result is null then raise exception 'Não há grade auditada disponível.'; end if;
  return result;
-end $;
+end $$;
 
 create or replace function public.opc_velha_reply(r public.opc_velha_rooms, who uuid, msg text default '')
 returns jsonb language sql security definer set search_path=public,pg_temp as $$
