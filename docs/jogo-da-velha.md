@@ -101,3 +101,8 @@ Aston Villa e Bologna chegaram à Champions em 2024/25 ([UEFA](https://www.uefa.
 
 
 A integração foi testada em um serviço real com três identificações anônimas: código, fila, turnos, empate repetido e aceito, mudança de grade, roubo, versão obsoleta, 40 ações, saída e bloqueio de terceiros. Tabelas não permitem leitura direta pelos jogadores. A sessão e o código ficam no sessionStorage da aba: após recarregar, use Retomar sala online. Fechar a aba pode perder a identificação; não é recuperação entre aparelhos. As salas em espera expiram em 15 minutos; registros são removidos após 24 horas quando o serviço recebe outra solicitação. Atualização entre jogadores por consulta a cada 1,8 segundo; queda temporária tenta reconectar. Fila pública aguarda outra pessoa real, sem bot disfarçado. O plano e as cotas do Supabase limitam a disponibilidade; não foi feito teste de carga massivo.
+
+
+## Auditoria factual de 14/10/2026
+
+A base de 25.742 identidades recebeu uma nova revisão de títulos, companheiros e grafias de clubes. [Método, exemplos corrigidos e limitações](jogo-da-velha-auditoria-2026-10-14.md). As fontes completas e compactas foram recalculadas em conjunto. O corte de conquistas segue até 2025.

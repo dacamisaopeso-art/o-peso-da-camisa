@@ -20,3 +20,8 @@ O coletor retomável é `work/scripts/velha-ligas-revisar.py`. A consolidação 
 ## Limitações e regras mantidas
 
 Registros do banco complementar vão até 2025; biografias foram consultadas em outubro de 2026. Títulos e categorias de companheiros não são inferidos a partir de transferências. Identidades ambíguas são excluídas. O jogo continua sem fotos de atletas, com nomes completos, distinção de homônimos e identidade preta/dourada. Bot limitado por dificuldade, acordo de empate e início da rodada por quem aceitou o empate foram preservados. Integração online continua dependendo de configuração externa; nenhum ranking ou pareamento global é simulado como real.
+
+
+## Antes da auditoria factual — 14/10/2026
+
+Checkpoint completo: `20d0603ed2a153f3c3787993687591e4941011b2`. Preserva o site anterior à revisão de títulos e companheiros. Os dados, fontes, estilos e demais jogos podem ser consultados nesse commit; não exige apagar o acervo.

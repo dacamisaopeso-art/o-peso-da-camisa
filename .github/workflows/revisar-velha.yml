@@ -1,0 +1,35 @@
+name: Conferir e publicar fatos do Jogo da Velha
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dados/velha-auditoria-*.json'
+      - 'scripts/revisar-velha-fatos.cjs'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: revisar-fatos-velha
+  cancel-in-progress: false
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Mesclar fatos e recalcular grades e fontes
+        run: |
+          node scripts/revisar-velha-fatos.cjs
+          node scripts/gerar-velha-online.cjs
+      - name: Conferir todos os jogos e as regressões relatadas
+        run: |
+          node scripts/testar-jogos.cjs
+          git diff --check
+      - name: Publicar somente os artefatos gerados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add velha-dados.js velha-jogadores.js velha-champions.js dados/velha-fontes-*.json docs/jogo-da-velha-fontes.json docs/jogo-da-velha-fontes.json.gz docs/jogo-da-velha-auditoria-2026-10-14.json online/velha-catalogo.sql
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Aplica fatos revisados, fontes e grades consistentes nos jogos OPC"
+          git push origin HEAD:main
