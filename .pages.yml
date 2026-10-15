@@ -29,7 +29,7 @@ content:
         label: Categoria
         type: select
         options:
-          values: [Ídolos, Personagens, Clubes, Histórias, Curiosidades]
+          values: [Ídolos, Personagens, Clubes, Histórias, Curiosidades, Rivalidades, Lendas do Futebol, História do futebol, Partidas históricas]
       - name: description
         label: Resumo
         type: text

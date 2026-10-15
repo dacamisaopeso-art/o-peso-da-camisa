@@ -1,5 +1,8 @@
 from pathlib import Path
 import html, re, yaml, markdown
+from datetime import date as Date
+from urllib.parse import urlsplit, unquote, quote
+import posixpath
 from blog_security import clean_article, safe_image_url
 from site_policies import protect
 from xml.etree import ElementTree as ET
@@ -10,7 +13,30 @@ OUT = ROOT / "publicacoes"
 OUT.mkdir(exist_ok=True)
 cards = []
 post_urls = []
-for path in sorted(POSTS.glob("*.md"), reverse=True):
+def publication_date(path):
+    source = path.read_text(encoding="utf-8")
+    if not source.startswith("---"):
+        return ("", path.stem)
+    meta = yaml.safe_load(source.split("---", 2)[1]) or {}
+    value = str(meta.get("date") or "")
+    if value:
+        Date.fromisoformat(value)
+    return (value, path.stem)
+
+def cover_url(value, prefix=""):
+    value = safe_image_url(value)
+    if not value or urlsplit(value).scheme:
+        return value
+    parsed = urlsplit(value)
+    route = unquote(parsed.path).removeprefix("/o-peso-da-camisa/")
+    route = posixpath.normpath(route)
+    if route.startswith("/") or route == ".." or route.startswith("../"):
+        raise ValueError(f"Caminho de capa fora do site: {value}")
+    if not (ROOT / route).is_file():
+        raise ValueError(f"Capa inexistente: {value}")
+    return prefix + quote(route, safe="/-._~") + ("?" + parsed.query if parsed.query else "")
+
+for path in sorted(POSTS.glob("*.md"), key=publication_date, reverse=True):
     source = path.read_text(encoding="utf-8")
     if not source.startswith("---"):
         continue
@@ -19,7 +45,7 @@ for path in sorted(POSTS.glob("*.md"), reverse=True):
     title = str(meta.get("title") or path.stem)
     description = str(meta.get("description") or "")
     category = str(meta.get("category") or "Blog")
-    image = safe_image_url(meta.get("image") or "")
+    image = cover_url(meta.get("image") or "")
     date = str(meta.get("date") or "")
     slug = re.sub(r"[^a-z0-9-]", "", path.stem.lower())
     if not slug:
@@ -27,9 +53,13 @@ for path in sorted(POSTS.glob("*.md"), reverse=True):
     url = "publicacoes/" + slug + ".html"
     post_urls.append(url)
     esc = lambda s: html.escape(str(s), quote=True)
-    image_tag = f'<img src="{esc(image)}" alt="Capa de {esc(title)}" loading="lazy">' if image else ""
+    def cover_tag(prefix=""):
+        src = cover_url(image, prefix) if image else prefix + "imagens/blog-capa-padrao.svg"
+        return f'<img data-blog-cover src="{esc(src)}" alt="{esc("Capa de " + title if image else "Ilustração editorial O Peso da Camisa")}" loading="lazy">'
+    image_tag = cover_tag()
     cards.append(f'<article class="article-card"><a href="{url}">{image_tag}<div class="article-content"><div class="real-kicker">{esc(category)} • {esc(date)}</div><h3>{esc(title)}</h3><p>{esc(description)}</p><span class="real-link">LER POST COMPLETO →</span></div></a></article>')
     article = clean_article(markdown.markdown(body, extensions=["extra", "sane_lists"]))
+    image_tag = cover_tag("../")
     page = f'''<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)} | O Peso da Camisa</title><meta name="description" content="{esc(description)}"><link rel="canonical" href="https://dacamisaopeso-art.github.io/o-peso-da-camisa/{url}"><meta name="robots" content="index,follow,max-image-preview:large"><style>body{{background:#07090b;color:#eee;font:17px/1.85 Arial,sans-serif;margin:0}}header,main,footer{{max-width:840px;margin:auto;padding:25px}}a{{color:#d8a83e}}h1{{font-size:clamp(32px,5vw,54px);line-height:1.15}}h2{{margin-top:40px}}p{{color:#ddd}}img{{max-width:100%;height:auto;border-radius:10px}}.tag{{color:#d8a83e;text-transform:uppercase;letter-spacing:2px;font-size:13px}}</style></head><body><header><a href="../">← O PESO DA CAMISA</a></header><main><div class="tag">{esc(category)} • {esc(date)}</div><h1>{esc(title)}</h1><p>{esc(description)}</p>{image_tag}<article>{article}</article><p><a href="../#blog">← Voltar ao blog</a></p></main><footer>O PESO DA CAMISA</footer></body></html>'''
     page = page.replace("</head>", '<link rel="stylesheet" href="../site-ajustes.css?v=1"></head>').replace("</body>", '<script defer src="../site-ajustes.js?v=1"></script></body>')
     (OUT / (slug + ".html")).write_text(protect(page, '../'), encoding="utf-8", newline="\n")
@@ -50,9 +80,19 @@ fixed_urls = ["", "kaka-da-superacao-a-bola-de-ouro.html", "robinho-da-promessa-
 namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
 ET.register_namespace("", namespace)
 urlset = ET.Element(f"{{{namespace}}}urlset")
-for relative_url in fixed_urls + sorted(post_urls):
+for relative_url in dict.fromkeys(fixed_urls + sorted(post_urls)):
+    target = ROOT / relative_url
+    if not (target / "index.html" if target.is_dir() else target).is_file():
+        raise ValueError(f"URL do sitemap sem página: {relative_url}")
     ET.SubElement(ET.SubElement(urlset, f"{{{namespace}}}url"), f"{{{namespace}}}loc").text = base_url + relative_url
 ET.indent(urlset, space="  ")
 ET.ElementTree(urlset).write(ROOT / "sitemap.xml", encoding="utf-8", xml_declaration=True)
 print(f"Sitemap atualizado com {len(fixed_urls) + len(post_urls)} URLs")
 
+
+# Preserva URLs antigas e seu conteúdo, retirando do índice páginas sem fonte editorial.
+for stale in OUT.glob("*.html"):
+    if "publicacoes/" + stale.name not in post_urls:
+        page = stale.read_text(encoding="utf-8")
+        page = re.sub(r'<meta name="robots" content="[^"]*">', '<meta name="robots" content="noindex,follow">', page)
+        stale.write_text(page, encoding="utf-8", newline="\n")

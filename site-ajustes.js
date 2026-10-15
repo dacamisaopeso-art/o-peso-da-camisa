@@ -1,6 +1,11 @@
 (function(){
  'use strict';
  const root=new URL('.',document.currentScript.src),$=id=>document.getElementById(id);
+ // Uma capa indisponível mantém o cartão legível, com ilustração editorial identificada.
+ document.querySelectorAll('img[data-blog-cover]').forEach(img=>{
+  const fallback=()=>{img.removeEventListener('error',fallback);img.src=new URL('imagens/blog-capa-padrao.svg',root);img.alt='Ilustração editorial O Peso da Camisa — foto de capa indisponível';};
+  img.addEventListener('error',fallback);if(img.complete&&img.naturalWidth===0)fallback();
+ });
  const poll=$('poll-details');if(poll)poll.addEventListener('toggle',()=>{const frame=poll.querySelector('iframe');if(poll.open&&!frame.hasAttribute('src'))frame.src=frame.dataset.src;});
  const shorts=$('shorts-expand');if(shorts)shorts.onclick=()=>{const expanded=shorts.getAttribute('aria-expanded')!=='true';shorts.setAttribute('aria-expanded',String(expanded));shorts.closest('.shorts-grid').classList.toggle('shorts-expanded',expanded);shorts.textContent=expanded?'Mostrar menos Shorts ↑':'Ver mais Shorts ↓';};
  // Um destaque a cada dia, sem carrossel ou movimento enquanto a pessoa lê.

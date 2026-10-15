@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - 'posts/**'
+      - 'tests/blog.test.py'
+      - 'imagens/**'
+      - '.pages.yml'
+      - '.github/workflows/publicar-blog.yml'
       - 'scripts/gerar_blog.py'
       - 'scripts/blog_security.py'
       - 'scripts/site_policies.py'
@@ -21,6 +25,7 @@ jobs:
           python-version: '3.12'
       - run: pip install -r scripts/requirements-blog.txt
       - run: python scripts/gerar_blog.py
+      - run: python tests/blog.test.py
       - name: Salvar páginas geradas
         run: |
           git config user.name "github-actions[bot]"
