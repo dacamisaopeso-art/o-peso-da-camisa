@@ -1,0 +1,2505 @@
+{
+  "version": "2026-10-14-v10-fatos",
+  "players": 25742,
+  "biographiesParsed": 14305,
+  "added": 430,
+  "removed": 40,
+  "teammatesBefore": {
+    "Romário": 3,
+    "Ronaldo": 12,
+    "Ronaldinho": 11,
+    "Cristiano Ronaldo": 3,
+    "Lionel Messi": 11,
+    "Neymar": 9
+  },
+  "teammatesAfter": {
+    "Romário": 13,
+    "Ronaldo": 21,
+    "Ronaldinho": 72,
+    "Cristiano Ronaldo": 33,
+    "Lionel Messi": 34,
+    "Neymar": 36
+  },
+  "repairedBoards": [
+    "eng.1-normal-61",
+    "eng.1-normal-74",
+    "eng.1-hard-1",
+    "eng.1-hard-4",
+    "eng.1-hard-7",
+    "eng.1-hard-8",
+    "eng.1-hard-19",
+    "eng.1-hard-37",
+    "eng.1-hard-38",
+    "eng.1-hard-45",
+    "eng.1-hard-52",
+    "eng.1-hard-53",
+    "eng.1-hard-62",
+    "eng.1-hard-65",
+    "eng.1-hard-67",
+    "eng.1-hard-69",
+    "eng.1-hard-79",
+    "esp.1-normal-60",
+    "esp.1-normal-72",
+    "esp.1-hard-2",
+    "esp.1-hard-5",
+    "esp.1-hard-11",
+    "esp.1-hard-21",
+    "esp.1-hard-27",
+    "esp.1-hard-33",
+    "esp.1-hard-40",
+    "esp.1-hard-46",
+    "esp.1-hard-53",
+    "esp.1-hard-60",
+    "esp.1-hard-68",
+    "esp.1-hard-70",
+    "esp.1-hard-75",
+    "esp.1-hard-78",
+    "ita.1-hard-2",
+    "ita.1-hard-13",
+    "ita.1-hard-23",
+    "ita.1-hard-25",
+    "ita.1-hard-37",
+    "ita.1-hard-41",
+    "ita.1-hard-43",
+    "ita.1-hard-60",
+    "ita.1-hard-75",
+    "fra.1-normal-11",
+    "fra.1-normal-25",
+    "fra.1-normal-30",
+    "fra.1-normal-37",
+    "fra.1-hard-14",
+    "fra.1-hard-21",
+    "fra.1-hard-22",
+    "fra.1-hard-51",
+    "fra.1-hard-53",
+    "fra.1-hard-54",
+    "fra.1-hard-56",
+    "fra.1-hard-67",
+    "fra.1-hard-72",
+    "fra.1-hard-74",
+    "bra.1-normal-61",
+    "bra.1-hard-0",
+    "bra.1-hard-4",
+    "bra.1-hard-11",
+    "bra.1-hard-18",
+    "bra.1-hard-20",
+    "bra.1-hard-22",
+    "bra.1-hard-29",
+    "bra.1-hard-30",
+    "bra.1-hard-34",
+    "bra.1-hard-37",
+    "bra.1-hard-39",
+    "bra.1-hard-50",
+    "bra.1-hard-53",
+    "bra.1-hard-56",
+    "bra.1-hard-60",
+    "bra.1-hard-65",
+    "bra.1-hard-66",
+    "bra.1-hard-71",
+    "bra.1-hard-72",
+    "europe-curated-hard-26",
+    "europe-curated-hard-31",
+    "europe-curated-hard-55"
+  ],
+  "curatedRepairedBoards": [
+    "europe-curated-hard-26",
+    "europe-curated-hard-31",
+    "europe-curated-hard-55"
+  ],
+  "changes": {
+    "added": [
+      {
+        "playerId": "Q21564642",
+        "name": "José Angulo",
+        "category": "award:seriea"
+      },
+      {
+        "playerId": "tm-195778",
+        "name": "Alexander Nübel",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-532776",
+        "name": "Amine Adli",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-429874",
+        "name": "Ansgar Knauff",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-190393",
+        "name": "Corentin Tolisso",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-190393",
+        "name": "Corentin Tolisso",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-190393",
+        "name": "Corentin Tolisso",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "tm-85906",
+        "name": "Danny da Costa",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-564545",
+        "name": "Edmond Tapsoba",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q677923",
+        "name": "Fábio",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "Q161089",
+        "name": "İlkay Gündoğan",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "196200",
+        "name": "Lucas Hernández",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "134283",
+        "name": "Thibaut Courtois",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-315332",
+        "name": "Aymen Barkok",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-468539",
+        "name": "Daniel Peretz",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-787912",
+        "name": "El Chadaille Bitshiabu",
+        "category": "award:ligue1"
+      },
+      {
+        "playerId": "Q194579",
+        "name": "Lucas Ocampos",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-991846",
+        "name": "Luiz Gustavo",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-991846",
+        "name": "Luiz Gustavo",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-190685",
+        "name": "Bouna Sarr",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-82097",
+        "name": "Christoph Kramer",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "tm-159844",
+        "name": "Christopher Lenz",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "Q222151",
+        "name": "João Moutinho",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-729263",
+        "name": "Pedro Vilhena",
+        "category": "award:copabrasil"
+      },
+      {
+        "playerId": "Q713507",
+        "name": "Sílvio",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-229005",
+        "name": "Abdou Diallo",
+        "category": "award:ligue1"
+      },
+      {
+        "playerId": "tm-569385",
+        "name": "Adil Aouchiche",
+        "category": "award:ligue1"
+      },
+      {
+        "playerId": "tm-216181",
+        "name": "Almamy Touré",
+        "category": "award:ligue1"
+      },
+      {
+        "playerId": "tm-216181",
+        "name": "Almamy Touré",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "Q187891",
+        "name": "Fernando Llorente",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "Q312772",
+        "name": "Fred",
+        "category": "award:ligue1"
+      },
+      {
+        "playerId": "Q312772",
+        "name": "Fred",
+        "category": "award:copaamerica"
+      },
+      {
+        "playerId": "tm-336307",
+        "name": "Christian Früchtl",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-925861",
+        "name": "Raí",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-925861",
+        "name": "Raí",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "tm-925861",
+        "name": "Raí",
+        "category": "award:ligue1"
+      },
+      {
+        "playerId": "tm-925861",
+        "name": "Raí",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "tm-19112",
+        "name": "Christian Gentner",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-59950",
+        "name": "Damien Le Tallec",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q156822",
+        "name": "Lúcio",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-45662",
+        "name": "Alexander Esswein",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q188542",
+        "name": "Alexander Hleb",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q15831064",
+        "name": "Juninho",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-211999",
+        "name": "Romário",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-211999",
+        "name": "Romário",
+        "category": "award:laliga"
+      },
+      {
+        "playerId": "tm-211999",
+        "name": "Romário",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "tm-211999",
+        "name": "Romário",
+        "category": "award:copaamerica"
+      },
+      {
+        "playerId": "tm-542207",
+        "name": "Deivid",
+        "category": "award:copabrasil"
+      },
+      {
+        "playerId": "tm-542207",
+        "name": "Deivid",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-1667",
+        "name": "Diego Benaglio",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q1916",
+        "name": "Patrice Evra",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-99189",
+        "name": "Pelé",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-99189",
+        "name": "Pelé",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "tm-99189",
+        "name": "Pelé",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "Q250901",
+        "name": "Álvaro Arbeloa",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-39717",
+        "name": "Diego Contento",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-39717",
+        "name": "Diego Contento",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q219771",
+        "name": "Ludovic Giuly",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-40937",
+        "name": "Elkin Soto",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "Q1988145",
+        "name": "Harlei",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "tm-1426",
+        "name": "Cacau",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q326008",
+        "name": "Saul Malatrasi",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-14856",
+        "name": "Andreas Ottl",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-773",
+        "name": "David Jarolím",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q976301",
+        "name": "Diego Fuser",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q976301",
+        "name": "Diego Fuser",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-83546",
+        "name": "Doriva",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "tm-178734",
+        "name": "Raí",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-178734",
+        "name": "Raí",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "tm-178734",
+        "name": "Raí",
+        "category": "award:ligue1"
+      },
+      {
+        "playerId": "tm-178734",
+        "name": "Raí",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "tm-362",
+        "name": "Alexander Bugera",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-68807",
+        "name": "Careca",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-68807",
+        "name": "Careca",
+        "category": "award:seriea"
+      },
+      {
+        "playerId": "tm-68807",
+        "name": "Careca",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-921",
+        "name": "André Lenz",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-1519",
+        "name": "Angelos Charisteas",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q507121",
+        "name": "Gary Mills",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-76117",
+        "name": "Gilmar",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-76117",
+        "name": "Gilmar",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "tm-76117",
+        "name": "Gilmar",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "Q2478028",
+        "name": "Martijn Reuser",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-53950",
+        "name": "Mauricio Molina",
+        "category": "award:copaamerica"
+      },
+      {
+        "playerId": "Q375012",
+        "name": "Stefano Tacconi",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-1742",
+        "name": "Andreas Görlitz",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-40934",
+        "name": "Andrés Orozco",
+        "category": "award:copaamerica"
+      },
+      {
+        "playerId": "tm-40594",
+        "name": "Daniel Reiche",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-55264",
+        "name": "Rubens Cardoso",
+        "category": "award:copabrasil"
+      },
+      {
+        "playerId": "tm-55264",
+        "name": "Rubens Cardoso",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "Q444295",
+        "name": "Bruce Grobbelaar",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-440",
+        "name": "Dirk Heinen",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-52391",
+        "name": "Edmílson",
+        "category": "award:ligue1"
+      },
+      {
+        "playerId": "tm-52391",
+        "name": "Edmílson",
+        "category": "award:laliga"
+      },
+      {
+        "playerId": "tm-52391",
+        "name": "Edmílson",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-52391",
+        "name": "Edmílson",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "tm-53037",
+        "name": "Lúcio",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-53037",
+        "name": "Lúcio",
+        "category": "award:seriea"
+      },
+      {
+        "playerId": "tm-53037",
+        "name": "Lúcio",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-53037",
+        "name": "Lúcio",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "tm-13139",
+        "name": "Rubens Júnior",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "tm-196",
+        "name": "Bernd Dreher",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-196",
+        "name": "Bernd Dreher",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-196",
+        "name": "Bernd Dreher",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-13176",
+        "name": "Márcio Mixirica",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "Q294351",
+        "name": "Siniša Mihajlović",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-14095",
+        "name": "Caíco",
+        "category": "award:copabrasil"
+      },
+      {
+        "playerId": "tm-388",
+        "name": "Carsten Wolters",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q2656692",
+        "name": "Giovanni Stroppa",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-227",
+        "name": "Alexander Zickler",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-227",
+        "name": "Alexander Zickler",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "tm-227",
+        "name": "Alexander Zickler",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-195",
+        "name": "Antonio Di Salvo",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "Q3787223",
+        "name": "Howard Gayle",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q531135",
+        "name": "Richard Witschge",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q3703601",
+        "name": "Davide Pinato",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q2734022",
+        "name": "Paulo Nunes",
+        "category": "award:copabrasil"
+      },
+      {
+        "playerId": "Q2734022",
+        "name": "Paulo Nunes",
+        "category": "award:copaamerica"
+      },
+      {
+        "playerId": "tm-1321727",
+        "name": "Zinho",
+        "category": "award:copabrasil"
+      },
+      {
+        "playerId": "tm-1321727",
+        "name": "Zinho",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "tm-1321727",
+        "name": "Zinho",
+        "category": "award:libertadores"
+      },
+      {
+        "playerId": "tm-1321727",
+        "name": "Zinho",
+        "category": "award:worldcup"
+      },
+      {
+        "playerId": "tm-527",
+        "name": "Dieter Frey",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-527",
+        "name": "Dieter Frey",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "tm-3",
+        "name": "Andreas Buck",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-759",
+        "name": "Bernd Hobsch",
+        "category": "award:bundesliga"
+      },
+      {
+        "playerId": "tm-1321275",
+        "name": "Sílvio Criciúma",
+        "category": "award:copabrasil"
+      },
+      {
+        "playerId": "Q287911",
+        "name": "Steve Nicol",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q608401",
+        "name": "Giancarlo Marocchi",
+        "category": "award:seriea"
+      },
+      {
+        "playerId": "Q608401",
+        "name": "Giancarlo Marocchi",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q608401",
+        "name": "Giancarlo Marocchi",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "Q219354",
+        "name": "Ian Rush",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q539125",
+        "name": "Marius Lăcătuș",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q461305",
+        "name": "Nicola Berti",
+        "category": "award:seriea"
+      },
+      {
+        "playerId": "Q461305",
+        "name": "Nicola Berti",
+        "category": "award:europa"
+      },
+      {
+        "playerId": "Q458474",
+        "name": "Alberico Evani",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q358222",
+        "name": "Andoni Goikoetxea",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q552965",
+        "name": "Roberto Mussi",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q923088",
+        "name": "Stefano Pioli",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q188720",
+        "name": "Michael Laudrup",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q173972",
+        "name": "Ruud Gullit",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q311362",
+        "name": "Darko Pančev",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q538794",
+        "name": "Stefano Borgonovo",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q526672",
+        "name": "Angelo Colombo",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q1541321",
+        "name": "Stefano Carobbi",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q817291",
+        "name": "Beniamino Vignola",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q552132",
+        "name": "David Hodgson",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q1371042",
+        "name": "Luciano Favero",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q68064",
+        "name": "Antonio Cabrini",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q233819",
+        "name": "Johan Neeskens",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q218380",
+        "name": "Cesare Prandelli",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q250743",
+        "name": "Eraldo Pecci",
+        "category": "award:seriea"
+      },
+      {
+        "playerId": "Q1485330",
+        "name": "Massimo Briaschi",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q313382",
+        "name": "Johnny Rep",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q4261",
+        "name": "Michel Platini",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q178628",
+        "name": "Paolo Rossi",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q2119297",
+        "name": "Stan Bowles",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q1319341",
+        "name": "Gianfranco Bedin",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q515815",
+        "name": "Pierino Prati",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q62182",
+        "name": "José Altafini",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q510299",
+        "name": "Angelo Anquilletti",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q535905",
+        "name": "Angelo Domenghini",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q451321",
+        "name": "Roberto Rosato",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q3941356",
+        "name": "Rosario Di Vincenzo",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q2706328",
+        "name": "Sergio Gori",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q508434",
+        "name": "Angelo Sormani",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q60435",
+        "name": "Karl-Heinz Schnellinger",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q388959",
+        "name": "Mario Corso",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q1318951",
+        "name": "Bruno Baveni",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q665397",
+        "name": "Aristide Guarneri",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q3638188",
+        "name": "Beniamino Di Giacomo",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q1527940",
+        "name": "Giuliano Sarti",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q1367004",
+        "name": "José Araquistáin",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q1446917",
+        "name": "Bruno Bolchi",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q721215",
+        "name": "Fabio Cudicini",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q44420",
+        "name": "Giovanni Trapattoni",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q993604",
+        "name": "Bruno Mora",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q176662",
+        "name": "Aurelio Milani",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q296350",
+        "name": "Cesare Maldini",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q501362",
+        "name": "Mario David",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q123118",
+        "name": "Raymond Kopa",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q164546",
+        "name": "Alfredo Di Stéfano",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q3659880",
+        "name": "Carlo Tagnin",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q2883237",
+        "name": "Pepillo II",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q1710330",
+        "name": "Juan Alonso",
+        "category": "award:champions"
+      },
+      {
+        "playerId": "Q6292564",
+        "name": "Eusébio",
+        "category": "award:ballondor"
+      },
+      {
+        "playerId": "Q173139",
+        "name": "George Weah",
+        "category": "award:ballondor"
+      },
+      {
+        "playerId": "Q173972",
+        "name": "Ruud Gullit",
+        "category": "award:ballondor"
+      },
+      {
+        "playerId": "Q17163",
+        "name": "Johan Cruyff",
+        "category": "award:ballondor"
+      },
+      {
+        "playerId": "Q230046",
+        "name": "Giovanni Rivera",
+        "category": "award:ballondor"
+      },
+      {
+        "playerId": "Q270367",
+        "name": "Luis Suárez",
+        "category": "award:ballondor"
+      },
+      {
+        "playerId": "Q1982869",
+        "name": "Vampeta",
+        "category": "award:brasileiro"
+      },
+      {
+        "playerId": "Q517914",
+        "name": "Dadá Maravilha",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q516417",
+        "name": "Pedro Rocha",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q550019",
+        "name": "Roberto Dinamite",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q742644",
+        "name": "Reinaldo",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q47526",
+        "name": "Zico",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q2448647",
+        "name": "Nunes",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q731260",
+        "name": "Serginho Chulapa",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q972671",
+        "name": "Edmar",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q342489",
+        "name": "Careca",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q714354",
+        "name": "Túlio Maravilha",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q181204",
+        "name": "Paulinho McLaren",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q204825",
+        "name": "Bebeto",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q2734022",
+        "name": "Paulo Nunes",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q494599",
+        "name": "Renaldo",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q445541",
+        "name": "Edmundo",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q509812",
+        "name": "Viola",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q192963",
+        "name": "Luís Fabiano",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q527594",
+        "name": "Rodrigo Fabri",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q467194",
+        "name": "Washington",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q595653",
+        "name": "Souza",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q2353159",
+        "name": "Josiel",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q314225",
+        "name": "Keirrison",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q1323111",
+        "name": "Kléber Pereira",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q170452",
+        "name": "Adriano",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q905206",
+        "name": "Diego Tardelli",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q326476",
+        "name": "Jonas",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q455557",
+        "name": "Humberlito Borges",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q14628966",
+        "name": "Éderson",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q315079",
+        "name": "Ricardo Oliveira",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q10393735",
+        "name": "William Pottker",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q2449294",
+        "name": "Diego Souza",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q14244926",
+        "name": "Henrique Dourado",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q314099",
+        "name": "Jô",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q23771470",
+        "name": "Claudinho",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q15966749",
+        "name": "Luciano",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q62786",
+        "name": "Hulk",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q55081204",
+        "name": "Alerrandro",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q56876908",
+        "name": "Kaio Jorge",
+        "category": "award:brtop"
+      },
+      {
+        "playerId": "Q295265",
+        "name": "Sándor Kocsis",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q180642",
+        "name": "Garrincha",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q311445",
+        "name": "Vavá",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q180649",
+        "name": "Mario Kempes",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q47778",
+        "name": "Gary Lineker",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q295307",
+        "name": "Salvatore Schillaci",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q187125",
+        "name": "Hristo Stoichkov",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q295746",
+        "name": "Oleg Salenko",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q189217",
+        "name": "Davor Šuker",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q80471",
+        "name": "Miroslav Klose",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "tm-58358",
+        "name": "Thomas Müller",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q83006",
+        "name": "David Villa",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q124086",
+        "name": "Wesley Sneijder",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q261534",
+        "name": "Diego Forlán",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q368441",
+        "name": "James Rodríguez",
+        "category": "award:wctop"
+      },
+      {
+        "playerId": "Q615668",
+        "name": "Rafael Cabral",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q437329",
+        "name": "Danilo",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q559474",
+        "name": "Edu Dracena",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q1185500",
+        "name": "Durval",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q2452835",
+        "name": "Léo",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q3383427",
+        "name": "Adriano",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q2722553",
+        "name": "Arouca",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q207407",
+        "name": "Elano",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q313835",
+        "name": "Paulo Henrique Ganso",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q2451217",
+        "name": "Zé Eduardo",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q22082590",
+        "name": "Nahuel Molina",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q28058687",
+        "name": "Cristian Romero",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q182063",
+        "name": "Nicolás Otamendi",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q6110670",
+        "name": "Rodrigo De Paul",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q96105248",
+        "name": "Enzo Fernández",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q33297140",
+        "name": "Alexis Mac Allister",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q251683",
+        "name": "Ángel Di María",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q47548",
+        "name": "Victor Valdés",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q172720",
+        "name": "Dani Alves",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q17507",
+        "name": "Gerard Piqué",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q161571",
+        "name": "Javier Mascherano",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q1935",
+        "name": "Eric Abidal",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q17500",
+        "name": "Xavi Hernández",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q49704",
+        "name": "Sergio Busquets",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q43729",
+        "name": "Andrés Iniesta",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q179773",
+        "name": "Pedro",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q83006",
+        "name": "David Villa",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q11584",
+        "name": "Iker Casillas",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q127452",
+        "name": "Dani Carvajal",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q489039",
+        "name": "Raphaël Varane",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q483309",
+        "name": "Sergio Ramos",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q484384",
+        "name": "Fábio Coentrão",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q483837",
+        "name": "Luka Modrić",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q54094",
+        "name": "Sami Khedira",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q251683",
+        "name": "Ángel Di María",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q184586",
+        "name": "Gareth Bale",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q1912",
+        "name": "Karim Benzema",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q160472",
+        "name": "Marc-André ter Stegen",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q13308",
+        "name": "Samuel Umtiti",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q455611",
+        "name": "Rafinha",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q115453",
+        "name": "Ivan Rakitić",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q26517",
+        "name": "Luis Suárez",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q142794",
+        "name": "Neymar",
+        "category": "with:Q615"
+      },
+      {
+        "playerId": "Q160472",
+        "name": "Marc-André ter Stegen",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q161571",
+        "name": "Javier Mascherano",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q17507",
+        "name": "Gerard Piqué",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q13308",
+        "name": "Samuel Umtiti",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q455611",
+        "name": "Rafinha",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q115453",
+        "name": "Ivan Rakitić",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q49704",
+        "name": "Sergio Busquets",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q43729",
+        "name": "Andrés Iniesta",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q615",
+        "name": "Lionel Messi",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q26517",
+        "name": "Luis Suárez",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q563649",
+        "name": "Victor",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q2301511",
+        "name": "Michel Macedo",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q1363213",
+        "name": "Réver",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q3830364",
+        "name": "Leonardo Silva",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q1715715",
+        "name": "Júnior César",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q6158497",
+        "name": "Pierre",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q161039",
+        "name": "Josué",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q905206",
+        "name": "Diego Tardelli",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q137242",
+        "name": "Bernard",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q314099",
+        "name": "Jô",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q294980",
+        "name": "Rui Patrício",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q481330",
+        "name": "Cédric Soares",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q485697",
+        "name": "Pepe",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q2736254",
+        "name": "José Fonte",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "tm-170986",
+        "name": "Raphaël Guerreiro",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q6298271",
+        "name": "João Mário",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q304416",
+        "name": "William Carvalho",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q2724855",
+        "name": "Adrien Silva",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q18394009",
+        "name": "Renato Sanches",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q482947",
+        "name": "Nani",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q295891",
+        "name": "Cláudio Taffarel",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q163750",
+        "name": "Jorginho",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q297721",
+        "name": "Aldair",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q1526974",
+        "name": "Márcio Santos",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q351827",
+        "name": "Branco",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q342457",
+        "name": "Mauro Silva",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q215890",
+        "name": "Dunga",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q350761",
+        "name": "Mazinho",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q204555",
+        "name": "Zinho",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q204825",
+        "name": "Bebeto",
+        "category": "with:Q178649"
+      },
+      {
+        "playerId": "Q188544",
+        "name": "Dida",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q213007",
+        "name": "Ignazio Abate",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q210453",
+        "name": "Thiago Silva",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q227892",
+        "name": "Alessandro Nesta",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q270359",
+        "name": "Giuseppe Favalli",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q188564",
+        "name": "Massimo Ambrosini",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q43926",
+        "name": "Andrea Pirlo",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q116980",
+        "name": "Gennaro Gattuso",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q296814",
+        "name": "Mancini",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q26069",
+        "name": "Klaas-Jan Huntelaar",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q125438",
+        "name": "Massimo Oddo",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q182907",
+        "name": "Gianluca Zambrotta",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q484909",
+        "name": "Clarence Seedorf",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q138075",
+        "name": "Alexandre Pato",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q126503",
+        "name": "Filippo Inzaghi",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q1424354",
+        "name": "Felipe",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q2578811",
+        "name": "Léo Moura",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q970674",
+        "name": "Welinton",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q1632593",
+        "name": "Ronaldo Angelim",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q2054410",
+        "name": "Willians",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q6701394",
+        "name": "Luiz Antônio",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q682277",
+        "name": "Renato Abreu",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q370014",
+        "name": "Thiago Neves",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q508316",
+        "name": "Deivid",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q218611",
+        "name": "Marcos Rocha",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q921131",
+        "name": "Richarlyson",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q3829237",
+        "name": "Leandro Donizete",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "tm-181639",
+        "name": "João Carlos",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q1433020",
+        "name": "Odvan",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q507815",
+        "name": "Alex",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q180866",
+        "name": "Beto",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q215952",
+        "name": "Emerson",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q350536",
+        "name": "Flávio Conceição",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q312140",
+        "name": "Serginho",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q1982869",
+        "name": "Vampeta",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q57167",
+        "name": "Zé Roberto",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q312886",
+        "name": "Lucas Moura",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q39444",
+        "name": "Ronaldinho",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q455557",
+        "name": "Humberlito Borges",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q142794",
+        "name": "Neymar",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q312886",
+        "name": "Lucas Moura",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q455557",
+        "name": "Humberlito Borges",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q19709176",
+        "name": "Gustavo Scarpa",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q197565",
+        "name": "Roger Machado",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q953573",
+        "name": "Danrlei",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q47548",
+        "name": "Victor Valdés",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q313682",
+        "name": "Oleguer",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q186330",
+        "name": "Rafael Márquez",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q17158",
+        "name": "Carles Puyol",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q173360",
+        "name": "Giovanni van Bronckhorst",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q151853",
+        "name": "Mark van Bommel",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q659634",
+        "name": "Deco",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q219771",
+        "name": "Ludovic Giuly",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q1255625",
+        "name": "Samuel Eto'o",
+        "category": "with:Q39444"
+      },
+      {
+        "playerId": "Q482955",
+        "name": "Edwin van der Sar",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q83756",
+        "name": "Wes Brown",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q483417",
+        "name": "Rio Ferdinand",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q163564",
+        "name": "Nemanja Vidić",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q1916",
+        "name": "Patrice Evra",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q437545",
+        "name": "Owen Hargreaves",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q29566",
+        "name": "Michael Carrick",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q45613",
+        "name": "Paul Scholes",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q50600",
+        "name": "Carlos Tevez",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q266613",
+        "name": "Wayne Rooney",
+        "category": "with:Q11571"
+      },
+      {
+        "playerId": "Q4282225",
+        "name": "Pará",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q925323",
+        "name": "Wesley",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q58441",
+        "name": "Robinho",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q518525",
+        "name": "André Felipe",
+        "category": "with:Q142794"
+      },
+      {
+        "playerId": "Q11584",
+        "name": "Iker Casillas",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q216816",
+        "name": "Míchel Salgado",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q205499",
+        "name": "Fernando Hierro",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q296975",
+        "name": "Iván Helguera",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q1835",
+        "name": "Zidane",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q294501",
+        "name": "Steve McManaman",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q483145",
+        "name": "Luís Figo",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q184362",
+        "name": "Claude Makélélé",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q194461",
+        "name": "Guti",
+        "category": "with:Q529207"
+      },
+      {
+        "playerId": "Q15831037",
+        "name": "Ivan",
+        "category": "club:goiasesporteclube"
+      },
+      {
+        "playerId": "Q20630672",
+        "name": "Jean Carioca",
+        "category": "club:associacaoatleticapontepreta"
+      },
+      {
+        "playerId": "Q3082141",
+        "name": "Deyvid Sacconi",
+        "category": "club:goiasesporteclube"
+      },
+      {
+        "playerId": "Q510123",
+        "name": "Elias",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q1748166",
+        "name": "Dalton",
+        "category": "club:internacional"
+      },
+      {
+        "playerId": "Q2707174",
+        "name": "Rodrigo",
+        "category": "club:goiasesporteclube"
+      },
+      {
+        "playerId": "Q26829248",
+        "name": "Rodrigo Biro",
+        "category": "club:associacaoatleticapontepreta"
+      },
+      {
+        "playerId": "Q5217969",
+        "name": "Daniel Lovinho",
+        "category": "club:goiasesporteclube"
+      },
+      {
+        "playerId": "Q2538809",
+        "name": "Luiz Alberto",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q522020",
+        "name": "Fernando Menegazzo",
+        "category": "club:gremio"
+      },
+      {
+        "playerId": "Q2735135",
+        "name": "Alessandro",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q180735",
+        "name": "Fabinho",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q715599",
+        "name": "Pingo",
+        "category": "club:associacaoatleticapontepreta"
+      },
+      {
+        "playerId": "Q527594",
+        "name": "Rodrigo Fabri",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q3940086",
+        "name": "Roger",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q47489",
+        "name": "Djalminha",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q2520149",
+        "name": "Andrade",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q2265611",
+        "name": "Gaúcho",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q9287179",
+        "name": "Heitor",
+        "category": "club:associacaoatleticapontepreta"
+      },
+      {
+        "playerId": "Q533007",
+        "name": "Elzo",
+        "category": "club:internacional"
+      },
+      {
+        "playerId": "Q311424",
+        "name": "Léo Júnior",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q3869199",
+        "name": "Márcio Rossini",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q2448647",
+        "name": "Nunes",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q969872",
+        "name": "Leandro",
+        "category": "club:flamengo"
+      },
+      {
+        "playerId": "Q121936904",
+        "name": "Lúcio Bala",
+        "category": "club:associacaoatleticapontepreta"
+      },
+      {
+        "playerId": "Q2625446",
+        "name": "César Maluco",
+        "category": "club:flamengo"
+      }
+    ],
+    "removed": [
+      {
+        "playerId": "Q648744",
+        "name": "Christian Cueva",
+        "category": "award:copaamerica",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q161069",
+        "name": "David Silva",
+        "category": "award:laliga",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q39444",
+        "name": "Ronaldinho",
+        "category": "award:copabrasil",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q161089",
+        "name": "İlkay Gündoğan",
+        "category": "award:euro",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q146907",
+        "name": "Miralem Pjanić",
+        "category": "award:champions",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q80306",
+        "name": "Giorgio Chiellini",
+        "category": "award:champions",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q1917",
+        "name": "Philippe Mexès",
+        "category": "award:champions",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q316778",
+        "name": "Walter Pandiani",
+        "category": "award:europa",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q617382",
+        "name": "Dênis Marques",
+        "category": "award:copabrasil",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q11948",
+        "name": "Michael Ballack",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q284359",
+        "name": "Nihat Kahveci",
+        "category": "award:euro",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q467194",
+        "name": "Washington",
+        "category": "award:copabrasil",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q445541",
+        "name": "Edmundo",
+        "category": "award:copabrasil",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q295512",
+        "name": "Carlos Gamarra",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q314078",
+        "name": "Ciro Ferrara",
+        "category": "award:euro",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q314078",
+        "name": "Ciro Ferrara",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q216312",
+        "name": "José Luis Chilavert",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q204089",
+        "name": "Carlos Valderrama",
+        "category": "award:copaamerica",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q703696",
+        "name": "Zlatko Yankov",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q1154427",
+        "name": "Eddie Newton",
+        "category": "award:champions",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q159951",
+        "name": "Karl-Heinz Riedle",
+        "category": "award:euro",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q1366521",
+        "name": "Nasko Sirakov",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q379535",
+        "name": "Steve Clarke",
+        "category": "award:premier",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q1339029",
+        "name": "Nikolay Iliev",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q358926",
+        "name": "Giuseppe Baresi",
+        "category": "award:champions",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q47526",
+        "name": "Zico",
+        "category": "award:seriea",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q311424",
+        "name": "Léo Júnior",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q68064",
+        "name": "Antonio Cabrini",
+        "category": "award:euro",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q742644",
+        "name": "Reinaldo",
+        "category": "award:brasileiro",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q372086",
+        "name": "Leopoldo Luque",
+        "category": "award:copaamerica",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q67981",
+        "name": "Romeo Benetti",
+        "category": "award:euro",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q67981",
+        "name": "Romeo Benetti",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q264532",
+        "name": "Vavá II",
+        "category": "award:laliga",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q817228",
+        "name": "Bengt Gustavsson",
+        "category": "award:worldcup",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q1613318",
+        "name": "Cesarino Cervellati",
+        "category": "award:seriea",
+        "reason": "revisão de conquistas: indicação, colocação, prêmio individual, treinador ou falta de confirmação na seção de atleta"
+      },
+      {
+        "playerId": "Q184946",
+        "name": "Joe Cole",
+        "category": "award:ballondor",
+        "reason": "não consta no palmarès anual oficial; não aceitar indicações, colocações ou reavaliação retrospectiva"
+      },
+      {
+        "playerId": "Q180649",
+        "name": "Mario Kempes",
+        "category": "award:ballondor",
+        "reason": "não consta no palmarès anual oficial; não aceitar indicações, colocações ou reavaliação retrospectiva"
+      },
+      {
+        "playerId": "Q131529",
+        "name": "Hans Krankl",
+        "category": "award:ballondor",
+        "reason": "não consta no palmarès anual oficial; não aceitar indicações, colocações ou reavaliação retrospectiva"
+      },
+      {
+        "playerId": "Q295732",
+        "name": "László Kubala",
+        "category": "award:ballondor",
+        "reason": "não consta no palmarès anual oficial; não aceitar indicações, colocações ou reavaliação retrospectiva"
+      },
+      {
+        "playerId": "Q3541008",
+        "name": "Virgilio Ferreira",
+        "category": "award:copaamerica",
+        "reason": "a edição e a seleção principal documentada não confirmam o título; cidadania ou convocação não bastam"
+      }
+    ]
+  }
+}

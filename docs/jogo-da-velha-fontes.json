@@ -1,9 +1,1 @@
-{
-  "version": "2026-10-11-v8-revisao-ligas",
-  "format": "gzip-compressed JSON array",
-  "file": "jogo-da-velha-fontes.json.gz",
-  "records": 251777,
-  "uncompressedBytes": 65791341,
-  "sha256": "684e7ab68a56643ceee58970a2e05284b6d524d1016429f3f6d6cff3978ba382",
-  "note": "As fontes de cada atleta continuam consultáveis na página fontes-jogo-da-velha.html. Descompactar este arquivo oferece todos os registros de comprovação."
-}
+{"version":"2026-10-11-v8-revisao-ligas","format":"gzip-compressed JSON array","file":"jogo-da-velha-fontes.json.gz","records":252247,"uncompressedBytes":65907322,"sha256":"1e72e72cedb665944cd8c74f443f046979de39b5ce14e04f3ca1e679c25916f5","note":"As fontes de cada atleta continuam consultáveis na página fontes-jogo-da-velha.html. Descompactar este arquivo oferece todos os registros de comprovação.","reviewed":"2026-10-14"}
