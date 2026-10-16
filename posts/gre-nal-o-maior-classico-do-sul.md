@@ -53,3 +53,31 @@ Porque o Gre-Nal não é apenas uma partida de futebol.
 **É uma rivalidade centenária que transforma Porto Alegre no palco de uma das maiores paixões do futebol brasileiro.**
 
 ---
+
+## Duas fundações, duas identidades
+
+A distância de seis anos entre as fundações dos clubes ajuda a entender a formação do clássico. O Grêmio nasceu em 1903; o Internacional foi fundado em 1909. As histórias de origem são distintas, mas os dois se tornaram referências de Porto Alegre e passaram a disputar não apenas partidas, mas também espaço na memória esportiva da cidade.
+
+O placar de 10 a 0 no primeiro encontro é um dado curioso, mas seria um erro imaginar que ele determinou o equilíbrio de toda a rivalidade. Ao longo de mais de um século, houve fases favoráveis a cada clube, decisões dramáticas e mudanças de geração. É justamente essa alternância que mantém o confronto relevante.
+
+## O clássico também é feito de campeonatos locais
+
+Antes de os grandes torneios continentais ganharem a projeção atual, o Campeonato Gaúcho já oferecia um palco recorrente para a disputa. Cada campanha estadual podia terminar em festa para uma torcida e em cobranças para a outra.
+
+A rivalidade, porém, não se limita às finais. Um Gre-Nal disputado no meio de uma temporada pode mudar o ambiente de um clube, interromper uma sequência positiva ou dar novo ânimo a um time pressionado. Por isso, a importância emocional de uma partida nem sempre corresponde ao seu peso na tabela.
+
+## Libertadores, Mundiais e a disputa pela memória
+
+As conquistas internacionais transformaram o debate entre gremistas e colorados. O Grêmio foi campeão da Libertadores em 1983, 1995 e 2017, além de vencer a Copa Intercontinental de 1983. O Internacional conquistou a Libertadores em 2006 e 2010 e o Mundial de Clubes da FIFA em 2006.
+
+Esses títulos foram obtidos em competições e contextos históricos diferentes. Compará-los faz parte das conversas entre torcedores, mas a trajetória de cada clube merece ser compreendida em seus próprios termos.
+
+Quando o Internacional venceu o Barcelona na decisão de 2006, por exemplo, a vitória passou a ser lembrada também pelo fato de Ronaldinho Gaúcho, ídolo formado no Grêmio, atuar pelo time espanhol. É um exemplo de como uma final internacional pode ganhar significado adicional dentro de uma rivalidade local.
+
+## O que faz um Gre-Nal ser diferente?
+
+A resposta não está em um único placar. Está na combinação de proximidade geográfica, encontros frequentes, tradição familiar e lembranças transmitidas entre gerações. Para muitos torcedores, a primeira experiência com o clássico acontece em casa, ouvindo histórias de pais e avós.
+
+É possível reconhecer a importância histórica do Gre-Nal sem transformar a discussão sobre qual é o “maior” clássico em um fato absoluto. Esse título depende dos critérios usados: público, tradição, equilíbrio, conquistas ou intensidade da rivalidade.
+
+Quer conhecer outros clássicos brasileiros? Leia também [a história do Fla-Flu](./fla-flu-a-maior-rivalidade-do-rio-de-janeiro.html) e [a rivalidade entre Remo e Paysandu](./remo-x-paysandu-a-historia-do-re-pa.html).
