@@ -12,11 +12,11 @@ Mas você sabe como tudo começou?
 
 ## A origem do clássico
 
-Em 1903, foi fundado o Grêmio, clube que inicialmente tinha forte ligação com a comunidade de origem alemã de Porto Alegre. Seis anos depois, em 1909, surgiu o Internacional, fundado com a proposta de reunir pessoas de diferentes origens.
+Em 15 de setembro de 1903, foi fundado o Grêmio, em Porto Alegre. Seis anos depois, em 1909, surgiu o Internacional, fundado com a proposta de reunir pessoas de diferentes origens.
 
 E não demorou para os dois se enfrentarem.
 
-No dia **18 de julho de 1909**, aconteceu o primeiro Gre-Nal da história. E o resultado foi impressionante: o Grêmio venceu por **10 a 0**, naquela que continua sendo a maior goleada do clássico.
+No dia **18 de julho de 1909**, aconteceu o primeiro Gre-Nal da história, um amistoso no estádio da Baixada, em Porto Alegre. E o resultado foi impressionante: o Grêmio venceu por **10 a 0**, naquela que continua sendo a maior goleada do clássico.
 
 Mas aquela partida era apenas o começo de uma rivalidade que atravessaria gerações.
 
@@ -28,7 +28,7 @@ E essa rivalidade ganhou ainda mais força com as conquistas internacionais.
 
 ## Títulos que alimentaram a disputa
 
-Em **1983**, o Grêmio conquistou a Libertadores e o Mundial Interclubes. Já em **2006**, o Internacional conquistou a América e o mundo, derrotando o Barcelona de Ronaldinho Gaúcho na final do Mundial.
+Em **1983**, o Grêmio conquistou a Libertadores e a Copa Intercontinental, conhecida como Mundial Interclubes. Já em **2006**, o Internacional conquistou a América e o mundo, derrotando o Barcelona de Ronaldinho Gaúcho por 1 a 0 na final do Mundial de Clubes da FIFA, com gol de Adriano Gabiru.
 
 O Internacional ainda conquistaria sua segunda Libertadores em **2010**, enquanto o Grêmio chegaria ao terceiro título continental em **2017**.
 
@@ -81,3 +81,14 @@ A resposta não está em um único placar. Está na combinação de proximidade 
 É possível reconhecer a importância histórica do Gre-Nal sem transformar a discussão sobre qual é o “maior” clássico em um fato absoluto. Esse título depende dos critérios usados: público, tradição, equilíbrio, conquistas ou intensidade da rivalidade.
 
 Quer conhecer outros clássicos brasileiros? Leia também [a história do Fla-Flu](./fla-flu-a-maior-rivalidade-do-rio-de-janeiro.html) e [a rivalidade entre Remo e Paysandu](./remo-x-paysandu-a-historia-do-re-pa.html).
+
+## Fontes e contexto
+
+- [Grêmio — Fundação em 15 de setembro de 1903](https://gremio.net/conteudo/index/44).
+- [Internacional — Fundação em 1909 e proposta de integração entre nacionalidades](https://www.internacional.com.br/clube/historia/1909).
+- [Internacional — Registro dos Gre-Nais: o amistoso de 18 de julho de 1909, na Baixada, terminou 10 a 0](https://internacional.com.br/clube/grenais).
+- [Grêmio — Títulos: Libertadores de 1983, 1995 e 2017 e Mundial Interclubes de 1983](https://gremio.net/titulos).
+- [Internacional — Mundial de Clubes da FIFA de 2006 e final contra o Barcelona](https://internacional.com.br/clube/titulos/campeao-da-copa-do-mundo-de-clubes-fifa-no-japao).
+- [Internacional — Bicampeonato da Libertadores em 2010 e referência à conquista de 2006](https://internacional.com.br/clube/titulos/bicampeao-da-libertadores-da-america).
+
+*Revisão histórica de 16 de outubro de 2026: “maior clássico” é uma avaliação editorial. Copa Intercontinental de 1983 e Mundial de Clubes da FIFA de 2006 são identificados pelos respectivos torneios.*

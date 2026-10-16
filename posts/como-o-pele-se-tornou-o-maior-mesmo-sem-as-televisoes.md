@@ -29,9 +29,9 @@ O garoto que brilhava no Santos se transformava em personagem de uma história q
 
 ## A lembrança de Pelé também passa pelo rádio
 
-O próprio Pelé contou à FIFA uma lembrança da Copa de 1950: quando criança, viu o pai chorar depois da derrota do Brasil para o Uruguai. A família acompanhava aquela partida pelo rádio.
+O próprio Pelé contou à FIFA uma lembrança da Copa de 1950: quando criança, viu o pai chorar depois da derrota do Brasil para o Uruguai. Segundo esse depoimento, o pai ouvia a partida pelo rádio enquanto Pelé brincava na rua; o menino voltou para casa e o encontrou chorando.
 
-O episódio ocorreu oito anos antes da primeira conquista mundial de Pelé. Ele ajuda a entender algo importante: antes de ser protagonista das maiores vitórias brasileiras, Pelé também tinha vivido a experiência de **torcer e sofrer ouvindo futebol**.
+O episódio ocorreu oito anos antes da primeira conquista mundial de Pelé. Ele ajuda a entender algo importante: antes de ser protagonista das maiores vitórias brasileiras, Pelé já tinha vivido em família a emoção de uma Copa acompanhada **pelo rádio**.
 
 Não era uma relação distante. O mesmo meio de comunicação que transmitiu uma frustração familiar ajudaria, anos depois, a espalhar a notícia de suas conquistas.
 
@@ -39,11 +39,11 @@ Não era uma relação distante. O mesmo meio de comunicação que transmitiu um
 
 Pelé conquistou os Mundiais de **1958, 1962 e 1970**, tornando-se o único jogador tricampeão da Copa do Mundo masculina.
 
-Mas essas conquistas não foram iguais. Em 1962, no Chile, uma lesão interrompeu sua participação ainda no começo do torneio; a Seleção seguiu até o título com atuações decisivas de outros craques, entre eles Garrincha.
+Mas essas conquistas não foram iguais. Em 1962, no Chile, uma lesão contra a Tchecoslováquia, na segunda partida do Brasil, interrompeu sua participação; a Seleção seguiu até o título com atuações decisivas de outros craques, entre eles Garrincha.
 
-Em 1970, no México, a televisão já tinha um papel muito maior na circulação das imagens do futebol. No Brasil, aquela Copa ficou associada à expansão das transmissões televisivas, inclusive em cores no exterior, embora a maior parte do público brasileiro ainda acompanhasse as imagens em preto e branco. O rádio continuou importante: uma tecnologia não apagou a outra de uma hora para outra.
+Em 1970, no México, a televisão já tinha um papel muito maior na circulação das imagens do futebol. No Brasil, aquela Copa marcou a transmissão dos jogos ao vivo via satélite. O acervo Memória Globo registra a exibição em cores de Brasil x Inglaterra para um grupo restrito no auditório da Embratel; isso não equivale a dizer que os lares brasileiros já tinham acesso regular à televisão colorida. O rádio continuou importante: uma tecnologia não apagou a outra de uma hora para outra.
 
-Na final contra a Itália, Pelé abriu o placar e participou da jogada do gol de Carlos Alberto. O Brasil venceu por 4 a 1. Dessa vez, muito mais gente pôde associar a voz que descrevia o craque às imagens de seus movimentos.
+Na final contra a Itália, Pelé abriu o placar e deu a assistência para o gol de Carlos Alberto. O Brasil venceu por 4 a 1. Dessa vez, muito mais gente pôde associar a voz que descrevia o craque às imagens de seus movimentos.
 
 ## O jogador que existia também na imaginação
 
@@ -61,8 +61,10 @@ A geração que acompanhou Pelé também viu brilhar outro personagem inesquecí
 
 ## Fontes e contexto
 
-- [FIFA — Pelé e suas três conquistas de Copa do Mundo](https://www.fifa.com/en/tournaments/mens/worldcup/articles/pele-three-world-cup-titles-only-player).
+- [FIFA — Pelé: seis gols em 1958, lesão em 1962 e atuação na final de 1970](https://www.fifa.com/en/tournaments/mens/worldcup/articles/pele-three-world-cup-titles-only-player).
 - [FIFA — Entrevista de Pelé sobre a lembrança do rádio na Copa de 1950](https://www.fifa.com/en/articles/pele-interview-brazil-selecao-fifa-world-cup-1950-sweden-1958-mexico-1970).
-- [FIFA — Seleção Brasileira bicampeã mundial em números](https://www.fifa.com/pt/articles/brasil-pele-garrincha-numeros-copa-mundo-1958-1962).
+- [FIFA — O recorde de Pelé aos 17 anos e os gols nas decisões de 1958](https://inside.fifa.com/en/tournaments/mens/worldcup/1958sweden/news/behind-the-world-cup-record-pele).
+- [TV Brasil/EBC — Inauguração da TV Tupi em 18 de setembro de 1950](https://tvbrasil.ebc.com.br/fique-ligado/2018/09/dia-18-de-setembro-e-comemorado-o-dia-nacional-da-televisao).
+- [Memória Globo — Transmissão e cobertura da Copa de 1970](https://memoriaglobo.globo.com/esporte/copa-do-mundo-do-mexico-1970/noticia/copa-do-mundo-do-mexico-1970.ghtml).
 
 *Nota editorial: a fotografia de capa mostra Pelé em 2010, não durante sua carreira como jogador. Autoria e condições de uso constam nos créditos de imagens do site.*

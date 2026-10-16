@@ -15,7 +15,7 @@ Esse jogador era **Garrincha**.
 
 Em 1953, Garrincha chegou ao Botafogo para realizar um teste. E logo de cara, teve pela frente Nilton Santos, um dos maiores laterais da época.
 
-Durante o treino, Garrincha aplicou um drible desconcertante no defensor, passando a bola entre suas pernas.
+Segundo o relato preservado no site oficial do Botafogo, Garrincha passou a bola entre as pernas de Nilton Santos durante o teste.
 
 Impressionado, Nilton Santos teria pedido aos dirigentes que contratassem aquele garoto. Afinal, era melhor ter Garrincha jogando ao seu lado do que precisar enfrentá-lo.
 
@@ -41,7 +41,7 @@ E aquele futebol irreverente conquistou o mundo.
 
 Em 1958, ele foi peça importante no primeiro título mundial do Brasil. Mas foi em 1962 que sua genialidade se tornou ainda mais evidente.
 
-Com Pelé lesionado durante o torneio, Garrincha assumiu o protagonismo, marcou quatro gols e conduziu o Brasil ao bicampeonato mundial.
+Com Pelé lesionado durante o torneio, Garrincha assumiu o protagonismo, marcou quatro gols, dividiu a artilharia com outros cinco jogadores e foi decisivo na conquista coletiva do bicampeonato mundial.
 
 O homem que parecia brincar com os adversários havia se tornado um dos maiores jogadores da história.
 
@@ -55,9 +55,9 @@ Porque, enquanto muitos jogadores driblavam para vencer...
 
 ## De Pau Grande à ponta direita do Botafogo
 
-Manuel Francisco dos Santos nasceu em 1933, em Pau Grande, distrito de Magé, no estado do Rio de Janeiro. O apelido Garrincha, inspirado em um pequeno pássaro, acabou se tornando muito mais conhecido do que seu nome de batismo.
+Garrincha nasceu em 1933, em Pau Grande, na região de Magé, no estado do Rio de Janeiro. O apelido Garrincha, inspirado em um pequeno pássaro, acabou se tornando muito mais conhecido do que seu nome de batismo.
 
-Sua trajetória não seguiu o roteiro habitual dos grandes ídolos. Antes de se consolidar no futebol profissional, Garrincha cresceu jogando em campos de sua região e trabalhando na indústria têxtil. Ao chegar ao Botafogo, em 1953, encontrou o clube em que construiria a parte mais marcante da carreira.
+Sua trajetória não seguiu o roteiro habitual dos grandes ídolos. Antes de se consolidar no futebol profissional, Garrincha cresceu jogando em campos de sua região. Ao chegar ao Botafogo, em 1953, encontrou o clube em que construiria a parte mais marcante da carreira.
 
 A história do teste com Nilton Santos se tornou uma das narrativas mais repetidas do futebol brasileiro. Há diferentes versões sobre o episódio e sobre as palavras atribuídas ao lateral. O que permanece é o significado dessa lembrança: a capacidade de Garrincha de surpreender até jogadores experientes.
 
@@ -73,7 +73,7 @@ O drible também tinha função coletiva. Ao atrair defensores, Garrincha criava
 
 Na Copa de 1958, disputada na Suécia, Garrincha ganhou espaço na equipe que conquistou o primeiro título mundial do Brasil. Ao lado de nomes como Pelé, Didi e Vavá, participou da construção de um estilo de jogo que marcou a história da Seleção.
 
-Quatro anos depois, no Chile, o cenário mudou. Pelé se lesionou durante o torneio e Garrincha assumiu papel ainda mais decisivo. Seus quatro gols na competição e suas atuações contra Inglaterra e Chile foram fundamentais na campanha do bicampeonato.
+Quatro anos depois, no Chile, o cenário mudou. Pelé se lesionou durante o torneio e Garrincha assumiu papel ainda mais decisivo. Seus quatro gols vieram nos jogos contra a Inglaterra, nas quartas de final (3 a 1), e o Chile, na semifinal (4 a 2): dois em cada partida. Na final, vencida por 3 a 1 contra a Tchecoslováquia, os gols brasileiros foram de Amarildo, Zito e Vavá.
 
 É importante distinguir as duas conquistas: Garrincha foi parte relevante da equipe de 1958, mas a Copa de 1962 é especialmente lembrada como o torneio em que seu protagonismo ficou evidente.
 
@@ -81,7 +81,7 @@ Quatro anos depois, no Chile, o cenário mudou. Pelé se lesionou durante o torn
 
 A imagem do jogador sorridente e imprevisível não conta toda a história. Garrincha também enfrentou problemas pessoais e de saúde, incluindo o alcoolismo. Sua trajetória não precisa ser romantizada para que seu talento seja reconhecido.
 
-Ele morreu em 1983, aos 49 anos. O impacto de sua carreira, porém, permaneceu nas histórias contadas por torcedores, nas imagens preservadas e no modo como o Brasil passou a lembrar de seus grandes pontas.
+Ele morreu em 20 de janeiro de 1983, aos 49 anos. O impacto de sua carreira, porém, permaneceu nas histórias contadas por torcedores, nas imagens preservadas e no modo como o Brasil passou a lembrar de seus grandes pontas.
 
 ## Por que Garrincha ainda importa?
 
@@ -92,3 +92,12 @@ Garrincha representa essa ligação entre eficiência e criatividade. É por iss
 Para conhecer outro personagem essencial das conquistas brasileiras, leia também [como Pelé se tornou uma lenda mesmo na era do rádio](./como-o-pele-se-tornou-o-maior-mesmo-sem-as-televisoes.html). E, para pensar no legado dessas gerações, veja nossa reflexão sobre [o Brasil como país do futebol](./o-brasil-ainda-e-o-pais-do-futebol.html).
 
 *Nota editorial: os episódios sobre o teste com Nilton Santos e os dribles repetidos são apresentados como histórias tradicionais da memória do futebol, não como diálogos documentados literalmente.*
+
+## Fontes e contexto
+
+- [Botafogo — Perfil de Garrincha: origem, período no clube, relato do teste com Nilton Santos e falecimento](https://www.botafogo.com.br/idolos/garrincha).
+- [FIFA — Os gols de Garrincha em Copas: dois contra a Inglaterra e dois contra o Chile em 1962](https://www.fifa.com/pt/tournaments/mens/worldcup/canadamexicousa2026/articles/video-todos-gols-garrincha-copa-do-mundo-da-fifa).
+- [FIFA — A artilharia compartilhada por seis jogadores em 1962](https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/89-days-to-go-identical-tallies-in-the-60s).
+- [FIFA — Vavá e a vitória coletiva na final de 1962](https://inside.fifa.com/tournaments/mens/worldcup/1962chile/news/vava-leaps-into-the-history-books-353w).
+
+*Revisão histórica de 16 de outubro de 2026: o episódio do teste é atribuído à memória institucional do Botafogo. As palavras de Nilton Santos e a fama de voltar para driblar não são apresentadas como transcrições ou lances individualmente documentados.*
