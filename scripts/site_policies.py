@@ -50,7 +50,7 @@ def protect(page, prefix=''):
     return page
 
 def public_pages():
-    return sorted(path for path in ROOT.rglob('*.html') if not any(part.startswith(('_', '.')) for part in path.relative_to(ROOT).parts))
+    return sorted(path for path in ROOT.rglob('*.html') if not any(part.startswith(('_', '.')) for part in path.relative_to(ROOT).parts) and not re.fullmatch(r'google[a-f0-9]+\.html', path.name))
 
 if __name__ == '__main__':
     for path in public_pages():

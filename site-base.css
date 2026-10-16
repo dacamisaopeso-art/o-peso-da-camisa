@@ -26,3 +26,5 @@ dialog{max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);overflow-y:au
  footer a{display:inline-block;padding:10px 6px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+.opc-media-credits{text-align:center;padding:16px;margin:0;background:#080b0e;font:13px/1.5 Arial,sans-serif}.opc-media-credits a{color:#d8a83e}

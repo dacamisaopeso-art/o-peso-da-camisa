@@ -55,6 +55,8 @@ class BlogTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
             shutil.copytree(ROOT/'scripts',root/'scripts')
+            (root/'dados').mkdir()
+            shutil.copy2(ROOT/'dados/licencas-imagens.json',root/'dados/licencas-imagens.json')
             shutil.copytree(ROOT/'posts',root/'posts')
             shutil.copytree(ROOT/'publicacoes',root/'publicacoes')
             (root/'imagens').mkdir()
@@ -65,11 +67,11 @@ class BlogTests(unittest.TestCase):
                 route=e.text.split('/o-peso-da-camisa/',1)[1]
                 target=root/(route+'index.html' if not route or route.endswith('/') else route)
                 if not target.exists(): target.parent.mkdir(parents=True,exist_ok=True); target.write_text('page',encoding='utf-8')
-            (root/'posts/zz-regression.md').write_text('---\ntitle: Teste\ndate: 2026-10-16\nimage: imagens/logo-opc.jpg\n---\nTexto **preservado**.\n',encoding='utf-8')
+            (root/'posts/zz-regression.md').write_text('---\ntitle: Teste\ndate: 2026-10-16\nimage: imagens/blog-capa-padrao.svg\n---\nTexto **preservado**.\n',encoding='utf-8')
             def generate(): subprocess.run([sys.executable,str(root/'scripts/gerar_blog.py')],check=True,capture_output=True)
             generate()
             page=(root/'publicacoes/zz-regression.html').read_text(encoding='utf-8')
-            self.assertIn('src="../imagens/logo-opc.jpg"',page)
+            self.assertIn('src="../imagens/blog-capa-padrao.svg"',page)
             self.assertIn('Texto <strong>preservado</strong>.',page)
             before={str(p.relative_to(root)):p.read_bytes() for p in [root/'index.html',root/'sitemap.xml',*(root/'publicacoes').glob('*.html')]}
             generate()

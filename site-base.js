@@ -1,5 +1,7 @@
 (function(){
  'use strict';
+ const mediaRoot=new URL('.',document.currentScript.src);if(!document.querySelector('a[data-image-credits]')){const credit=document.createElement('p');credit.className='opc-media-credits';const link=document.createElement('a');link.href=new URL('creditos-imagens.html',mediaRoot);link.dataset.imageCredits='';link.textContent='Créditos das imagens';credit.append(link);document.body.append(credit);}
+
  const main=document.querySelector('main')||document.querySelector('#inicio')||document.querySelector('#root');
  if(main){if(!main.id)main.id='opc-conteudo';const skip=document.createElement('a');skip.className='opc-skip';skip.href='#'+main.id;skip.textContent='Pular para o conteúdo';document.body.prepend(skip);if(!main.hasAttribute('tabindex'))main.setAttribute('tabindex','-1');}
  const nav=document.querySelector('.site-header .site-nav');

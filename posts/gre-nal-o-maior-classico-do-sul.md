@@ -53,5 +53,3 @@ Porque o Gre-Nal não é apenas uma partida de futebol.
 **É uma rivalidade centenária que transforma Porto Alegre no palco de uma das maiores paixões do futebol brasileiro.**
 
 ---
-
-*Foto de capa: confusão durante o Gre-Nal de 2 de dezembro de 2012, no Estádio Olímpico Monumental. Fotografia de Guilherme Testa / Editorial J, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GRENAL_(8248126822).jpg), licenciada sob [Creative Commons CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/). Imagem utilizada sem alterações.*

@@ -4,7 +4,7 @@ date: 2026-10-07
 category: Histórias
 description: Contamos um pouco sobre como o maior jogador da história do futebol
   se tornou tão grande apenas pela voz.
-image: /o-peso-da-camisa/imagens/walter-firmopelep012cro610f1-1-031090x1600-1024x1503.jpg
+image: /o-peso-da-camisa/imagens/pele-agencia-brasil-2010.jpg
 ---
 Imagine ser considerado o maior jogador de futebol do mundo... por pessoas que nunca sequer viram você jogar.
 
@@ -30,4 +30,4 @@ Ela também viajava de boca em boca, de rádio em rádio, de geração em geraç
 
 Antes dos vídeos virais, dos melhores momentos e das redes sociais, existia um menino de Três Corações que fazia o Brasil inteiro parar para ouvir.
 
-E, mesmo sem vê-lo, milhões de pessoas já sabiam que estavam diante de um Rei.  
+E, mesmo sem vê-lo, milhões de pessoas já sabiam que estavam diante de um Rei.

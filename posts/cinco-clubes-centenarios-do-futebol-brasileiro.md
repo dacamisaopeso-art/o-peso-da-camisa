@@ -6,7 +6,6 @@ description: "Vitória, Fluminense, 14 de Julho, Ponte Preta e Rio Grande: cinco
 image: "/o-peso-da-camisa/imagens/laranjeiras-clubes-centenarios.jpg"
 ---
 
-*Na capa: estádio de Laranjeiras, do Fluminense, em 21 de julho de 2018. Foto de [Alexandre Magno Barreto Berwanger, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Est%C3%A1dio_de_Laranjeiras_21_07_2018_4.jpg), sob licença [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Arquivo original, sem alterações.*
 
 Você conhece cinco dos clubes que estão entre os mais antigos da história do futebol brasileiro?
 

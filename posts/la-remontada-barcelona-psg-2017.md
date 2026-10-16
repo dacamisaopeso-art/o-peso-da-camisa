@@ -78,6 +78,5 @@ E existem partidas que, mesmo sem terminar em título, nunca deixam de ser conta
 
 ---
 
-*Foto: Hugo Pérez Marsol, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bar%C3%A7a_6_-_PSG_1%3B_Dimecres_8_de_mar%C3%A7_de_2017_-_33185087512.jpg), licença [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).*
 
 *Fontes: [UEFA — How Barcelona tore up the history books](https://www.uefa.com/uefachampionsleague/news/0237-0e966ee49e08-4065577d094a-1000--how-barcelona-tore-up-the-history-books/); [FC Barcelona — registro da partida](https://www.fcbarcelona.com/en/matches/21497/fc-barcelona-paris-saint-germain-ucl-2016-17).*

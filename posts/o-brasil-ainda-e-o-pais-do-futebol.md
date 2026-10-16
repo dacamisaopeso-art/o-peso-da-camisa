@@ -43,6 +43,3 @@ Mas a camisa amarela não vence partidas por aquilo que conquistou décadas atr�
 Se quiser voltar ao topo, a Seleção precisará transformar seu talento em um projeto coletivo consistente, capaz de competir com as melhores equipes do mundo.
 
 **O Brasil ainda é o país do futebol quando olhamos para sua história. Mas será que continua merecendo esse título pelo que apresenta hoje?**
-
-
-*Foto: Seleção Brasileira de 1970. Fonte: El Gráfico, via Wikimedia Commons (domínio público).*
