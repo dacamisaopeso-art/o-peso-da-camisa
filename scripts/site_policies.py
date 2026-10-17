@@ -47,6 +47,11 @@ def protect(page, prefix=''):
         page = page.replace('</body>', f'<script defer src="{prefix}site-base.js?v=20261014"></script></body>')
     if not re.search(r'<link\b[^>]*rel=["\'](?:shortcut )?icon["\']', page, re.I):
         page = page.replace('</head>', f'<link rel="icon" href="{prefix}imagens/favicon-opc.png"></head>')
+    # Acesso institucional estático também nas páginas geradas e nos jogos.
+    if not re.search(r'href=["\'][^"\']*politica-de-privacidade\.html', page, re.I):
+        links = [('','Início'), ('jogos.html','Jogos'), ('sobre-nos.html','Sobre nós'), ('contato.html','Contato'), ('politica-de-privacidade.html','Privacidade e cookies')]
+        navigation = '<nav class="opc-institutional" aria-label="Informações do site">' + ' '.join(f'<a href="{prefix + route if route else prefix or "./"}">{label}</a>' for route,label in links) + '</nav>'
+        page = page.replace('</body>', navigation + '</body>')
     return page
 
 def public_pages():

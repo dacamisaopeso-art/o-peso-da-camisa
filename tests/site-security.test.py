@@ -29,6 +29,7 @@ class SecurityTests(unittest.TestCase):
     self.assertEqual(page.count('http-equiv="Content-Security-Policy"'),1)
     self.assertIn('site-base.js',page)
     self.assertIn('site-base.css',page)
+    self.assertRegex(page,r'href="[^"]*politica-de-privacidade\.html"')
     policy=html.unescape(re.search(r'<meta http-equiv="Content-Security-Policy" content="([^"]+)"',page)[1])
     self.assertIn("object-src 'none'",policy)
     script_policy=policy.split('script-src ')[1].split(';')[0]

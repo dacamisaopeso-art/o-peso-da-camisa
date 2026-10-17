@@ -54,7 +54,7 @@ A rivalidade acompanha os clubes mesmo quando eles enfrentam outros adversários
 
 Em **2002**, o Paysandu conquistou a **Copa dos Campeões**, superando o Cruzeiro na decisão. O título garantiu a classificação para a Libertadores de 2003. Na competição continental, o clube viveu uma de suas noites mais lembradas ao vencer o Boca Juniors na Bombonera. [Fontes: Copa dos Campeões](https://www.paysandu.com.br/noticias/3545/maior-titulo-do-futebol-do-norte-conquista-da-copa-dos-campeoes-completa-15-anos) e [vitória sobre o Boca Juniors](https://www.paysandu.com.br/noticias/3064/ha-14-anos-o-paysandu-vencia-o-boca-juniors-em-la-bombonera?pagina=140).
 
-O Remo também construiu capítulos importantes fora do Pará, como a conquista do **Campeonato Brasileiro da Série C de 2005**, registrada entre seus títulos nacionais. [Fonte: material oficial do Clube do Remo](https://www.clubedoremo.com.br/files/272e5490b547d57f96bd2f2196aaaf65.pdf).
+O Remo também construiu capítulos importantes fora do Pará, como a conquista do **Campeonato Brasileiro da Série C de 2005**, registrada entre seus títulos nacionais. [Fonte: material oficial do Clube do Remo](https://clubedoremo.com.br/titulos).
 
 São conquistas de competições diferentes, com seus próprios contextos, que ampliaram a história dos clubes e o repertório das duas torcidas.
 
@@ -88,6 +88,6 @@ Há histórias que ficam nos livros e nos registros esportivos. Outras sobrevive
 
 É dessa combinação entre resultados e lembranças que Remo e Paysandu mantêm sua rivalidade viva. A cada encontro, surge a possibilidade de uma nova história para contar.
 
-**E você: qual Re-Pa marcou a sua vida? Deixe sua lembrança nos comentários!**
+**E você: qual Re-Pa marcou a sua vida? Compartilhe sua lembrança nos [perfis oficiais do projeto](../contato.html).**
 
 ---
