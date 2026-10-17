@@ -3,7 +3,7 @@ title: "La Remontada: os sete minutos que transformaram o impossível em histór
 date: 2026-10-08
 category: "Histórias"
 description: "O Barcelona precisava reverter um 4 a 0 contra o PSG. Neymar, Sergi Roberto e os minutos finais de uma noite que entrou para a história da Champions League."
-image: "https://commons.wikimedia.org/wiki/Special:FilePath/Bar%C3%A7a%206%20-%20PSG%201%3B%20Dimecres%208%20de%20mar%C3%A7%20de%202017%20-%2033185087512.jpg"
+image: "/o-peso-da-camisa/imagens/la-remontada-barcelona-psg-2017-capa.jpg"
 ---
 
 **Em 2017, o Barcelona precisava superar uma derrota por 4 a 0 diante do PSG. Aos 87 minutos do jogo de volta, ainda faltavam três gols. O que aconteceu depois entrou para a história da Champions League.**

@@ -3,7 +3,7 @@ title: "Por que somos chamados de torcedores? A história por trás dos nomes da
 date: 2026-10-08
 category: "Curiosidades"
 description: "De luvas torcidas nas arquibancadas brasileiras a um funcionário que inflava bolas no Uruguai: descubra as histórias por trás de torcedor, hincha e supporter."
-image: "https://commons.wikimedia.org/wiki/Special:FilePath/Spectators_watching_Brazil_national_football_team_train_at_Dobsonville_Stadium_2010-06-03_4.jpg?width=1200"
+image: "/o-peso-da-camisa/imagens/por-que-somos-chamados-de-torcedores-capa.jpg"
 ---
 
 Antes de existir uma torcida organizada, antes das arquibancadas lotadas e dos cânticos que atravessam estádios inteiros, já existia alguém sofrendo por um time. Mas por que, no Brasil, chamamos essa pessoa de **torcedor**?

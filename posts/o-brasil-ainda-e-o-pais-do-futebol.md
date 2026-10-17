@@ -3,7 +3,7 @@ title: "O Brasil ainda é o país do futebol ou vive das glórias do passado?"
 date: 2026-10-08
 category: "Histórias"
 description: "Com cinco títulos mundiais, a Seleção Brasileira construiu uma história incomparável. Mas será que o peso dessa tradição ainda corresponde ao futebol apresentado em campo?"
-image: "https://commons.wikimedia.org/wiki/Special:FilePath/Brazil_national_team_1970.jpg"
+image: "/o-peso-da-camisa/imagens/o-brasil-ainda-e-o-pais-do-futebol-capa.jpg"
 ---
 
 *Recorte histórico: esta reflexão considera as Copas do Mundo masculinas até a edição de 2022. As avaliações sobre organização e identidade de jogo são opiniões editoriais, não conclusões estatísticas sobre a Seleção de 2026.*

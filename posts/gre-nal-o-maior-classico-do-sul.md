@@ -3,7 +3,7 @@ title: "Gre-Nal: o maior clássico do Sul"
 date: 2026-10-10
 category: "Rivalidades"
 description: "A história centenária do Gre-Nal: o primeiro clássico, a goleada de 1909, as conquistas mundiais e a paixão que divide o Rio Grande do Sul."
-image: "https://commons.wikimedia.org/wiki/Special:FilePath/GRENAL%20%288248126822%29.jpg"
+image: "/o-peso-da-camisa/imagens/gre-nal-o-maior-classico-do-sul-capa.jpg"
 ---
 
 Você conhece a rivalidade entre Grêmio e Internacional? Conhecido como **Gre-Nal**, esse confronto é considerado uma das maiores rivalidades do futebol brasileiro, reunindo duas torcidas centenárias que dividem o Rio Grande do Sul.

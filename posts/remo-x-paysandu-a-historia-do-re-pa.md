@@ -3,7 +3,7 @@ title: "Remo x Paysandu: a história do Re-Pa, uma rivalidade que atravessa gera
 date: 2026-10-15
 category: "Rivalidades"
 description: "Do primeiro Re-Pa em 1914 ao 7 a 0 de 1945, o tabu de 33 jogos e as conquistas nacionais: a história de uma das maiores rivalidades do Brasil."
-image: "/o-peso-da-camisa/imagens/re-pa-original.svg"
+image: "/o-peso-da-camisa/imagens/re-pa-mangueirao-2016.jpg"
 ---
 
 Tem clássico que começa no campo e continua pela semana inteira. Em Belém, Remo e Paysandu fazem isso há mais de um século. O Re-Pa reúne orgulho, memória e uma paixão que passa de avós para pais, de pais para filhos.

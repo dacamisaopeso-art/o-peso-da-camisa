@@ -2,7 +2,7 @@
 title: "Fla-Flu: a maior rivalidade do Rio de Janeiro?"
 date: 2026-10-09
 category: "Rivalidades"
-image: "https://commons.wikimedia.org/wiki/Special:FilePath/Campeonato_Carioca_-_Fluminense_x_Flamengo_(25087481991).jpg"
+image: "/o-peso-da-camisa/imagens/fla-flu-a-maior-rivalidade-do-rio-de-janeiro-capa.jpg"
 description: "A história do Fla-Flu começou com uma ruptura no Fluminense, atravessou gerações e levou quase 195 mil pessoas ao Maracanã em 1963."
 ---
 
