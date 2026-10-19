@@ -1,0 +1,39 @@
+{
+  "client": "ca-pub-9262477198650799",
+  "installed": [
+    "adivinhe-pela-carreira.html",
+    "contato.html",
+    "creditos-imagens.html",
+    "desafio-da-champions.html",
+    "desafio-das-lendas.html",
+    "escalacao-historica.html",
+    "fontes-jogo-da-velha.html",
+    "forja-de-craques/index.html",
+    "index.html",
+    "intruso-da-camisa.html",
+    "jogo-da-velha.html",
+    "jogos.html",
+    "kaka-da-superacao-a-bola-de-ouro.html",
+    "politica-de-privacidade.html",
+    "publicacoes/cinco-clubes-centenarios-do-futebol-brasileiro.html",
+    "publicacoes/como-o-pele-se-tornou-o-maior-mesmo-sem-as-televisoes.html",
+    "publicacoes/fla-flu-a-maior-rivalidade-do-rio-de-janeiro.html",
+    "publicacoes/garrincha-o-homem-que-voltava-para-driblar-de-novo.html",
+    "publicacoes/gre-nal-o-maior-classico-do-sul.html",
+    "publicacoes/la-remontada-barcelona-psg-2017.html",
+    "publicacoes/o-brasil-ainda-e-o-pais-do-futebol.html",
+    "publicacoes/por-que-somos-chamados-de-torcedores.html",
+    "publicacoes/remo-x-paysandu-a-historia-do-re-pa.html",
+    "robinho-da-promessa-a-queda.html",
+    "sobre-nos.html"
+  ],
+  "excluded": [
+    "404.html",
+    "creditos-jogo-da-velha.html",
+    "index (1).html",
+    "publicacoes/teste-de-publicacao.html"
+  ],
+  "domainRoot": "https://dacamisaopeso-art.github.io/",
+  "accountApproval": "Não verificada",
+  "consent": "Configuração de CMP certificada na conta permanece pendente para os usos aplicáveis."
+}

@@ -7,6 +7,21 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+ADSENSE_CLIENT = 'ca-pub-9262477198650799'
+ADSENSE_URL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + ADSENSE_CLIENT
+ADSENSE_TAG = f'<script async src="{ADSENSE_URL}" crossorigin="anonymous"></script>'
+
+def adsense_eligible(page):
+    """Não monetizar erros, versões antigas e páginas retiradas do índice."""
+    return bool(re.search(r'<head\b', page, re.I)) and not re.search(
+        r'<meta\b[^>]*name=["\']robots["\'][^>]*content=["\'][^"\']*noindex|<meta\b[^>]*http-equiv=["\']refresh["\']|Esta página saiu de campo\.', page, re.I)
+
+def install_adsense(page):
+    # Normaliza o carregador oficial antes de inserir uma única cópia no head.
+    page = re.sub(r'<script\b[^>]*\bsrc=["\'][^"\']*pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js[^"\']*["\'][^>]*>\s*</script\s*>', '', page, flags=re.I)
+    if adsense_eligible(page):
+        page = re.sub(r'</head\s*>', ADSENSE_TAG + '</head>', page, count=1, flags=re.I)
+    return page
 
 class Handlers(HTMLParser):
     def __init__(self):
@@ -24,6 +39,7 @@ def protect(page, prefix=''):
         prefix = '/o-peso-da-camisa/'
     page = re.sub(r'<meta\b[^>]*http-equiv=["\']Content-Security-Policy["\'][^>]*>\s*', '', page, flags=re.I)
     page = re.sub(r'<meta\b[^>]*name=["\']referrer["\'][^>]*>\s*', '', page, flags=re.I)
+    adsense = adsense_eligible(page)
     handlers = Handlers()
     handlers.feed(page)
     scripts = [body for attrs, body in re.findall(r'<script\b([^>]*)>(.*?)</script\s*>', page, re.I | re.S)
@@ -31,11 +47,13 @@ def protect(page, prefix=''):
     hashes = sorted(set(digest(value) for value in scripts + handlers.values))
     policy = "; ".join([
         "default-src 'self'", "base-uri 'self'", "object-src 'none'",
-        "script-src 'self' " + ("'unsafe-hashes' " if handlers.values else '') + ' '.join(hashes),
+        # GitHub Pages não gera nonces por resposta. Mantemos os hashes para
+        # scripts inline; HTTPS permite dependências variáveis do AdSense.
+        "script-src 'self' " + ("https: 'unsafe-eval' " if adsense else '') + ("'unsafe-hashes' " if handlers.values else '') + ' '.join(hashes),
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
         "font-src 'self' https://fonts.gstatic.com data:", "img-src 'self' https: data: blob:",
-        "connect-src 'self' https://lygpkgdpvxilfxoywcal.supabase.co",
-        "frame-src https://strawpoll.com https://www.youtube.com https://www.youtube-nocookie.com",
+        "connect-src 'self' " + ("https:" if adsense else "https://lygpkgdpvxilfxoywcal.supabase.co"),
+        "frame-src " + ("https:" if adsense else "https://strawpoll.com https://www.youtube.com https://www.youtube-nocookie.com"),
         "media-src 'self' blob: data:", "worker-src 'self' blob:", "form-action 'self'",
     ])
     metas = '<meta http-equiv="Content-Security-Policy" content="' + html.escape(policy, quote=True) + '"><meta name="referrer" content="strict-origin-when-cross-origin">'
@@ -52,7 +70,7 @@ def protect(page, prefix=''):
         links = [('','Início'), ('jogos.html','Jogos'), ('sobre-nos.html','Sobre nós'), ('contato.html','Contato'), ('politica-de-privacidade.html','Privacidade e cookies')]
         navigation = '<nav class="opc-institutional" aria-label="Informações do site">' + ' '.join(f'<a href="{prefix + route if route else prefix or "./"}">{label}</a>' for route,label in links) + '</nav>'
         page = page.replace('</body>', navigation + '</body>')
-    return page
+    return install_adsense(page)
 
 def public_pages():
     return sorted(path for path in ROOT.rglob('*.html') if not any(part.startswith(('_', '.')) for part in path.relative_to(ROOT).parts) and not re.fullmatch(r'google[a-f0-9]+\.html', path.name))

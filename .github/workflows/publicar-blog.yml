@@ -13,6 +13,7 @@ on:
       - 'scripts/image_rights.py'
       - 'dados/licencas-imagens.json'
       - 'tests/imagens-licencas.test.py'
+      - 'tests/adsense.test.py'
       - 'scripts/blog_security.py'
       - 'scripts/site_policies.py'
       - 'scripts/requirements-blog.txt'
@@ -30,11 +31,14 @@ jobs:
       - run: pip install -r scripts/requirements-blog.txt
       - run: python scripts/gerar_creditos_imagens.py
       - run: python scripts/gerar_blog.py
+      - run: python scripts/site_policies.py
       - run: python tests/blog.test.py
       - run: python tests/imagens-licencas.test.py
+      - run: python tests/adsense.test.py
+      - run: python tests/site-security.test.py
       - name: Salvar páginas geradas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html publicacoes/ sitemap.xml creditos-imagens.html
+          git add -- '*.html' sitemap.xml
           git diff --cached --quiet || (git commit -m "Publica novos artigos do blog" && git push)
