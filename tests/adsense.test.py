@@ -17,6 +17,22 @@ class Scripts(HTMLParser):
   if tag=='head':self.in_head=False
 
 class AdSenseTests(unittest.TestCase):
+ def test_games_and_catalogue_never_load_adsense(self):
+  for route in ['jogos.html','adivinhe-pela-carreira.html','desafio-da-champions.html','desafio-das-lendas.html','escalacao-historica.html','intruso-da-camisa.html','jogo-da-velha.html','forja-de-craques/index.html','fontes-jogo-da-velha.html']:
+   with self.subTest(route=route):
+    text=(ROOT/route).read_text(encoding='utf-8')
+    self.assertNotIn('adsbygoogle.js',text)
+    self.assertNotIn('adsbygoogle.js',protect(text))
+    self.assertNotIn("https: 'unsafe-eval'",html.unescape(text))
+ def test_editorial_coverage_independent_of_eligibility(self):
+  for path in [ROOT/'index.html',ROOT/'kaka-da-superacao-a-bola-de-ouro.html',ROOT/'robinho-da-promessa-a-queda.html',*(ROOT/'publicacoes').glob('*.html')]:
+   if 'noindex' in path.read_text(encoding='utf-8'):continue
+   with self.subTest(page=path.name):self.assertEqual(path.read_text(encoding='utf-8').count(ADSENSE_URL),1)
+ def test_future_article_and_duplicate_loader(self):
+  page='<html><head><meta charset="utf-8"><link rel="canonical" href="https://dacamisaopeso-art.github.io/o-peso-da-camisa/publicacoes/nova-materia.html"></head><body>Nova matéria</body></html>'
+  first=protect(page,'../');self.assertEqual(first.count(ADSENSE_URL),1)
+  duplicate=first.replace('</head>',f'<script async src="{ADSENSE_URL}" crossorigin="anonymous"></script></head>')
+  self.assertEqual(protect(duplicate,'../'),first)
  def test_exactly_one_official_loader_in_head(self):
   for path in public_pages():
    text=path.read_text(encoding='utf-8');parser=Scripts();parser.feed(text)
