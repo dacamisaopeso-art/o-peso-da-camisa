@@ -49,6 +49,7 @@ jobs:
           script: |
             adb shell dumpsys webviewupdate
             gradle connectedDebugAndroidTest --stacktrace
+            adb install -r app/build/outputs/apk/debug/app-debug.apk
             adb shell am start -n br.com.opesodacamisa.jogos/.MainActivity
             sleep 3
             adb shell screencap -p /sdcard/opc-app.png
