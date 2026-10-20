@@ -1,0 +1,34 @@
+name: Disponibilizar APK Android testado
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publicar-apk.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: read
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: dacamisaopeso-art/o-peso-da-camisa
+    steps:
+      - name: Recuperar o APK que passou pelos testes Android
+        run: |
+          gh api repos/dacamisaopeso-art/o-peso-da-camisa/actions/artifacts/12288620037/zip > android.zip
+          unzip -q android.zip -d android
+          cp android/outputs/apk/debug/app-debug.apk OPC-Jogos-0.1.0.apk
+          echo 'bc1ad00bf8ab0c1406b9b8ee5831d878ef93b079dde24b9b474fcaa82a7223e5  OPC-Jogos-0.1.0.apk' > SHA256SUMS.txt
+          sha256sum --check SHA256SUMS.txt
+      - name: Publicar download estável sem recompilar nem trocar a assinatura
+        run: |
+          if gh release view android-v0.1.0 >/dev/null 2>&1; then
+            gh release download android-v0.1.0 --pattern OPC-Jogos-0.1.0.apk --dir existing
+            cmp OPC-Jogos-0.1.0.apk existing/OPC-Jogos-0.1.0.apk
+          else
+            gh release create android-v0.1.0 OPC-Jogos-0.1.0.apk SHA256SUMS.txt --target 60f6bcef24725cf3f64c8cf702ef345688393520 --title 'OPC Jogos Android 0.1.0 — teste' --notes 'Primeiro APK Android para testes. Oito jogos OPC. Android 8+ com WebView atualizado. Salas online compartilham o servidor do site e exigem internet. APK de desenvolvimento; a assinatura definitiva de atualizações será preparada antes de uma distribuição regular. Recordes e favoritos são locais. Este é o mesmo APK já entregue para teste; SHA-256 disponível no arquivo anexo.' --prerelease
+          fi
