@@ -32,6 +32,8 @@ jobs:
             _projetos/opc-android/app/build/outputs/apk/debug/*.apk
             _projetos/opc-android/app/build/reports/lint-results-debug.html
           retention-days: 30
+      - name: Permitir aceleração somente ao usuário temporário do teste
+        run: sudo setfacl -m u:$(id -un):rw /dev/kvm
       - name: Conferir em emulador Android
         uses: reactivecircus/android-emulator-runner@v2
         with:
@@ -39,6 +41,8 @@ jobs:
           arch: x86_64
           profile: pixel_2
           disable-animations: true
+          emulator-boot-timeout: 360
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -accel on
           working-directory: _projetos/opc-android
           script: |
             gradle connectedDebugAndroidTest --stacktrace

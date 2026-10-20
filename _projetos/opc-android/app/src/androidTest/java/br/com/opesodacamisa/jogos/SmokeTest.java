@@ -39,4 +39,11 @@ public class SmokeTest {
   android.content.ClipboardManager clipboard=(android.content.ClipboardManager)rule.getActivity().getSystemService(android.content.Context.CLIPBOARD_SERVICE);assertEquals("https://dacamisaopeso-art.github.io/o-peso-da-camisa/futdraw.html?sala=ABC123",clipboard.getPrimaryClip().getItemAt(0).getText().toString());
  }
 
+ @Test public void onlineRoomConnectsFromAndroidOriginAndLeavesCleanly()throws Exception{
+  rule.getActivity().runOnUiThread(()->rule.getActivity().web.loadUrl(MainActivity.ORIGIN+"/assets/www/futdraw.html"));Thread.sleep(300);ready();
+  js("document.getElementById('fd-name').value='Android QA';document.getElementById('fd-rounds').value='10';document.getElementById('fd-setup').requestSubmit()");
+  try{long deadline=System.currentTimeMillis()+30000;while(!"false".equals(js("document.getElementById('fd-room').hidden"))&&System.currentTimeMillis()<deadline)Thread.sleep(200);assertEquals("Room connects from local Android HTTPS origin","false",js("document.getElementById('fd-room').hidden"));assertEquals("true",js("document.getElementById('fd-lobby-info').textContent.includes('10 rodada')"));}
+  finally{js("document.getElementById('fd-leave').click()");Thread.sleep(200);js("if(document.getElementById('fd-confirm').open)document.getElementById('fd-confirm-yes').click()");}
+ }
+
 }
