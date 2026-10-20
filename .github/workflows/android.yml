@@ -37,14 +37,17 @@ jobs:
       - name: Conferir em emulador Android
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
+          api-level: 35
           arch: x86_64
+          target: google_apis
+          disable-linux-hw-accel: false
           profile: pixel_2
           disable-animations: true
           emulator-boot-timeout: 360
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -accel on
           working-directory: _projetos/opc-android
           script: |
+            adb shell dumpsys webviewupdate
             gradle connectedDebugAndroidTest --stacktrace
             adb shell am start -n br.com.opesodacamisa.jogos/.MainActivity
             sleep 3
