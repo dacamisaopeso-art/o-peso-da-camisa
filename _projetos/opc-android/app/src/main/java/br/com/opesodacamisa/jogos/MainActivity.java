@@ -24,6 +24,7 @@ public class MainActivity extends Activity {
     private byte[] pendingPng;
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
+        if(Build.VERSION.SDK_INT>=30)getWindow().setDecorFitsSystemWindows(false);
         root=new FrameLayout(this);root.setBackgroundColor(Color.rgb(11,14,17));setContentView(root);
         root.setOnApplyWindowInsetsListener((view,insets)->{
             if(Build.VERSION.SDK_INT>=30){android.graphics.Insets bars=insets.getInsets(WindowInsets.Type.systemBars()|WindowInsets.Type.displayCutout()|WindowInsets.Type.ime());view.setPadding(bars.left,bars.top,bars.right,bars.bottom);}

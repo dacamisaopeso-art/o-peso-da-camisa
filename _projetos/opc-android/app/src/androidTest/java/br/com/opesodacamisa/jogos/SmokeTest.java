@@ -18,6 +18,7 @@ public class SmokeTest {
   assertEquals("8",js("document.querySelectorAll('.app-game').length"));
   assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth"));
   js("document.querySelector('.favorite-toggle').click()");js("document.querySelector('[data-filter=favorites]').click()");assertEquals("1",js("document.querySelectorAll('.app-game').length"));
+  rule.getActivity().runOnUiThread(()->rule.getActivity().web.getSettings().setBlockNetworkLoads(true));
   String[] pages={"jogo-da-velha.html","futdraw.html","adivinhe-pela-carreira.html","intruso-da-camisa.html","escalacao-historica.html","desafio-das-lendas.html","desafio-da-champions.html","forja-de-craques/index.html"};
   for(String page:pages){rule.getActivity().runOnUiThread(()->rule.getActivity().web.loadUrl(MainActivity.ORIGIN+"/assets/www/"+page));Thread.sleep(300);ready();assertEquals(page,"true",js("document.documentElement.classList.contains('opc-mobile')"));assertEquals(page,"true",js("document.documentElement.scrollWidth<=innerWidth+1"));assertEquals(page,"1",js("document.querySelectorAll('.opc-app-bar').length"));}
  }
