@@ -1,0 +1,35 @@
+name: Conferir FutDraw
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'futdraw*'
+      - 'dados/futdraw-*'
+      - 'online/futdraw-*'
+      - 'scripts/gerar-futdraw.cjs'
+      - 'tests/futdraw*'
+      - '.github/workflows/testar-futdraw.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Instalar PostgreSQL de testes, fora do site
+        run: npm install --prefix "$RUNNER_TEMP/futdraw" --ignore-scripts --no-audit --no-fund @electric-sql/pglite@0.5.10
+      - name: Regras, canvas e catálogo
+        run: node tests/futdraw.test.cjs
+      - name: Servidor e segurança com três participantes
+        env:
+          FUTDRAW_PGLITE_MODULE: ${{ runner.temp }}/futdraw/node_modules/@electric-sql/pglite
+        run: node tests/futdraw-db.integration.cjs
+      - name: Sintaxe e consistência do catálogo
+        run: |
+          node --check futdraw.js
+          node --check futdraw-online.js
+          node scripts/gerar-futdraw.cjs
+          git diff --exit-code -- dados/futdraw-palavras.json online/futdraw-catalogo.sql
+          git diff --check

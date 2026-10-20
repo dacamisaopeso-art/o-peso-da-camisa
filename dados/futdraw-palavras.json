@@ -1,0 +1,7489 @@
+{
+  "version": "2026-10-19-futdraw-v1",
+  "categories": {
+    "jogador": "Jogadores",
+    "clube": "Clubes",
+    "estadio": "Estádios",
+    "treinador": "Treinadores"
+  },
+  "words": [
+    {
+      "id": "jogador:ronaldo",
+      "label": "Ronaldo",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "R9",
+        "Ronaldo Fenômeno"
+      ],
+      "accepted": [
+        "ronaldo",
+        "r9",
+        "ronaldofenomeno"
+      ],
+      "sourcePlayerId": "Q529207"
+    },
+    {
+      "id": "jogador:ronaldinho",
+      "label": "Ronaldinho",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Ronaldinho Gaúcho"
+      ],
+      "accepted": [
+        "ronaldinho",
+        "ronaldinhogaucho"
+      ],
+      "sourcePlayerId": "Q39444"
+    },
+    {
+      "id": "jogador:neymar",
+      "label": "Neymar",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Neymar Jr",
+        "Neymar Júnior"
+      ],
+      "accepted": [
+        "neymar",
+        "neymarjr",
+        "neymarjunior"
+      ],
+      "sourcePlayerId": "Q142794"
+    },
+    {
+      "id": "jogador:kaka",
+      "label": "Kaká",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "kaka"
+      ]
+    },
+    {
+      "id": "jogador:rivaldo",
+      "label": "Rivaldo",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rivaldo"
+      ]
+    },
+    {
+      "id": "jogador:robertocarlos",
+      "label": "Roberto Carlos",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "robertocarlos"
+      ],
+      "sourcePlayerId": "Q429039"
+    },
+    {
+      "id": "jogador:cafu",
+      "label": "Cafu",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "cafu"
+      ]
+    },
+    {
+      "id": "jogador:dida",
+      "label": "Dida",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "dida"
+      ],
+      "sourcePlayerId": "Q188544"
+    },
+    {
+      "id": "jogador:alex",
+      "label": "Alex",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Alex de Souza"
+      ],
+      "accepted": [
+        "alex",
+        "alexdesouza"
+      ]
+    },
+    {
+      "id": "jogador:adriano",
+      "label": "Adriano",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Adriano Imperador"
+      ],
+      "accepted": [
+        "adriano",
+        "adrianoimperador"
+      ]
+    },
+    {
+      "id": "jogador:juninhopernambucano",
+      "label": "Juninho Pernambucano",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "juninhopernambucano"
+      ],
+      "sourcePlayerId": "Q203451"
+    },
+    {
+      "id": "jogador:lucio",
+      "label": "Lúcio",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "lucio"
+      ]
+    },
+    {
+      "id": "jogador:juan",
+      "label": "Juan",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "juan"
+      ]
+    },
+    {
+      "id": "jogador:thiagosilva",
+      "label": "Thiago Silva",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "thiagosilva"
+      ],
+      "sourcePlayerId": "Q210453"
+    },
+    {
+      "id": "jogador:davidluiz",
+      "label": "David Luiz",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "davidluiz"
+      ],
+      "sourcePlayerId": "Q193706"
+    },
+    {
+      "id": "jogador:marcelo",
+      "label": "Marcelo",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "marcelo"
+      ]
+    },
+    {
+      "id": "jogador:maicon",
+      "label": "Maicon",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "maicon"
+      ]
+    },
+    {
+      "id": "jogador:maxwell",
+      "label": "Maxwell",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "maxwell"
+      ]
+    },
+    {
+      "id": "jogador:edmilson",
+      "label": "Edmílson",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "edmilson"
+      ]
+    },
+    {
+      "id": "jogador:gilbertosilva",
+      "label": "Gilberto Silva",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "gilbertosilva"
+      ],
+      "sourcePlayerId": "Q190142"
+    },
+    {
+      "id": "jogador:kleberson",
+      "label": "Kléberson",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "kleberson"
+      ],
+      "sourcePlayerId": "Q311035"
+    },
+    {
+      "id": "jogador:juninhopaulista",
+      "label": "Juninho Paulista",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "juninhopaulista"
+      ],
+      "sourcePlayerId": "Q318184"
+    },
+    {
+      "id": "jogador:zeroberto",
+      "label": "Zé Roberto",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "zeroberto"
+      ]
+    },
+    {
+      "id": "jogador:elano",
+      "label": "Elano",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "elano"
+      ],
+      "sourcePlayerId": "Q207407"
+    },
+    {
+      "id": "jogador:diego",
+      "label": "Diego",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Diego Ribas"
+      ],
+      "accepted": [
+        "diego",
+        "diegoribas"
+      ]
+    },
+    {
+      "id": "jogador:robinho",
+      "label": "Robinho",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "robinho"
+      ]
+    },
+    {
+      "id": "jogador:ricardooliveira",
+      "label": "Ricardo Oliveira",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ricardooliveira"
+      ],
+      "sourcePlayerId": "Q315079"
+    },
+    {
+      "id": "jogador:luisfabiano",
+      "label": "Luís Fabiano",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "luisfabiano"
+      ],
+      "sourcePlayerId": "Q192963"
+    },
+    {
+      "id": "jogador:juliocesar",
+      "label": "Júlio César",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "juliocesar"
+      ]
+    },
+    {
+      "id": "jogador:gomes",
+      "label": "Gomes",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Heurelho Gomes"
+      ],
+      "accepted": [
+        "gomes",
+        "heurelhogomes"
+      ],
+      "sourcePlayerId": "Q11696107"
+    },
+    {
+      "id": "jogador:alisson",
+      "label": "Alisson",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Alisson Becker"
+      ],
+      "accepted": [
+        "alisson",
+        "alissonbecker"
+      ]
+    },
+    {
+      "id": "jogador:ederson",
+      "label": "Ederson",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Ederson Moraes"
+      ],
+      "accepted": [
+        "ederson",
+        "edersonmoraes"
+      ]
+    },
+    {
+      "id": "jogador:casemiro",
+      "label": "Casemiro",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "casemiro"
+      ],
+      "sourcePlayerId": "Q616664"
+    },
+    {
+      "id": "jogador:fabinho",
+      "label": "Fabinho",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "fabinho"
+      ]
+    },
+    {
+      "id": "jogador:fernandinho",
+      "label": "Fernandinho",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "fernandinho"
+      ]
+    },
+    {
+      "id": "jogador:paulinho",
+      "label": "Paulinho",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "José Paulo Bezerra"
+      ],
+      "accepted": [
+        "paulinho",
+        "josepaulobezerra"
+      ]
+    },
+    {
+      "id": "jogador:ramires",
+      "label": "Ramires",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ramires"
+      ],
+      "sourcePlayerId": "Q204407"
+    },
+    {
+      "id": "jogador:willian",
+      "label": "Willian",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "willian"
+      ]
+    },
+    {
+      "id": "jogador:lucasmoura",
+      "label": "Lucas Moura",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "lucasmoura"
+      ],
+      "sourcePlayerId": "Q312886"
+    },
+    {
+      "id": "jogador:oscar",
+      "label": "Oscar",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "oscar"
+      ]
+    },
+    {
+      "id": "jogador:philippecoutinho",
+      "label": "Philippe Coutinho",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "philippecoutinho"
+      ],
+      "sourcePlayerId": "Q311872"
+    },
+    {
+      "id": "jogador:robertofirmino",
+      "label": "Roberto Firmino",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "robertofirmino"
+      ],
+      "sourcePlayerId": "Q602525"
+    },
+    {
+      "id": "jogador:gabrieljesus",
+      "label": "Gabriel Jesus",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "gabrieljesus"
+      ],
+      "sourcePlayerId": "217289"
+    },
+    {
+      "id": "jogador:richarlison",
+      "label": "Richarlison",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "richarlison"
+      ],
+      "sourcePlayerId": "Q20806743"
+    },
+    {
+      "id": "jogador:raphinha",
+      "label": "Raphinha",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "raphinha"
+      ]
+    },
+    {
+      "id": "jogador:viniciusjunior",
+      "label": "Vinícius Júnior",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Vini Jr",
+        "Vinicius Junior"
+      ],
+      "accepted": [
+        "viniciusjunior",
+        "vinijr"
+      ],
+      "sourcePlayerId": "252107"
+    },
+    {
+      "id": "jogador:rodrygo",
+      "label": "Rodrygo",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rodrygo"
+      ],
+      "sourcePlayerId": "267804"
+    },
+    {
+      "id": "jogador:savinho",
+      "label": "Savinho",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "savinho"
+      ]
+    },
+    {
+      "id": "jogador:luizao",
+      "label": "Luizão",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "luizao"
+      ]
+    },
+    {
+      "id": "jogador:denilson",
+      "label": "Denílson",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "denilson"
+      ]
+    },
+    {
+      "id": "jogador:bebeto",
+      "label": "Bebeto",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "bebeto"
+      ]
+    },
+    {
+      "id": "jogador:romario",
+      "label": "Romário",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "romario"
+      ],
+      "sourcePlayerId": "Q178649"
+    },
+    {
+      "id": "jogador:djalminha",
+      "label": "Djalminha",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "djalminha"
+      ],
+      "sourcePlayerId": "Q47489"
+    },
+    {
+      "id": "jogador:giovanni",
+      "label": "Giovanni",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "giovanni"
+      ]
+    },
+    {
+      "id": "jogador:anderson",
+      "label": "Anderson",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "anderson"
+      ]
+    },
+    {
+      "id": "jogador:douglascosta",
+      "label": "Douglas Costa",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "douglascosta"
+      ],
+      "sourcePlayerId": "Q391680"
+    },
+    {
+      "id": "jogador:renatoaugusto",
+      "label": "Renato Augusto",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "renatoaugusto"
+      ]
+    },
+    {
+      "id": "jogador:renatogaucho",
+      "label": "Renato Gaúcho",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Renato Portaluppi"
+      ],
+      "accepted": [
+        "renatogaucho",
+        "renatoportaluppi"
+      ],
+      "sourcePlayerId": "Q1345763"
+    },
+    {
+      "id": "jogador:leonardo",
+      "label": "Leonardo",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Leonardo Nascimento"
+      ],
+      "accepted": [
+        "leonardo",
+        "leonardonascimento"
+      ]
+    },
+    {
+      "id": "jogador:luissuarez",
+      "label": "Luis Suárez",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Luis Suarez"
+      ],
+      "accepted": [
+        "luissuarez"
+      ]
+    },
+    {
+      "id": "jogador:carlostevez",
+      "label": "Carlos Tévez",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Carlos Tevez"
+      ],
+      "accepted": [
+        "carlostevez"
+      ],
+      "sourcePlayerId": "Q50600"
+    },
+    {
+      "id": "jogador:diegoforlan",
+      "label": "Diego Forlán",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Diego Forlan"
+      ],
+      "accepted": [
+        "diegoforlan"
+      ],
+      "sourcePlayerId": "Q261534"
+    },
+    {
+      "id": "jogador:diegolugano",
+      "label": "Diego Lugano",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Lugano",
+        "Diego Lugano"
+      ],
+      "accepted": [
+        "diegolugano",
+        "lugano"
+      ],
+      "sourcePlayerId": "Q373547"
+    },
+    {
+      "id": "jogador:dariopereyra",
+      "label": "Darío Pereyra",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Dario Pereyra"
+      ],
+      "accepted": [
+        "dariopereyra"
+      ]
+    },
+    {
+      "id": "jogador:petkovic",
+      "label": "Petkovic",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Dejan Petkovic"
+      ],
+      "accepted": [
+        "petkovic",
+        "dejanpetkovic"
+      ]
+    },
+    {
+      "id": "jogador:dalessandro",
+      "label": "D'Alessandro",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Andrés D'Alessandro"
+      ],
+      "accepted": [
+        "dalessandro",
+        "andresdalessandro"
+      ]
+    },
+    {
+      "id": "jogador:deco",
+      "label": "Deco",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "deco"
+      ],
+      "sourcePlayerId": "Q659634"
+    },
+    {
+      "id": "jogador:diegomilito",
+      "label": "Diego Milito",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "diegomilito"
+      ],
+      "sourcePlayerId": "Q76089"
+    },
+    {
+      "id": "jogador:diegocosta",
+      "label": "Diego Costa",
+      "category": "jogador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "diegocosta"
+      ]
+    },
+    {
+      "id": "jogador:pele",
+      "label": "Pelé",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Pele"
+      ],
+      "accepted": [
+        "pele"
+      ]
+    },
+    {
+      "id": "jogador:garrincha",
+      "label": "Garrincha",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "garrincha"
+      ],
+      "sourcePlayerId": "Q180642"
+    },
+    {
+      "id": "jogador:zico",
+      "label": "Zico",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "zico"
+      ],
+      "sourcePlayerId": "Q47526"
+    },
+    {
+      "id": "jogador:socrates",
+      "label": "Sócrates",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "socrates"
+      ],
+      "sourcePlayerId": "Q102331"
+    },
+    {
+      "id": "jogador:falcao",
+      "label": "Falcão",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Paulo Roberto Falcão"
+      ],
+      "accepted": [
+        "falcao",
+        "paulorobertofalcao"
+      ]
+    },
+    {
+      "id": "jogador:rivellino",
+      "label": "Rivellino",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Rivelino"
+      ],
+      "accepted": [
+        "rivellino",
+        "rivelino"
+      ],
+      "sourcePlayerId": "Q220283"
+    },
+    {
+      "id": "jogador:tostao",
+      "label": "Tostão",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "tostao"
+      ]
+    },
+    {
+      "id": "jogador:jairzinho",
+      "label": "Jairzinho",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "jairzinho"
+      ],
+      "sourcePlayerId": "Q210102"
+    },
+    {
+      "id": "jogador:didi",
+      "label": "Didi",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "didi"
+      ]
+    },
+    {
+      "id": "jogador:niltonsantos",
+      "label": "Nilton Santos",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "niltonsantos"
+      ],
+      "sourcePlayerId": "Q83329"
+    },
+    {
+      "id": "jogador:djalmasantos",
+      "label": "Djalma Santos",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "djalmasantos"
+      ],
+      "sourcePlayerId": "Q299693"
+    },
+    {
+      "id": "jogador:carlosalbertotorres",
+      "label": "Carlos Alberto Torres",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "carlosalbertotorres"
+      ],
+      "sourcePlayerId": "Q295262"
+    },
+    {
+      "id": "jogador:bellini",
+      "label": "Bellini",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "bellini"
+      ]
+    },
+    {
+      "id": "jogador:gilmar",
+      "label": "Gilmar",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "gilmar"
+      ]
+    },
+    {
+      "id": "jogador:leao",
+      "label": "Leão",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Emerson Leão"
+      ],
+      "accepted": [
+        "leao",
+        "emersonleao"
+      ]
+    },
+    {
+      "id": "jogador:robertodinamite",
+      "label": "Roberto Dinamite",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "robertodinamite"
+      ],
+      "sourcePlayerId": "Q550019"
+    },
+    {
+      "id": "jogador:reinaldo",
+      "label": "Reinaldo",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "reinaldo"
+      ]
+    },
+    {
+      "id": "jogador:ederaleixo",
+      "label": "Éder Aleixo",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ederaleixo"
+      ],
+      "sourcePlayerId": "Q273766"
+    },
+    {
+      "id": "jogador:toninhocerezo",
+      "label": "Toninho Cerezo",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "toninhocerezo"
+      ],
+      "sourcePlayerId": "Q552917"
+    },
+    {
+      "id": "jogador:careca",
+      "label": "Careca",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "careca"
+      ]
+    },
+    {
+      "id": "jogador:muller",
+      "label": "Müller",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Muller"
+      ],
+      "accepted": [
+        "muller"
+      ]
+    },
+    {
+      "id": "jogador:rai",
+      "label": "Raí",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rai"
+      ]
+    },
+    {
+      "id": "jogador:ricardorocha",
+      "label": "Ricardo Rocha",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ricardorocha"
+      ]
+    },
+    {
+      "id": "jogador:branco",
+      "label": "Branco",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "branco"
+      ],
+      "sourcePlayerId": "Q351827"
+    },
+    {
+      "id": "jogador:maurosilva",
+      "label": "Mauro Silva",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "maurosilva"
+      ],
+      "sourcePlayerId": "Q342457"
+    },
+    {
+      "id": "jogador:mazinho",
+      "label": "Mazinho",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "mazinho"
+      ]
+    },
+    {
+      "id": "jogador:viola",
+      "label": "Viola",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "viola"
+      ],
+      "sourcePlayerId": "Q509812"
+    },
+    {
+      "id": "jogador:zinho",
+      "label": "Zinho",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "zinho"
+      ]
+    },
+    {
+      "id": "jogador:jorginho",
+      "label": "Jorginho",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "jorginho"
+      ]
+    },
+    {
+      "id": "jogador:marcos",
+      "label": "Marcos",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "marcos"
+      ]
+    },
+    {
+      "id": "jogador:rogerioceni",
+      "label": "Rogério Ceni",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rogerioceni"
+      ],
+      "sourcePlayerId": "Q1249859"
+    },
+    {
+      "id": "jogador:vampeta",
+      "label": "Vampeta",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "vampeta"
+      ],
+      "sourcePlayerId": "Q1982869"
+    },
+    {
+      "id": "jogador:dinei",
+      "label": "Dinei",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "dinei"
+      ],
+      "sourcePlayerId": "Q3312668"
+    },
+    {
+      "id": "jogador:edilson",
+      "label": "Edílson",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Edilson Capetinha"
+      ],
+      "accepted": [
+        "edilson",
+        "edilsoncapetinha"
+      ]
+    },
+    {
+      "id": "jogador:edmundo",
+      "label": "Edmundo",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "edmundo"
+      ],
+      "sourcePlayerId": "Q445541"
+    },
+    {
+      "id": "jogador:tuliomaravilha",
+      "label": "Túlio Maravilha",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "tuliomaravilha"
+      ],
+      "sourcePlayerId": "Q714354"
+    },
+    {
+      "id": "jogador:marcelinhocarioca",
+      "label": "Marcelinho Carioca",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "marcelinhocarioca"
+      ],
+      "sourcePlayerId": "Q378101"
+    },
+    {
+      "id": "jogador:neto",
+      "label": "Neto",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Craque Neto"
+      ],
+      "accepted": [
+        "neto",
+        "craqueneto"
+      ]
+    },
+    {
+      "id": "jogador:marcosassuncao",
+      "label": "Marcos Assunção",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "marcosassuncao"
+      ],
+      "sourcePlayerId": "Q2089039"
+    },
+    {
+      "id": "jogador:mancini",
+      "label": "Mancini",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "mancini"
+      ],
+      "sourcePlayerId": "Q296814"
+    },
+    {
+      "id": "jogador:wellingtonpaulista",
+      "label": "Wellington Paulista",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "wellingtonpaulista"
+      ],
+      "sourcePlayerId": "Q1634101"
+    },
+    {
+      "id": "jogador:obina",
+      "label": "Obina",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "obina"
+      ],
+      "sourcePlayerId": "Q959642"
+    },
+    {
+      "id": "jogador:washington",
+      "label": "Washington",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Washington Coração Valente"
+      ],
+      "accepted": [
+        "washington",
+        "washingtoncoracaovalente"
+      ]
+    },
+    {
+      "id": "jogador:dodo",
+      "label": "Dodô",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Dodo"
+      ],
+      "accepted": [
+        "dodo"
+      ]
+    },
+    {
+      "id": "jogador:dagoberto",
+      "label": "Dagoberto",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "dagoberto"
+      ],
+      "sourcePlayerId": "Q943432"
+    },
+    {
+      "id": "jogador:klebergladiador",
+      "label": "Kléber Gladiador",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "klebergladiador"
+      ]
+    },
+    {
+      "id": "jogador:valdivia",
+      "label": "Valdivia",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Jorge Valdivia"
+      ],
+      "accepted": [
+        "valdivia",
+        "jorgevaldivia"
+      ],
+      "sourcePlayerId": "Q18176477"
+    },
+    {
+      "id": "jogador:valdirbigode",
+      "label": "Valdir Bigode",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "valdirbigode"
+      ],
+      "sourcePlayerId": "Q4007591"
+    },
+    {
+      "id": "jogador:paulonunes",
+      "label": "Paulo Nunes",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "paulonunes"
+      ],
+      "sourcePlayerId": "Q2734022"
+    },
+    {
+      "id": "jogador:jardel",
+      "label": "Jardel",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "jardel"
+      ]
+    },
+    {
+      "id": "jogador:luan",
+      "label": "Luan",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Luan Guilherme"
+      ],
+      "accepted": [
+        "luan",
+        "luanguilherme"
+      ]
+    },
+    {
+      "id": "jogador:barcos",
+      "label": "Barcos",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Hernán Barcos"
+      ],
+      "accepted": [
+        "barcos",
+        "hernanbarcos"
+      ]
+    },
+    {
+      "id": "jogador:guerrero",
+      "label": "Guerrero",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Paolo Guerrero"
+      ],
+      "accepted": [
+        "guerrero",
+        "paologuerrero"
+      ]
+    },
+    {
+      "id": "jogador:valencia",
+      "label": "Valencia",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Enner Valencia"
+      ],
+      "accepted": [
+        "valencia",
+        "ennervalencia"
+      ]
+    },
+    {
+      "id": "jogador:germancano",
+      "label": "Germán Cano",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "German Cano",
+        "Cano"
+      ],
+      "accepted": [
+        "germancano",
+        "cano"
+      ],
+      "sourcePlayerId": "Q3761170"
+    },
+    {
+      "id": "jogador:fred",
+      "label": "Fred",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Fred Guedes"
+      ],
+      "accepted": [
+        "fred",
+        "fredguedes"
+      ]
+    },
+    {
+      "id": "jogador:darioconca",
+      "label": "Darío Conca",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Dario Conca"
+      ],
+      "accepted": [
+        "darioconca"
+      ],
+      "sourcePlayerId": "Q470113"
+    },
+    {
+      "id": "jogador:thiagoneves",
+      "label": "Thiago Neves",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "thiagoneves"
+      ],
+      "sourcePlayerId": "Q370014"
+    },
+    {
+      "id": "jogador:felipemelo",
+      "label": "Felipe Melo",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "felipemelo"
+      ],
+      "sourcePlayerId": "Q204450"
+    },
+    {
+      "id": "jogador:andre",
+      "label": "André",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "André Trindade"
+      ],
+      "accepted": [
+        "andre",
+        "andretrindade"
+      ]
+    },
+    {
+      "id": "jogador:ganso",
+      "label": "Ganso",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Paulo Henrique Ganso"
+      ],
+      "accepted": [
+        "ganso",
+        "paulohenriqueganso"
+      ]
+    },
+    {
+      "id": "jogador:gabigol",
+      "label": "Gabigol",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Gabriel Barbosa"
+      ],
+      "accepted": [
+        "gabigol",
+        "gabrielbarbosa"
+      ]
+    },
+    {
+      "id": "jogador:brunohenrique",
+      "label": "Bruno Henrique",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "brunohenrique"
+      ]
+    },
+    {
+      "id": "jogador:pedro",
+      "label": "Pedro",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "pedro"
+      ]
+    },
+    {
+      "id": "jogador:evertonribeiro",
+      "label": "Everton Ribeiro",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Everton Ribeiro"
+      ],
+      "accepted": [
+        "evertonribeiro"
+      ],
+      "sourcePlayerId": "Q4025436"
+    },
+    {
+      "id": "jogador:arrascaeta",
+      "label": "Arrascaeta",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Giorgian de Arrascaeta"
+      ],
+      "accepted": [
+        "arrascaeta",
+        "giorgiandearrascaeta"
+      ]
+    },
+    {
+      "id": "jogador:rodinei",
+      "label": "Rodinei",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rodinei"
+      ],
+      "sourcePlayerId": "Q20048828"
+    },
+    {
+      "id": "jogador:filipeluis",
+      "label": "Filipe Luís",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Filipe Luis"
+      ],
+      "accepted": [
+        "filipeluis"
+      ],
+      "sourcePlayerId": "Q350547"
+    },
+    {
+      "id": "jogador:diegoalves",
+      "label": "Diego Alves",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "diegoalves"
+      ],
+      "sourcePlayerId": "Q313082"
+    },
+    {
+      "id": "jogador:evertoncebolinha",
+      "label": "Everton Cebolinha",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Cebolinha"
+      ],
+      "accepted": [
+        "evertoncebolinha",
+        "cebolinha"
+      ]
+    },
+    {
+      "id": "jogador:cassio",
+      "label": "Cássio",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Cassio"
+      ],
+      "accepted": [
+        "cassio"
+      ]
+    },
+    {
+      "id": "jogador:fagner",
+      "label": "Fagner",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "fagner"
+      ]
+    },
+    {
+      "id": "jogador:fabio",
+      "label": "Fábio",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Fabio"
+      ],
+      "accepted": [
+        "fabio"
+      ]
+    },
+    {
+      "id": "jogador:weverton",
+      "label": "Weverton",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "weverton"
+      ]
+    },
+    {
+      "id": "jogador:gustavogomez",
+      "label": "Gustavo Gómez",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Gustavo Gomez"
+      ],
+      "accepted": [
+        "gustavogomez"
+      ],
+      "sourcePlayerId": "Q1033783"
+    },
+    {
+      "id": "jogador:dudu",
+      "label": "Dudu",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "dudu"
+      ]
+    },
+    {
+      "id": "jogador:raphaelveiga",
+      "label": "Raphael Veiga",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "raphaelveiga"
+      ],
+      "sourcePlayerId": "Q27443365"
+    },
+    {
+      "id": "jogador:gustavoscarpa",
+      "label": "Gustavo Scarpa",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "gustavoscarpa"
+      ],
+      "sourcePlayerId": "Q19709176"
+    },
+    {
+      "id": "jogador:zerafael",
+      "label": "Zé Rafael",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "zerafael"
+      ],
+      "sourcePlayerId": "Q19519846"
+    },
+    {
+      "id": "jogador:rony",
+      "label": "Rony",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rony"
+      ],
+      "sourcePlayerId": "Q28748046"
+    },
+    {
+      "id": "jogador:endrick",
+      "label": "Endrick",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "endrick"
+      ],
+      "sourcePlayerId": "Q110644260"
+    },
+    {
+      "id": "jogador:estevao",
+      "label": "Estêvão",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Estevao"
+      ],
+      "accepted": [
+        "estevao"
+      ]
+    },
+    {
+      "id": "jogador:vagnerlove",
+      "label": "Vágner Love",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Vagner Love",
+        "Wagner Love",
+        "Vágner Love"
+      ],
+      "accepted": [
+        "vagnerlove",
+        "wagnerlove"
+      ],
+      "sourcePlayerId": "Q295880"
+    },
+    {
+      "id": "jogador:liedson",
+      "label": "Liedson",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "liedson"
+      ],
+      "sourcePlayerId": "Q213676"
+    },
+    {
+      "id": "jogador:dentinho",
+      "label": "Dentinho",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "dentinho"
+      ]
+    },
+    {
+      "id": "jogador:jorgehenrique",
+      "label": "Jorge Henrique",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "jorgehenrique"
+      ],
+      "sourcePlayerId": "Q2352258"
+    },
+    {
+      "id": "jogador:elias",
+      "label": "Elias",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "elias"
+      ]
+    },
+    {
+      "id": "jogador:danilo",
+      "label": "Danilo",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Danilo Gabriel"
+      ],
+      "accepted": [
+        "danilo",
+        "danilogabriel"
+      ]
+    },
+    {
+      "id": "jogador:jadson",
+      "label": "Jadson",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "jadson"
+      ]
+    },
+    {
+      "id": "jogador:emersonsheik",
+      "label": "Emerson Sheik",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "emersonsheik"
+      ],
+      "sourcePlayerId": "Q59870"
+    },
+    {
+      "id": "jogador:ralf",
+      "label": "Ralf",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ralf"
+      ],
+      "sourcePlayerId": "Q73018"
+    },
+    {
+      "id": "jogador:gil",
+      "label": "Gil",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "gil"
+      ]
+    },
+    {
+      "id": "jogador:hernanes",
+      "label": "Hernanes",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "hernanes"
+      ],
+      "sourcePlayerId": "Q313570"
+    },
+    {
+      "id": "jogador:miranda",
+      "label": "Miranda",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "miranda"
+      ]
+    },
+    {
+      "id": "jogador:luisao",
+      "label": "Luisão",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "luisao"
+      ]
+    },
+    {
+      "id": "jogador:josue",
+      "label": "Josué",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "josue"
+      ]
+    },
+    {
+      "id": "jogador:aloisiochulapa",
+      "label": "Aloísio Chulapa",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "aloisiochulapa"
+      ],
+      "sourcePlayerId": "Q2400390"
+    },
+    {
+      "id": "jogador:grafite",
+      "label": "Grafite",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "grafite"
+      ],
+      "sourcePlayerId": "Q159059"
+    },
+    {
+      "id": "jogador:calleri",
+      "label": "Calleri",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Jonathan Calleri"
+      ],
+      "accepted": [
+        "calleri",
+        "jonathancalleri"
+      ]
+    },
+    {
+      "id": "jogador:luciano",
+      "label": "Luciano",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "luciano"
+      ]
+    },
+    {
+      "id": "jogador:lucaspratto",
+      "label": "Lucas Pratto",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "lucaspratto"
+      ],
+      "sourcePlayerId": "Q1845684"
+    },
+    {
+      "id": "jogador:diegosouza",
+      "label": "Diego Souza",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "diegosouza"
+      ]
+    },
+    {
+      "id": "jogador:diegotardelli",
+      "label": "Diego Tardelli",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "diegotardelli"
+      ],
+      "sourcePlayerId": "Q905206"
+    },
+    {
+      "id": "jogador:hulk",
+      "label": "Hulk",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "hulk"
+      ],
+      "sourcePlayerId": "Q62786"
+    },
+    {
+      "id": "jogador:paulinhodoatletico",
+      "label": "Paulinho do Atlético",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Paulo Henrique Sampaio"
+      ],
+      "accepted": [
+        "paulinhodoatletico",
+        "paulohenriquesampaio"
+      ]
+    },
+    {
+      "id": "jogador:bernard",
+      "label": "Bernard",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "bernard"
+      ],
+      "sourcePlayerId": "Q137242"
+    },
+    {
+      "id": "jogador:victor",
+      "label": "Victor",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Victor Leandro"
+      ],
+      "accepted": [
+        "victor",
+        "victorleandro"
+      ]
+    },
+    {
+      "id": "jogador:rever",
+      "label": "Réver",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rever"
+      ],
+      "sourcePlayerId": "Q1363213"
+    },
+    {
+      "id": "jogador:leonardosilva",
+      "label": "Leonardo Silva",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "leonardosilva"
+      ],
+      "sourcePlayerId": "Q3830364"
+    },
+    {
+      "id": "jogador:marques",
+      "label": "Marques",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "marques"
+      ],
+      "sourcePlayerId": "Q197729"
+    },
+    {
+      "id": "jogador:guilhermealves",
+      "label": "Guilherme Alves",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "guilhermealves"
+      ],
+      "sourcePlayerId": "Q2718851"
+    },
+    {
+      "id": "jogador:alexmineiro",
+      "label": "Alex Mineiro",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "alexmineiro"
+      ],
+      "sourcePlayerId": "Q2001590"
+    },
+    {
+      "id": "jogador:juliobaptista",
+      "label": "Júlio Baptista",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "juliobaptista"
+      ],
+      "sourcePlayerId": "Q204895"
+    },
+    {
+      "id": "jogador:andrelima",
+      "label": "André Lima",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "andrelima"
+      ],
+      "sourcePlayerId": "Q520972"
+    },
+    {
+      "id": "jogador:nunes",
+      "label": "Nunes",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "nunes"
+      ]
+    },
+    {
+      "id": "jogador:aldair",
+      "label": "Aldair",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "aldair"
+      ],
+      "sourcePlayerId": "Q297721"
+    },
+    {
+      "id": "jogador:andrade",
+      "label": "Andrade",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "andrade"
+      ]
+    },
+    {
+      "id": "jogador:adilio",
+      "label": "Adílio",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "adilio"
+      ],
+      "sourcePlayerId": "Q380405"
+    },
+    {
+      "id": "jogador:leandro",
+      "label": "Leandro",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "leandro"
+      ]
+    },
+    {
+      "id": "jogador:junior",
+      "label": "Júnior",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Maestro Júnior"
+      ],
+      "accepted": [
+        "junior",
+        "maestrojunior"
+      ]
+    },
+    {
+      "id": "jogador:mozer",
+      "label": "Mozer",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "mozer"
+      ]
+    },
+    {
+      "id": "jogador:renatoabreu",
+      "label": "Renato Abreu",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "renatoabreu"
+      ],
+      "sourcePlayerId": "Q682277"
+    },
+    {
+      "id": "jogador:ibson",
+      "label": "Ibson",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ibson"
+      ],
+      "sourcePlayerId": "Q938963"
+    },
+    {
+      "id": "jogador:toro",
+      "label": "Toró",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "toro"
+      ],
+      "sourcePlayerId": "Q3995847"
+    },
+    {
+      "id": "jogador:leomoura",
+      "label": "Léo Moura",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "leomoura"
+      ],
+      "sourcePlayerId": "Q2578811"
+    },
+    {
+      "id": "jogador:leopereira",
+      "label": "Léo Pereira",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "leopereira"
+      ]
+    },
+    {
+      "id": "jogador:davidbraz",
+      "label": "David Braz",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "davidbraz"
+      ],
+      "sourcePlayerId": "Q939542"
+    },
+    {
+      "id": "jogador:ricardinho",
+      "label": "Ricardinho",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ricardinho"
+      ]
+    },
+    {
+      "id": "jogador:adhemar",
+      "label": "Adhemar",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "adhemar"
+      ]
+    },
+    {
+      "id": "jogador:deivid",
+      "label": "Deivid",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "deivid"
+      ]
+    },
+    {
+      "id": "jogador:donizetepantera",
+      "label": "Donizete Pantera",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "donizetepantera"
+      ],
+      "sourcePlayerId": "Q745422"
+    },
+    {
+      "id": "jogador:athirson",
+      "label": "Athirson",
+      "category": "jogador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "athirson"
+      ],
+      "sourcePlayerId": "Q514376"
+    },
+    {
+      "id": "jogador:lionelmessi",
+      "label": "Lionel Messi",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Messi"
+      ],
+      "accepted": [
+        "lionelmessi",
+        "messi"
+      ],
+      "sourcePlayerId": "Q615"
+    },
+    {
+      "id": "jogador:cristianoronaldo",
+      "label": "Cristiano Ronaldo",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "CR7"
+      ],
+      "accepted": [
+        "cristianoronaldo",
+        "cr7"
+      ],
+      "sourcePlayerId": "Q11571"
+    },
+    {
+      "id": "jogador:zinedinezidane",
+      "label": "Zinedine Zidane",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Zidane"
+      ],
+      "accepted": [
+        "zinedinezidane",
+        "zidane"
+      ]
+    },
+    {
+      "id": "jogador:luisfigo",
+      "label": "Luís Figo",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Luis Figo",
+        "Figo"
+      ],
+      "accepted": [
+        "luisfigo",
+        "figo"
+      ],
+      "sourcePlayerId": "Q483145"
+    },
+    {
+      "id": "jogador:karimbenzema",
+      "label": "Karim Benzema",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Benzema"
+      ],
+      "accepted": [
+        "karimbenzema",
+        "benzema"
+      ],
+      "sourcePlayerId": "Q1912"
+    },
+    {
+      "id": "jogador:robertlewandowski",
+      "label": "Robert Lewandowski",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Lewandowski"
+      ],
+      "accepted": [
+        "robertlewandowski",
+        "lewandowski"
+      ],
+      "sourcePlayerId": "Q151269"
+    },
+    {
+      "id": "jogador:kylianmbappe",
+      "label": "Kylian Mbappé",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Mbappe",
+        "Mbappé"
+      ],
+      "accepted": [
+        "kylianmbappe",
+        "mbappe"
+      ],
+      "sourcePlayerId": "231388"
+    },
+    {
+      "id": "jogador:erlinghaaland",
+      "label": "Erling Haaland",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Haaland"
+      ],
+      "accepted": [
+        "erlinghaaland",
+        "haaland"
+      ],
+      "sourcePlayerId": "253989"
+    },
+    {
+      "id": "jogador:mohamedsalah",
+      "label": "Mohamed Salah",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Salah"
+      ],
+      "accepted": [
+        "mohamedsalah",
+        "salah"
+      ],
+      "sourcePlayerId": "Q1354960"
+    },
+    {
+      "id": "jogador:sadiomane",
+      "label": "Sadio Mané",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Sadio Mane",
+        "Mané"
+      ],
+      "accepted": [
+        "sadiomane",
+        "mane"
+      ],
+      "sourcePlayerId": "Q209942"
+    },
+    {
+      "id": "jogador:riyadmahrez",
+      "label": "Riyad Mahrez",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Mahrez"
+      ],
+      "accepted": [
+        "riyadmahrez",
+        "mahrez"
+      ],
+      "sourcePlayerId": "Q8338725"
+    },
+    {
+      "id": "jogador:jamievardy",
+      "label": "Jamie Vardy",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Vardy"
+      ],
+      "accepted": [
+        "jamievardy",
+        "vardy"
+      ],
+      "sourcePlayerId": "Q6147586"
+    },
+    {
+      "id": "jogador:ngolokante",
+      "label": "N'Golo Kanté",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Kante",
+        "Kanté"
+      ],
+      "accepted": [
+        "ngolokante",
+        "kante"
+      ],
+      "sourcePlayerId": "Q16665941"
+    },
+    {
+      "id": "jogador:raheemsterling",
+      "label": "Raheem Sterling",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Sterling"
+      ],
+      "accepted": [
+        "raheemsterling",
+        "sterling"
+      ],
+      "sourcePlayerId": "Q312157"
+    },
+    {
+      "id": "jogador:angeldimaria",
+      "label": "Ángel Di María",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Di Maria",
+        "Di María"
+      ],
+      "accepted": [
+        "angeldimaria",
+        "dimaria"
+      ],
+      "sourcePlayerId": "Q251683"
+    },
+    {
+      "id": "jogador:antoinegriezmann",
+      "label": "Antoine Griezmann",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Griezmann"
+      ],
+      "accepted": [
+        "antoinegriezmann",
+        "griezmann"
+      ],
+      "sourcePlayerId": "Q455462"
+    },
+    {
+      "id": "jogador:lukamodric",
+      "label": "Luka Modrić",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Modric",
+        "Modrić"
+      ],
+      "accepted": [
+        "lukamodric",
+        "modric"
+      ],
+      "sourcePlayerId": "Q483837"
+    },
+    {
+      "id": "jogador:tonikroos",
+      "label": "Toni Kroos",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Kroos"
+      ],
+      "accepted": [
+        "tonikroos",
+        "kroos"
+      ],
+      "sourcePlayerId": "Q131234"
+    },
+    {
+      "id": "jogador:andresiniesta",
+      "label": "Andrés Iniesta",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Iniesta"
+      ],
+      "accepted": [
+        "andresiniesta",
+        "iniesta"
+      ],
+      "sourcePlayerId": "Q43729"
+    },
+    {
+      "id": "jogador:xavi",
+      "label": "Xavi",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Xavi Hernández"
+      ],
+      "accepted": [
+        "xavi",
+        "xavihernandez"
+      ]
+    },
+    {
+      "id": "jogador:sergiobusquets",
+      "label": "Sergio Busquets",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Busquets"
+      ],
+      "accepted": [
+        "sergiobusquets",
+        "busquets"
+      ],
+      "sourcePlayerId": "Q49704"
+    },
+    {
+      "id": "jogador:gerardpique",
+      "label": "Gerard Piqué",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Piqué",
+        "Pique"
+      ],
+      "accepted": [
+        "gerardpique",
+        "pique"
+      ],
+      "sourcePlayerId": "Q17507"
+    },
+    {
+      "id": "jogador:carlespuyol",
+      "label": "Carles Puyol",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Puyol"
+      ],
+      "accepted": [
+        "carlespuyol",
+        "puyol"
+      ],
+      "sourcePlayerId": "Q17158"
+    },
+    {
+      "id": "jogador:sergioramos",
+      "label": "Sergio Ramos",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Ramos"
+      ],
+      "accepted": [
+        "sergioramos",
+        "ramos"
+      ],
+      "sourcePlayerId": "Q483309"
+    },
+    {
+      "id": "jogador:ikercasillas",
+      "label": "Iker Casillas",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Casillas"
+      ],
+      "accepted": [
+        "ikercasillas",
+        "casillas"
+      ],
+      "sourcePlayerId": "Q11584"
+    },
+    {
+      "id": "jogador:gianluigibuffon",
+      "label": "Gianluigi Buffon",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Buffon"
+      ],
+      "accepted": [
+        "gianluigibuffon",
+        "buffon"
+      ],
+      "sourcePlayerId": "Q68060"
+    },
+    {
+      "id": "jogador:manuelneuer",
+      "label": "Manuel Neuer",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Neuer"
+      ],
+      "accepted": [
+        "manuelneuer",
+        "neuer"
+      ],
+      "sourcePlayerId": "84774"
+    },
+    {
+      "id": "jogador:oliverkahn",
+      "label": "Oliver Kahn",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Kahn"
+      ],
+      "accepted": [
+        "oliverkahn",
+        "kahn"
+      ],
+      "sourcePlayerId": "tm-206"
+    },
+    {
+      "id": "jogador:peterschmeichel",
+      "label": "Peter Schmeichel",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Schmeichel"
+      ],
+      "accepted": [
+        "peterschmeichel",
+        "schmeichel"
+      ],
+      "sourcePlayerId": "Q182314"
+    },
+    {
+      "id": "jogador:edwinvandersar",
+      "label": "Edwin van der Sar",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Van der Sar"
+      ],
+      "accepted": [
+        "edwinvandersar",
+        "vandersar"
+      ],
+      "sourcePlayerId": "Q482955"
+    },
+    {
+      "id": "jogador:thibautcourtois",
+      "label": "Thibaut Courtois",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Courtois"
+      ],
+      "accepted": [
+        "thibautcourtois",
+        "courtois"
+      ],
+      "sourcePlayerId": "134283"
+    },
+    {
+      "id": "jogador:gianluigidonnarumma",
+      "label": "Gianluigi Donnarumma",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Donnarumma"
+      ],
+      "accepted": [
+        "gianluigidonnarumma",
+        "donnarumma"
+      ],
+      "sourcePlayerId": "217092"
+    },
+    {
+      "id": "jogador:stevengerrard",
+      "label": "Steven Gerrard",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Gerrard"
+      ],
+      "accepted": [
+        "stevengerrard",
+        "gerrard"
+      ],
+      "sourcePlayerId": "Q459830"
+    },
+    {
+      "id": "jogador:franklampard",
+      "label": "Frank Lampard",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Lampard"
+      ],
+      "accepted": [
+        "franklampard",
+        "lampard"
+      ],
+      "sourcePlayerId": "Q41533"
+    },
+    {
+      "id": "jogador:paulscholes",
+      "label": "Paul Scholes",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Scholes"
+      ],
+      "accepted": [
+        "paulscholes",
+        "scholes"
+      ],
+      "sourcePlayerId": "Q45613"
+    },
+    {
+      "id": "jogador:davidbeckham",
+      "label": "David Beckham",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Beckham"
+      ],
+      "accepted": [
+        "davidbeckham",
+        "beckham"
+      ],
+      "sourcePlayerId": "Q10520"
+    },
+    {
+      "id": "jogador:waynerooney",
+      "label": "Wayne Rooney",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Rooney"
+      ],
+      "accepted": [
+        "waynerooney",
+        "rooney"
+      ],
+      "sourcePlayerId": "Q266613"
+    },
+    {
+      "id": "jogador:thierryhenry",
+      "label": "Thierry Henry",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Henry"
+      ],
+      "accepted": [
+        "thierryhenry",
+        "henry"
+      ],
+      "sourcePlayerId": "Q45901"
+    },
+    {
+      "id": "jogador:dennisbergkamp",
+      "label": "Dennis Bergkamp",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Bergkamp"
+      ],
+      "accepted": [
+        "dennisbergkamp",
+        "bergkamp"
+      ],
+      "sourcePlayerId": "Q185389"
+    },
+    {
+      "id": "jogador:robinvanpersie",
+      "label": "Robin van Persie",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Van Persie"
+      ],
+      "accepted": [
+        "robinvanpersie",
+        "vanpersie"
+      ],
+      "sourcePlayerId": "Q2339"
+    },
+    {
+      "id": "jogador:didierdrogba",
+      "label": "Didier Drogba",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Drogba"
+      ],
+      "accepted": [
+        "didierdrogba",
+        "drogba"
+      ],
+      "sourcePlayerId": "Q48892"
+    },
+    {
+      "id": "jogador:samueletoo",
+      "label": "Samuel Eto'o",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Etoo",
+        "Eto'o"
+      ],
+      "accepted": [
+        "samueletoo",
+        "etoo"
+      ],
+      "sourcePlayerId": "Q1255625"
+    },
+    {
+      "id": "jogador:georgeweah",
+      "label": "George Weah",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Weah"
+      ],
+      "accepted": [
+        "georgeweah",
+        "weah"
+      ],
+      "sourcePlayerId": "Q173139"
+    },
+    {
+      "id": "jogador:andriyshevchenko",
+      "label": "Andriy Shevchenko",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Shevchenko"
+      ],
+      "accepted": [
+        "andriyshevchenko",
+        "shevchenko"
+      ],
+      "sourcePlayerId": "Q41244"
+    },
+    {
+      "id": "jogador:alessandrodelpiero",
+      "label": "Alessandro Del Piero",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Del Piero"
+      ],
+      "accepted": [
+        "alessandrodelpiero",
+        "delpiero"
+      ],
+      "sourcePlayerId": "Q624"
+    },
+    {
+      "id": "jogador:francescototti",
+      "label": "Francesco Totti",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Totti"
+      ],
+      "accepted": [
+        "francescototti",
+        "totti"
+      ],
+      "sourcePlayerId": "Q20110"
+    },
+    {
+      "id": "jogador:robertobaggio",
+      "label": "Roberto Baggio",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Baggio"
+      ],
+      "accepted": [
+        "robertobaggio",
+        "baggio"
+      ],
+      "sourcePlayerId": "Q67964"
+    },
+    {
+      "id": "jogador:paolomaldini",
+      "label": "Paolo Maldini",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Maldini"
+      ],
+      "accepted": [
+        "paolomaldini",
+        "maldini"
+      ],
+      "sourcePlayerId": "Q483027"
+    },
+    {
+      "id": "jogador:alessandronesta",
+      "label": "Alessandro Nesta",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Nesta"
+      ],
+      "accepted": [
+        "alessandronesta",
+        "nesta"
+      ],
+      "sourcePlayerId": "Q227892"
+    },
+    {
+      "id": "jogador:fabiocannavaro",
+      "label": "Fabio Cannavaro",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Cannavaro"
+      ],
+      "accepted": [
+        "fabiocannavaro",
+        "cannavaro"
+      ],
+      "sourcePlayerId": "Q102027"
+    },
+    {
+      "id": "jogador:giorgiochiellini",
+      "label": "Giorgio Chiellini",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Chiellini"
+      ],
+      "accepted": [
+        "giorgiochiellini",
+        "chiellini"
+      ],
+      "sourcePlayerId": "Q80306"
+    },
+    {
+      "id": "jogador:leonardobonucci",
+      "label": "Leonardo Bonucci",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Bonucci"
+      ],
+      "accepted": [
+        "leonardobonucci",
+        "bonucci"
+      ],
+      "sourcePlayerId": "Q208050"
+    },
+    {
+      "id": "jogador:andreapirlo",
+      "label": "Andrea Pirlo",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Pirlo"
+      ],
+      "accepted": [
+        "andreapirlo",
+        "pirlo"
+      ],
+      "sourcePlayerId": "Q43926"
+    },
+    {
+      "id": "jogador:gennarogattuso",
+      "label": "Gennaro Gattuso",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Gattuso"
+      ],
+      "accepted": [
+        "gennarogattuso",
+        "gattuso"
+      ],
+      "sourcePlayerId": "Q116980"
+    },
+    {
+      "id": "jogador:clarenceseedorf",
+      "label": "Clarence Seedorf",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Seedorf"
+      ],
+      "accepted": [
+        "clarenceseedorf",
+        "seedorf"
+      ],
+      "sourcePlayerId": "Q484909"
+    },
+    {
+      "id": "jogador:edgardavids",
+      "label": "Edgar Davids",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Davids"
+      ],
+      "accepted": [
+        "edgardavids",
+        "davids"
+      ],
+      "sourcePlayerId": "Q185115"
+    },
+    {
+      "id": "jogador:wesleysneijder",
+      "label": "Wesley Sneijder",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Sneijder"
+      ],
+      "accepted": [
+        "wesleysneijder",
+        "sneijder"
+      ],
+      "sourcePlayerId": "Q124086"
+    },
+    {
+      "id": "jogador:arjenrobben",
+      "label": "Arjen Robben",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Robben"
+      ],
+      "accepted": [
+        "arjenrobben",
+        "robben"
+      ],
+      "sourcePlayerId": "Q43913"
+    },
+    {
+      "id": "jogador:franckribery",
+      "label": "Franck Ribéry",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Ribery",
+        "Ribéry"
+      ],
+      "accepted": [
+        "franckribery",
+        "ribery"
+      ],
+      "sourcePlayerId": "Q1918"
+    },
+    {
+      "id": "jogador:thomasmuller",
+      "label": "Thomas Müller",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Thomas Muller"
+      ],
+      "accepted": [
+        "thomasmuller"
+      ],
+      "sourcePlayerId": "tm-58358"
+    },
+    {
+      "id": "jogador:philipplahm",
+      "label": "Philipp Lahm",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Lahm"
+      ],
+      "accepted": [
+        "philipplahm",
+        "lahm"
+      ],
+      "sourcePlayerId": "tm-2219"
+    },
+    {
+      "id": "jogador:bastianschweinsteiger",
+      "label": "Bastian Schweinsteiger",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Schweinsteiger"
+      ],
+      "accepted": [
+        "bastianschweinsteiger",
+        "schweinsteiger"
+      ],
+      "sourcePlayerId": "Q44298"
+    },
+    {
+      "id": "jogador:miroslavklose",
+      "label": "Miroslav Klose",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Klose"
+      ],
+      "accepted": [
+        "miroslavklose",
+        "klose"
+      ],
+      "sourcePlayerId": "Q80471"
+    },
+    {
+      "id": "jogador:jurgenklinsmann",
+      "label": "Jürgen Klinsmann",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Klinsmann"
+      ],
+      "accepted": [
+        "jurgenklinsmann",
+        "klinsmann"
+      ],
+      "sourcePlayerId": "Q57079"
+    },
+    {
+      "id": "jogador:michaelballack",
+      "label": "Michael Ballack",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Ballack"
+      ],
+      "accepted": [
+        "michaelballack",
+        "ballack"
+      ],
+      "sourcePlayerId": "Q11948"
+    },
+    {
+      "id": "jogador:mesutozil",
+      "label": "Mesut Özil",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Ozil",
+        "Özil"
+      ],
+      "accepted": [
+        "mesutozil",
+        "ozil"
+      ],
+      "sourcePlayerId": "Q83488"
+    },
+    {
+      "id": "jogador:ilkaygundogan",
+      "label": "İlkay Gündoğan",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Gundogan"
+      ],
+      "accepted": [
+        "ilkaygundogan",
+        "gundogan"
+      ],
+      "sourcePlayerId": "Q161089"
+    },
+    {
+      "id": "jogador:kevindebruyne",
+      "label": "Kevin De Bruyne",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "De Bruyne"
+      ],
+      "accepted": [
+        "kevindebruyne",
+        "debruyne"
+      ],
+      "sourcePlayerId": "Q357984"
+    },
+    {
+      "id": "jogador:vincentkompany",
+      "label": "Vincent Kompany",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Kompany"
+      ],
+      "accepted": [
+        "vincentkompany",
+        "kompany"
+      ],
+      "sourcePlayerId": "Q201381"
+    },
+    {
+      "id": "jogador:edindzeko",
+      "label": "Edin Džeko",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Dzeko"
+      ],
+      "accepted": [
+        "edindzeko",
+        "dzeko"
+      ],
+      "sourcePlayerId": "Q153786"
+    },
+    {
+      "id": "jogador:sergioaguero",
+      "label": "Sergio Agüero",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Aguero",
+        "Agüero"
+      ],
+      "accepted": [
+        "sergioaguero",
+        "aguero"
+      ],
+      "sourcePlayerId": "Q119562"
+    },
+    {
+      "id": "jogador:javiermascherano",
+      "label": "Javier Mascherano",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Mascherano"
+      ],
+      "accepted": [
+        "javiermascherano",
+        "mascherano"
+      ],
+      "sourcePlayerId": "Q161571"
+    },
+    {
+      "id": "jogador:leandroparedes",
+      "label": "Leandro Paredes",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Paredes"
+      ],
+      "accepted": [
+        "leandroparedes",
+        "paredes"
+      ],
+      "sourcePlayerId": "Q630170"
+    },
+    {
+      "id": "jogador:enzofernandez",
+      "label": "Enzo Fernández",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Enzo Fernandez"
+      ],
+      "accepted": [
+        "enzofernandez"
+      ],
+      "sourcePlayerId": "Q96105248"
+    },
+    {
+      "id": "jogador:rodrigodepaul",
+      "label": "Rodrigo De Paul",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "De Paul"
+      ],
+      "accepted": [
+        "rodrigodepaul",
+        "depaul"
+      ],
+      "sourcePlayerId": "Q6110670"
+    },
+    {
+      "id": "jogador:bernardosilva",
+      "label": "Bernardo Silva",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "bernardosilva"
+      ],
+      "sourcePlayerId": "Q15521306"
+    },
+    {
+      "id": "jogador:brunofernandes",
+      "label": "Bruno Fernandes",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "brunofernandes"
+      ],
+      "sourcePlayerId": "124091"
+    },
+    {
+      "id": "jogador:sonheungmin",
+      "label": "Son Heung-min",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Son"
+      ],
+      "accepted": [
+        "sonheungmin",
+        "son"
+      ],
+      "sourcePlayerId": "Q439722"
+    },
+    {
+      "id": "jogador:bukayosaka",
+      "label": "Bukayo Saka",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Saka"
+      ],
+      "accepted": [
+        "bukayosaka",
+        "saka"
+      ],
+      "sourcePlayerId": "Q59306386"
+    },
+    {
+      "id": "jogador:colepalmer",
+      "label": "Cole Palmer",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Palmer"
+      ],
+      "accepted": [
+        "colepalmer",
+        "palmer"
+      ],
+      "sourcePlayerId": "Q99760796"
+    },
+    {
+      "id": "jogador:rodri",
+      "label": "Rodri",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rodri"
+      ]
+    },
+    {
+      "id": "jogador:philfoden",
+      "label": "Phil Foden",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Foden"
+      ],
+      "accepted": [
+        "philfoden",
+        "foden"
+      ],
+      "sourcePlayerId": "250787"
+    },
+    {
+      "id": "jogador:harrykane",
+      "label": "Harry Kane",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Kane"
+      ],
+      "accepted": [
+        "harrykane",
+        "kane"
+      ],
+      "sourcePlayerId": "142200"
+    },
+    {
+      "id": "jogador:judebellingham",
+      "label": "Jude Bellingham",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Bellingham"
+      ],
+      "accepted": [
+        "judebellingham",
+        "bellingham"
+      ],
+      "sourcePlayerId": "291281"
+    },
+    {
+      "id": "jogador:pedri",
+      "label": "Pedri",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "pedri"
+      ],
+      "sourcePlayerId": "250465"
+    },
+    {
+      "id": "jogador:gavi",
+      "label": "Gavi",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "gavi"
+      ],
+      "sourcePlayerId": "323702"
+    },
+    {
+      "id": "jogador:lamineyamal",
+      "label": "Lamine Yamal",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Yamal"
+      ],
+      "accepted": [
+        "lamineyamal",
+        "yamal"
+      ],
+      "sourcePlayerId": "362150"
+    },
+    {
+      "id": "jogador:daniolmo",
+      "label": "Dani Olmo",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "daniolmo"
+      ],
+      "sourcePlayerId": "Q19560313"
+    },
+    {
+      "id": "jogador:danicarvajal",
+      "label": "Dani Carvajal",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Carvajal"
+      ],
+      "accepted": [
+        "danicarvajal",
+        "carvajal"
+      ],
+      "sourcePlayerId": "Q127452"
+    },
+    {
+      "id": "jogador:federicovalverde",
+      "label": "Federico Valverde",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Valverde"
+      ],
+      "accepted": [
+        "federicovalverde",
+        "valverde"
+      ],
+      "sourcePlayerId": "235818"
+    },
+    {
+      "id": "jogador:federicochiesa",
+      "label": "Federico Chiesa",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Chiesa"
+      ],
+      "accepted": [
+        "federicochiesa",
+        "chiesa"
+      ],
+      "sourcePlayerId": "Q26704703"
+    },
+    {
+      "id": "jogador:paulodybala",
+      "label": "Paulo Dybala",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Dybala"
+      ],
+      "accepted": [
+        "paulodybala",
+        "dybala"
+      ],
+      "sourcePlayerId": "Q166317"
+    },
+    {
+      "id": "jogador:lautaromartinez",
+      "label": "Lautaro Martínez",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Lautaro Martinez"
+      ],
+      "accepted": [
+        "lautaromartinez"
+      ],
+      "sourcePlayerId": "Q21484126"
+    },
+    {
+      "id": "jogador:romelulukaku",
+      "label": "Romelu Lukaku",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Lukaku"
+      ],
+      "accepted": [
+        "romelulukaku",
+        "lukaku"
+      ],
+      "sourcePlayerId": "Q313316"
+    },
+    {
+      "id": "jogador:zlatanibrahimovic",
+      "label": "Zlatan Ibrahimović",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Ibrahimovic",
+        "Ibrahimović"
+      ],
+      "accepted": [
+        "zlatanibrahimovic",
+        "ibrahimovic"
+      ],
+      "sourcePlayerId": "Q46896"
+    },
+    {
+      "id": "jogador:ericcantona",
+      "label": "Eric Cantona",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Cantona"
+      ],
+      "accepted": [
+        "ericcantona",
+        "cantona"
+      ],
+      "sourcePlayerId": "Q170328"
+    },
+    {
+      "id": "jogador:alanshearer",
+      "label": "Alan Shearer",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Shearer"
+      ],
+      "accepted": [
+        "alanshearer",
+        "shearer"
+      ],
+      "sourcePlayerId": "Q483583"
+    },
+    {
+      "id": "jogador:michaelowen",
+      "label": "Michael Owen",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Owen"
+      ],
+      "accepted": [
+        "michaelowen",
+        "owen"
+      ],
+      "sourcePlayerId": "Q128829"
+    },
+    {
+      "id": "jogador:garethbale",
+      "label": "Gareth Bale",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Bale"
+      ],
+      "accepted": [
+        "garethbale",
+        "bale"
+      ],
+      "sourcePlayerId": "Q184586"
+    },
+    {
+      "id": "jogador:ryangiggs",
+      "label": "Ryan Giggs",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Giggs"
+      ],
+      "accepted": [
+        "ryangiggs",
+        "giggs"
+      ],
+      "sourcePlayerId": "Q10524"
+    },
+    {
+      "id": "jogador:garyneville",
+      "label": "Gary Neville",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Neville"
+      ],
+      "accepted": [
+        "garyneville",
+        "neville"
+      ],
+      "sourcePlayerId": "Q348857"
+    },
+    {
+      "id": "jogador:roykeane",
+      "label": "Roy Keane",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Keane"
+      ],
+      "accepted": [
+        "roykeane",
+        "keane"
+      ],
+      "sourcePlayerId": "Q188632"
+    },
+    {
+      "id": "jogador:fernandotorres",
+      "label": "Fernando Torres",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Torres"
+      ],
+      "accepted": [
+        "fernandotorres",
+        "torres"
+      ],
+      "sourcePlayerId": "Q42731"
+    },
+    {
+      "id": "jogador:davidvilla",
+      "label": "David Villa",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Villa"
+      ],
+      "accepted": [
+        "davidvilla",
+        "villa"
+      ],
+      "sourcePlayerId": "Q83006"
+    },
+    {
+      "id": "jogador:fernandomorientes",
+      "label": "Fernando Morientes",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Morientes"
+      ],
+      "accepted": [
+        "fernandomorientes",
+        "morientes"
+      ],
+      "sourcePlayerId": "Q45567"
+    },
+    {
+      "id": "jogador:raul",
+      "label": "Raúl",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Raul",
+        "Raúl González"
+      ],
+      "accepted": [
+        "raul",
+        "raulgonzalez"
+      ]
+    },
+    {
+      "id": "jogador:davidsilva",
+      "label": "David Silva",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "davidsilva"
+      ],
+      "sourcePlayerId": "Q161069"
+    },
+    {
+      "id": "jogador:santicazorla",
+      "label": "Santi Cazorla",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Cazorla"
+      ],
+      "accepted": [
+        "santicazorla",
+        "cazorla"
+      ],
+      "sourcePlayerId": "Q185225"
+    },
+    {
+      "id": "jogador:juanmata",
+      "label": "Juan Mata",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Mata"
+      ],
+      "accepted": [
+        "juanmata",
+        "mata"
+      ],
+      "sourcePlayerId": "Q168740"
+    },
+    {
+      "id": "jogador:daviddegea",
+      "label": "David de Gea",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "De Gea"
+      ],
+      "accepted": [
+        "daviddegea",
+        "degea"
+      ],
+      "sourcePlayerId": "108482"
+    },
+    {
+      "id": "jogador:petrcech",
+      "label": "Petr Čech",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Petr Cech",
+        "Cech"
+      ],
+      "accepted": [
+        "petrcech",
+        "cech"
+      ],
+      "sourcePlayerId": "Q483137"
+    },
+    {
+      "id": "jogador:edenhazard",
+      "label": "Eden Hazard",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Hazard"
+      ],
+      "accepted": [
+        "edenhazard",
+        "hazard"
+      ],
+      "sourcePlayerId": "Q214204"
+    },
+    {
+      "id": "jogador:gianfrancozola",
+      "label": "Gianfranco Zola",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Zola"
+      ],
+      "accepted": [
+        "gianfrancozola",
+        "zola"
+      ],
+      "sourcePlayerId": "Q9354"
+    },
+    {
+      "id": "jogador:gonzalohiguain",
+      "label": "Gonzalo Higuaín",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Higuain",
+        "Higuaín"
+      ],
+      "accepted": [
+        "gonzalohiguain",
+        "higuain"
+      ],
+      "sourcePlayerId": "Q483846"
+    },
+    {
+      "id": "jogador:edinsoncavani",
+      "label": "Edinson Cavani",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Cavani"
+      ],
+      "accepted": [
+        "edinsoncavani",
+        "cavani"
+      ],
+      "sourcePlayerId": "Q167790"
+    },
+    {
+      "id": "jogador:alexissanchez",
+      "label": "Alexis Sánchez",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Alexis Sanchez"
+      ],
+      "accepted": [
+        "alexissanchez"
+      ],
+      "sourcePlayerId": "Q180553"
+    },
+    {
+      "id": "jogador:arturovidal",
+      "label": "Arturo Vidal",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Vidal"
+      ],
+      "accepted": [
+        "arturovidal",
+        "vidal"
+      ],
+      "sourcePlayerId": "Q192671"
+    },
+    {
+      "id": "jogador:jamesrodriguez",
+      "label": "James Rodríguez",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "James Rodriguez"
+      ],
+      "accepted": [
+        "jamesrodriguez"
+      ],
+      "sourcePlayerId": "Q368441"
+    },
+    {
+      "id": "jogador:radamelfalcao",
+      "label": "Radamel Falcao",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Falcao García"
+      ],
+      "accepted": [
+        "radamelfalcao",
+        "falcaogarcia"
+      ],
+      "sourcePlayerId": "Q138172"
+    },
+    {
+      "id": "jogador:hristostoichkov",
+      "label": "Hristo Stoichkov",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Stoichkov"
+      ],
+      "accepted": [
+        "hristostoichkov",
+        "stoichkov"
+      ],
+      "sourcePlayerId": "Q187125"
+    },
+    {
+      "id": "jogador:gheorghehagi",
+      "label": "Gheorghe Hagi",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Hagi"
+      ],
+      "accepted": [
+        "gheorghehagi",
+        "hagi"
+      ],
+      "sourcePlayerId": "Q189892"
+    },
+    {
+      "id": "jogador:pavelnedved",
+      "label": "Pavel Nedvěd",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Nedved"
+      ],
+      "accepted": [
+        "pavelnedved",
+        "nedved"
+      ],
+      "sourcePlayerId": "Q171295"
+    },
+    {
+      "id": "jogador:johancruyff",
+      "label": "Johan Cruyff",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Cruyff"
+      ],
+      "accepted": [
+        "johancruyff",
+        "cruyff"
+      ],
+      "sourcePlayerId": "Q17163"
+    },
+    {
+      "id": "jogador:franzbeckenbauer",
+      "label": "Franz Beckenbauer",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Beckenbauer"
+      ],
+      "accepted": [
+        "franzbeckenbauer",
+        "beckenbauer"
+      ]
+    },
+    {
+      "id": "jogador:gerdmuller",
+      "label": "Gerd Müller",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Gerd Muller"
+      ],
+      "accepted": [
+        "gerdmuller"
+      ]
+    },
+    {
+      "id": "jogador:eusebio",
+      "label": "Eusébio",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Eusebio"
+      ],
+      "accepted": [
+        "eusebio"
+      ]
+    },
+    {
+      "id": "jogador:ferencpuskas",
+      "label": "Ferenc Puskás",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Puskas",
+        "Puskás"
+      ],
+      "accepted": [
+        "ferencpuskas",
+        "puskas"
+      ],
+      "sourcePlayerId": "Q482931"
+    },
+    {
+      "id": "jogador:alfredodistefano",
+      "label": "Alfredo Di Stéfano",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Di Stefano"
+      ],
+      "accepted": [
+        "alfredodistefano",
+        "distefano"
+      ],
+      "sourcePlayerId": "Q164546"
+    },
+    {
+      "id": "jogador:michelplatini",
+      "label": "Michel Platini",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Platini"
+      ],
+      "accepted": [
+        "michelplatini",
+        "platini"
+      ],
+      "sourcePlayerId": "Q4261"
+    },
+    {
+      "id": "jogador:marcovanbasten",
+      "label": "Marco van Basten",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Van Basten"
+      ],
+      "accepted": [
+        "marcovanbasten",
+        "vanbasten"
+      ],
+      "sourcePlayerId": "Q483629"
+    },
+    {
+      "id": "jogador:ruudgullit",
+      "label": "Ruud Gullit",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Gullit"
+      ],
+      "accepted": [
+        "ruudgullit",
+        "gullit"
+      ],
+      "sourcePlayerId": "Q173972"
+    },
+    {
+      "id": "jogador:frankrijkaard",
+      "label": "Frank Rijkaard",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Rijkaard"
+      ],
+      "accepted": [
+        "frankrijkaard",
+        "rijkaard"
+      ],
+      "sourcePlayerId": "Q169098"
+    },
+    {
+      "id": "jogador:lotharmatthaus",
+      "label": "Lothar Matthäus",
+      "category": "jogador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Matthaus"
+      ],
+      "accepted": [
+        "lotharmatthaus",
+        "matthaus"
+      ],
+      "sourcePlayerId": "Q36386"
+    },
+    {
+      "id": "clube:flamengo",
+      "label": "Flamengo",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "flamengo"
+      ]
+    },
+    {
+      "id": "clube:fluminense",
+      "label": "Fluminense",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "fluminense"
+      ]
+    },
+    {
+      "id": "clube:vasco",
+      "label": "Vasco",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Vasco da Gama"
+      ],
+      "accepted": [
+        "vasco",
+        "vascodagama"
+      ]
+    },
+    {
+      "id": "clube:botafogo",
+      "label": "Botafogo",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "botafogo"
+      ]
+    },
+    {
+      "id": "clube:corinthians",
+      "label": "Corinthians",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "corinthians"
+      ]
+    },
+    {
+      "id": "clube:palmeiras",
+      "label": "Palmeiras",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "palmeiras"
+      ]
+    },
+    {
+      "id": "clube:saopaulo",
+      "label": "São Paulo",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Sao Paulo"
+      ],
+      "accepted": [
+        "saopaulo"
+      ]
+    },
+    {
+      "id": "clube:santos",
+      "label": "Santos",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "santos"
+      ]
+    },
+    {
+      "id": "clube:gremio",
+      "label": "Grêmio",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Gremio"
+      ],
+      "accepted": [
+        "gremio"
+      ]
+    },
+    {
+      "id": "clube:internacional",
+      "label": "Internacional",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Inter de Porto Alegre"
+      ],
+      "accepted": [
+        "internacional",
+        "interdeportoalegre"
+      ]
+    },
+    {
+      "id": "clube:cruzeiro",
+      "label": "Cruzeiro",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "cruzeiro"
+      ]
+    },
+    {
+      "id": "clube:atleticomineiro",
+      "label": "Atlético Mineiro",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Galo",
+        "Atlético-MG"
+      ],
+      "accepted": [
+        "atleticomineiro",
+        "galo",
+        "atleticomg"
+      ]
+    },
+    {
+      "id": "clube:athleticoparanaense",
+      "label": "Athletico Paranaense",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Athletico-PR"
+      ],
+      "accepted": [
+        "athleticoparanaense",
+        "athleticopr"
+      ]
+    },
+    {
+      "id": "clube:coritiba",
+      "label": "Coritiba",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "coritiba"
+      ]
+    },
+    {
+      "id": "clube:bahia",
+      "label": "Bahia",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "bahia"
+      ]
+    },
+    {
+      "id": "clube:vitoria",
+      "label": "Vitória",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Vitoria"
+      ],
+      "accepted": [
+        "vitoria"
+      ]
+    },
+    {
+      "id": "clube:sport",
+      "label": "Sport",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Sport Recife"
+      ],
+      "accepted": [
+        "sport",
+        "sportrecife"
+      ]
+    },
+    {
+      "id": "clube:nautico",
+      "label": "Náutico",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Nautico"
+      ],
+      "accepted": [
+        "nautico"
+      ]
+    },
+    {
+      "id": "clube:santacruz",
+      "label": "Santa Cruz",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "santacruz"
+      ]
+    },
+    {
+      "id": "clube:fortaleza",
+      "label": "Fortaleza",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "fortaleza"
+      ]
+    },
+    {
+      "id": "clube:ceara",
+      "label": "Ceará",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Ceara"
+      ],
+      "accepted": [
+        "ceara"
+      ]
+    },
+    {
+      "id": "clube:goias",
+      "label": "Goiás",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Goias"
+      ],
+      "accepted": [
+        "goias"
+      ]
+    },
+    {
+      "id": "clube:guarani",
+      "label": "Guarani",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "guarani"
+      ]
+    },
+    {
+      "id": "clube:pontepreta",
+      "label": "Ponte Preta",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "pontepreta"
+      ]
+    },
+    {
+      "id": "clube:portuguesa",
+      "label": "Portuguesa",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "portuguesa"
+      ]
+    },
+    {
+      "id": "clube:juventude",
+      "label": "Juventude",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "juventude"
+      ]
+    },
+    {
+      "id": "clube:chapecoense",
+      "label": "Chapecoense",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "chapecoense"
+      ]
+    },
+    {
+      "id": "clube:remo",
+      "label": "Remo",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "remo"
+      ]
+    },
+    {
+      "id": "clube:paysandu",
+      "label": "Paysandu",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "paysandu"
+      ]
+    },
+    {
+      "id": "clube:americamineiro",
+      "label": "América Mineiro",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "América-MG"
+      ],
+      "accepted": [
+        "americamineiro",
+        "americamg"
+      ]
+    },
+    {
+      "id": "clube:avai",
+      "label": "Avaí",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Avai"
+      ],
+      "accepted": [
+        "avai"
+      ]
+    },
+    {
+      "id": "clube:figueirense",
+      "label": "Figueirense",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "figueirense"
+      ]
+    },
+    {
+      "id": "clube:criciuma",
+      "label": "Criciúma",
+      "category": "clube",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Criciuma"
+      ],
+      "accepted": [
+        "criciuma"
+      ]
+    },
+    {
+      "id": "clube:realmadrid",
+      "label": "Real Madrid",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "realmadrid"
+      ]
+    },
+    {
+      "id": "clube:barcelona",
+      "label": "Barcelona",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Barça",
+        "Barca"
+      ],
+      "accepted": [
+        "barcelona",
+        "barca"
+      ]
+    },
+    {
+      "id": "clube:atleticodemadrid",
+      "label": "Atlético de Madrid",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Atletico de Madrid"
+      ],
+      "accepted": [
+        "atleticodemadrid"
+      ]
+    },
+    {
+      "id": "clube:sevilla",
+      "label": "Sevilla",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "sevilla"
+      ]
+    },
+    {
+      "id": "clube:valencia",
+      "label": "Valencia",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "valencia"
+      ]
+    },
+    {
+      "id": "clube:athleticbilbao",
+      "label": "Athletic Bilbao",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Athletic Club"
+      ],
+      "accepted": [
+        "athleticbilbao",
+        "athleticclub"
+      ]
+    },
+    {
+      "id": "clube:realsociedad",
+      "label": "Real Sociedad",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "realsociedad"
+      ]
+    },
+    {
+      "id": "clube:villarreal",
+      "label": "Villarreal",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "villarreal"
+      ]
+    },
+    {
+      "id": "clube:realbetis",
+      "label": "Real Betis",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Betis"
+      ],
+      "accepted": [
+        "realbetis",
+        "betis"
+      ]
+    },
+    {
+      "id": "clube:manchesterunited",
+      "label": "Manchester United",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "manchesterunited"
+      ]
+    },
+    {
+      "id": "clube:manchestercity",
+      "label": "Manchester City",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "manchestercity"
+      ]
+    },
+    {
+      "id": "clube:liverpool",
+      "label": "Liverpool",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "liverpool"
+      ]
+    },
+    {
+      "id": "clube:arsenal",
+      "label": "Arsenal",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "arsenal"
+      ]
+    },
+    {
+      "id": "clube:chelsea",
+      "label": "Chelsea",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "chelsea"
+      ]
+    },
+    {
+      "id": "clube:tottenham",
+      "label": "Tottenham",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Tottenham Hotspur"
+      ],
+      "accepted": [
+        "tottenham",
+        "tottenhamhotspur"
+      ]
+    },
+    {
+      "id": "clube:newcastle",
+      "label": "Newcastle",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Newcastle United"
+      ],
+      "accepted": [
+        "newcastle",
+        "newcastleunited"
+      ]
+    },
+    {
+      "id": "clube:astonvilla",
+      "label": "Aston Villa",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "astonvilla"
+      ]
+    },
+    {
+      "id": "clube:leicester",
+      "label": "Leicester",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Leicester City"
+      ],
+      "accepted": [
+        "leicester",
+        "leicestercity"
+      ]
+    },
+    {
+      "id": "clube:westham",
+      "label": "West Ham",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "West Ham United"
+      ],
+      "accepted": [
+        "westham",
+        "westhamunited"
+      ]
+    },
+    {
+      "id": "clube:everton",
+      "label": "Everton",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "everton"
+      ]
+    },
+    {
+      "id": "clube:nottinghamforest",
+      "label": "Nottingham Forest",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "nottinghamforest"
+      ]
+    },
+    {
+      "id": "clube:bayerndemunique",
+      "label": "Bayern de Munique",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Bayern Munich",
+        "Bayern"
+      ],
+      "accepted": [
+        "bayerndemunique",
+        "bayernmunich",
+        "bayern"
+      ]
+    },
+    {
+      "id": "clube:borussiadortmund",
+      "label": "Borussia Dortmund",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Dortmund"
+      ],
+      "accepted": [
+        "borussiadortmund",
+        "dortmund"
+      ]
+    },
+    {
+      "id": "clube:bayerleverkusen",
+      "label": "Bayer Leverkusen",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Leverkusen"
+      ],
+      "accepted": [
+        "bayerleverkusen",
+        "leverkusen"
+      ]
+    },
+    {
+      "id": "clube:eintrachtfrankfurt",
+      "label": "Eintracht Frankfurt",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Frankfurt"
+      ],
+      "accepted": [
+        "eintrachtfrankfurt",
+        "frankfurt"
+      ]
+    },
+    {
+      "id": "clube:wolfsburg",
+      "label": "Wolfsburg",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "wolfsburg"
+      ]
+    },
+    {
+      "id": "clube:stuttgart",
+      "label": "Stuttgart",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "stuttgart"
+      ]
+    },
+    {
+      "id": "clube:juventus",
+      "label": "Juventus",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "juventus"
+      ]
+    },
+    {
+      "id": "clube:milan",
+      "label": "Milan",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "AC Milan"
+      ],
+      "accepted": [
+        "milan",
+        "acmilan"
+      ]
+    },
+    {
+      "id": "clube:interdemilao",
+      "label": "Inter de Milão",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Internazionale",
+        "Inter Milan"
+      ],
+      "accepted": [
+        "interdemilao",
+        "internazionale",
+        "intermilan"
+      ]
+    },
+    {
+      "id": "clube:napoli",
+      "label": "Napoli",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "napoli"
+      ]
+    },
+    {
+      "id": "clube:roma",
+      "label": "Roma",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "AS Roma"
+      ],
+      "accepted": [
+        "roma",
+        "asroma"
+      ]
+    },
+    {
+      "id": "clube:lazio",
+      "label": "Lazio",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "lazio"
+      ]
+    },
+    {
+      "id": "clube:fiorentina",
+      "label": "Fiorentina",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "fiorentina"
+      ]
+    },
+    {
+      "id": "clube:atalanta",
+      "label": "Atalanta",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "atalanta"
+      ]
+    },
+    {
+      "id": "clube:parma",
+      "label": "Parma",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "parma"
+      ]
+    },
+    {
+      "id": "clube:parissaintgermain",
+      "label": "Paris Saint-Germain",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "PSG",
+        "Paris Saint Germain"
+      ],
+      "accepted": [
+        "parissaintgermain",
+        "psg"
+      ]
+    },
+    {
+      "id": "clube:olympiquedemarseille",
+      "label": "Olympique de Marseille",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Marseille"
+      ],
+      "accepted": [
+        "olympiquedemarseille",
+        "marseille"
+      ]
+    },
+    {
+      "id": "clube:lyon",
+      "label": "Lyon",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Olympique Lyonnais"
+      ],
+      "accepted": [
+        "lyon",
+        "olympiquelyonnais"
+      ]
+    },
+    {
+      "id": "clube:monaco",
+      "label": "Monaco",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "AS Monaco"
+      ],
+      "accepted": [
+        "monaco",
+        "asmonaco"
+      ]
+    },
+    {
+      "id": "clube:lille",
+      "label": "Lille",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "lille"
+      ]
+    },
+    {
+      "id": "clube:nice",
+      "label": "Nice",
+      "category": "clube",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "OGC Nice"
+      ],
+      "accepted": [
+        "nice",
+        "ogcnice"
+      ]
+    },
+    {
+      "id": "estadio:maracana",
+      "label": "Maracanã",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Maracana"
+      ],
+      "accepted": [
+        "maracana"
+      ]
+    },
+    {
+      "id": "estadio:morumbi",
+      "label": "Morumbi",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "MorumBis"
+      ],
+      "accepted": [
+        "morumbi",
+        "morumbis"
+      ]
+    },
+    {
+      "id": "estadio:pacaembu",
+      "label": "Pacaembu",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "pacaembu"
+      ]
+    },
+    {
+      "id": "estadio:allianzparque",
+      "label": "Allianz Parque",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "allianzparque"
+      ]
+    },
+    {
+      "id": "estadio:neoquimicaarena",
+      "label": "Neo Química Arena",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Arena Corinthians",
+        "Itaquerão"
+      ],
+      "accepted": [
+        "neoquimicaarena",
+        "arenacorinthians",
+        "itaquerao"
+      ]
+    },
+    {
+      "id": "estadio:vilabelmiro",
+      "label": "Vila Belmiro",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "vilabelmiro"
+      ]
+    },
+    {
+      "id": "estadio:saojanuario",
+      "label": "São Januário",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Sao Januario"
+      ],
+      "accepted": [
+        "saojanuario"
+      ]
+    },
+    {
+      "id": "estadio:engenhao",
+      "label": "Engenhão",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Nilton Santos"
+      ],
+      "accepted": [
+        "engenhao",
+        "niltonsantos"
+      ]
+    },
+    {
+      "id": "estadio:mineirao",
+      "label": "Mineirão",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Mineirao"
+      ],
+      "accepted": [
+        "mineirao"
+      ]
+    },
+    {
+      "id": "estadio:independencia",
+      "label": "Independência",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Independencia"
+      ],
+      "accepted": [
+        "independencia"
+      ]
+    },
+    {
+      "id": "estadio:arenadogremio",
+      "label": "Arena do Grêmio",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Arena do Gremio"
+      ],
+      "accepted": [
+        "arenadogremio"
+      ]
+    },
+    {
+      "id": "estadio:beirario",
+      "label": "Beira-Rio",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Beira Rio"
+      ],
+      "accepted": [
+        "beirario"
+      ]
+    },
+    {
+      "id": "estadio:castelao",
+      "label": "Castelão",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Castelao"
+      ],
+      "accepted": [
+        "castelao"
+      ]
+    },
+    {
+      "id": "estadio:fontenova",
+      "label": "Fonte Nova",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Arena Fonte Nova"
+      ],
+      "accepted": [
+        "fontenova",
+        "arenafontenova"
+      ]
+    },
+    {
+      "id": "estadio:barradao",
+      "label": "Barradão",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Barradao"
+      ],
+      "accepted": [
+        "barradao"
+      ]
+    },
+    {
+      "id": "estadio:ilhadoretiro",
+      "label": "Ilha do Retiro",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ilhadoretiro"
+      ]
+    },
+    {
+      "id": "estadio:arruda",
+      "label": "Arruda",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "arruda"
+      ]
+    },
+    {
+      "id": "estadio:aflitos",
+      "label": "Aflitos",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "aflitos"
+      ]
+    },
+    {
+      "id": "estadio:coutopereira",
+      "label": "Couto Pereira",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "coutopereira"
+      ]
+    },
+    {
+      "id": "estadio:arenadabaixada",
+      "label": "Arena da Baixada",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Ligga Arena"
+      ],
+      "accepted": [
+        "arenadabaixada",
+        "liggaarena"
+      ]
+    },
+    {
+      "id": "estadio:mangueirao",
+      "label": "Mangueirão",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Mangueirao"
+      ],
+      "accepted": [
+        "mangueirao"
+      ]
+    },
+    {
+      "id": "estadio:serradourada",
+      "label": "Serra Dourada",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "serradourada"
+      ]
+    },
+    {
+      "id": "estadio:manegarrincha",
+      "label": "Mané Garrincha",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Mane Garrincha"
+      ],
+      "accepted": [
+        "manegarrincha"
+      ]
+    },
+    {
+      "id": "estadio:ressacada",
+      "label": "Ressacada",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "ressacada"
+      ]
+    },
+    {
+      "id": "estadio:orlandoscarpelli",
+      "label": "Orlando Scarpelli",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "orlandoscarpelli"
+      ]
+    },
+    {
+      "id": "estadio:brincodeouro",
+      "label": "Brinco de Ouro",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "brincodeouro"
+      ]
+    },
+    {
+      "id": "estadio:moiseslucarelli",
+      "label": "Moisés Lucarelli",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Moises Lucarelli"
+      ],
+      "accepted": [
+        "moiseslucarelli"
+      ]
+    },
+    {
+      "id": "estadio:alfredojaconi",
+      "label": "Alfredo Jaconi",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "alfredojaconi"
+      ]
+    },
+    {
+      "id": "estadio:arenaconda",
+      "label": "Arena Condá",
+      "category": "estadio",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Arena Conda"
+      ],
+      "accepted": [
+        "arenaconda"
+      ]
+    },
+    {
+      "id": "estadio:santiagobernabeu",
+      "label": "Santiago Bernabéu",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Santiago Bernabeu",
+        "Bernabeu"
+      ],
+      "accepted": [
+        "santiagobernabeu",
+        "bernabeu"
+      ]
+    },
+    {
+      "id": "estadio:campnou",
+      "label": "Camp Nou",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Spotify Camp Nou"
+      ],
+      "accepted": [
+        "campnou",
+        "spotifycampnou"
+      ]
+    },
+    {
+      "id": "estadio:metropolitano",
+      "label": "Metropolitano",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Cívitas Metropolitano",
+        "Wanda Metropolitano"
+      ],
+      "accepted": [
+        "metropolitano",
+        "civitasmetropolitano",
+        "wandametropolitano"
+      ]
+    },
+    {
+      "id": "estadio:mestalla",
+      "label": "Mestalla",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "mestalla"
+      ]
+    },
+    {
+      "id": "estadio:sanmames",
+      "label": "San Mamés",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "San Mames"
+      ],
+      "accepted": [
+        "sanmames"
+      ]
+    },
+    {
+      "id": "estadio:ramonsanchezpizjuan",
+      "label": "Ramón Sánchez Pizjuán",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Ramon Sanchez Pizjuan"
+      ],
+      "accepted": [
+        "ramonsanchezpizjuan"
+      ]
+    },
+    {
+      "id": "estadio:oldtrafford",
+      "label": "Old Trafford",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "oldtrafford"
+      ]
+    },
+    {
+      "id": "estadio:anfield",
+      "label": "Anfield",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "anfield"
+      ]
+    },
+    {
+      "id": "estadio:emiratesstadium",
+      "label": "Emirates Stadium",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Emirates"
+      ],
+      "accepted": [
+        "emiratesstadium",
+        "emirates"
+      ]
+    },
+    {
+      "id": "estadio:stamfordbridge",
+      "label": "Stamford Bridge",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "stamfordbridge"
+      ]
+    },
+    {
+      "id": "estadio:etihadstadium",
+      "label": "Etihad Stadium",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Etihad"
+      ],
+      "accepted": [
+        "etihadstadium",
+        "etihad"
+      ]
+    },
+    {
+      "id": "estadio:tottenhamhotspurstadium",
+      "label": "Tottenham Hotspur Stadium",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "tottenhamhotspurstadium"
+      ]
+    },
+    {
+      "id": "estadio:stjamespark",
+      "label": "St James' Park",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "St James Park"
+      ],
+      "accepted": [
+        "stjamespark"
+      ]
+    },
+    {
+      "id": "estadio:villapark",
+      "label": "Villa Park",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "villapark"
+      ]
+    },
+    {
+      "id": "estadio:goodisonpark",
+      "label": "Goodison Park",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "goodisonpark"
+      ]
+    },
+    {
+      "id": "estadio:allianzarena",
+      "label": "Allianz Arena",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "allianzarena"
+      ]
+    },
+    {
+      "id": "estadio:signalidunapark",
+      "label": "Signal Iduna Park",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Westfalenstadion"
+      ],
+      "accepted": [
+        "signalidunapark",
+        "westfalenstadion"
+      ]
+    },
+    {
+      "id": "estadio:sansiro",
+      "label": "San Siro",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Giuseppe Meazza"
+      ],
+      "accepted": [
+        "sansiro",
+        "giuseppemeazza"
+      ]
+    },
+    {
+      "id": "estadio:allianzstadium",
+      "label": "Allianz Stadium",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Juventus Stadium"
+      ],
+      "accepted": [
+        "allianzstadium",
+        "juventusstadium"
+      ]
+    },
+    {
+      "id": "estadio:olimpicoderoma",
+      "label": "Olímpico de Roma",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Olimpico de Roma",
+        "Stadio Olimpico"
+      ],
+      "accepted": [
+        "olimpicoderoma",
+        "stadioolimpico"
+      ]
+    },
+    {
+      "id": "estadio:diegoarmandomaradona",
+      "label": "Diego Armando Maradona",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "San Paolo"
+      ],
+      "accepted": [
+        "diegoarmandomaradona",
+        "sanpaolo"
+      ]
+    },
+    {
+      "id": "estadio:parcdesprinces",
+      "label": "Parc des Princes",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Parque dos Príncipes"
+      ],
+      "accepted": [
+        "parcdesprinces",
+        "parquedosprincipes"
+      ]
+    },
+    {
+      "id": "estadio:velodrome",
+      "label": "Vélodrome",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Velodrome"
+      ],
+      "accepted": [
+        "velodrome"
+      ]
+    },
+    {
+      "id": "estadio:groupamastadium",
+      "label": "Groupama Stadium",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Parc Olympique Lyonnais"
+      ],
+      "accepted": [
+        "groupamastadium",
+        "parcolympiquelyonnais"
+      ]
+    },
+    {
+      "id": "estadio:louisii",
+      "label": "Louis II",
+      "category": "estadio",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Stade Louis II"
+      ],
+      "accepted": [
+        "louisii",
+        "stadelouisii"
+      ]
+    },
+    {
+      "id": "treinador:luizfelipescolari",
+      "label": "Luiz Felipe Scolari",
+      "category": "treinador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Felipão",
+        "Scolari",
+        "Luiz Felipe Scolari"
+      ],
+      "accepted": [
+        "luizfelipescolari",
+        "felipao",
+        "scolari"
+      ]
+    },
+    {
+      "id": "treinador:carlosalbertoparreira",
+      "label": "Carlos Alberto Parreira",
+      "category": "treinador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Parreira"
+      ],
+      "accepted": [
+        "carlosalbertoparreira",
+        "parreira"
+      ]
+    },
+    {
+      "id": "treinador:vanderleiluxemburgo",
+      "label": "Vanderlei Luxemburgo",
+      "category": "treinador",
+      "modes": [
+        "brasil",
+        "europa"
+      ],
+      "aliases": [
+        "Luxemburgo"
+      ],
+      "accepted": [
+        "vanderleiluxemburgo",
+        "luxemburgo"
+      ]
+    },
+    {
+      "id": "treinador:abelferreira",
+      "label": "Abel Ferreira",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "abelferreira"
+      ]
+    },
+    {
+      "id": "treinador:jorgejesus",
+      "label": "Jorge Jesus",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "jorgejesus"
+      ]
+    },
+    {
+      "id": "treinador:renatogaucho",
+      "label": "Renato Gaúcho",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Renato Portaluppi"
+      ],
+      "accepted": [
+        "renatogaucho",
+        "renatoportaluppi"
+      ]
+    },
+    {
+      "id": "treinador:fernandodiniz",
+      "label": "Fernando Diniz",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "fernandodiniz"
+      ]
+    },
+    {
+      "id": "treinador:dorivaljunior",
+      "label": "Dorival Júnior",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Dorival Junior"
+      ],
+      "accepted": [
+        "dorivaljunior"
+      ]
+    },
+    {
+      "id": "treinador:tite",
+      "label": "Tite",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "tite"
+      ]
+    },
+    {
+      "id": "treinador:dunga",
+      "label": "Dunga",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "dunga"
+      ]
+    },
+    {
+      "id": "treinador:telesantana",
+      "label": "Telê Santana",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Tele Santana"
+      ],
+      "accepted": [
+        "telesantana"
+      ]
+    },
+    {
+      "id": "treinador:zagallo",
+      "label": "Zagallo",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Mário Zagallo"
+      ],
+      "accepted": [
+        "zagallo",
+        "mariozagallo"
+      ]
+    },
+    {
+      "id": "treinador:muricyramalho",
+      "label": "Muricy Ramalho",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "muricyramalho"
+      ]
+    },
+    {
+      "id": "treinador:joelsantana",
+      "label": "Joel Santana",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "joelsantana"
+      ]
+    },
+    {
+      "id": "treinador:abelbraga",
+      "label": "Abel Braga",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "abelbraga"
+      ]
+    },
+    {
+      "id": "treinador:cuca",
+      "label": "Cuca",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "cuca"
+      ]
+    },
+    {
+      "id": "treinador:manomenezes",
+      "label": "Mano Menezes",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "manomenezes"
+      ]
+    },
+    {
+      "id": "treinador:rogermachado",
+      "label": "Roger Machado",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "rogermachado"
+      ]
+    },
+    {
+      "id": "treinador:odairhellmann",
+      "label": "Odair Hellmann",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "odairhellmann"
+      ]
+    },
+    {
+      "id": "treinador:vagnermancini",
+      "label": "Vágner Mancini",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Vagner Mancini"
+      ],
+      "accepted": [
+        "vagnermancini"
+      ]
+    },
+    {
+      "id": "treinador:pauloautuori",
+      "label": "Paulo Autuori",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "pauloautuori"
+      ]
+    },
+    {
+      "id": "treinador:oswaldodeoliveira",
+      "label": "Oswaldo de Oliveira",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "oswaldodeoliveira"
+      ]
+    },
+    {
+      "id": "treinador:levirculpi",
+      "label": "Levir Culpi",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "levirculpi"
+      ]
+    },
+    {
+      "id": "treinador:endersonmoreira",
+      "label": "Enderson Moreira",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "endersonmoreira"
+      ]
+    },
+    {
+      "id": "treinador:renatopaiva",
+      "label": "Renato Paiva",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "renatopaiva"
+      ]
+    },
+    {
+      "id": "treinador:rogerioceni",
+      "label": "Rogério Ceni",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Rogerio Ceni"
+      ],
+      "accepted": [
+        "rogerioceni"
+      ]
+    },
+    {
+      "id": "treinador:filipeluis",
+      "label": "Filipe Luís",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Filipe Luis"
+      ],
+      "accepted": [
+        "filipeluis"
+      ]
+    },
+    {
+      "id": "treinador:antoniooliveira",
+      "label": "António Oliveira",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Antonio Oliveira"
+      ],
+      "accepted": [
+        "antoniooliveira"
+      ]
+    },
+    {
+      "id": "treinador:ramondiaz",
+      "label": "Ramon Díaz",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Ramon Diaz"
+      ],
+      "accepted": [
+        "ramondiaz"
+      ]
+    },
+    {
+      "id": "treinador:ramonmenezes",
+      "label": "Ramón Menezes",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [
+        "Ramon Menezes"
+      ],
+      "accepted": [
+        "ramonmenezes"
+      ]
+    },
+    {
+      "id": "treinador:jairventura",
+      "label": "Jair Ventura",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "jairventura"
+      ]
+    },
+    {
+      "id": "treinador:gutoferreira",
+      "label": "Guto Ferreira",
+      "category": "treinador",
+      "modes": [
+        "brasil"
+      ],
+      "aliases": [],
+      "accepted": [
+        "gutoferreira"
+      ]
+    },
+    {
+      "id": "treinador:pepguardiola",
+      "label": "Pep Guardiola",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Guardiola"
+      ],
+      "accepted": [
+        "pepguardiola",
+        "guardiola"
+      ]
+    },
+    {
+      "id": "treinador:carloancelotti",
+      "label": "Carlo Ancelotti",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Ancelotti"
+      ],
+      "accepted": [
+        "carloancelotti",
+        "ancelotti"
+      ]
+    },
+    {
+      "id": "treinador:josemourinho",
+      "label": "José Mourinho",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Jose Mourinho",
+        "Mourinho"
+      ],
+      "accepted": [
+        "josemourinho",
+        "mourinho"
+      ]
+    },
+    {
+      "id": "treinador:alexferguson",
+      "label": "Alex Ferguson",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Sir Alex Ferguson",
+        "Ferguson"
+      ],
+      "accepted": [
+        "alexferguson",
+        "siralexferguson",
+        "ferguson"
+      ]
+    },
+    {
+      "id": "treinador:arsenewenger",
+      "label": "Arsène Wenger",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Arsene Wenger",
+        "Wenger"
+      ],
+      "accepted": [
+        "arsenewenger",
+        "wenger"
+      ]
+    },
+    {
+      "id": "treinador:jurgenklopp",
+      "label": "Jürgen Klopp",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Jurgen Klopp",
+        "Klopp"
+      ],
+      "accepted": [
+        "jurgenklopp",
+        "klopp"
+      ]
+    },
+    {
+      "id": "treinador:zinedinezidane",
+      "label": "Zinedine Zidane",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Zidane"
+      ],
+      "accepted": [
+        "zinedinezidane",
+        "zidane"
+      ]
+    },
+    {
+      "id": "treinador:diegosimeone",
+      "label": "Diego Simeone",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Simeone"
+      ],
+      "accepted": [
+        "diegosimeone",
+        "simeone"
+      ]
+    },
+    {
+      "id": "treinador:luisenrique",
+      "label": "Luis Enrique",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "luisenrique"
+      ]
+    },
+    {
+      "id": "treinador:hansiflick",
+      "label": "Hansi Flick",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Flick"
+      ],
+      "accepted": [
+        "hansiflick",
+        "flick"
+      ]
+    },
+    {
+      "id": "treinador:thomastuchel",
+      "label": "Thomas Tuchel",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Tuchel"
+      ],
+      "accepted": [
+        "thomastuchel",
+        "tuchel"
+      ]
+    },
+    {
+      "id": "treinador:antonioconte",
+      "label": "Antonio Conte",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Conte"
+      ],
+      "accepted": [
+        "antonioconte",
+        "conte"
+      ]
+    },
+    {
+      "id": "treinador:massimilianoallegri",
+      "label": "Massimiliano Allegri",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Allegri"
+      ],
+      "accepted": [
+        "massimilianoallegri",
+        "allegri"
+      ]
+    },
+    {
+      "id": "treinador:mauriziosarri",
+      "label": "Maurizio Sarri",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Sarri"
+      ],
+      "accepted": [
+        "mauriziosarri",
+        "sarri"
+      ]
+    },
+    {
+      "id": "treinador:robertomancini",
+      "label": "Roberto Mancini",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Mancini"
+      ],
+      "accepted": [
+        "robertomancini",
+        "mancini"
+      ]
+    },
+    {
+      "id": "treinador:simoneinzaghi",
+      "label": "Simone Inzaghi",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "simoneinzaghi"
+      ]
+    },
+    {
+      "id": "treinador:gianpierogasperini",
+      "label": "Gian Piero Gasperini",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Gasperini"
+      ],
+      "accepted": [
+        "gianpierogasperini",
+        "gasperini"
+      ]
+    },
+    {
+      "id": "treinador:marcelobielsa",
+      "label": "Marcelo Bielsa",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Bielsa"
+      ],
+      "accepted": [
+        "marcelobielsa",
+        "bielsa"
+      ]
+    },
+    {
+      "id": "treinador:mauriciopochettino",
+      "label": "Mauricio Pochettino",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Pochettino"
+      ],
+      "accepted": [
+        "mauriciopochettino",
+        "pochettino"
+      ]
+    },
+    {
+      "id": "treinador:rafaelbenitez",
+      "label": "Rafael Benítez",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Rafa Benitez",
+        "Benítez"
+      ],
+      "accepted": [
+        "rafaelbenitez",
+        "rafabenitez",
+        "benitez"
+      ]
+    },
+    {
+      "id": "treinador:unaiemery",
+      "label": "Unai Emery",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Emery"
+      ],
+      "accepted": [
+        "unaiemery",
+        "emery"
+      ]
+    },
+    {
+      "id": "treinador:mikelarteta",
+      "label": "Mikel Arteta",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Arteta"
+      ],
+      "accepted": [
+        "mikelarteta",
+        "arteta"
+      ]
+    },
+    {
+      "id": "treinador:xabialonso",
+      "label": "Xabi Alonso",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [],
+      "accepted": [
+        "xabialonso"
+      ]
+    },
+    {
+      "id": "treinador:xavi",
+      "label": "Xavi",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Xavi Hernández"
+      ],
+      "accepted": [
+        "xavi",
+        "xavihernandez"
+      ]
+    },
+    {
+      "id": "treinador:ronaldkoeman",
+      "label": "Ronald Koeman",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Koeman"
+      ],
+      "accepted": [
+        "ronaldkoeman",
+        "koeman"
+      ]
+    },
+    {
+      "id": "treinador:frankrijkaard",
+      "label": "Frank Rijkaard",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Rijkaard"
+      ],
+      "accepted": [
+        "frankrijkaard",
+        "rijkaard"
+      ]
+    },
+    {
+      "id": "treinador:johancruyff",
+      "label": "Johan Cruyff",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Cruyff"
+      ],
+      "accepted": [
+        "johancruyff",
+        "cruyff"
+      ]
+    },
+    {
+      "id": "treinador:ottmarhitzfeld",
+      "label": "Ottmar Hitzfeld",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Hitzfeld"
+      ],
+      "accepted": [
+        "ottmarhitzfeld",
+        "hitzfeld"
+      ]
+    },
+    {
+      "id": "treinador:juppheynckes",
+      "label": "Jupp Heynckes",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Heynckes"
+      ],
+      "accepted": [
+        "juppheynckes",
+        "heynckes"
+      ]
+    },
+    {
+      "id": "treinador:louisvangaal",
+      "label": "Louis van Gaal",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Van Gaal"
+      ],
+      "accepted": [
+        "louisvangaal",
+        "vangaal"
+      ]
+    },
+    {
+      "id": "treinador:arneslot",
+      "label": "Arne Slot",
+      "category": "treinador",
+      "modes": [
+        "europa"
+      ],
+      "aliases": [
+        "Slot"
+      ],
+      "accepted": [
+        "arneslot",
+        "slot"
+      ]
+    }
+  ],
+  "coverage": "Seleção editorial de nomes conhecidos, de diferentes épocas. Não é uma lista completa de elencos atuais.",
+  "sources": [
+    "Base histórica de jogadores e clubes já utilizada nos jogos OPC; curadoria de reconhecimento por nome.",
+    "Sem fotografias, escudos, estatísticas estimadas ou vínculos de clube atual."
+  ]
+}
