@@ -8,3 +8,8 @@ __pycache__/
 *.log
 _projetos/forja-de-craques/dist/
 _audit-*
+
+_projetos/opc-android/.gradle/
+_projetos/opc-android/**/build/
+_projetos/opc-android/app/src/main/assets/
+_projetos/opc-android/local.properties

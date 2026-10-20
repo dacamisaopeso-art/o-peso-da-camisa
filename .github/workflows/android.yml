@@ -1,0 +1,58 @@
+name: Construir OPC Android
+on:
+  push:
+    branches: [app/android-primeira-versao]
+    paths: ['_projetos/opc-android/**', '.github/workflows/android.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Preparar e conferir pacote de jogos
+        run: node _projetos/opc-android/app.test.cjs
+      - name: Compilar APK de teste
+        working-directory: _projetos/opc-android
+        run: gradle assembleDebug assembleDebugAndroidTest lintDebug --stacktrace
+      - name: Guardar APK e relatório de análise
+        uses: actions/upload-artifact@v4
+        with:
+          name: OPC-Jogos-Android-0.1.0
+          path: |
+            _projetos/opc-android/app/build/outputs/apk/debug/*.apk
+            _projetos/opc-android/app/build/reports/lint-results-debug.html
+          retention-days: 30
+      - name: Conferir em emulador Android
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          arch: x86_64
+          profile: pixel_2
+          disable-animations: true
+          working-directory: _projetos/opc-android
+          script: |
+            gradle connectedDebugAndroidTest --stacktrace
+            adb shell am start -n br.com.opesodacamisa.jogos/.MainActivity
+            sleep 3
+            adb shell screencap -p /sdcard/opc-app.png
+            adb pull /sdcard/opc-app.png app/build/outputs/opc-app.png
+      - name: Guardar testes e captura
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: OPC-Jogos-testes-Android
+          path: |
+            _projetos/opc-android/app/build/reports/androidTests/
+            _projetos/opc-android/app/build/outputs/androidTest-results/
+            _projetos/opc-android/app/build/outputs/opc-app.png
+          if-no-files-found: ignore
