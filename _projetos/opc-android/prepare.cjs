@@ -1,0 +1,23 @@
+/* Builds a games-only bundle from the current repository. Never rewrites website files. */
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const project=__dirname,repo=path.resolve(project,'../..'),out=path.join(project,'app/src/main/assets/www'),catalog=JSON.parse(fs.readFileSync(path.join(project,'web/catalog.json'),'utf8'));
+function ensureInside(base,file){const rel=path.relative(base,file);if(rel.startsWith('..')||path.isAbsolute(rel))throw Error('Outside output directory: '+file);}
+if(fs.existsSync(out)){ensureInside(project,out);fs.rmSync(out,{recursive:true});}fs.mkdirSync(out,{recursive:true});
+const copied=new Set();function copy(rel){rel=rel.replaceAll('\\','/');const src=path.resolve(repo,rel);ensureInside(repo,src);if(!fs.existsSync(src)||!fs.statSync(src).isFile())throw Error('Asset missing: '+rel);const target=path.join(out,rel);ensureInside(out,target);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(src,target);copied.add(rel);}
+for(const file of fs.readdirSync(repo))if(/\.(js|css)$/.test(file))copy(file);
+for(const file of fs.readdirSync(path.join(repo,'dados')))if(/^(velha-fontes-\d|carreira-curadoria|futdraw-palavras)\.json$/.test(file))copy('dados/'+file);
+function walk(rel){for(const ent of fs.readdirSync(path.join(repo,rel),{withFileTypes:true})){const p=rel+'/'+ent.name;if(ent.isDirectory())walk(p);else copy(p);}}walk('forja-de-craques');
+const pages=[...catalog.map(g=>[g.path,g.id]),['politica-de-privacidade.html','info'],['creditos-imagens.html','info'],['creditos-jogo-da-velha.html','info'],['fontes-jogo-da-velha.html','info']];
+for(const [file,id]of pages){let html=fs.readFileSync(path.join(repo,file),'utf8'),prefix='../'.repeat(file.split('/').length-1);html=html.replace(/<html\b/,'<html data-opc-game="'+id+'"').replace(/<script\b[^>]*src=["'][^"']*site-base\.js[^"']*["'][^>]*>\s*<\/script>/gi,'').replace(/<script\b[^>]*src=["'][^"']*site-ajustes\.js[^"']*["'][^>]*>\s*<\/script>/gi,'').replace(/<script\b[^>]*src=["'][^"']*(?:googlesyndication|adsbygoogle)[^"']*["'][^>]*>\s*<\/script>/gi,'');html=html.replace(/<meta name="viewport" content="[^"]*">/,'<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">');html=html.replace('</head>','<link rel="stylesheet" href="'+prefix+'fonts.css"><link rel="stylesheet" href="'+prefix+'mobile.css"></head>').replace('</body>','<script defer src="'+prefix+'mobile.js"></script><script defer src="'+prefix+'opc-jogos-core.js"></script><script defer src="'+prefix+'opc-jogos.js"></script></body>');const target=path.join(out,file);fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,html);copied.add(file);}
+// Include original local game artwork and images explicitly referenced by the copied content.
+for(const rel of [...copied])if(/\.(js|css|html|json)$/.test(rel)){const text=fs.readFileSync(path.join(out,rel),'utf8');for(const m of text.matchAll(/(?:\.\.\/)?imagens\/([^\s"'<>`?#)]+\.(?:png|jpe?g|webp|svg|gif))/gi)){const img='imagens/'+m[1];if(fs.existsSync(path.join(repo,img))&&!copied.has(img))copy(img);}}
+for(const file of ['favicon-opc.png','logo-opc.jpg'])if(!copied.has('imagens/'+file))copy('imagens/'+file);
+for(const file of fs.readdirSync(path.join(project,'web')))fs.copyFileSync(path.join(project,'web',file),path.join(out,file));
+fs.mkdirSync(path.join(out,'fonts'),{recursive:true});for(const file of fs.readdirSync(path.join(project,'fonts')))fs.copyFileSync(path.join(project,'fonts',file),path.join(out,'fonts',file));
+for(const file of ['carreira.css','escalacao.css','intruso.css']){const p=path.join(out,file);fs.writeFileSync(p,fs.readFileSync(p,'utf8').replace(/@import url\(['"]https:\/\/fonts\.googleapis\.com[^)]+\);/g,''));}
+// Replace site navigation only in this generated app, never in the source site.
+for(const name of ['jogos.html'])fs.copyFileSync(path.join(out,'index.html'),path.join(out,name));
+const hashes=Object.fromEntries([...copied].filter(x=>/\.(js|json)$/.test(x)).map(x=>[x,crypto.createHash('sha256').update(fs.readFileSync(path.join(repo,x))).digest('hex')]));
+fs.writeFileSync(path.join(out,'bundle-manifest.json'),JSON.stringify({version:'0.1.0',games:catalog.map(g=>g.path),sourceHashes:hashes},null,2));
+console.log('OPC Android: '+catalog.length+' jogos, '+copied.size+' arquivos de origem. Saída: '+out);
+module.exports={out,catalog,hashes};

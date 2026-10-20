@@ -1,4 +1,8 @@
 node_modules/
+*.p12
+*.jks
+*.keystore
+*signing-password*
 __pycache__/
 *.py[cod]
 .venv/
@@ -8,3 +12,8 @@ __pycache__/
 *.log
 _projetos/forja-de-craques/dist/
 _audit-*
+
+_projetos/opc-android/.gradle/
+_projetos/opc-android/**/build/
+_projetos/opc-android/app/src/main/assets/
+_projetos/opc-android/local.properties
