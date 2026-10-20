@@ -22,7 +22,7 @@ O botão **Editar nome** funciona na sala de espera, durante a partida e no resu
 
 Traços são enviados em lotes de até 16 operações e recebidos incrementalmente. Há atualização aproximada de 0,85 segundo, com envio de traços a cada 0,4 segundo. Isso é sincronização por consultas curtas, não WebSocket. Custo e latência dependem da conexão e do plano Supabase. São aceitas até 2.400 operações por desenho; cada operação admite no máximo 64 pontos e coordenadas limitadas à tela. Há limites de tamanho de requisição, intervalo entre palpites e criação de salas por sessão. Não é um sistema contra abuso em grande escala: CAPTCHA/moderação e limites de infraestrutura podem ser necessários se houver crescimento significativo.
 
-Salas expiram três horas após a criação e são removidas, com seus participantes e desenhos, na criação de uma nova sala. Quem sai ou fica ausente por mais de 90 segundos perde a participação ativa. O anfitrião é transferido ao próximo participante ativo; uma sala vazia expira. Não há pareamento público nesta versão. Não são usados contas pessoais, e-mail, senha, ranking global, anúncios ou imagens externas.
+Salas expiram seis horas após a criação e são removidas, com seus participantes e desenhos, na criação de uma nova sala. Quem sai ou fica ausente por mais de 90 segundos perde a participação ativa. O anfitrião é transferido ao próximo participante ativo; uma sala vazia expira. Não há pareamento público nesta versão. Não são usados contas pessoais, e-mail, senha, ranking global, anúncios ou imagens externas.
 
 ## Implantação
 
@@ -37,3 +37,6 @@ Salas expiram três horas após a criação e são removidas, com seus participa
 ## Testes
 
 `node tests/futdraw.test.cjs` cobre nomes/variantes, filtros de categorias, dicas, pontuação, preenchimento de região fechada, desfazer e contratos de segurança. O teste de integração em PostgreSQL (`tests/futdraw-db.integration.cjs`) exige `@electric-sql/pglite` como dependência de desenvolvimento; ele não é entregue ao navegador. Exercita três participantes, proteção da palavra, acertos, passagem de turno, tentativas após tempo, saída, escrita indevida e bloqueio de leitura direta. O pacote pode ser instalado fora do site e passado em `FUTDRAW_PGLITE_MODULE`.
+
+## Ferramentas de desenho
+Treino com Próximo tema, sem repetir os temas já escolhidos até renovar o conjunto. Salvar desenho baixa um PNG branco de 960 × 600 pixels. Tela cheia: botão ou tecla F fora de campos de texto; Esc sai. Em navegadores sem a API, a área ocupa a janela. Salas de 1 a 10 rodadas; cada rodada inclui todos os participantes.

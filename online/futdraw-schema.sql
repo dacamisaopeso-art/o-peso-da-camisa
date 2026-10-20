@@ -4,7 +4,7 @@ create table if not exists public.opc_futdraw_catalog(id boolean primary key def
 create table if not exists public.opc_futdraw_rooms(
  code text primary key default upper(substr(replace(gen_random_uuid()::text,'-',''),1,6)),
  host uuid not null,config jsonb not null,state jsonb not null,secret jsonb not null default '{}',drawing jsonb not null default '[]',
- created_at timestamptz not null default now(),expires_at timestamptz not null default now()+interval '3 hours'
+ created_at timestamptz not null default now(),expires_at timestamptz not null default now()+interval '6 hours'
 );
 create table if not exists public.opc_futdraw_members(
  code text references public.opc_futdraw_rooms(code) on delete cascade,uid uuid not null,name text not null,
@@ -68,13 +68,13 @@ begin
  if kind='create' then
   if (select count(*) from public.opc_futdraw_rooms where host=who and created_at>now()-interval '1 hour')>=4 then raise exception 'Você já criou várias salas. Aguarde antes de criar outra.';end if;
   cfg:=payload->'config';categories:=cfg->'categories';
-  if cfg->>'mode' not in ('brasil','europa') or cfg->>'rounds' not in ('1','2','3','5') or cfg->>'duration' not in ('60','90','120') or jsonb_typeof(categories) is distinct from 'array' or jsonb_array_length(categories) not between 1 and 4 then raise exception 'Configuração inválida.';end if;
+  if cfg->>'mode' not in ('brasil','europa') or cfg->>'rounds' not in ('1','2','3','4','5','6','7','8','9','10') or cfg->>'duration' not in ('60','90','120') or jsonb_typeof(categories) is distinct from 'array' or jsonb_array_length(categories) not between 1 and 4 then raise exception 'Configuração inválida.';end if;
   if exists(select 1 from jsonb_array_elements_text(categories) c where c not in ('clube','estadio','jogador','treinador')) then raise exception 'Categoria inválida.';end if;
   if cfg is null or cfg->>'mode' is null or cfg->>'rounds' is null or cfg->>'duration' is null then raise exception 'Configuração incompleta.';end if;
   nick:=left(regexp_replace(btrim(coalesce(payload->>'name','')),'[[:cntrl:]]','','g'),24);if length(nick)<2 then raise exception 'Escolha um apelido de 2 a 24 caracteres.';end if;
   delete from public.opc_futdraw_rooms where expires_at<now();
   cfg:=jsonb_build_object('mode',cfg->>'mode','rounds',(cfg->>'rounds')::integer,'duration',(cfg->>'duration')::integer,'categories',categories);
-  insert into public.opc_futdraw_rooms(host,config,state) values(who,cfg,jsonb_build_object('phase','lobby','index',-1,'order','[]'::jsonb,'used','[]'::jsonb,'messages','[]'::jsonb,'solved','[]'::jsonb,'hints',0,'message','Compartilhe o código e reúna de 2 a 8 pessoas.')) returning * into r;
+  insert into public.opc_futdraw_rooms(host,config,expires_at,state) values(who,cfg,now()+interval '6 hours',jsonb_build_object('phase','lobby','index',-1,'order','[]'::jsonb,'used','[]'::jsonb,'messages','[]'::jsonb,'solved','[]'::jsonb,'hints',0,'message','Compartilhe o código e reúna de 2 a 8 pessoas.')) returning * into r;
   insert into public.opc_futdraw_members(code,uid,name,seat) values(r.code,who,nick,0);
   return public.opc_futdraw_reply(r,who);
  end if;
