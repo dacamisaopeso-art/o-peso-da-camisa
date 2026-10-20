@@ -23,3 +23,5 @@ Conteúdo servido por HTTPS local com WebViewAssetLoader; acesso a file:// e con
 APK de desenvolvimento assinado para testes; não é uma versão assinada para loja. O certificado de desenvolvimento pode mudar entre compilações de CI, exigindo desinstalação para trocar de APK (o que apaga dados locais). Antes de distribuir atualizações regulares, criar e guardar uma chave de assinatura definitiva. Não desinstalar uma versão com progresso importante sem avaliar essa limitação.
 
 O compartilhamento de PNG da Forja ainda deve ser validado no aparelho; o salvamento nativo implementado nesta etapa é o do FutDraw. Fotos remotas podem ficar indisponíveis sem conexão; o motor e os nomes continuam locais. Não alterar o banco do site ao testar.
+
+Tipografia Inter e Barlow Condensed incluída sob SIL OFL 1.1, com fontes e licenças originais. Assim, os jogos mantêm a tipografia mesmo sem internet.

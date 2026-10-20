@@ -28,4 +28,15 @@ public class SmokeTest {
   js("document.querySelector('#fd-choices button').click()");assertEquals("false",js("document.getElementById('fd-tools').hidden"));assertEquals("false",js("document.getElementById('fd-next').hidden"));
   js("window.OPC_APP.back()");assertEquals("true",js("document.getElementById('fd-confirm').open"));js("document.getElementById('fd-confirm-no').click()");assertEquals("false",js("document.getElementById('fd-room').hidden"));
  }
+ @Test public void pngExportUsesAndroidDocumentPickerAndPublicInvites()throws Exception{
+  rule.getActivity().runOnUiThread(()->rule.getActivity().web.loadUrl(MainActivity.ORIGIN+"/assets/www/futdraw.html"));Thread.sleep(300);ready();
+  js("document.getElementById('fd-practice').click()");long deadline=System.currentTimeMillis()+15000;while(!"3".equals(js("document.querySelectorAll('#fd-choices button').length"))&&System.currentTimeMillis()<deadline)Thread.sleep(100);js("document.querySelector('#fd-choices button').click()");
+  java.io.File png=new java.io.File(rule.getActivity().getCacheDir(),"export-test.png");if(png.exists())assertTrue(png.delete());
+  Instrumentation instrumentation=InstrumentationRegistry.getInstrumentation();
+  Instrumentation.ActivityMonitor picker=new Instrumentation.ActivityMonitor(){@Override public Instrumentation.ActivityResult onStartActivity(android.content.Intent intent){if(android.content.Intent.ACTION_CREATE_DOCUMENT.equals(intent.getAction()))return new Instrumentation.ActivityResult(android.app.Activity.RESULT_OK,new android.content.Intent().setData(android.net.Uri.fromFile(png)));return null;}};
+  instrumentation.addMonitor(picker);try{js("document.getElementById('fd-save').click()");deadline=System.currentTimeMillis()+15000;while(!png.exists()&&System.currentTimeMillis()<deadline)Thread.sleep(100);assertTrue("PNG saved through native document picker",png.exists());android.graphics.Bitmap bitmap=android.graphics.BitmapFactory.decodeFile(png.getPath());assertNotNull(bitmap);assertEquals(960,bitmap.getWidth());assertEquals(600,bitmap.getHeight());bitmap.recycle();}finally{instrumentation.removeMonitor(picker);}
+  js("navigator.clipboard.writeText(location.origin+'/assets/www/futdraw.html?sala=ABC123')");Thread.sleep(200);
+  android.content.ClipboardManager clipboard=(android.content.ClipboardManager)rule.getActivity().getSystemService(android.content.Context.CLIPBOARD_SERVICE);assertEquals("https://dacamisaopeso-art.github.io/o-peso-da-camisa/futdraw.html?sala=ABC123",clipboard.getPrimaryClip().getItemAt(0).getText().toString());
+ }
+
 }
