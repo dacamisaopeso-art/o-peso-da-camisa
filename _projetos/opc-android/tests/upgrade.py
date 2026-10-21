@@ -29,12 +29,14 @@ def find(prefix):
  for _ in range(12):
   for node in nodes():
    label=node.get('content-desc','') or node.get('text','')
-   if prefix in label:return node,label
+   bounds=list(map(int,re.findall(r'\d+',node.get('bounds',''))))
+   if prefix in label and len(bounds)==4 and bounds[2]>bounds[0] and bounds[3]>bounds[1]:return node,label
   run('adb','shell','input','swipe','250','1300','250','550','350');time.sleep(.3)
  run('adb','shell','screencap','-p','/sdcard/opc-upgrade.png');run('adb','pull','/sdcard/opc-upgrade.png',str(out/'upgrade.png'));raise RuntimeError('Could not find test control: '+prefix)
 # Set a genuine favorite in the previous release, then install the new release in place.
 node,label=find('Adicionar aos favoritos:')
 x1,y1,x2,y2=map(int,re.findall(r'\d+',node.get('bounds')));run('adb','shell','input','tap',str((x1+x2)//2),str((y1+y2)//2));time.sleep(.5)
+find(label.replace('Adicionar aos favoritos:','Remover dos favoritos:'))
 assert 'Success' in run('adb','install','-r',str(new))
 run('adb','shell','am','start','-W','-n',component)
 find(label.replace('Adicionar aos favoritos:','Remover dos favoritos:'))
