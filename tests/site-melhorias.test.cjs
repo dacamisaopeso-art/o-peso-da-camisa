@@ -8,5 +8,5 @@ a.equal(daily.day(new Date('2026-10-12T01:00:00Z')),'2026-10-11');a.deepEqual(Ar
 require('../velha-busca-nomes.js');const originalNames=globalThis.OPC_VELHA_SEARCH_NAMES;require('../velha-busca-indice.js');for(const [id,p]of Object.entries(originalNames))a.deepEqual(globalThis.OPC_VELHA_SEARCH_NAMES[id].names,p.names);
 const publicPages=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.name.startsWith('_')||e.name.startsWith('.')||e.name==='node_modules'?[]:e.isDirectory()?publicPages(path.join(dir,e.name)):e.name.endsWith('.html')?[path.relative(root,path.join(dir,e.name))]:[]);
 for(const p of publicPages(root)){const html=read(p);for(const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)){if(!match[1].includes('application/ld+json')&&match[2].trim())new vm.Script(match[2],{filename:p});}a(!html.includes('>Painel editorial ↗</a>'));}
-a(read('jogo-da-velha.html').indexOf('velha-diario.js')<read('jogo-da-velha.html').indexOf('velha.js?v=20261014'));a(!read('jogo-da-velha.html').includes('velha-dados.js'));
+a(read('jogo-da-velha.html').indexOf('velha-diario.js')<read('jogo-da-velha.html').indexOf('velha.js?v='));a(!read('jogo-da-velha.html').includes('velha-dados.js'));
 console.log('OK: 25.742 identidades, critérios, fontes e aliases preservados; resultados iguais nos sete modos; desafio diário, sequência, sintaxe e carregamento.');

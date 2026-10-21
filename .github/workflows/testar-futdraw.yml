@@ -6,6 +6,8 @@ on:
       - 'futdraw*'
       - 'dados/futdraw-*'
       - 'online/futdraw-*'
+      - 'online/salas-social*'
+      - 'tests/salas-social*'
       - 'scripts/gerar-futdraw.cjs'
       - 'tests/futdraw*'
       - '.github/workflows/testar-futdraw.yml'
@@ -26,6 +28,10 @@ jobs:
         env:
           FUTDRAW_PGLITE_MODULE: ${{ runner.temp }}/futdraw/node_modules/@electric-sql/pglite
         run: node tests/futdraw-db.integration.cjs
+      - name: Prontidão, revanche e anfitrião
+        env:
+          FUTDRAW_PGLITE_MODULE: ${{ runner.temp }}/futdraw/node_modules/@electric-sql/pglite
+        run: node tests/salas-social.integration.cjs
       - name: Sintaxe e consistência do catálogo
         run: |
           node --check futdraw.js

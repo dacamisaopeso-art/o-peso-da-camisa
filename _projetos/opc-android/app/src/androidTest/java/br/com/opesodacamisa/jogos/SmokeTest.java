@@ -64,4 +64,20 @@ public class SmokeTest {
   finally{js("document.getElementById('fd-leave').click()");Thread.sleep(200);js("if(document.getElementById('fd-confirm').open)document.getElementById('fd-confirm-yes').click()");}
  }
 
+ @Test public void preferencesPersistAndBackClosesTopHelp()throws Exception{
+  load("jogo-da-velha.html");
+  js("OPC_OPEN_PREFS()");
+  assertEquals("true",js("document.querySelector('dialog.opc-report').open"));
+  js("(()=>{const d=document.querySelector('dialog.opc-report');d.querySelector('select').value='extra';d.querySelectorAll('input')[0].checked=true;d.querySelector('form').requestSubmit();})()");
+  assertEquals("true",js("document.documentElement.dataset.opcText==='extra'&&document.documentElement.classList.contains('opc-reduce-motion')"));
+  js("OPC_OPEN_RULES({id:'velha'})");
+  rule.getActivity().runOnUiThread(()->rule.getActivity().appBack());Thread.sleep(200);
+  assertEquals("1",js("document.querySelectorAll('dialog[open]').length"));
+  js("document.querySelector('dialog[open]').close()");
+  load("futdraw.html");
+  assertEquals("extra",new org.json.JSONArray("["+js("document.documentElement.dataset.opcText")+"]").getString(0));
+  assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth+1"));
+  js("OPC_PREFS.save({text:'normal',reduceMotion:false,saveData:false})");
+ }
+
 }
