@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
     private View fullView;
     private WebChromeClient.CustomViewCallback fullCallback;
     private byte[] pendingPng;
+    private byte[] pendingBackup;
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
         if(Build.VERSION.SDK_INT>=30)getWindow().setDecorFitsSystemWindows(false);
@@ -61,6 +62,8 @@ public class MainActivity extends Activity {
             String raw=message.getData();if(raw==null||raw.length()>8_000_000)return;
             try{JSONObject obj=new JSONObject(raw);String type=obj.optString("type"),id=obj.optString("id");
                 if("savePng".equals(type)){savePng(obj.optString("data"),obj.optString("name"));}
+                else if("saveBackup".equals(type)){String text=obj.optString("text");if(text.length()>4_000_000||!"opc-jogos-backup".equals(new JSONObject(text).optString("format")))return;if(pendingBackup!=null){toast("Conclua o salvamento anterior.");return;}pendingBackup=text.getBytes(java.nio.charset.StandardCharsets.UTF_8);Intent save=new Intent(Intent.ACTION_CREATE_DOCUMENT).addCategory(Intent.CATEGORY_OPENABLE).setType("application/json").putExtra(Intent.EXTRA_TITLE,"OPC-Jogos-backup.json");startActivityForResult(save,43);}
+                else if("openBackup".equals(type)){startActivityForResult(new Intent(Intent.ACTION_OPEN_DOCUMENT).addCategory(Intent.CATEGORY_OPENABLE).setType("application/json"),44);}
                 else if("share".equals(type)){String text=obj.optString("text"),url=obj.optString("url");if(text.length()>4000||url.length()>1000)return;Uri u=Uri.parse(url);if(!url.isEmpty()&&!("https".equals(u.getScheme())&&"dacamisaopeso-art.github.io".equals(u.getHost())))return;Intent send=new Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_TEXT,text+(url.isEmpty()?"":"\n"+url));startActivity(Intent.createChooser(send,"Compartilhar"));}
                 else if("copy".equals(type)){String text=obj.optString("text");if(text.length()>8000)return;((android.content.ClipboardManager)getSystemService(CLIPBOARD_SERVICE)).setPrimaryClip(ClipData.newPlainText("OPC Jogos",text));toast("Copiado.");}
                 else if("exit".equals(type)){new AlertDialog.Builder(this).setTitle("Fechar OPC Jogos?").setNegativeButton("Continuar jogando",null).setPositiveButton("Fechar",(d,w)->finish()).show();}
@@ -78,7 +81,20 @@ public class MainActivity extends Activity {
         if(png.length<8||png.length>6_000_000||png[0]!=(byte)137||png[1]!=80||png[2]!=78||png[3]!=71)return;
         pendingPng=png;Intent save=new Intent(Intent.ACTION_CREATE_DOCUMENT).addCategory(Intent.CATEGORY_OPENABLE).setType("image/png");save.putExtra(Intent.EXTRA_TITLE,name.replaceAll("[^a-zA-Z0-9_.-]","-").replaceAll("^\\.+","")+".png");startActivityForResult(save,42);
     }
-    @Override protected void onActivityResult(int request,int result,Intent data){super.onActivityResult(request,result,data);if(request!=42)return;byte[] png=pendingPng;pendingPng=null;if(result!=RESULT_OK||data==null||data.getData()==null||png==null)return;try(OutputStream out=getContentResolver().openOutputStream(data.getData())){if(out==null)throw new IOException();out.write(png);toast("Desenho salvo.");}catch(IOException e){toast("Não foi possível salvar o desenho.");}}
+    @Override protected void onActivityResult(int request,int result,Intent data){
+        super.onActivityResult(request,result,data);
+        if(request==44){if(result!=RESULT_OK||data==null||data.getData()==null)return;
+            try(InputStream in=getContentResolver().openInputStream(data.getData());ByteArrayOutputStream bytes=new ByteArrayOutputStream()){
+                if(in==null)throw new IOException();byte[] buffer=new byte[8192];int n;
+                while((n=in.read(buffer))!=-1){if(bytes.size()+n>4_000_000)throw new IOException();bytes.write(buffer,0,n);}
+                String text=new String(bytes.toByteArray(),java.nio.charset.StandardCharsets.UTF_8);
+                web.evaluateJavascript("window.OPC_BACKUP_RECEIVE && window.OPC_BACKUP_RECEIVE("+JSONObject.quote(text)+")",null);
+            }catch(IOException e){toast("Não foi possível ler o backup. O limite é 4 MB.");}return;
+        }
+        if(request!=42&&request!=43)return;byte[] bytes=request==42?pendingPng:pendingBackup;if(request==42)pendingPng=null;else pendingBackup=null;
+        if(result!=RESULT_OK||data==null||data.getData()==null||bytes==null)return;
+        try(OutputStream out=getContentResolver().openOutputStream(data.getData())){if(out==null)throw new IOException();out.write(bytes);toast(request==42?"Desenho salvo.":"Backup salvo.");}catch(IOException e){toast("Não foi possível salvar o arquivo.");}
+    }
     void appBack(){if(web==null){finish();return;}if(fullView!=null){exitFull();return;}web.evaluateJavascript("window.OPC_APP ? window.OPC_APP.back() : history.back()",null);}
     @Override public void onBackPressed(){appBack();}
     private void exitFull(){if(fullView==null)return;root.removeView(fullView);fullView=null;web.setVisibility(View.VISIBLE);if(fullCallback!=null){fullCallback.onCustomViewHidden();fullCallback=null;}if(Build.VERSION.SDK_INT>=30)getWindow().getInsetsController().show(WindowInsets.Type.systemBars());}

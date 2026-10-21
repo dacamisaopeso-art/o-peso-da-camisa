@@ -80,4 +80,26 @@ public class SmokeTest {
   js("OPC_PREFS.save({text:'normal',reduceMotion:false,saveData:false})");
  }
 
+ @Test public void backupExportAndImportUseAndroidPicker()throws Exception{
+  load("index.html");js("localStorage.setItem('opc-app-favorites',JSON.stringify(['velha']));localStorage.setItem('opc-futdraw-recovery-v1',JSON.stringify({token:'not-exportable'}));OPC_OPEN_BACKUP()");
+  java.io.File backup=new java.io.File(rule.getActivity().getCacheDir(),"opc-backup-test.json");if(backup.exists())assertTrue(backup.delete());
+  Instrumentation instrumentation=InstrumentationRegistry.getInstrumentation();
+  Instrumentation.ActivityMonitor picker=new Instrumentation.ActivityMonitor(){@Override public Instrumentation.ActivityResult onStartActivity(android.content.Intent intent){if(android.content.Intent.ACTION_CREATE_DOCUMENT.equals(intent.getAction())||android.content.Intent.ACTION_OPEN_DOCUMENT.equals(intent.getAction()))return new Instrumentation.ActivityResult(android.app.Activity.RESULT_OK,new android.content.Intent().setData(android.net.Uri.fromFile(backup)));return null;}};
+  instrumentation.addMonitor(picker);
+  try{js("Array.from(document.querySelectorAll('dialog button')).find(b=>b.textContent==='Exportar backup').click()");long deadline=System.currentTimeMillis()+15000;while(!backup.exists()&&System.currentTimeMillis()<deadline)Thread.sleep(100);assertTrue(backup.exists());String text=new String(java.nio.file.Files.readAllBytes(backup.toPath()),java.nio.charset.StandardCharsets.UTF_8);assertTrue(text.contains("opc-jogos-backup"));assertFalse(text.contains("not-exportable"));
+   js("localStorage.setItem('opc-app-favorites','[]');Array.from(document.querySelectorAll('dialog button')).find(b=>b.textContent==='Escolher backup para importar').click()");deadline=System.currentTimeMillis()+15000;while(!"true".equals(js("Array.from(document.querySelectorAll('dialog button')).some(b=>b.textContent==='Confirmar importação'&&!b.hidden)"))&&System.currentTimeMillis()<deadline)Thread.sleep(100);
+   js("Array.from(document.querySelectorAll('dialog button')).find(b=>b.textContent==='Confirmar importação').click()");Thread.sleep(500);ready();assertEquals("true",js("JSON.parse(localStorage.getItem('opc-app-favorites')).includes('velha')"));
+  }finally{instrumentation.removeMonitor(picker);backup.delete();js("localStorage.removeItem('opc-futdraw-recovery-v1')");}
+ }
+ @Test public void tutorialIsSkippableAndDoesNotRepeat()throws Exception{
+  load("index.html");js("localStorage.removeItem('opc-tutorial-v1-futdraw')");load("futdraw.html");assertEquals("1",js("document.querySelectorAll('.opc-tutorial').length"));js("Array.from(document.querySelectorAll('.opc-tutorial button')).find(b=>b.textContent==='Próximo').click()");assertEquals("true",js("document.querySelector('.opc-tutorial h2').textContent.includes('2/3')"));js("Array.from(document.querySelectorAll('.opc-tutorial button')).find(b=>b.textContent==='Pular').click()");assertEquals("0",js("document.querySelectorAll('.opc-tutorial').length"));load("futdraw.html");assertEquals("0",js("document.querySelectorAll('.opc-tutorial').length"));
+ }
+ @Test public void homePreferencesAndInstalledVersionWork()throws Exception{
+  load("index.html");assertEquals("4",js("OPC_INSTALLED.versionCode"));assertEquals("\"br.com.opesodacamisa.jogos.oficial\"",js("OPC_INSTALLED.package"));js("document.getElementById('app-preferences').click()");assertEquals("true",js("document.querySelector('dialog[open]').getAttribute('aria-label')==='Acessibilidade e dados'"));rule.getActivity().runOnUiThread(()->rule.getActivity().appBack());Thread.sleep(200);assertEquals("0",js("document.querySelectorAll('dialog[open]').length"));
+ }
+
+ @Test public void pixSupportFitsAndCopiesProvidedKey()throws Exception{
+  load("apoie.html");assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth+1"));js("document.getElementById('copy-pix').click()");Thread.sleep(300);android.content.ClipboardManager clipboard=(android.content.ClipboardManager)rule.getActivity().getSystemService(android.content.Context.CLIPBOARD_SERVICE);assertEquals("5cc3542e-3754-489b-9307-5396ba950b56",clipboard.getPrimaryClip().getItemAt(0).getText().toString());
+ }
+
 }
