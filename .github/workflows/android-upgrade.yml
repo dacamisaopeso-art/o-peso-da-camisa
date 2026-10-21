@@ -42,4 +42,5 @@ jobs:
           path: |
             upgrade-proof/result.json
             upgrade-proof/upgrade.png
+            upgrade-proof/last-ui.xml
           if-no-files-found: ignore

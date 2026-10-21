@@ -17,14 +17,17 @@ pkg='br.com.opesodacamisa.jogos.oficial';component=pkg+'/br.com.opesodacamisa.jo
 assert 'Success' in run('adb','install',str(old));run('adb','shell','am','start','-W','-n',component)
 def nodes():
  run('adb','shell','uiautomator','dump','/sdcard/opc-upgrade.xml')
- xml=run('adb','exec-out','cat','/sdcard/opc-upgrade.xml');return ET.fromstring(xml).iter('node')
+ xml=run('adb','shell','cat','/sdcard/opc-upgrade.xml');(out/'last-ui.xml').write_text(xml);start=xml.find('<hierarchy');end=xml.rfind('</hierarchy>');
+ if start<0 or end<0:
+  time.sleep(1);return []
+ return ET.fromstring(xml[start:end+len('</hierarchy>')]).iter('node')
 def find(prefix):
- for _ in range(8):
+ for _ in range(12):
   for node in nodes():
    label=node.get('content-desc','') or node.get('text','')
    if prefix in label:return node,label
   run('adb','shell','input','swipe','250','1300','250','550','350');time.sleep(.3)
- raise RuntimeError('Could not find test control: '+prefix)
+ run('adb','shell','screencap','-p','/sdcard/opc-upgrade.png');run('adb','pull','/sdcard/opc-upgrade.png',str(out/'upgrade.png'));raise RuntimeError('Could not find test control: '+prefix)
 # Set a genuine favorite in the previous release, then install the new release in place.
 node,label=find('Adicionar aos favoritos:')
 x1,y1,x2,y2=map(int,re.findall(r'\d+',node.get('bounds')));run('adb','shell','input','tap',str((x1+x2)//2),str((y1+y2)//2));time.sleep(.5)
