@@ -21,7 +21,6 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - run: sdkmanager 'build-tools;35.0.0'
       - run: sudo setfacl -m u:$(id -un):rw /dev/kvm
       - uses: reactivecircus/android-emulator-runner@v2
         env:
@@ -33,7 +32,9 @@ jobs:
           profile: pixel_2
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -accel on
-          script: python _projetos/opc-android/tests/upgrade.py
+          script: |
+            sdkmanager 'build-tools;35.0.0'
+            python _projetos/opc-android/tests/upgrade.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
