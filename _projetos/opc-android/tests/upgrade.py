@@ -16,8 +16,12 @@ for file in [old,new]:
 pkg='br.com.opesodacamisa.jogos.oficial';component=pkg+'/br.com.opesodacamisa.jogos.MainActivity'
 assert 'Success' in run('adb','install',str(old));run('adb','shell','am','start','-W','-n',component)
 def nodes():
- run('adb','shell','uiautomator','dump','/sdcard/opc-upgrade.xml')
- xml=run('adb','shell','cat','/sdcard/opc-upgrade.xml');(out/'last-ui.xml').write_text(xml);start=xml.find('<hierarchy');end=xml.rfind('</hierarchy>');
+ try:
+  dump=run('adb','shell','uiautomator','dump','/sdcard/opc-upgrade.xml')
+  xml=run('adb','shell','cat','/sdcard/opc-upgrade.xml')
+ except subprocess.CalledProcessError as error:
+  (out/'last-ui.xml').write_text(str(error.output));time.sleep(1);return []
+ (out/'last-ui.xml').write_text(xml);start=xml.find('<hierarchy');end=xml.rfind('</hierarchy>');
  if start<0 or end<0:
   time.sleep(1);return []
  return ET.fromstring(xml[start:end+len('</hierarchy>')]).iter('node')
