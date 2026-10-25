@@ -1,0 +1,55 @@
+name: Publicar Android assinado
+on:
+  push:
+    branches: [main]
+    paths: ['_releases/android/**', '.github/workflows/android-release.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: android-official-release
+  cancel-in-progress: false
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Conferir integridade do pacote assinado localmente
+        working-directory: _releases/android
+        run: sha256sum --check SHA256SUMS-0.5.0.txt
+      - run: sudo setfacl -m u:$(id -un):rw /dev/kvm
+      - name: Testar atualização real de 0.4 para 0.5
+        uses: reactivecircus/android-emulator-runner@v2
+        env:
+          OPC_RELEASE_TAG: android-v0.5.0
+          OPC_CURRENT_APK: _releases/android/OPC-Jogos-0.5.0.apk
+        with:
+          api-level: 35
+          arch: x86_64
+          target: google_apis
+          profile: pixel_2
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -accel on
+          script: |
+            sdkmanager 'build-tools;35.0.0'
+            python _projetos/opc-android/tests/upgrade.py
+      - name: Guardar comprovação da atualização
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: OPC-atualizacao-0.4-para-0.5
+          path: |
+            upgrade-proof/result.json
+            upgrade-proof/upgrade.png
+            upgrade-proof/last-ui.xml
+          if-no-files-found: ignore
+      - name: Publicar APK após confirmar atualização sem duplicar o aplicativo
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create android-v0.5.0 _releases/android/OPC-Jogos-0.5.0.apk _releases/android/SHA256SUMS-0.5.0.txt --target "$GITHUB_SHA" --title 'OPC Jogos Oficial 0.5.0 · DrafTeam' --notes-file _releases/android/NOTAS-0.5.0.md --latest
