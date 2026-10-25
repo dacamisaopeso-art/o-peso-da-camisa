@@ -21,7 +21,9 @@ jobs:
           java-version: '17'
       - name: Conferir integridade do pacote assinado localmente
         working-directory: _releases/android
-        run: sha256sum --check SHA256SUMS-0.5.0.txt
+        run: |
+          cat OPC-Jogos-0.5.0.apk.part* > OPC-Jogos-0.5.0.apk
+          sha256sum --check SHA256SUMS-0.5.0.txt
       - run: sudo setfacl -m u:$(id -un):rw /dev/kvm
       - name: Testar atualização real de 0.4 para 0.5
         uses: reactivecircus/android-emulator-runner@v2
