@@ -19,3 +19,5 @@ _projetos/opc-android/app/src/main/assets/
 _projetos/opc-android/local.properties
 
 outputs/drafteam-online/
+
+_releases/android/*.apk

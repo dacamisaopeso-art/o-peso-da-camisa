@@ -8,7 +8,7 @@ assert.equal(gameLinks.length,9,'Todos os nove jogos continuam disponíveis no s
 for(const file of gameLinks)assert(fs.existsSync(path.join(root,file)),'Jogo preservado: '+file);
 for(const icon of manifest.icons){const b=fs.readFileSync(path.join(root,icon.src));const size=Number(icon.sizes.split('x')[0]);assert.equal(b.readUInt32BE(16),size);assert.equal(b.readUInt32BE(20),size);}
 const html=read('aplicativo.html');for(const m of html.matchAll(/(?:href|src)="([^"#?]+)(?:[?#][^"]*)?"/g)){if(!/^[a-z]+:/i.test(m[1]))assert(fs.existsSync(path.join(root,m[1])),m[1]);}
-assert(html.includes('releases/download/android-v0.4.0/OPC-Jogos-0.4.0.apk'));assert(!html.includes('adsbygoogle'));assert(!read('app-sw.js').includes("addEventListener('fetch'"),'SW must not intercept online traffic');
+assert(html.includes('releases/download/android-v0.5.0/OPC-Jogos-0.5.0.apk'));assert(!html.includes('adsbygoogle'));assert(!read('app-sw.js').includes("addEventListener('fetch'"),'SW must not intercept online traffic');
 const code=read('app-instalar.js');const listeners={},status={},instructions={scrollIntoView(){this.scrolled=true}},button={addEventListener(k,v){this[k]=v}};const registrations=[];
 const context={URL,location:{protocol:'https:'},matchMedia:()=>({matches:false}),navigator:{serviceWorker:{register:(url,opts)=>{registrations.push([String(url),opts]);return Promise.resolve();}}},window:{addEventListener:(k,v)=>listeners[k]=v},document:{currentScript:{src:'https://example.test/o-peso-da-camisa/app-instalar.js'},head:{append(){}},createElement:()=>({}),querySelector:q=>q==='[data-install-app]'?button:q==='[data-install-status]'?status:q==='#instalacao-navegador'?instructions:null}};
 vm.runInNewContext(code,context);
