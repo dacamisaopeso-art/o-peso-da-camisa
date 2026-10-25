@@ -1,0 +1,29 @@
+name: Conferir DrafTeam
+on:
+  push:
+    branches: [main]
+    paths: ['drafteam*', 'online/drafteam*', 'scripts/*drafteam*', 'tests/drafteam*', '.github/workflows/drafteam.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regras:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --prefix "$RUNNER_TEMP/drafteam" --ignore-scripts --no-audit --no-fund @electric-sql/pglite@0.5.10
+      - run: |
+          node tests/drafteam.test.cjs
+          node tests/drafteam-online.test.cjs
+          node tests/drafteam-edge.test.cjs
+          node --check drafteam.js
+          node --check drafteam-online.js
+          node scripts/gerar-drafteam.cjs
+          git diff --exit-code -- drafteam-dados.js online/drafteam-catalogo.sql
+      - run: node tests/drafteam-db.integration.cjs
+        env:
+          FUTDRAW_PGLITE_MODULE: ${{ runner.temp }}/drafteam/node_modules/@electric-sql/pglite

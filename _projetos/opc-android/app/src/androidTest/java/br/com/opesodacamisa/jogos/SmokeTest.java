@@ -16,12 +16,12 @@ public class SmokeTest {
  private void load(String page)throws Exception{expectedUrl=MainActivity.ORIGIN+"/assets/www/"+page+(page.contains("?")?"&":"?")+"qa="+System.nanoTime();rule.getActivity().runOnUiThread(()->rule.getActivity().web.loadUrl(expectedUrl));ready();}
  private void ready()throws Exception{long deadline=System.currentTimeMillis()+30000;while(System.currentTimeMillis()<deadline){if("true".equals(js("!!window.OPC_APP && document.readyState==='complete' && (!"+org.json.JSONObject.quote(expectedUrl)+" || location.href==="+org.json.JSONObject.quote(expectedUrl)+")")))return;Thread.sleep(200);}fail("Page did not initialize");}
  @Test public void allGamesOpenFromLocalAssetsAndFitPhone()throws Exception{
-  load("index.html");long deadline=System.currentTimeMillis()+15000;while(!"8".equals(js("document.querySelectorAll('.app-game').length"))&&System.currentTimeMillis()<deadline)Thread.sleep(200);
-  assertEquals("8",js("document.querySelectorAll('.app-game').length"));
+  load("index.html");long deadline=System.currentTimeMillis()+15000;while(!"9".equals(js("document.querySelectorAll('.app-game').length"))&&System.currentTimeMillis()<deadline)Thread.sleep(200);
+  assertEquals("9",js("document.querySelectorAll('.app-game').length"));
   assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth"));
   js("document.querySelector('.app-game .favorite-toggle').click()");js("document.querySelector('[data-filter=favorites]').click()");assertEquals("1",js("document.querySelectorAll('.app-game').length"));
   rule.getActivity().runOnUiThread(()->rule.getActivity().web.getSettings().setBlockNetworkLoads(true));
-  String[] pages={"jogo-da-velha.html","futdraw.html","adivinhe-pela-carreira.html","intruso-da-camisa.html","escalacao-historica.html","desafio-das-lendas.html","desafio-da-champions.html","forja-de-craques/index.html"};
+  String[] pages={"drafteam.html","jogo-da-velha.html","futdraw.html","adivinhe-pela-carreira.html","intruso-da-camisa.html","escalacao-historica.html","desafio-das-lendas.html","desafio-da-champions.html","forja-de-craques/index.html"};
   for(String page:pages){load(page);assertEquals(page,"true",js("document.documentElement.classList.contains('opc-mobile')"));assertEquals(page,"true",js("document.documentElement.scrollWidth<=innerWidth+1"));assertEquals(page,"1",js("document.querySelectorAll('.opc-app-bar').length"));}
  }
  @Test public void dailyChallengeResumesAndReportStaysLocal()throws Exception{
@@ -102,4 +102,23 @@ public class SmokeTest {
   load("apoie.html");assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth+1"));js("document.getElementById('copy-pix').click()");Thread.sleep(300);android.content.ClipboardManager clipboard=(android.content.ClipboardManager)rule.getActivity().getSystemService(android.content.Context.CLIPBOARD_SERVICE);assertEquals("5cc3542e-3754-489b-9307-5396ba950b56",clipboard.getPrimaryClip().getItemAt(0).getText().toString());
  }
 
+
+ @Test public void drafTeamCompletesAndRestoresDraft()throws Exception{
+  load("drafteam.html");
+  js("localStorage.removeItem('opc-drafteam-current-v1');document.getElementById('dt-duration').value='0';document.getElementById('dt-seed').value='android-drafteam-qa';document.getElementById('dt-start').click()");
+  assertEquals("5",js("document.querySelectorAll('.criterion').length"));
+  js("document.querySelector('#dt-stage button').click()");
+  assertEquals("5",js("document.querySelectorAll('.criterion.back').length"));
+  js("document.querySelector('.criterion.back').click();document.querySelector('.formation-card').click()");
+  assertEquals("5",js("document.querySelectorAll('#dt-pitch .slot').length"));
+  for(int i=0;i<18;i++){
+   if("true".equals(js("!!document.querySelector('.result-hero')")))break;
+   js("(()=>{const p=document.querySelector('#dt-action .player-choice');if(p){p.click();document.querySelector('#dt-action .gold').click();}else{document.querySelector('#dt-action .gold')?.click();}})()");
+   assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth+1"));
+  }
+  assertEquals("true",js("!!document.querySelector('.result-hero')"));
+  load("drafteam.html");js("document.getElementById('dt-resume').click()");
+  assertEquals("true",js("!!document.querySelector('.result-hero')"));
+  assertEquals("5",js("document.querySelectorAll('#dt-pitch .slot').length"));
+ }
 }

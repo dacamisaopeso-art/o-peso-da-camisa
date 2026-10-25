@@ -2,7 +2,7 @@ name: Construir OPC Android
 on:
   push:
     branches: [main, app/android-primeira-versao]
-    paths: ['_projetos/opc-android/**', '.github/workflows/android.yml', 'opc-jogos*', 'futdraw*.js', 'velha*.js', 'intruso*']
+    paths: ['_projetos/opc-android/**', '.github/workflows/android.yml', 'opc-jogos*', 'futdraw*.js', 'velha*.js', 'intruso*', 'drafteam*']
   workflow_dispatch:
 permissions:
   contents: read
@@ -29,7 +29,7 @@ jobs:
       - name: Guardar APK e relatório de análise
         uses: actions/upload-artifact@v4
         with:
-          name: OPC-Jogos-Android-0.4.0
+          name: OPC-Jogos-Android-0.5.0
           path: |
             _projetos/opc-android/app/build/outputs/apk/debug/*.apk
             _projetos/opc-android/app/build/outputs/apksigner.jar

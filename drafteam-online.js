@@ -1,0 +1,16 @@
+(function(root){'use strict';
+const sessionKey='opc-drafteam-session-v1',roomKey='opc-drafteam-room-v1';let session=null,room=null,timer=null,pending=null,generation=0,callback=null,failures=0;
+try{session=JSON.parse(sessionStorage.getItem(sessionKey));}catch{}
+const cfg=()=>root.OPC_VELHA_ONLINE_CONFIG||{},enabled=()=>root.OPC_DRAFTEAM_ONLINE_CONFIG?.enabled===true;
+async function send(path,body,token){const c=cfg(),controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);try{const r=await fetch(c.url+path,{method:'POST',headers:{apikey:c.publicKey,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:JSON.stringify(body),signal:controller.signal});const value=await r.json();if(!r.ok)throw Error(value.message||value.msg||'A solicitação não foi aceita.');return value;}catch(e){if(e.name==='AbortError')throw Error('A conexão demorou. Atualize a sala antes de repetir uma jogada.');throw e;}finally{clearTimeout(timeout);}}
+async function auth(){if(session&&Date.now()<session.expires-60000)return;if(pending)return pending;pending=(async()=>{const r=session?.refreshToken?await send('/auth/v1/token?grant_type=refresh_token',{refresh_token:session.refreshToken}):await send('/auth/v1/signup',{});if(!r.access_token||!r.refresh_token)throw Error('Não foi possível identificar sua sessão.');session={token:r.access_token,refreshToken:r.refresh_token,expires:Date.now()+(r.expires_in||3600)*1000};try{sessionStorage.setItem(sessionKey,JSON.stringify(session));}catch{}})();try{await pending;}finally{pending=null;}}
+async function rpc(input){if(!enabled())throw Error('As salas do DrafTeam ainda aguardam ativação no servidor. Os modos solo já funcionam.');await auth();return send('/functions/v1/'+root.OPC_DRAFTEAM_ONLINE_CONFIG.functionName,input,session.token);}
+function remember(){try{if(room&&session)localStorage.setItem(roomKey,JSON.stringify({code:room,session,at:Date.now()}));}catch{}}
+function saved(){try{const r=JSON.parse(localStorage.getItem(roomKey));return r&&Date.now()-r.at<300000&&/^[A-F0-9]{8}$/.test(r.code)?r:null;}catch{return null;}}
+async function poll(tag){if(tag!==generation||!room)return;try{const r=await rpc({type:'get',code:room});if(tag!==generation)return;failures=0;remember();callback?.(r);}catch(e){if(tag!==generation)return;failures=Math.min(4,failures+1);callback?.({error:e.message});}if(tag===generation)timer=setTimeout(()=>poll(tag),Math.min(15000,2000*2**failures));}
+async function connect(input,onChange){clearTimeout(timer);const tag=++generation;callback=onChange;if(input.type==='get'){const r=saved();if(r?.code===input.code&&!session)session=r.session;}const result=await rpc(input);if(tag!==generation)throw Error('Solicitação cancelada.');room=result.code;remember();timer=setTimeout(()=>poll(tag),2000);return result;}
+async function action(type,payload={}){if(!room)throw Error('Entre em uma sala.');const r=await rpc({type,code:room,...payload});remember();return r;}
+async function leave(){const code=room;generation++;clearTimeout(timer);room=null;try{localStorage.removeItem(roomKey);}catch{}if(code)await rpc({type:'leave',code});}
+root.OPC_DRAFTEAM_ONLINE={enabled,connect,action,leave,saved};
+root.addEventListener?.('online',()=>{if(room){clearTimeout(timer);poll(generation);}});
+})(globalThis);

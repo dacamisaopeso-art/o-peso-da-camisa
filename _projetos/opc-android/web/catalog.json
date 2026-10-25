@@ -1,10 +1,92 @@
 [
- {"id":"velha","name":"Jogo da Velha","path":"jogo-da-velha.html","tag":"BOT · LOCAL · ONLINE","kind":"both","icon":"grade","description":"Cruze histórias. Conquiste três casas.","accent":"#d8a83e"},
- {"id":"futdraw","name":"FutDraw","path":"futdraw.html","tag":"TREINO · SALAS ONLINE","kind":"both","icon":"traco","description":"O futebol na ponta do seu traço.","accent":"#83cbb0"},
- {"id":"carreira","name":"Adivinhe pela Carreira","path":"adivinhe-pela-carreira.html","tag":"SOLO · SEM INTERNET","kind":"solo","icon":"rota","description":"Cada clube revela uma pista. Quem é o craque?","accent":"#cfbce8"},
- {"id":"intruso","name":"Intruso da Camisa","path":"intruso-da-camisa.html","tag":"SOLO · SEM INTERNET","kind":"solo","icon":"intruso","description":"Quatro nomes. Uma história que não encaixa.","accent":"#e8ab90"},
- {"id":"escalacao","name":"Escalação Histórica","path":"escalacao-historica.html","tag":"SOLO · SEM INTERNET","kind":"solo","icon":"campo","description":"Uma partida inesquecível. Onze titulares.","accent":"#89be99"},
- {"id":"lendas","name":"Desafio das Lendas","path":"desafio-das-lendas.html","tag":"SOLO · SEM INTERNET","kind":"solo","icon":"copa","description":"Monte sua seleção e dispute a Copa das Lendas.","accent":"#e4c46d"},
- {"id":"champions","name":"Desafio da Champions","path":"desafio-da-champions.html","tag":"SOLO · SEM INTERNET","kind":"solo","icon":"estrelas","description":"Sua equipe. A conquista da Europa.","accent":"#8eafe4"},
- {"id":"forja","name":"Forja de Craques","path":"forja-de-craques/index.html","tag":"SOLO · SEM INTERNET","kind":"solo","icon":"forja","description":"Oito atributos. Um craque. Sua carreira.","accent":"#dda26d"}
+  {
+    "id": "drafteam",
+    "name": "DrafTeam",
+    "path": "drafteam.html",
+    "tag": "SOLO · BOTS · SALAS ONLINE",
+    "kind": "both",
+    "icon": "cartas",
+    "description": "Monte seu time. Desafie a sorte.",
+    "accent": "#d8a83e"
+  },
+  {
+    "id": "velha",
+    "name": "Jogo da Velha",
+    "path": "jogo-da-velha.html",
+    "tag": "BOT · LOCAL · ONLINE",
+    "kind": "both",
+    "icon": "grade",
+    "description": "Cruze histórias. Conquiste três casas.",
+    "accent": "#d8a83e"
+  },
+  {
+    "id": "futdraw",
+    "name": "FutDraw",
+    "path": "futdraw.html",
+    "tag": "TREINO · SALAS ONLINE",
+    "kind": "both",
+    "icon": "traco",
+    "description": "O futebol na ponta do seu traço.",
+    "accent": "#83cbb0"
+  },
+  {
+    "id": "carreira",
+    "name": "Adivinhe pela Carreira",
+    "path": "adivinhe-pela-carreira.html",
+    "tag": "SOLO · SEM INTERNET",
+    "kind": "solo",
+    "icon": "rota",
+    "description": "Cada clube revela uma pista. Quem é o craque?",
+    "accent": "#cfbce8"
+  },
+  {
+    "id": "intruso",
+    "name": "Intruso da Camisa",
+    "path": "intruso-da-camisa.html",
+    "tag": "SOLO · SEM INTERNET",
+    "kind": "solo",
+    "icon": "intruso",
+    "description": "Quatro nomes. Uma história que não encaixa.",
+    "accent": "#e8ab90"
+  },
+  {
+    "id": "escalacao",
+    "name": "Escalação Histórica",
+    "path": "escalacao-historica.html",
+    "tag": "SOLO · SEM INTERNET",
+    "kind": "solo",
+    "icon": "campo",
+    "description": "Uma partida inesquecível. Onze titulares.",
+    "accent": "#89be99"
+  },
+  {
+    "id": "lendas",
+    "name": "Desafio das Lendas",
+    "path": "desafio-das-lendas.html",
+    "tag": "SOLO · SEM INTERNET",
+    "kind": "solo",
+    "icon": "copa",
+    "description": "Monte sua seleção e dispute a Copa das Lendas.",
+    "accent": "#e4c46d"
+  },
+  {
+    "id": "champions",
+    "name": "Desafio da Champions",
+    "path": "desafio-da-champions.html",
+    "tag": "SOLO · SEM INTERNET",
+    "kind": "solo",
+    "icon": "estrelas",
+    "description": "Sua equipe. A conquista da Europa.",
+    "accent": "#8eafe4"
+  },
+  {
+    "id": "forja",
+    "name": "Forja de Craques",
+    "path": "forja-de-craques/index.html",
+    "tag": "SOLO · SEM INTERNET",
+    "kind": "solo",
+    "icon": "forja",
+    "description": "Oito atributos. Um craque. Sua carreira.",
+    "accent": "#dda26d"
+  }
 ]

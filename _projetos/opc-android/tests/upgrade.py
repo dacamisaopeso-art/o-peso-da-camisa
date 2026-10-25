@@ -6,7 +6,7 @@ tag=os.environ['OPC_RELEASE_TAG']
 if not re.fullmatch(r'android-v\d+\.\d+\.\d+',tag): raise RuntimeError('Invalid release tag')
 version=tag.removeprefix('android-v');base='https://github.com/dacamisaopeso-art/o-peso-da-camisa/releases/download/'
 old=out/'previous.apk';new=out/'current.apk'
-for url,file in [(base+'android-v0.3.0/OPC-Jogos-0.3.0.apk',old),(base+tag+'/OPC-Jogos-'+version+'.apk',new)]:urllib.request.urlretrieve(url,file)
+for url,file in [(base+'android-v0.4.0/OPC-Jogos-0.4.0.apk',old),(base+tag+'/OPC-Jogos-'+version+'.apk',new)]:urllib.request.urlretrieve(url,file)
 def run(*args):return subprocess.check_output(args,text=True,stderr=subprocess.STDOUT)
 sdk=Path(os.environ['ANDROID_HOME'])/'build-tools'/'35.0.0'
 cert='82e768255953f1c5b0549690bc374671a3e80a70674179841c8d5b23ab2262dc'
@@ -43,5 +43,5 @@ find(label.replace('Adicionar aos favoritos:','Remover dos favoritos:'))
 packages=run('adb','shell','pm','list','packages','br.com.opesodacamisa.jogos').strip().splitlines();assert packages==['package:'+pkg],packages
 assert 'versionName='+version in run('adb','shell','dumpsys','package',pkg)
 run('adb','shell','screencap','-p','/sdcard/opc-upgrade.png');run('adb','pull','/sdcard/opc-upgrade.png',str(out/'upgrade.png'))
-(out/'result.json').write_text(json.dumps({'previous':'0.3.0','current':version,'package':pkg,'sameCertificate':True,'installInPlace':True,'favoritePreserved':True,'onlyOneApp':True},indent=2))
-print('PASS: official APK upgrades 0.3.0 in place, same signature and package, favorite preserved, one installed app.')
+(out/'result.json').write_text(json.dumps({'previous':'0.4.0','current':version,'package':pkg,'sameCertificate':True,'installInPlace':True,'favoritePreserved':True,'onlyOneApp':True},indent=2))
+print('PASS: official APK upgrades 0.4.0 in place, same signature and package, favorite preserved, one installed app.')

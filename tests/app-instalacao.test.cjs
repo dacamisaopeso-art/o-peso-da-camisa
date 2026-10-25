@@ -4,7 +4,7 @@ const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p
 const manifest=JSON.parse(read('app.webmanifest'));
 assert.equal(manifest.start_url,'./jogos.html?origem=app');assert.equal(manifest.scope,'./');assert.equal(manifest.display,'standalone');
 const gameLinks=[...read('jogos.html').matchAll(/class="game-promo-button" href="([^"]+)/g)].map(x=>x[1]);
-assert.equal(gameLinks.length,8,'Todos os oito jogos continuam disponíveis no site');
+assert.equal(gameLinks.length,9,'Todos os nove jogos continuam disponíveis no site');
 for(const file of gameLinks)assert(fs.existsSync(path.join(root,file)),'Jogo preservado: '+file);
 for(const icon of manifest.icons){const b=fs.readFileSync(path.join(root,icon.src));const size=Number(icon.sizes.split('x')[0]);assert.equal(b.readUInt32BE(16),size);assert.equal(b.readUInt32BE(20),size);}
 const html=read('aplicativo.html');for(const m of html.matchAll(/(?:href|src)="([^"#?]+)(?:[?#][^"]*)?"/g)){if(!/^[a-z]+:/i.test(m[1]))assert(fs.existsSync(path.join(root,m[1])),m[1]);}
