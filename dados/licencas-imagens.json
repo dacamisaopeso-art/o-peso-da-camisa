@@ -22236,6 +22236,34 @@
       "commercial": true,
       "changes": "Arquivo não editado pelo site; enquadramento responsivo na exibição.",
       "basis": "Licença soccer.ru CC BY-SA 3.0; autorização VRT do portal registrada no Commons (2008100510027116). Cristiano Ronaldo no Portugal x Espanha de 15/06/2018, jogo em que marcou três gols. Direitos de imagem e marcas são independentes; o uso não implica apoio ao site."
+    },
+    {
+      "title": "Gigante de Arroyito, Rosario — fotografia de 9 de junho de 2007",
+      "page": "https://commons.wikimedia.org/wiki/File:Estadio_Gigante_de_Arroyito.jpg",
+      "author": "Pablo D. Flores",
+      "displayAuthor": "Pablo D. Flores",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceCredit": "Obra própria de Pablo D. Flores, publicada no Wikimedia Commons. Estádio visto do rio Paraná em 09/06/2007; não retrata o jogo de 1978.",
+      "usageTerms": "Creative Commons Attribution-Share Alike 3.0 Unported",
+      "restrictions": "",
+      "sha1": "bd809344eedc8dd04a2908d523b41cde5a22dcd0",
+      "verified": true,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Estadio_Gigante_de_Arroyito.jpg",
+      "checked": "2026-10-25",
+      "active": true,
+      "kind": "photo",
+      "uses": [
+        "posts/a-copa-de-1978-foi-manipulada.md",
+        "publicacoes/a-copa-de-1978-foi-manipulada.html",
+        "index.html"
+      ],
+      "key": "imagens/copa-1978-gigante-de-arroyito.jpg",
+      "id": "img-copa-1978-arroyito",
+      "conditions": "Uso comercial permitido. Atribuir Pablo D. Flores e Wikimedia Commons, vincular a licença CC BY-SA 3.0 e indicar alterações. Adaptações da fotografia devem manter a mesma licença ou uma compatível; o texto editorial não está abrangido por essa licença.",
+      "commercial": true,
+      "changes": "Arquivo original não editado pelo site; enquadramento responsivo na exibição. Fotografia de 2007.",
+      "basis": "Página individual do Commons conferida em 25/10/2026: autor declara obra própria e oferece CC BY-SA 3.0, CC BY-SA 2.5 e GFDL. Selecionada CC BY-SA 3.0. Original de 1444 × 887 pixels. Direitos independentes de marcas permanecem aplicáveis; não implica apoio do autor ao site."
     }
   ],
   "blog": {
@@ -22247,7 +22275,8 @@
     "la-remontada-barcelona-psg-2017": "imagens/la-remontada-barcelona-psg-2017-capa.jpg",
     "o-brasil-ainda-e-o-pais-do-futebol": "imagens/o-brasil-ainda-e-o-pais-do-futebol-capa.jpg",
     "por-que-somos-chamados-de-torcedores": "imagens/por-que-somos-chamados-de-torcedores-capa.jpg",
-    "remo-x-paysandu-a-historia-do-re-pa": "imagens/re-pa-mangueirao-2016.jpg"
+    "remo-x-paysandu-a-historia-do-re-pa": "imagens/re-pa-mangueirao-2016.jpg",
+    "a-copa-de-1978-foi-manipulada": "imagens/copa-1978-gigante-de-arroyito.jpg"
   },
   "shorts": {
     "w7SQCoW7o4U": "imagens/fla-flu-a-maior-rivalidade-do-rio-de-janeiro-capa.jpg",

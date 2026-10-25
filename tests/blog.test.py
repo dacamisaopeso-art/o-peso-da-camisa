@@ -1,5 +1,6 @@
 """Regressões do blog: ordem, capas, sitemap e preservação do conteúdo."""
 import re
+import json
 import subprocess
 import sys
 import tempfile
@@ -20,6 +21,20 @@ class Images(HTMLParser):
         if tag == 'img': self.images.append(dict(attrs))
 
 class BlogTests(unittest.TestCase):
+    def test_investigative_article_seo_and_evidence(self):
+        page = (ROOT/'publicacoes/a-copa-de-1978-foi-manipulada.html').read_text(encoding='utf-8')
+        canonical = 'https://dacamisaopeso-art.github.io/o-peso-da-camisa/publicacoes/a-copa-de-1978-foi-manipulada.html'
+        self.assertIn('property="og:url" content="'+canonical+'"', page)
+        self.assertIn('name="twitter:card" content="summary_large_image"', page)
+        schema = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', page)[1])
+        self.assertEqual(schema['@type'], 'BlogPosting')
+        self.assertEqual(schema['mainEntityOfPage'], canonical)
+        self.assertEqual(schema['datePublished'], '2026-10-25')
+        self.assertIn('2007 por Pablo D. Flores', page)
+        self.assertIn('Não foram consultados autos integrais', page)
+        self.assertIn('não fica demonstrada pelas fontes reunidas', page)
+        self.assertEqual(page.count('<figcaption class="image-credit">'), 1)
+
     def test_order_and_preserved_cards(self):
         index = (ROOT/'index.html').read_text(encoding='utf-8')
         block = index.split('<!-- CMS_POSTS_START -->')[1].split('<!-- CMS_POSTS_END -->')[0]

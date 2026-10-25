@@ -1,5 +1,5 @@
 from pathlib import Path
-import html, re, yaml, markdown
+import html, re, json, yaml, markdown
 from datetime import date as Date
 from urllib.parse import urlsplit, unquote, quote
 import posixpath
@@ -57,12 +57,24 @@ for path in sorted(POSTS.glob("*.md"), key=publication_date, reverse=True):
     esc = lambda s: html.escape(str(s), quote=True)
     def cover_tag(prefix=""):
         src = cover_url(image, prefix) if image else prefix + "imagens/blog-capa-padrao.svg"
-        return f'<img data-blog-cover src="{esc(src)}" alt="{esc("Capa de " + title if image else "Ilustração editorial O Peso da Camisa")}" loading="lazy">'
+        alt = meta.get("image_alt") or ("Capa de " + title if image else "Ilustração editorial O Peso da Camisa")
+        return f'<img data-blog-cover src="{esc(src)}" alt="{esc(alt)}" loading="lazy">'
     image_tag = cover_tag()
     cards.append(f'<article class="article-card"><a href="{url}">{image_tag}<div class="article-content"><div class="real-kicker">{esc(category)} • {esc(date)}</div><h3>{esc(title)}</h3><p>{esc(description)}</p><span class="real-link">LER POST COMPLETO →</span></div></a>{attribution(rights, compact=True)}</article>')
     article = clean_article(markdown.markdown(body, extensions=["extra", "sane_lists"]))
     image_tag = "<figure>" + cover_tag("../") + attribution(rights, "../") + "</figure>"
     page = f'''<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)} | O Peso da Camisa</title><meta name="description" content="{esc(description)}"><link rel="canonical" href="https://dacamisaopeso-art.github.io/o-peso-da-camisa/{url}"><meta name="robots" content="index,follow,max-image-preview:large"><style>body{{background:#07090b;color:#eee;font:17px/1.85 Arial,sans-serif;margin:0}}header,main,footer{{max-width:840px;margin:auto;padding:25px}}a{{color:#d8a83e}}h1{{font-size:clamp(32px,5vw,54px);line-height:1.15}}h2{{margin-top:40px}}p{{color:#ddd}}img{{max-width:100%;height:auto;border-radius:10px}}.tag{{color:#d8a83e;text-transform:uppercase;letter-spacing:2px;font-size:13px}}</style></head><body><header><a href="../">← O PESO DA CAMISA</a></header><main><div class="tag">{esc(category)} • {esc(date)}</div><h1>{esc(title)}</h1><p>{esc(description)}</p>{image_tag}<article>{article}</article><p><a href="../#blog">← Voltar ao blog</a></p></main><footer>O PESO DA CAMISA</footer></body></html>'''
+    if meta.get("seo") is True:
+        canonical = "https://dacamisaopeso-art.github.io/o-peso-da-camisa/" + url
+        absolute_image = image if urlsplit(image).scheme else "https://dacamisaopeso-art.github.io/o-peso-da-camisa/" + image
+        social = {"og:type": "article", "og:locale": "pt_BR", "og:site_name": "O Peso da Camisa", "og:title": title, "og:description": description, "og:url": canonical, "og:image": absolute_image, "og:image:alt": meta.get("image_alt") or title, "article:published_time": date}
+        seo_tags = ''.join(f'<meta property="{esc(key)}" content="{esc(value)}">' for key, value in social.items())
+        seo_tags += '<meta name="twitter:card" content="summary_large_image">'
+        for key, value in {"title": title, "description": description, "image": absolute_image, "image:alt": meta.get("image_alt") or title}.items():
+            seo_tags += f'<meta name="twitter:{key}" content="{esc(value)}">'
+        schema = {"@context": "https://schema.org", "@type": "BlogPosting", "headline": title, "description": description, "datePublished": date, "image": absolute_image, "mainEntityOfPage": canonical, "inLanguage": "pt-BR", "author": {"@type": "Organization", "name": "O Peso da Camisa"}, "publisher": {"@type": "Organization", "name": "O Peso da Camisa"}}
+        seo_tags += '<script type="application/ld+json">' + json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026') + '</script>'
+        page = page.replace("</head>", seo_tags + "</head>")
     page = page.replace("</head>", '<link rel="stylesheet" href="../site-ajustes.css?v=1"></head>').replace("</body>", '<script defer src="../site-ajustes.js?v=1"></script></body>')
     (OUT / (slug + ".html")).write_text(protect(page, '../'), encoding="utf-8", newline="\n")
 
