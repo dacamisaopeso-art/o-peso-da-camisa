@@ -22264,6 +22264,35 @@
       "commercial": true,
       "changes": "Arquivo original não editado pelo site; enquadramento responsivo na exibição. Fotografia de 2007.",
       "basis": "Página individual do Commons conferida em 25/10/2026: autor declara obra própria e oferece CC BY-SA 3.0, CC BY-SA 2.5 e GFDL. Selecionada CC BY-SA 3.0. Original de 1444 × 887 pixels. Direitos independentes de marcas permanecem aplicáveis; não implica apoio do autor ao site."
+    },
+    {
+      "title": "Arrascaeta com a camisa do Flamengo — final da Libertadores de 2021",
+      "page": "https://commons.wikimedia.org/wiki/File:Arrascaeta_Libertadores_2021.jpg",
+      "author": "Artigas Pessio / Intendencia de Montevideo",
+      "displayAuthor": "Artigas Pessio / IM; recorte: KakuLogia+",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceCredit": "Artigas Pessio / IM. Original: https://montevideo.gub.uy/files/20211127dicimouyap0503jpg . Matriz com autoria e licença: https://commons.wikimedia.org/wiki/File:Final_de_la_Copa_CONMEBOL_Libertadores_en_el_Estadio_Centenario_-_20211127dicimouyap0503.jpg .",
+      "usageTerms": "Creative Commons Attribution-ShareAlike 4.0 International",
+      "restrictions": "Direitos de imagem e marcas são independentes; o uso editorial não implica apoio ao site.",
+      "sha1": "16a94e3cebb1b4cde84d01ceb38e166e9b387b86",
+      "revision": 1076086182,
+      "revisionTimestamp": "2025-08-21T16:06:00Z",
+      "verified": true,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Arrascaeta_Libertadores_2021.jpg",
+      "checked": "2026-10-25",
+      "active": true,
+      "kind": "photo",
+      "uses": [
+        "index.html",
+        "publicacoes/estrangeiros-com-mais-titulos-no-futebol-brasileiro.html"
+      ],
+      "key": "imagens/arrascaeta-flamengo-libertadores-2021.jpg",
+      "id": "img-arrascaeta-flamengo-2021",
+      "conditions": "Uso comercial e adaptações permitidos sob CC BY-SA 4.0. Preservar crédito e fonte, vincular a licença e identificar alterações. Adaptações da fotografia devem manter a mesma licença ou compatível.",
+      "commercial": true,
+      "changes": "Recorte de KakuLogia+ a partir da fotografia de 27/11/2021; arquivo baixado sem alterações pelo site, com enquadramento responsivo na exibição. Fotografia e recorte sob CC BY-SA 4.0.",
+      "basis": "A ficha do recorte omite autor no resumo, mas identifica Artigas Pessio / IM nos metadados e remete à matriz 20211127dicimouyap0503, que declara fonte original, autor e CC BY-SA 4.0. Matriz e recorte conferidos em 25/10/2026; SHA-1 local coincide com o publicado no Commons. Não é imagem gerada nem registro de título do Flamengo na final de 2021."
     }
   ],
   "blog": {
@@ -22276,7 +22305,8 @@
     "o-brasil-ainda-e-o-pais-do-futebol": "imagens/o-brasil-ainda-e-o-pais-do-futebol-capa.jpg",
     "por-que-somos-chamados-de-torcedores": "imagens/por-que-somos-chamados-de-torcedores-capa.jpg",
     "remo-x-paysandu-a-historia-do-re-pa": "imagens/re-pa-mangueirao-2016.jpg",
-    "a-copa-de-1978-foi-manipulada": "imagens/copa-1978-gigante-de-arroyito.jpg"
+    "a-copa-de-1978-foi-manipulada": "imagens/copa-1978-gigante-de-arroyito.jpg",
+    "estrangeiros-com-mais-titulos-no-futebol-brasileiro": "imagens/arrascaeta-flamengo-libertadores-2021.jpg"
   },
   "shorts": {
     "w7SQCoW7o4U": "imagens/fla-flu-a-maior-rivalidade-do-rio-de-janeiro-capa.jpg",
