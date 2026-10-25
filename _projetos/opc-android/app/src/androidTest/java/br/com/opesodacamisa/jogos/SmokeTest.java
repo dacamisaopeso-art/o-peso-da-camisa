@@ -95,7 +95,7 @@ public class SmokeTest {
   load("index.html");js("localStorage.removeItem('opc-tutorial-v1-futdraw')");load("futdraw.html");assertEquals("1",js("document.querySelectorAll('.opc-tutorial').length"));js("Array.from(document.querySelectorAll('.opc-tutorial button')).find(b=>b.textContent==='Próximo').click()");assertEquals("true",js("document.querySelector('.opc-tutorial h2').textContent.includes('2/3')"));js("Array.from(document.querySelectorAll('.opc-tutorial button')).find(b=>b.textContent==='Pular').click()");assertEquals("0",js("document.querySelectorAll('.opc-tutorial').length"));load("futdraw.html");assertEquals("0",js("document.querySelectorAll('.opc-tutorial').length"));
  }
  @Test public void homePreferencesAndInstalledVersionWork()throws Exception{
-  load("index.html");assertEquals("4",js("OPC_INSTALLED.versionCode"));assertEquals("\"br.com.opesodacamisa.jogos.oficial\"",js("OPC_INSTALLED.package"));js("document.getElementById('app-preferences').click()");assertEquals("true",js("document.querySelector('dialog[open]').getAttribute('aria-label')==='Acessibilidade e dados'"));rule.getActivity().runOnUiThread(()->rule.getActivity().appBack());Thread.sleep(200);assertEquals("0",js("document.querySelectorAll('dialog[open]').length"));
+  load("index.html");assertEquals("5",js("OPC_INSTALLED.versionCode"));assertEquals("\"br.com.opesodacamisa.jogos.oficial\"",js("OPC_INSTALLED.package"));js("document.getElementById('app-preferences').click()");assertEquals("true",js("document.querySelector('dialog[open]').getAttribute('aria-label')==='Acessibilidade e dados'"));rule.getActivity().runOnUiThread(()->rule.getActivity().appBack());Thread.sleep(200);assertEquals("0",js("document.querySelectorAll('dialog[open]').length"));
  }
 
  @Test public void pixSupportFitsAndCopiesProvidedKey()throws Exception{
@@ -109,11 +109,13 @@ public class SmokeTest {
   assertEquals("5",js("document.querySelectorAll('.criterion').length"));
   js("document.querySelector('#dt-stage button').click()");
   assertEquals("5",js("document.querySelectorAll('.criterion.back').length"));
-  js("document.querySelector('.criterion.back').click();document.querySelector('.formation-card').click()");
+  js("document.querySelector('.criterion.back').click()");
+  js("document.querySelector('.formation-card').click()");
   assertEquals("5",js("document.querySelectorAll('#dt-pitch .slot').length"));
   for(int i=0;i<18;i++){
    if("true".equals(js("!!document.querySelector('.result-hero')")))break;
-   js("(()=>{const p=document.querySelector('#dt-action .player-choice');if(p){p.click();document.querySelector('#dt-action .gold').click();}else{document.querySelector('#dt-action .gold')?.click();}})()");
+   js("(()=>{const p=document.querySelector('#dt-action .player-choice');if(p){p.click();}else{document.querySelector('#dt-action .gold')?.click();}})()");
+   js("document.querySelector('#dt-action .gold:not(:disabled)')?.click()");
    assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth+1"));
   }
   assertEquals("true",js("!!document.querySelector('.result-hero')"));
