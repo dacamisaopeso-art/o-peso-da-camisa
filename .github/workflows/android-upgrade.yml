@@ -7,7 +7,7 @@ on:
       tag:
         description: Versão pública a conferir
         required: true
-        default: android-v0.5.0
+        default: android-v0.6.0
 permissions:
   contents: read
 jobs:
@@ -25,6 +25,7 @@ jobs:
       - uses: reactivecircus/android-emulator-runner@v2
         env:
           OPC_RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+          OPC_PREVIOUS_VERSION: '0.5.0'
         with:
           api-level: 35
           arch: x86_64

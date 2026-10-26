@@ -5,8 +5,10 @@ out=Path('upgrade-proof');out.mkdir(exist_ok=True)
 tag=os.environ['OPC_RELEASE_TAG']
 if not re.fullmatch(r'android-v\d+\.\d+\.\d+',tag): raise RuntimeError('Invalid release tag')
 version=tag.removeprefix('android-v');base='https://github.com/dacamisaopeso-art/o-peso-da-camisa/releases/download/'
+previous=os.environ.get('OPC_PREVIOUS_VERSION','0.5.0')
+if not re.fullmatch(r'\d+\.\d+\.\d+',previous) or tuple(map(int,version.split('.')))<=tuple(map(int,previous.split('.'))):raise RuntimeError('Expected a newer official version')
 old=out/'previous.apk';new=out/'current.apk'
-urllib.request.urlretrieve(base+'android-v0.4.0/OPC-Jogos-0.4.0.apk',old)
+urllib.request.urlretrieve(base+'android-v'+previous+'/OPC-Jogos-'+previous+'.apk',old)
 if os.environ.get('OPC_CURRENT_APK'):shutil.copyfile(os.environ['OPC_CURRENT_APK'],new)
 else:urllib.request.urlretrieve(base+tag+'/OPC-Jogos-'+version+'.apk',new)
 def run(*args):return subprocess.check_output(args,text=True,stderr=subprocess.STDOUT)
@@ -45,5 +47,5 @@ find(label.replace('Adicionar aos favoritos:','Remover dos favoritos:'))
 packages=run('adb','shell','pm','list','packages','br.com.opesodacamisa.jogos').strip().splitlines();assert packages==['package:'+pkg],packages
 assert 'versionName='+version in run('adb','shell','dumpsys','package',pkg)
 run('adb','shell','screencap','-p','/sdcard/opc-upgrade.png');run('adb','pull','/sdcard/opc-upgrade.png',str(out/'upgrade.png'))
-(out/'result.json').write_text(json.dumps({'previous':'0.4.0','current':version,'package':pkg,'sameCertificate':True,'installInPlace':True,'favoritePreserved':True,'onlyOneApp':True},indent=2))
-print('PASS: official APK upgrades 0.4.0 in place, same signature and package, favorite preserved, one installed app.')
+(out/'result.json').write_text(json.dumps({'previous':previous,'current':version,'package':pkg,'sameCertificate':True,'installInPlace':True,'favoritePreserved':True,'onlyOneApp':True},indent=2))
+print('PASS: official APK upgrades '+previous+' to '+version+' in place, same signature and package, favorite preserved, one installed app.')
