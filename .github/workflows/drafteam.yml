@@ -1,7 +1,7 @@
 name: Conferir DrafTeam
 on:
   push:
-    branches: [main, app/drafteam-simultaneo]
+    branches: [main]
     paths: ['drafteam*', 'online/drafteam*', 'online/drafteam-catalogo-v2/**', 'dados/drafteam/**', 'scripts/*drafteam*', 'tests/drafteam*', '.github/workflows/drafteam.yml']
   workflow_dispatch:
 permissions:

@@ -1,7 +1,7 @@
 name: Construir OPC Android
 on:
   push:
-    branches: [main, app/android-primeira-versao, app/drafteam-simultaneo]
+    branches: [main, app/android-primeira-versao]
     paths: ['_projetos/opc-android/**', '.github/workflows/android.yml', 'opc-jogos*', 'futdraw*.js', 'velha*.js', 'intruso*', 'drafteam*']
   workflow_dispatch:
 permissions:
