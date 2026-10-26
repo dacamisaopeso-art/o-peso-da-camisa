@@ -1,5 +1,7 @@
 # DrafTeam — arquitetura, cobertura e entrega
 
+**Atualização 0.6.0 / 26-10-2026:** a descrição da versão inicial abaixo fica como histórico. A rodada simultânea e a nova cobertura estão descritas ao fim deste documento.
+
 ## Checkpoint de origem
 
 Antes deste jogo: `d257a10c0365e59874d8da48938c5a76315545ed` (OPC Jogos Oficial 0.4.0). Os oito jogos, suas bases e seus motores ficam preservados. Para desfazer, reverta somente os commits DrafTeam; não restaure o checkout inteiro por cima de trabalho posterior.
@@ -69,3 +71,19 @@ Passaram 31 suítes locais de jogos, 105 drafts completos, testes do serviço/Ed
 O APK 0.5.0 foi assinado localmente com o certificado permanente; SHA-256 `76153dd1bea1ac182c5648a2ee16a54cbfdf0100f0920942d2b62a8fa55034af`. A distribuição automática usa somente o APK público assinado em `_releases/android`, nunca a chave privada. O arquivo público é transportado em treze partes binárias; o fluxo recompõe o APK e verifica a soma completa antes de qualquer instalação. Nenhuma parte é oferecida como instalador. O fluxo de publicação instala sobre 0.4.0 em emulador, confirma certificado/pacote/favorito/instalação única e somente então cria a versão pública. O download e o manifesto do site só devem anunciar 0.5.0 após esse fluxo passar.
 
 A execução `40229226811` passou: atualização assinada de 0.4.0 para 0.5.0, mesmo certificado e pacote, favorito preservado e uma única instalação. A versão `android-v0.5.0` foi publicada sem pré-lançamento, com APK de 13.193.774 bytes e a soma indicada acima, confirmada também pelo digest do asset no GitHub. O manifesto e a página de download passam a anunciar 0.5.0 somente após essa confirmação.
+
+## Rodadas simultâneas e expansão — 0.6.0
+
+Checkpoint anterior: `5f2d234b0c1ddc280ac79873817eccde8d3e7f22`; branch local `checkpoint/drafteam-0.5-antes-simultaneo-20261026`. Nenhuma base ou motor de outro jogo é alterado.
+
+A projeção remove o corte de popularidade: 25.742 identidades, 120 cartas e 62 objetivos. Os nomes pouco conhecidos permanecem pesquisáveis; sugestões sem texto favorecem fama e nomes exatos/apelidos continuam usando a busca OPC. Clubes e conquistas entram apenas com evidência HTTP explícita já existente. Posições derivam somente do campo registrado; décadas derivam de nascimento registrado. Alias de clubes e de países têm lista finita no gerador, sem inferir nacionalidade específica a partir de Reino Unido, seleção defendida ou clube. Lacunas não são afirmações históricas negativas.
+
+Os novos objetivos abrangem nacionalidades, clubes brasileiros/europeus, campeões registrados de competições, posição de origem e décadas de nascimento. Cada atleta elegível conta uma vez; o jogo não soma troféus nem inventa gols. O gerador informa a cobertura por objetivo e recusa qualquer objetivo com menos de 15 nomes elegíveis.
+
+`drafteam-rounds.js` coordena o motor de efeitos: todos recebem cartas independentes e privadas e confirmam em Pronto. Os elencos permanecem intactos até todos confirmarem. A prioridade em conflitos alterna pelo índice da rodada, independentemente da ordem dos envios. Imunidades entram antes dos ataques. Se o atleta ou alvo mudar, quem perdeu o conflito escolhe novamente, sem perder sua ação; cartas sem opções recebem mercado de reposição. Quem já resolveu aguarda. São mantidas exclusividade global, regularização, votos privados, duas formações e resultado auditável.
+
+O serviço online reserva escolhas em documento privado; a resposta expõe somente a carta e a intenção do próprio participante, além de um booleano público de prontidão. Não envia as cartas/intenções dos adversários nem o objetivo secreto. Timeout preenche somente decisões pendentes. A revisão de rodada continua separada da presença; CAS impede sobreposição de gravações.
+
+A função nova `drafteam-v2` usa o mesmo armazenamento privado de salas, sem mudar permissões ou o catálogo SQL legado. O catálogo ampliado é lido de um commit imutável do repositório, em JSON sem execução de código, com SHA-256 do manifesto e de cada bloco. O bundle exige uma referência de 40 caracteres já publicada. A função `drafteam` antiga e seu catálogo permanecem disponíveis para os APKs 0.5, que podem continuar suas partidas. Novas salas simultâneas usam clientes 0.6 / site atualizado.
+
+A base do navegador/APK é particionada em 26 arquivos gerados. O APK inclui todos os blocos para jogar solo sem rede. Saves e recordes v2 têm chaves próprias e entram no backup; saves v1 são preservados. A assinatura, nome e pacote Android permanecem oficiais.

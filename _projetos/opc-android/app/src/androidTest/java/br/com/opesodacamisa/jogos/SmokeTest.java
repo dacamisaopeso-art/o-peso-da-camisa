@@ -95,7 +95,7 @@ public class SmokeTest {
   load("index.html");js("localStorage.removeItem('opc-tutorial-v1-futdraw')");load("futdraw.html");assertEquals("1",js("document.querySelectorAll('.opc-tutorial').length"));js("Array.from(document.querySelectorAll('.opc-tutorial button')).find(b=>b.textContent==='Próximo').click()");assertEquals("true",js("document.querySelector('.opc-tutorial h2').textContent.includes('2/3')"));js("Array.from(document.querySelectorAll('.opc-tutorial button')).find(b=>b.textContent==='Pular').click()");assertEquals("0",js("document.querySelectorAll('.opc-tutorial').length"));load("futdraw.html");assertEquals("0",js("document.querySelectorAll('.opc-tutorial').length"));
  }
  @Test public void homePreferencesAndInstalledVersionWork()throws Exception{
-  load("index.html");assertEquals("5",js("OPC_INSTALLED.versionCode"));assertEquals("\"br.com.opesodacamisa.jogos.oficial\"",js("OPC_INSTALLED.package"));js("document.getElementById('app-preferences').click()");assertEquals("true",js("document.querySelector('dialog[open]').getAttribute('aria-label')==='Acessibilidade e dados'"));rule.getActivity().runOnUiThread(()->rule.getActivity().appBack());Thread.sleep(200);assertEquals("0",js("document.querySelectorAll('dialog[open]').length"));
+  load("index.html");assertEquals("6",js("OPC_INSTALLED.versionCode"));assertEquals("\"br.com.opesodacamisa.jogos.oficial\"",js("OPC_INSTALLED.package"));js("document.getElementById('app-preferences').click()");assertEquals("true",js("document.querySelector('dialog[open]').getAttribute('aria-label')==='Acessibilidade e dados'"));rule.getActivity().runOnUiThread(()->rule.getActivity().appBack());Thread.sleep(200);assertEquals("0",js("document.querySelectorAll('dialog[open]').length"));
  }
 
  @Test public void pixSupportFitsAndCopiesProvidedKey()throws Exception{
@@ -105,7 +105,7 @@ public class SmokeTest {
 
  @Test public void drafTeamCompletesAndRestoresDraft()throws Exception{
   load("drafteam.html");
-  js("localStorage.removeItem('opc-drafteam-current-v1');document.getElementById('dt-duration').value='0';document.getElementById('dt-seed').value='android-drafteam-qa';document.getElementById('dt-start').click()");
+  js("localStorage.removeItem('opc-drafteam-current-v2');document.getElementById('dt-duration').value='0';document.getElementById('dt-seed').value='android-drafteam-qa';document.getElementById('dt-start').click()");
   assertEquals("5",js("document.querySelectorAll('.criterion').length"));
   js("document.querySelector('#dt-stage button').click()");
   assertEquals("5",js("document.querySelectorAll('.criterion.back').length"));
@@ -123,4 +123,19 @@ public class SmokeTest {
   assertEquals("true",js("!!document.querySelector('.result-hero')"));
   assertEquals("5",js("document.querySelectorAll('#dt-pitch .slot').length"));
  }
+ private void awaitJs(String predicate)throws Exception{long deadline=System.currentTimeMillis()+15000;while(System.currentTimeMillis()<deadline){if("true".equals(js(predicate)))return;Thread.sleep(100);}fail("UI condition timed out: "+predicate);}
+ @Test public void drafTeamBotWaitsForSimultaneousReady()throws Exception{
+  load("drafteam.html");
+  js("document.getElementById('dt-mode').value='bots';document.getElementById('dt-bots').value='1';document.getElementById('dt-duration').value='0';document.getElementById('dt-fast').checked=true;document.getElementById('dt-seed').value='android-simultaneous-qa';document.getElementById('dt-start').click()");
+  js("document.querySelector('#dt-stage button').click()");awaitJs("document.querySelectorAll('.criterion.back').length===5");
+  js("document.querySelector('.criterion.back').click()");awaitJs("!!document.querySelector('.formation-card')");
+  js("document.querySelector('.formation-card').click()");awaitJs("!!document.querySelector('#dt-search')");
+  awaitJs("document.getElementById('dt-round-status').textContent.includes('1/2 prontos')");
+  assertEquals("true",js("Array.from(document.querySelectorAll('#dt-pitch .slot span')).every(n=>n.textContent==='+ escolher')"));
+  assertEquals("true",js("document.querySelector('#dt-action .gold').textContent.startsWith('Pronto')"));
+  js("document.querySelector('.player-choice').click()");js("document.querySelector('#dt-action .gold').click()");
+  awaitJs("document.getElementById('dt-title').textContent.includes('Rodada 2')");
+  assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth+1"));
+ }
+
 }

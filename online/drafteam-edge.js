@@ -6,7 +6,7 @@ async function initialize(){
  const url=Deno.env.get('SUPABASE_URL'),key=Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
  if(!url||!key)throw Error('Serviço ainda não configurado.');
  const storage=async payload=>{const r=await fetch(url+'/rest/v1/rpc/opc_drafteam_storage',{method:'POST',headers:{apikey:key,Authorization:'Bearer '+key,'Content-Type':'application/json'},body:JSON.stringify({payload})});const result=await r.json();if(!r.ok)throw Error(result.message||'O servidor não aceitou a atualização.');return result;};
- const data=await storage({type:'catalog'});if(!data?.players?.length)throw Error('Base do DrafTeam ainda não instalada.');
+ const data=await loadDrafTeamCatalog(globalThis.OPC_DRAFTEAM_CATALOG);if(!data?.players?.length)throw Error('Base do DrafTeam ainda não instalada.');
  const service=createDrafTeamService(OPC_DRAFTEAM,data,{create:(code,document,uid)=>storage({type:'create',code,document,uid}),get:code=>storage({type:'get',code}),save:(code,version,document)=>storage({type:'save',code,version,document})});
  return {url,key,service};
 }

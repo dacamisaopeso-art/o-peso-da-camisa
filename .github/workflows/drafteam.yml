@@ -1,8 +1,8 @@
 name: Conferir DrafTeam
 on:
   push:
-    branches: [main]
-    paths: ['drafteam*', 'online/drafteam*', 'scripts/*drafteam*', 'tests/drafteam*', '.github/workflows/drafteam.yml']
+    branches: [main, app/drafteam-simultaneo]
+    paths: ['drafteam*', 'online/drafteam*', 'online/drafteam-catalogo-v2/**', 'dados/drafteam/**', 'scripts/*drafteam*', 'tests/drafteam*', '.github/workflows/drafteam.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,10 +20,11 @@ jobs:
           node tests/drafteam.test.cjs
           node tests/drafteam-online.test.cjs
           node tests/drafteam-edge.test.cjs
+          node tests/drafteam-catalogo.test.cjs
           node --check drafteam.js
           node --check drafteam-online.js
           node scripts/gerar-drafteam.cjs
-          git diff --exit-code -- drafteam-dados.js online/drafteam-catalogo.sql
+          git diff --exit-code -- drafteam-dados.js drafteam.html dados/drafteam online/drafteam-catalogo-v2
       - run: node tests/drafteam-db.integration.cjs
         env:
           FUTDRAW_PGLITE_MODULE: ${{ runner.temp }}/drafteam/node_modules/@electric-sql/pglite

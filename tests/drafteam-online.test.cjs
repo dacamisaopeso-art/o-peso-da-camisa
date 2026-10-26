@@ -1,4 +1,4 @@
-const a=require('node:assert/strict'),C=require('../drafteam-core.js'),{createDrafTeamService}=require('../online/drafteam-service.cjs');require('../drafteam-dados.js');const data=OPC_DRAFTEAM_DATA;
+const a=require('node:assert/strict'),C=require('../drafteam-rounds.js'),{createDrafTeamService}=require('../online/drafteam-service.cjs');require('../drafteam-dados.js');const data=OPC_DRAFTEAM_DATA;
 async function run(){for(let count=2;count<=5;count++){
  let now=1000000;const rooms=new Map(),store={async create(code,document){if(rooms.has(code))throw Error('collision');const r={code,version:1,document:structuredClone(document),updated:now};rooms.set(code,r);return structuredClone(r);},async get(code){return structuredClone(rooms.get(code));},async save(code,version,document){const before=rooms.get(code);if(before.version!==version)throw Error('A sala mudou.');const r={code,version:version+1,document:structuredClone(document),updated:now};rooms.set(code,r);return structuredClone(r);}};
  const service=createDrafTeamService(C,data,store,{now:()=>now,uuid:()=>crypto.randomUUID()});const rpc=(uid,input)=>service.request('user'+uid,input);
@@ -10,12 +10,12 @@ async function run(){for(let count=2;count<=5;count++){
  const move=async(i,action)=>{const current=await rpc(i,{type:'get',code});return rpc(i,{type:'move',code,version:current.version,action});};
  await Promise.all(Array.from({length:count},(_,i)=>move(i,{type:'ready'})));r=await move(0,{type:'vote',index:0});a.equal(r.game.teams[0].vote,undefined);a.equal(r.game.teams[0].voted,true);a(!('secret' in r.game));await a.rejects(move(0,{type:'vote',index:1}),/Voto/);
  for(let i=1;i<count;i++)r=await move(i,{type:'vote',index:i%2});a.equal(r.game.phase,'formation');for(let i=0;i<count;i++){const mine=await rpc(i,{type:'get',code});a.equal(mine.game.choices.length,2);a.equal(new Set(mine.game.choices).size,2);a.equal(mine.game.teams[(i+1)%count].choice,undefined);r=await move(i,{type:'formation',formation:mine.game.choices[0]});}
- const before=await rpc(0,{type:'get',code});const presence=await rpc(1,{type:'get',code});a.equal(presence.version,before.version,'presence must not invalidate a turn');const action=C.bot(data,rooms.get(code).document.game,0,'normal');await rpc(0,{type:'move',code,version:before.version,action});await a.rejects(rpc(0,{type:'move',code,version:before.version,action}),/mudou/);
+ const before=await rpc(0,{type:'get',code});const presence=await rpc(1,{type:'get',code});a.equal(presence.version,before.version,'presence must not invalidate a turn');const action=C.bot(data,rooms.get(code).document.game,0,'normal');r=await rpc(0,{type:'move',code,version:before.version,action});a.equal(r.game.submitted,true);a(r.game.teams.every(t=>t.slots.every(id=>id===null)));a.equal((await rpc(1,{type:'get',code})).game.submittedAction,null);for(let i=1;i<count;i++)r=await move(i,C.bot(data,rooms.get(code).document.game,i,'normal'));await a.rejects(rpc(0,{type:'move',code,version:before.version,action}),/mudou/);
  // Server timer alone can finish a game even with disconnected participants.
- let rounds=0;while(rooms.get(code).document.game.phase!=='finished'&&rounds++<300){now+=31000;r=await rpc(0,{type:'get',code});a(!('secret' in r.game)||r.game.phase==='finished');if(r.game.card?.type==='joker'&&r.game.actor!==0)a.equal(r.game.hint,undefined);}
+ let rounds=0;while(rooms.get(code).document.game.phase!=='finished'&&rounds++<300){now+=31000;r=await rpc(0,{type:'get',code});a(!('secret' in r.game)||r.game.phase==='finished');a(!('roundCards' in r.game));a(!('roundState' in r.game));}
  a.equal(r.game.phase,'finished');a(r.game.results.some(x=>x.winner));a(r.game.teams.every(t=>t.slots.every(Boolean)));a(r.game.teams[1].slots.length>0);
  // Reconnecting beyond the five-minute reservation is denied; automated team remains.
- await a.rejects(rpc(1,{type:'get',code}),/prazo de retorno/);
+ now+=300001;await a.rejects(rpc(1,{type:'get',code}),/prazo de retorno/);
  }
  console.log('OK DrafTeam online: 2–5 membros, sexto bloqueado, autenticação, votos privados, sem seed/objetivo/pistas vazados, formações individuais, CAS e conclusão por timeout.');
 }
