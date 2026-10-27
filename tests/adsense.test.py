@@ -25,7 +25,7 @@ class AdSenseTests(unittest.TestCase):
     self.assertNotIn('adsbygoogle.js',protect(text))
     self.assertNotIn("https: 'unsafe-eval'",html.unescape(text))
  def test_editorial_coverage_independent_of_eligibility(self):
-  for path in [ROOT/'index.html',ROOT/'kaka-da-superacao-a-bola-de-ouro.html',ROOT/'robinho-da-promessa-a-queda.html',*(ROOT/'publicacoes').glob('*.html')]:
+  for path in [ROOT/'kaka-da-superacao-a-bola-de-ouro.html',ROOT/'robinho-da-promessa-a-queda.html',*(ROOT/'publicacoes').glob('*.html')]:
    if 'noindex' in path.read_text(encoding='utf-8'):continue
    with self.subTest(page=path.name):self.assertEqual(path.read_text(encoding='utf-8').count(ADSENSE_URL),1)
  def test_future_article_and_duplicate_loader(self):
@@ -56,5 +56,31 @@ class AdSenseTests(unittest.TestCase):
    self.assertIn('https:',scripts);self.assertNotIn("'unsafe-inline'",scripts);self.assertIn("object-src 'none'",csp)
  def test_ads_txt(self):
   self.assertEqual((ROOT/'ads.txt').read_text().strip(),'google.com, pub-9262477198650799, DIRECT, f08c47fec0942fa0')
+ def test_support_pages_have_no_ad_loader(self):
+  for route in ['index.html','sobre-nos.html','contato.html','politica-de-privacidade.html','creditos-imagens.html','apoie.html','aplicativo.html']:
+   with self.subTest(route=route):
+    page=(ROOT/route).read_text(encoding='utf-8')
+    self.assertFalse(adsense_eligible(page))
+    self.assertNotIn('adsbygoogle.js',page)
+    self.assertNotIn('adsbygoogle.js',protect(page))
+  self.assertIn('name="google-adsense-account" content="ca-pub-9262477198650799"',(ROOT/'index.html').read_text(encoding='utf-8'))
+ def test_generated_articles_identify_editorial_and_related_content(self):
+  for source in (ROOT/'posts').glob('*.md'):
+   with self.subTest(post=source.stem):
+    page=(ROOT/'publicacoes'/f'{source.stem}.html').read_text(encoding='utf-8')
+    self.assertIn('rel="author" href="../sobre-nos.html#editorial"',page)
+    self.assertRegex(page,r'<time datetime="\d{4}-\d{2}-\d{2}">')
+    self.assertRegex(page,r'Leitura estimada: [1-9]\d* min')
+    self.assertIn('href="../contato.html#correcoes"',page)
+    related=re.search(r'<aside class="related-reading".*?</aside>',page)[0]
+    links=re.findall(r'href="([^"]+)"',related)
+    self.assertEqual(len(links),2)
+    for link in links:
+     self.assertNotEqual(link,source.stem+'.html')
+     self.assertTrue((ROOT/'publicacoes'/link).is_file())
+    self.assertIn('"@type": "BlogPosting"',page)
+ def test_editorial_anchors_exist(self):
+  self.assertIn('id="editorial"',(ROOT/'sobre-nos.html').read_text(encoding='utf-8'))
+  self.assertIn('id="correcoes"',(ROOT/'contato.html').read_text(encoding='utf-8'))
 
 if __name__=='__main__':unittest.main()

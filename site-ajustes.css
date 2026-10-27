@@ -6,3 +6,6 @@
 .home-game>div{display:flex;flex-direction:column;align-items:flex-start;min-height:245px}.home-game>div>p:not(.real-kicker){margin-bottom:20px}.home-game .real-btn{margin-top:auto}.home-game .real-kicker{min-height:16px}
 
 .image-credit{font:12px/1.6 Arial,sans-serif;color:#b7b3a8;overflow-wrap:anywhere}.article-card>.image-credit{padding:0 22px 18px;margin:0}.image-credit a{color:#d8a83e}main figure{margin:20px 0}main figcaption{margin-top:10px}.opc-media-credits{text-align:center;padding:16px;margin:0;background:#080b0e;font:13px/1.5 Arial,sans-serif}.opc-media-credits a{color:#d8a83e}
+
+/* Transparência editorial sem interromper a leitura. */
+.article-byline{font-size:14px;color:#b9bfc1;line-height:1.7;overflow-wrap:anywhere}.editorial-note{border-top:1px solid #383329;margin-top:32px;padding-top:14px}.editorial-note p,.editorial-intro{font-size:14px;color:#b9bfc1;line-height:1.8}.editorial-intro{max-width:700px}.article-byline a,.editorial-note a,.editorial-intro a{color:#e8c171;text-underline-offset:3px}main{overflow-wrap:anywhere}main article table{display:block;max-width:100%;overflow-x:auto}.related-reading a{padding:8px 0}#editorial,#correcoes{scroll-margin-top:25px}

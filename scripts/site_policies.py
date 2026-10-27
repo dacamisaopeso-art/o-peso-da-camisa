@@ -12,10 +12,10 @@ ADSENSE_URL = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?cl
 ADSENSE_TAG = f'<script async src="{ADSENSE_URL}" crossorigin="anonymous"></script>'
 
 def adsense_eligible(page):
-    """Homepage/catálogo, matérias e páginas institucionais; jogos excluídos."""
-    editorial = ('<!-- CMS_POSTS_START -->' in page or
+    """Somente matérias completas; catálogos, apoio e jogos sem publicidade."""
+    editorial = (
         bool(re.search(r'<link\b[^>]*rel=["\']canonical["\'][^>]*href=["\']https://dacamisaopeso-art.github.io/o-peso-da-camisa/publicacoes/[^"\']+\.html', page, re.I)) or
-        bool(re.search(r'<link\b[^>]*rel=["\']canonical["\'][^>]*href=["\']https://dacamisaopeso-art.github.io/o-peso-da-camisa/(?:kaka-da-superacao-a-bola-de-ouro|robinho-da-promessa-a-queda|sobre-nos|contato|politica-de-privacidade|creditos-imagens)\.html', page, re.I)))
+        bool(re.search(r'<link\b[^>]*rel=["\']canonical["\'][^>]*href=["\']https://dacamisaopeso-art.github.io/o-peso-da-camisa/(?:kaka-da-superacao-a-bola-de-ouro|robinho-da-promessa-a-queda)\.html', page, re.I)))
     return editorial and bool(re.search(r'<head\b', page, re.I)) and not re.search(
         r'<meta\b[^>]*name=["\']robots["\'][^>]*content=["\'][^"\']*noindex|<meta\b[^>]*http-equiv=["\']refresh["\']|Esta página saiu de campo\.', page, re.I)
 
