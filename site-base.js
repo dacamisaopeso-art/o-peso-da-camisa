@@ -1,9 +1,7 @@
 (function(){
  'use strict';
- const mediaRoot=new URL('.',document.currentScript.src);if(!document.querySelector('a[data-image-credits]')){const credit=document.createElement('p');credit.className='opc-media-credits';const link=document.createElement('a');link.href=new URL('creditos-imagens.html',mediaRoot);link.dataset.imageCredits='';link.textContent='Créditos das imagens';credit.append(link);document.body.append(credit);}
-
- const appLink=document.createElement('a');appLink.href=new URL('aplicativo.html',mediaRoot);appLink.textContent='App Android e instalação no navegador';appLink.className='opc-media-credits';document.body.append(appLink);
- const pixLink=document.createElement('a');pixLink.href=new URL('apoie.html',mediaRoot);pixLink.textContent='Apoiar o projeto · Pix';pixLink.className='opc-media-credits';document.body.append(pixLink);
+ const mediaRoot=new URL('.',document.currentScript.src);
+ if(!document.querySelector('.opc-footer-links')){const links=document.createElement('nav');links.className='opc-footer-links';links.setAttribute('aria-label','Créditos, aplicativo e apoio');for(const [route,label,credit]of [['creditos-imagens.html','Créditos das imagens',true],['aplicativo.html','App Android e instalação no navegador',false],['apoie.html','Apoiar o projeto · Pix',false]]){if(credit&&document.querySelector('a[data-image-credits]'))continue;const a=document.createElement('a');a.href=new URL(route,mediaRoot);a.textContent=label;if(credit)a.dataset.imageCredits='';links.append(a);}document.body.append(links);}
 
  if(!document.querySelector('script[data-opc-hub]')){const load=(file,ready)=>{const script=document.createElement('script');script.src=new URL(file,mediaRoot);script.onload=ready;document.body.append(script);return script;};const core=()=>{const script=load('opc-jogos-core.js?v=3',()=>load('opc-help.js?v=4',()=>load('opc-backup-core.js?v=4',()=>load('opc-backup.js?v=4',()=>load('opc-tutorial.js?v=4',()=>load('opc-jogos.js?v=4'))))));script.dataset.opcHub='';};if(window.OPC_PREFS)core();else load('opc-preferences.js?v=3',core);}
 

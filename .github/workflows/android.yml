@@ -29,7 +29,7 @@ jobs:
       - name: Guardar APK e relatório de análise
         uses: actions/upload-artifact@v4
         with:
-          name: OPC-Jogos-Android-0.6.0
+          name: OPC-Jogos-Android-0.7.0
           path: |
             _projetos/opc-android/app/build/outputs/apk/debug/*.apk
             _projetos/opc-android/app/build/outputs/apksigner.jar

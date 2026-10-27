@@ -95,7 +95,7 @@ public class SmokeTest {
   load("index.html");js("localStorage.removeItem('opc-tutorial-v1-futdraw')");load("futdraw.html");assertEquals("1",js("document.querySelectorAll('.opc-tutorial').length"));js("Array.from(document.querySelectorAll('.opc-tutorial button')).find(b=>b.textContent==='Próximo').click()");assertEquals("true",js("document.querySelector('.opc-tutorial h2').textContent.includes('2/3')"));js("Array.from(document.querySelectorAll('.opc-tutorial button')).find(b=>b.textContent==='Pular').click()");assertEquals("0",js("document.querySelectorAll('.opc-tutorial').length"));load("futdraw.html");assertEquals("0",js("document.querySelectorAll('.opc-tutorial').length"));
  }
  @Test public void homePreferencesAndInstalledVersionWork()throws Exception{
-  load("index.html");assertEquals("6",js("OPC_INSTALLED.versionCode"));assertEquals("\"br.com.opesodacamisa.jogos.oficial\"",js("OPC_INSTALLED.package"));js("document.getElementById('app-preferences').click()");assertEquals("true",js("document.querySelector('dialog[open]').getAttribute('aria-label')==='Acessibilidade e dados'"));rule.getActivity().runOnUiThread(()->rule.getActivity().appBack());Thread.sleep(200);assertEquals("0",js("document.querySelectorAll('dialog[open]').length"));
+  load("index.html");assertEquals("7",js("OPC_INSTALLED.versionCode"));assertEquals("\"br.com.opesodacamisa.jogos.oficial\"",js("OPC_INSTALLED.package"));js("document.getElementById('app-preferences').click()");assertEquals("true",js("document.querySelector('dialog[open]').getAttribute('aria-label')==='Acessibilidade e dados'"));rule.getActivity().runOnUiThread(()->rule.getActivity().appBack());Thread.sleep(200);assertEquals("0",js("document.querySelectorAll('dialog[open]').length"));
  }
 
  @Test public void pixSupportFitsAndCopiesProvidedKey()throws Exception{
@@ -136,6 +136,24 @@ public class SmokeTest {
   js("document.querySelector('.player-choice').click()");js("document.querySelector('#dt-action .gold').click()");
   awaitJs("document.getElementById('dt-title').textContent.includes('Rodada 2')");
   assertEquals("true",js("document.documentElement.scrollWidth<=innerWidth+1"));
+ }
+
+ @Test public void favoriteFocusSurvivesRerenderAndFilters()throws Exception{
+  load("index.html");awaitJs("document.querySelectorAll('.favorite-toggle').length===9");
+  js("localStorage.setItem('opc-app-favorites','[]')");load("index.html");awaitJs("document.querySelectorAll('.favorite-toggle').length===9");
+  js("(()=>{const b=document.querySelector('.favorite-toggle');b.focus();b.click();})()");
+  assertEquals("true",js("document.activeElement.matches('.favorite-toggle[aria-pressed=true]')"));
+  js("document.querySelector('[data-filter=favorites]').click();document.querySelector('.favorite-toggle').click()");
+  assertEquals("true",js("document.activeElement.matches('[data-filter=favorites]')"));
+ }
+ @Test public void drafTeamAppExitCleansRoomAndLabelsDialog()throws Exception{
+  load("drafteam.html");assertEquals("\"DrafTeam\"",js("document.querySelector('.opc-app-bar strong').textContent"));
+  js("window.OPC_DRAFTEAM_ONLINE={leave:async()=>localStorage.setItem('opc-qa-left','yes')};document.querySelector('.opc-app-bar button:last-child').click()");
+  assertEquals("true",js("document.querySelector('.opc-leave-dialog').getAttribute('aria-labelledby')==='opc-leave-title'"));
+  assertEquals("true",js("document.activeElement.textContent==='Continuar jogando'"));
+  js("document.querySelector('.opc-leave-dialog button:last-child').click()");
+  awaitJs("location.pathname.endsWith('/index.html')");
+  assertEquals("\"yes\"",js("localStorage.getItem('opc-qa-left')"));js("localStorage.removeItem('opc-qa-left')");
  }
 
 }

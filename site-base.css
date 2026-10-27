@@ -29,3 +29,7 @@ dialog{max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);overflow-y:au
 
 .opc-media-credits{text-align:center;padding:16px;margin:0;background:#080b0e;font:13px/1.5 Arial,sans-serif}.opc-media-credits a{color:#d8a83e}
 .opc-institutional{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;padding:20px 16px;border-top:1px solid #252a2e;background:#080b0e;font:14px/1.5 Arial,sans-serif}.opc-institutional a{display:inline-flex;align-items:center;min-height:44px;color:#d8a83e}
+
+/* Links secundários agrupados e foco sem ficar sob elementos fixos. */
+.opc-footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 20px;border-top:1px solid #252a2e;background:#080b0e;padding:18px 20px;font:14px/1.6 Arial,sans-serif}.opc-footer-links a{display:inline-flex;align-items:center;min-height:44px;color:#d8a83e;text-underline-offset:3px;overflow-wrap:anywhere}:where(button,input,select,textarea,a,summary,[tabindex]){scroll-margin-block:110px 80px}
+@media(max-width:480px){.opc-footer-links{flex-direction:column;align-items:flex-start;gap:4px;padding-inline:24px}}

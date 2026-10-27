@@ -24,7 +24,7 @@
   window.addEventListener('appinstalled', () => { pending = null; reflect(); if (status) status.textContent = 'Aplicativo instalado. Procure OPC Jogos na tela inicial.'; });
   button?.addEventListener('click', async () => {
     if (!pending) {
-      if (instructions) { instructions.open = true; instructions.scrollIntoView({behavior: 'smooth', block: 'center'}); }
+      if (instructions) { instructions.open = true; instructions.scrollIntoView({behavior: window.OPC_PREFS?.reducedMotion?.() ? 'instant' : 'smooth', block: 'center'}); }
       if (status) status.textContent = 'Use o menu do navegador para instalar ou adicionar à tela inicial. Veja as instruções abaixo.';
       return;
     }

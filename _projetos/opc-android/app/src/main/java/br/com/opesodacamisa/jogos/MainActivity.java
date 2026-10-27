@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         if(major<111){new AlertDialog.Builder(this).setTitle("Atualize o componente de navegação").setMessage("Para abrir os jogos com segurança, atualize o Android System WebView ou o Chrome e abra o OPC Jogos novamente.").setCancelable(false).setNegativeButton("Fechar",(d,w)->finish()).setPositiveButton("Ver atualização",(d,w)->{openBrowser(Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.webview"));finish();}).show();return;}
         web=new WebView(this);root.addView(web,new FrameLayout.LayoutParams(-1,-1));web.setBackgroundColor(Color.rgb(11,14,17));
         WebSettings settings=web.getSettings();settings.setJavaScriptEnabled(true);settings.setDomStorageEnabled(true);
-        settings.setAllowFileAccess(false);settings.setAllowContentAccess(false);settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
+        settings.setAllowFileAccess(false);settings.setAllowContentAccess(false);settings.setAllowFileAccessFromFileURLs(false);settings.setAllowUniversalAccessFromFileURLs(false);settings.setSafeBrowsingEnabled(true);settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         settings.setJavaScriptCanOpenWindowsAutomatically(false);settings.setSupportMultipleWindows(false);settings.setMediaPlaybackRequiresUserGesture(true);
         CookieManager.getInstance().setAcceptThirdPartyCookies(web,false);
         WebView.setWebContentsDebuggingEnabled((getApplicationInfo().flags&ApplicationInfo.FLAG_DEBUGGABLE)!=0);
