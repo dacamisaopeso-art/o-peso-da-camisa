@@ -22,15 +22,15 @@ jobs:
       - name: Conferir integridade do pacote assinado localmente
         working-directory: _releases/android
         run: |
-          cat OPC-Jogos-0.6.0.apk.part* > OPC-Jogos-0.6.0.apk
-          sha256sum --check SHA256SUMS-0.6.0.txt
+          cat OPC-Jogos-0.7.0.apk.part* > OPC-Jogos-0.7.0.apk
+          sha256sum --check SHA256SUMS-0.7.0.txt
       - run: sudo setfacl -m u:$(id -un):rw /dev/kvm
-      - name: Testar atualização real de 0.5 para 0.6
+      - name: Testar atualização real de 0.6 para 0.7
         uses: reactivecircus/android-emulator-runner@v2
         env:
-          OPC_RELEASE_TAG: android-v0.6.0
-          OPC_PREVIOUS_VERSION: '0.5.0'
-          OPC_CURRENT_APK: _releases/android/OPC-Jogos-0.6.0.apk
+          OPC_RELEASE_TAG: android-v0.7.0
+          OPC_PREVIOUS_VERSION: '0.6.0'
+          OPC_CURRENT_APK: _releases/android/OPC-Jogos-0.7.0.apk
         with:
           api-level: 35
           arch: x86_64
@@ -45,7 +45,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: OPC-atualizacao-0.5-para-0.6
+          name: OPC-atualizacao-0.6-para-0.7
           path: |
             upgrade-proof/result.json
             upgrade-proof/upgrade.png
@@ -55,4 +55,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create android-v0.6.0 _releases/android/OPC-Jogos-0.6.0.apk _releases/android/SHA256SUMS-0.6.0.txt --target "$GITHUB_SHA" --title 'OPC Jogos Oficial 0.6.0 · DrafTeam' --notes-file _releases/android/NOTAS-0.6.0.md --latest
+          gh release create android-v0.7.0 _releases/android/OPC-Jogos-0.7.0.apk _releases/android/SHA256SUMS-0.7.0.txt --target "$GITHUB_SHA" --title 'OPC Jogos Oficial 0.7.0 · Conforto e acessibilidade' --notes-file _releases/android/NOTAS-0.7.0.md --latest
