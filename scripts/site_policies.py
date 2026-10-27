@@ -73,6 +73,8 @@ def protect(page, prefix=''):
         links = [('','Início'), ('jogos.html','Jogos'), ('sobre-nos.html','Sobre nós'), ('contato.html','Contato'), ('politica-de-privacidade.html','Privacidade e cookies')]
         navigation = '<nav class="opc-institutional" aria-label="Informações do site">' + ' '.join(f'<a href="{prefix + route if route else prefix or "./"}">{label}</a>' for route,label in links) + '</nav>'
         page = page.replace('</body>', navigation + '</body>')
+    # Recursos alterados recebem uma versão explícita para não reutilizar a UI antiga.
+    page = re.sub(r'((?:src|href)=["\'][^"\']*(?:site-base\.(?:js|css)|futdraw\.css|app-instalar\.js))(?:\?[^"\']*)?(["\'])', r'\1?v=20261027-audit\2', page)
     return install_adsense(page)
 
 def public_pages():

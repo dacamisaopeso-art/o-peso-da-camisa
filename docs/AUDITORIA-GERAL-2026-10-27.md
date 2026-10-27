@@ -14,12 +14,13 @@ Nove jogos, matérias, dados, regras, identidade preta/dourada e integração on
 - App: textos secundários pequenos e ações de ajuda sem estilo próprio. Fontes ampliadas, botões maiores e margens para a navegação fixa.
 - FutDraw: cores tinham 26 px no site e 30 px no app. Controles passam a 44 px em telas pequenas, com quebra em linhas.
 - Site: links de créditos, app e apoio agrupados em navegação secundária, mantendo a chamada Pix superior.
+- Site: recursos compartilhados recebem versão explícita na URL; o teste visual reproduziu interface antiga em cache e confirmou 44 px e o rodapé novo após a correção.
 - Site/app: movimentos de navegação respeitam a preferência de movimento reduzido nas ações alteradas.
 - Android: opções de acesso a arquivos locais/universal explicitamente desativadas e Safe Browsing explicitamente ativo, além das proteções já existentes.
 
 ## Verificação
 
-Antes das alterações, passaram 32 suítes JavaScript dos jogos. As nove telas iniciais foram conferidas a 320 px sem transbordamento horizontal. As suítes afetadas de interface, instalação, FutDraw, preferências, backup, segurança e licenças passaram depois das alterações. O pacote Android mantém nove jogos e os hashes dos motores e dados de origem. Dois testes Android adicionais verificam foco de favoritos e saída do DrafTeam; a distribuição depende da compilação, análise e testes do emulador.
+Passaram 32 suítes JavaScript dos jogos, 26 testes Python e quatro testes de integração PostgreSQL local. As nove telas iniciais foram conferidas a 320 px sem transbordamento horizontal. As suítes afetadas de interface, instalação, FutDraw, preferências, backup, segurança e licenças passaram depois das alterações. O pacote Android mantém nove jogos e os hashes dos motores e dados de origem. Os 14 testes Android passaram no emulador, incluindo os dois novos casos de foco de favoritos e saída do DrafTeam. Compilação, análise e integridade do pacote passaram; o teste de atualização oficial da 0.6 para a 0.7 também passou: mesmo certificado, mesmo pacote, favorito preservado e somente um app instalado. A versão 0.7 está distribuída na release android-v0.7.0, com checksum SHA-256 d14ce6d8d35e6714fcc0566135767b0516580c92dd4e7efd0f8cd9ea8e52d2b3.
 
 A varredura de 382 arquivos de código/configuração não encontrou JWT com papel service_role ou chaves privadas PEM. Isso é uma checagem limitada de padrões, não um pentest nem garantia de ausência de todo tipo de segredo. As chaves públicas Supabase permanecem públicas por definição; as regras do servidor continuam necessárias.
 
